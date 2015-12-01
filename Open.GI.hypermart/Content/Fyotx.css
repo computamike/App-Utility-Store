@@ -1,0 +1,50 @@
+﻿.news{
+  margin: 50px;
+}
+
+.popover{
+    max-width: 100%;
+    
+}
+
+
+.profile{
+  width: 320px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.profile-content {
+  width: 320px;
+  height: 130px;
+}
+.profile-content img{
+  width: 100px;
+  height: auto;
+  display:inline-block;
+  float:left;
+}
+
+.fade-content{
+  }
+
+.profile-content .info{
+  position: relative;
+  left: 10px;
+  top: 0;
+  display: inline-block;
+  float:left;
+}
+
+.profile-content .info .name{
+  color: #b200ff;
+  font-weight: bold;
+}
+
+.profile-content .btn{
+  position: relative;
+  left: -70px;
+  top: 10px;
+  display: inline-block;
+}
