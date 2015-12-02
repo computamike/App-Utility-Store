@@ -8,7 +8,6 @@ using Open.GI.hypermart.Models;
 using Open.GI.hypermart.DAL;
 using System.IO;
 using System.Drawing;
-using Open.GI.hypermart.Models;
 using Open.GI.hypermart.Helpers;
 
 namespace Open.GI.hypermart.Controllers

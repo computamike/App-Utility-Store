@@ -8,7 +8,7 @@ namespace Open.GI.hypermart.DAL
 
     public partial class HypermartContext : DbContext
     {
-        public HypermartContext(): base("HypermartContext ")
+        public HypermartContext(): base("HypermartContext")
         {
         }
 
