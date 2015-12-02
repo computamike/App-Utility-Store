@@ -21,11 +21,21 @@ namespace Open.GI.hypermart.Controllers
         [ChildActionOnly]
         public ActionResult Details(string userid)
         {
-            Helpers.AD_Repository sdr = new  Helpers.AD_Repository();
-            var user = sdr.getUser(userid);
-            if (user == null)
+            notFounduser.username = userid;
+            try
+            {
+                Helpers.AD_Repository sdr = new  Helpers.AD_Repository();
+                var user = sdr.getUser(userid);
+                if (user == null)
+                    return PartialView(notFounduser);
+                return PartialView(user);
+                }
+            catch (Exception)
+            {
+
                 return PartialView(notFounduser);
-            return PartialView(user);
+            }
+
         }
 
     }
