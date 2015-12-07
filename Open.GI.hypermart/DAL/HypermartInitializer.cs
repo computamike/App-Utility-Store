@@ -56,7 +56,7 @@ namespace Open.GI.hypermart.DAL
                     Tagline="Access and integfrate OGI and OFFICE", 
                     Description = "THIS IS A COOL APP - EVERYONE SHOULD DOWNLOAD IT",
                     Lead="mhingley",
-                    ScreenShots = 
+                    Screenshots = 
                     {
                         new Screenshot{ScreenShot1  =Properties.Resources.Download1.ImageToByteArray()},
                         new Screenshot{ScreenShot1  =Properties.Resources.Download2.ImageToByteArray()},

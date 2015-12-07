@@ -31,6 +31,30 @@ namespace Open.GI.hypermart.Helpers
             }
         }
 
+
+
+        public static string ImageToB64(this Image ImageToConvert)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                // Convert Image to byte[]
+                ImageToConvert.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+                byte[] imageBytes = ms.ToArray();
+
+                // Convert byte[] to Base64 String
+                string base64String = Convert.ToBase64String(imageBytes);
+
+                return base64String;
+            }
+        }
+
+        public static byte[] ImageToByteArray(this System.Drawing.Image  imageIn)
+        {
+            MemoryStream ms = new MemoryStream();
+            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
+            return ms.ToArray();
+        }
+
         public static string TESTExtension(this System.Drawing.Bitmap foo )
         {
             return "hi";

@@ -6,13 +6,13 @@ namespace Open.GI.hypermart.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Product")]
     public partial class Product
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
             Files = new HashSet<File>();
-            ScreenShots = new HashSet<Screenshot>();
+            Screenshots = new HashSet<Screenshot>();
         }
 
         public int ID { get; set; }
@@ -26,8 +26,10 @@ namespace Open.GI.hypermart.Models
         [StringLength(50)]
         public string Lead { get; set; }
 
-        public virtual ICollection<Screenshot> ScreenShots { get; set; }
-        
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<File> Files { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Screenshot> Screenshots { get; set; }
     }
 }

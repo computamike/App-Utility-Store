@@ -6,9 +6,9 @@ namespace Open.GI.hypermart.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("File")]
     public partial class File
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public File()
         {
             Platforms = new HashSet<Platform>();
@@ -31,6 +31,7 @@ namespace Open.GI.hypermart.Models
 
         public virtual Product Product { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Platform> Platforms { get; set; }
     }
 }

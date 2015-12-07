@@ -13,7 +13,7 @@ namespace Open.GI.hypermart.Models
         public Image Photo { get; set; }
         public string Email { get; set; }
         public string JobTitle { get; set; }
-        
+
 
     }
 }

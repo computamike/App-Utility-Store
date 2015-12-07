@@ -125,7 +125,11 @@ namespace Open.GI.hypermart.Helpers
             var dcs = EnumerateDomains();
             var ds = new DirectorySearcher();
 
-            DirectoryEntry entry = new DirectoryEntry("LDAP://OU=Users,OU=Development,OU=Departments,DC=wnet,DC=local");
+            DirectoryEntry rootEntry = new DirectoryEntry("LDAP://RootDSE");
+            String str = (string)rootEntry.Properties["defaultNamingContext"][0];
+            DirectoryEntry entry = new DirectoryEntry("LDAP://" + str);
+
+            //DirectoryEntry entry = new DirectoryEntry("LDAP://OU=Users,OU=Development,OU=Departments,DC=wnet,DC=local");
             DirectorySearcher mySearcher = new DirectorySearcher(entry)
             {
                 SearchScope = SearchScope.Subtree,

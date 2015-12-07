@@ -25,7 +25,7 @@
             @{Int32 SlideID = 0;}
 
 
-            @foreach (var f in Model.ScreenShots)
+            @foreach (var f in Model.Screenshots )
             {
                 if (SlideID == 0)
                 {
@@ -50,14 +50,14 @@
 
             @{
 
-                if (Model.ScreenShots.Count == 0)
+                if (Model.Screenshots.Count == 0)
                 {
                     <img src="~/Resources/drawing-1.png" />
 
                 }
             }
 
-            @foreach (var f in Model.ScreenShots)
+            @foreach (var f in Model.Screenshots)
             {
 
                 var img = String.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(f.ScreenShot1));

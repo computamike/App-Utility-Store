@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Open.GI.hypermart", "Open.GI.hypermart\Open.GI.hypermart.csproj", "{4089EEDD-3AE9-4E59-B365-2D29439E5856}"
 EndProject
@@ -13,6 +13,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3DAB5D30-9859-431A-B06A-F128886FDB6D}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API TestConsumer", "API TestConsumer\API TestConsumer.csproj", "{5358CE4B-9A20-45C2-8B9C-24662ACE06A3}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4089EEDD-3AE9-4E59-B365-2D29439E5856} = {4089EEDD-3AE9-4E59-B365-2D29439E5856}
 	EndProjectSection
 EndProject
 Global
@@ -29,6 +34,10 @@ Global
 		{8A43BBD5-766F-47DF-9BA9-F3307AFB6DC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A43BBD5-766F-47DF-9BA9-F3307AFB6DC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A43BBD5-766F-47DF-9BA9-F3307AFB6DC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5358CE4B-9A20-45C2-8B9C-24662ACE06A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5358CE4B-9A20-45C2-8B9C-24662ACE06A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5358CE4B-9A20-45C2-8B9C-24662ACE06A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5358CE4B-9A20-45C2-8B9C-24662ACE06A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,9 +6,9 @@ using System.Web;
 namespace Open.GI.hypermart.Models
 {
     public enum storageType
-	{
+    {
         InternalBLOB,
         RemoteShare,
-	         
-	}
+
+    }
 }
