@@ -18,6 +18,17 @@ namespace Open.GI.hypermart.Controllers
     /// </summary>
     public class StoreContentController : ApiController
     {
+
+        public StoreContentController()
+        {
+
+        }
+
+        public StoreContentController(HypermartContext dbContext)
+        {
+            db = dbContext;
+        }
+
         private HypermartContext db = new HypermartContext();
 
         public IQueryable<ProductDTO> GetAllProducts()

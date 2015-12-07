@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Open.GI.hypermart.DAL
 {
-    interface IHypermartContext
+    public interface IHypermartContext
     {
         System.Data.Entity.DbSet<Open.GI.hypermart.Models.File> Files { get; set; }
         System.Data.Entity.DbSet<Open.GI.hypermart.Models.Platform> Platforms { get; set; }
