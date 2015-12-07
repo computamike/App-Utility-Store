@@ -118,8 +118,12 @@ namespace Open.GI.hypermart.Helpers
             return results;
         }
 
-        public User getUser(string partialName)
+        public static User getUser(string partialName)
         {
+            if (partialName.Contains('\\'))
+            {
+                partialName = partialName.Split('\\')[1];
+            }
             List<User> results = new List<User>();
             var Ldap = FriendlyDomainToLdapDomain("wnet");
             var dcs = EnumerateDomains();

@@ -24,8 +24,8 @@ namespace Open.GI.hypermart.Controllers
             notFounduser.username = userid;
             try
             {
-                Helpers.AD_Repository sdr = new  Helpers.AD_Repository();
-                var user = sdr.getUser(userid);
+                
+                var user = Helpers.AD_Repository.getUser(userid);
                 if (user == null)
                     return PartialView(notFounduser);
                 return PartialView(user);
