@@ -63,6 +63,24 @@ namespace Open.GI.hypermart.Models
         public string Lead { get; set; }
 
         /// <summary>
+        /// Gets or sets the source code location for the project.
+        /// </summary>
+        /// <value>
+        /// The source code.
+        /// </value>
+        public string SourceCode { get; set; }
+
+        /// <summary>
+        /// Gets or sets the maintainers.
+        /// </summary>
+        /// <value>
+        /// The maintainers.
+        /// </value>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<string> Maintainers { get; set; }
+        
+
+        /// <summary>
         /// Gets or sets the files.
         /// </summary>
         /// <value>

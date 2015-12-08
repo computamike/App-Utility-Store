@@ -25,17 +25,19 @@ namespace TestAPI
     [TestFixture]
     public class APIControllerTests
     {
+        //
+        //TODO : checking for equality between 2 instances of an object can be done by overriding the equality operator.  This is more convenient that checking each property.
+        //
+        List<Product> fakeProducts;
         public void Setup()
         {
-            //mockDB = new Mock<IHypermartContext>();
-            //mockDB.Setup(db => db.Products).Returns(Products);
-           
+            
         }
 
         [Test]
         public void CanListAllApps()
         {
-            fakeCustomers = new List<Product>()
+            fakeProducts = new List<Product>()
             {
                 new Product(){ID =1,Description="d1",Files = null,Lead="l1",Screenshots = null,Tagline="tl1",Title = "title1"},
                 new Product(){ID =2,Description="d2",Files = null,Lead="l2",Screenshots = null,Tagline="tl2",Title = "title2"},
@@ -44,7 +46,7 @@ namespace TestAPI
 
 
             var mockedContext = new Mock<Open.GI.hypermart.DAL.HypermartContext>();
-            mockedContext.Setup(c => c.Products).ReturnsDbSet(fakeCustomers);
+            mockedContext.Setup(c => c.Products).ReturnsDbSet(fakeProducts);
             var p = mockedContext.Object.Products;
             
             StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(mockedContext.Object);
@@ -55,11 +57,7 @@ namespace TestAPI
 
         }
 
-        List<Product> fakeCustomers;
-
-
- 
-
+        
 
         [Test]
         public void CanAddNewProduct()
@@ -91,17 +89,17 @@ namespace TestAPI
             StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext.Object);
            
             var res = CUT.AddProduct(ProductToAdd);
-            Assert.AreEqual(ExpectedProductDTO.ID, res.ID, "Expected prouct returned from Add Product call does not match expected product");
-            Assert.AreEqual(ExpectedProductDTO.Description, res.Description, "Expected prouct returned from Add Product call does not match expected product");
-            Assert.AreEqual(ExpectedProductDTO.Lead, res.Lead, "Expected prouct returned from Add Product call does not match expected product");
-            Assert.AreEqual(ExpectedProductDTO.Tagline, res.Tagline, "Expected prouct returned from Add Product call does not match expected product");
-            Assert.AreEqual(ExpectedProductDTO.Title, res.Title, "Expected prouct returned from Add Product call does not match expected product");
+            Assert.AreEqual(ExpectedProductDTO.ID, res.ID, "Expected product returned from Add Product call does not match expected product");
+            Assert.AreEqual(ExpectedProductDTO.Description, res.Description, "Expected product returned from Add Product call does not match expected product");
+            Assert.AreEqual(ExpectedProductDTO.Lead, res.Lead, "Expected prdouct returned from Add Product call does not match expected product");
+            Assert.AreEqual(ExpectedProductDTO.Tagline, res.Tagline, "Expected product returned from Add Product call does not match expected product");
+            Assert.AreEqual(ExpectedProductDTO.Title, res.Title, "Expected product returned from Add Product call does not match expected product");
 
         }
 
         private void  dataAdd(Product obj)
         {
-            fakeCustomers.Add(obj);
+            fakeProducts.Add(obj);
              
 
         }
