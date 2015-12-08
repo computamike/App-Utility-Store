@@ -9,22 +9,59 @@ using System.Web.Hosting;
 
 namespace Open.GI.hypermart.Helpers
 {
- 
+
+    /// <summary>
+    /// File Share helper (create and manage file shares)
+    /// </summary>
       public enum ManagementType : uint
     {
+        /// <summary>
+        /// The disk drive
+        /// </summary>
         DiskDrive = 0x0,
+        /// <summary>
+        /// The print queue
+        /// </summary>
         PrintQueue = 0x1,
+        /// <summary>
+        /// The device
+        /// </summary>
         DEVICE = 0x2,
+        /// <summary>
+        /// The ipc
+        /// </summary>
         IPC = 0x3,
+        /// <summary>
+        /// The dis k_ driv e_ admin
+        /// </summary>
         DISK_DRIVE_ADMIN = 0x80000000,
+        /// <summary>
+        /// The prin t_ queu e_ admin
+        /// </summary>
         PRINT_QUEUE_ADMIN = 0x80000001,
+        /// <summary>
+        /// The devic e_ admin
+        /// </summary>
         DEVICE_ADMIN = 0x80000002,
+        /// <summary>
+        /// The ip c_ admin
+        /// </summary>
         IPC_ADMIN = 0x8000003
     }
 
 
+      /// <summary>
+      /// 
+      /// </summary>
     public class FileShareHelper
-    { 
+    {
+        /// <summary>
+        /// Creates the share.
+        /// </summary>
+        /// <param name="FolderName">Name of the folder.</param>
+        /// <param name="ShareName">Name of the share.</param>
+        /// <param name="Description">The description.</param>
+        /// <exception cref="System.Exception">Unable to share directory.</exception>
         public static void CreateShare(string FolderName, string ShareName, string Description )
         {
             
@@ -77,6 +114,10 @@ namespace Open.GI.hypermart.Helpers
             
         }
 
+        /// <summary>
+        /// Deletes the share.
+        /// </summary>
+        /// <param name="FolderName">Name of the folder.</param>
         public static void DeleteShare(string FolderName )
         {
             var RootPath = HostingEnvironment.ApplicationPhysicalPath;

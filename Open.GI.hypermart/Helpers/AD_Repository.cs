@@ -9,6 +9,9 @@ using Open.GI.hypermart.Models;
 using System.DirectoryServices.ActiveDirectory;
 namespace Open.GI.hypermart.Helpers
 {
+    /// <summary>
+    /// Active Directory Repository
+    /// </summary>
     public class AD_Repository
     {
         private static string GetName(SearchResult item)
@@ -58,6 +61,10 @@ namespace Open.GI.hypermart.Helpers
             }
             return x;
         }
+        /// <summary>
+        /// Enumerates the domains.
+        /// </summary>
+        /// <returns></returns>
         public static ArrayList EnumerateDomains()
         {
             ArrayList alGCs = new ArrayList();
@@ -69,6 +76,11 @@ namespace Open.GI.hypermart.Helpers
             return alGCs;
         }
 
+        /// <summary>
+        /// Friendlies the domain to LDAP domain.
+        /// </summary>
+        /// <param name="friendlyDomainName">Name of the friendly domain.</param>
+        /// <returns></returns>
         public static string FriendlyDomainToLdapDomain(string friendlyDomainName)
         {
             string ldapPath = null;
@@ -85,6 +97,11 @@ namespace Open.GI.hypermart.Helpers
             }
             return ldapPath;
         }
+        /// <summary>
+        /// Gets the users.
+        /// </summary>
+        /// <param name="partialName">The partial name.</param>
+        /// <returns></returns>
         public List<User> GetUsers(string partialName)
         {
             List<User> results = new List<User>();
@@ -118,6 +135,11 @@ namespace Open.GI.hypermart.Helpers
             return results;
         }
 
+        /// <summary>
+        /// Gets the user.
+        /// </summary>
+        /// <param name="partialName">The partial name.</param>
+        /// <returns></returns>
         public static User getUser(string partialName)
         {
             if (partialName.Contains('\\'))

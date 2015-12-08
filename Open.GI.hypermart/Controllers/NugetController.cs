@@ -8,14 +8,26 @@ using System.Web.Mvc;
 
 namespace Open.GI.hypermart.Controllers
 {
+    /// <summary>
+    /// An attempt to create a Nuget controller (phase 2)
+    /// </summary>
+    /// <seealso cref="System.Web.Mvc.Controller" />
     public class NugetController : Controller
     {
         // GET: Nuget
+        /// <summary>
+        /// Indexes this instance.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             return View();
         }
         // GET: Nuget
+        /// <summary>
+        /// Packageses this instance.
+        /// </summary>
+        /// <returns></returns>
         public AtomActionResult  Packages()
         {
 

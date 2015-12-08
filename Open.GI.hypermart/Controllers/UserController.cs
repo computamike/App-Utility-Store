@@ -6,6 +6,10 @@ using System.Web.Mvc;
 
 namespace Open.GI.hypermart.Controllers
 {
+    /// <summary>
+    /// User Controller
+    /// </summary>
+    /// <seealso cref="System.Web.Mvc.Controller" />
     public class UserController : Controller
     {
         private Open.GI.hypermart.Models.User notFounduser = new Models.User 
@@ -15,9 +19,14 @@ namespace Open.GI.hypermart.Controllers
             Photo = Properties.Resources.ImageNotFound,
             JobTitle = "Not Found",
             PhoneNumnber = ""        };
- 
 
 
+
+        /// <summary>
+        /// Detailses the specified userid.
+        /// </summary>
+        /// <param name="userid">The userid.</param>
+        /// <returns></returns>
         [ChildActionOnly]
         public ActionResult Details(string userid)
         {

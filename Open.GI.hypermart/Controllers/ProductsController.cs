@@ -11,17 +11,30 @@ using Open.GI.hypermart.Models;
 
 namespace Open.GI.hypermart.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Web.Mvc.Controller" />
     public class ProductsController : Controller
     {
         private HypermartContext db = new HypermartContext();
 
         // GET: Products
+        /// <summary>
+        /// Indexes this instance.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             return View(db.Products.ToList());
         }
 
         // GET: Products/Details/5
+        /// <summary>
+        /// Detailses the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         public ActionResult Details(int? id)
         {
             
@@ -38,6 +51,10 @@ namespace Open.GI.hypermart.Controllers
         }
 
         // GET: Products/Create
+        /// <summary>
+        /// Creates this instance.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Create()
         {
             return View();
@@ -46,6 +63,11 @@ namespace Open.GI.hypermart.Controllers
         // POST: Products/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Creates the specified product.
+        /// </summary>
+        /// <param name="product">The product.</param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ID,Title,Version")] Product product)
@@ -61,6 +83,11 @@ namespace Open.GI.hypermart.Controllers
         }
 
         // GET: Products/Edit/5
+        /// <summary>
+        /// Edits the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -78,6 +105,11 @@ namespace Open.GI.hypermart.Controllers
         // POST: Products/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
+        /// <summary>
+        /// Edits the specified product.
+        /// </summary>
+        /// <param name="product">The product.</param>
+        /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "ID,Title,Version,Description,Lead")] Product product)
@@ -92,6 +124,11 @@ namespace Open.GI.hypermart.Controllers
         }
 
         // GET: Products/Delete/5
+        /// <summary>
+        /// Deletes the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -107,6 +144,11 @@ namespace Open.GI.hypermart.Controllers
         }
 
         // POST: Products/Delete/5
+        /// <summary>
+        /// Deletes the confirmed.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
@@ -117,6 +159,10 @@ namespace Open.GI.hypermart.Controllers
             return RedirectToAction("Index");
         }
 
+        /// <summary>
+        /// Releases unmanaged resources and optionally releases managed resources.
+        /// </summary>
+        /// <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing)

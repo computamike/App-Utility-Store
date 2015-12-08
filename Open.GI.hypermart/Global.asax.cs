@@ -9,8 +9,15 @@ using System.Web.Routing;
 
 namespace Open.GI.hypermart
 {
+    /// <summary>
+    /// Main MVC Application Class
+    /// </summary>
+    /// <seealso cref="System.Web.HttpApplication" />
     public class MvcApplication : System.Web.HttpApplication
     {
+        /// <summary>
+        /// ASP.NET MVC Application start method
+        /// </summary>
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

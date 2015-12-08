@@ -10,9 +10,23 @@ using System.Web.Mvc;
 
 namespace Open.GI.hypermart.Controllers
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <seealso cref="System.Web.Mvc.Controller" />
     public class DownloadController : Controller
     {
         private HypermartContext db = new HypermartContext();
+        /// <summary>
+        /// Downloads the specified identifier.
+        /// </summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        /// <exception cref="System.Web.HttpException">
+        /// Cannot find file 
+        /// or
+        /// Cannot find file - can't get remote link.
+        /// </exception>
         public FileResult Download(int id)
         {
 

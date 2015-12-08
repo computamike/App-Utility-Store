@@ -17,6 +17,10 @@ namespace Open.GI.hypermart
     public class Status : System.Web.Services.WebService
     {
 
+        /// <summary>
+        /// This is the Hello World method.
+        /// </summary>
+        /// <returns></returns>
         [WebMethod]
         public string HelloWorld()
         {

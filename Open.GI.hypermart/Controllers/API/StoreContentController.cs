@@ -19,11 +19,18 @@ namespace Open.GI.hypermart.Controllers
     public class StoreContentController : ApiController
     {
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StoreContentController"/> class.
+        /// </summary>
         public StoreContentController()
         {
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="StoreContentController"/> class.
+        /// </summary>
+        /// <param name="dbContext">The database context.</param>
         public StoreContentController(HypermartContext dbContext)
         {
             db = dbContext;
@@ -31,6 +38,10 @@ namespace Open.GI.hypermart.Controllers
 
         private HypermartContext db = new HypermartContext();
 
+        /// <summary>
+        /// Gets all products.
+        /// </summary>
+        /// <returns></returns>
         public IQueryable<ProductDTO> GetAllProducts()
         {
             var x = from b in db.Products
@@ -56,7 +67,7 @@ namespace Open.GI.hypermart.Controllers
         {
             try
             {
-                if (itemToAdd.Screenshots.Count == 0)
+                if (itemToAdd.Screenshots != null && itemToAdd.Screenshots.Count == 0)
                 {
                     itemToAdd.Screenshots = null;
                 }

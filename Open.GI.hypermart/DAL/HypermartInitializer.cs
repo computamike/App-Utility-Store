@@ -9,8 +9,15 @@ using System.Web;
 
 namespace Open.GI.hypermart.DAL
 {
+    /// <summary>
+    /// Hypermart Initializer
+    /// </summary>
     public class HypermartInitializer :DropCreateDatabaseIfModelChanges<HypermartContext>
     {
+        /// <summary>
+        /// Seeds the database with content.
+        /// </summary>
+        /// <param name="context">The context.</param>
         protected override void Seed(HypermartContext context)
         {
             // Add platforms - at this stage add generic (such as WINDOWS) and specific (such as WINDOWS 32 BIT) - this might change

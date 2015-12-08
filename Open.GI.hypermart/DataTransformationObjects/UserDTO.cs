@@ -13,11 +13,18 @@ namespace Open.GI.hypermart.DataTransformationObjects
     /// </summary>
     public class UserDTO
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserDTO"/> class.
+        /// </summary>
         public UserDTO()
         {
 
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserDTO"/> class.
+        /// </summary>
+        /// <param name="UserToWrap">The user to wrap.</param>
         public UserDTO(Open.GI.hypermart.Models.User UserToWrap)
         {
             username = UserToWrap.username;
@@ -26,13 +33,37 @@ namespace Open.GI.hypermart.DataTransformationObjects
             Email = UserToWrap.Email;
         }
 
+        /// <summary>
+        /// Gets or sets the username.
+        /// </summary>
+        /// <value>
+        /// The username.
+        /// </value>
         public string username { get; set; }
+        /// <summary>
+        /// Gets or sets the phone numnber.
+        /// </summary>
+        /// <value>
+        /// The phone numnber.
+        /// </value>
         public string PhoneNumnber { get; set; }
         /// <summary>
         /// Base 64 encoded png image.
         /// </summary>
         public Byte[] Photo_byteArray{ get; set; }
+        /// <summary>
+        /// Gets or sets the email.
+        /// </summary>
+        /// <value>
+        /// The email.
+        /// </value>
         public string Email { get; set; }
+        /// <summary>
+        /// Gets or sets the job title.
+        /// </summary>
+        /// <value>
+        /// The job title.
+        /// </value>
         public string JobTitle { get; set; }
     }
 }

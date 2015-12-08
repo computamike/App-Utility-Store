@@ -8,6 +8,9 @@ using System.Web.Mvc;
 
 namespace Open.GI.hypermart.Helpers
 {
+    /// <summary>
+    /// Image Helpers - manage images.
+    /// </summary>
     public static class ImageHelper
     {
         /// <summary>
@@ -33,6 +36,11 @@ namespace Open.GI.hypermart.Helpers
 
 
 
+        /// <summary>
+        /// Images to Base 64 string.
+        /// </summary>
+        /// <param name="ImageToConvert">The image to convert.</param>
+        /// <returns></returns>
         public static string ImageToB64(this Image ImageToConvert)
         {
             using (MemoryStream ms = new MemoryStream())
@@ -48,6 +56,11 @@ namespace Open.GI.hypermart.Helpers
             }
         }
 
+        /// <summary>
+        /// Images to byte array.
+        /// </summary>
+        /// <param name="imageIn">The image in.</param>
+        /// <returns></returns>
         public static byte[] ImageToByteArray(this System.Drawing.Image  imageIn)
         {
             MemoryStream ms = new MemoryStream();
@@ -55,11 +68,21 @@ namespace Open.GI.hypermart.Helpers
             return ms.ToArray();
         }
 
+        /// <summary>
+        /// Tests the extension.
+        /// </summary>
+        /// <param name="foo">The foo.</param>
+        /// <returns></returns>
         public static string TESTExtension(this System.Drawing.Bitmap foo )
         {
             return "hi";
         }
 
+        /// <summary>
+        /// Images to byte array.
+        /// </summary>
+        /// <param name="imageIn">The image in.</param>
+        /// <returns></returns>
         public static byte[] ImageToByteArray(this System.Drawing.Bitmap imageIn)
         {
             MemoryStream ms = new MemoryStream();
@@ -67,6 +90,11 @@ namespace Open.GI.hypermart.Helpers
             return ms.ToArray();
         }
 
+        /// <summary>
+        /// Bytes the array to image.
+        /// </summary>
+        /// <param name="byteArrayIn">The byte array in.</param>
+        /// <returns></returns>
         public static Image byteArrayToImage(this byte[] byteArrayIn)
         {
             MemoryStream ms = new MemoryStream(byteArrayIn);
