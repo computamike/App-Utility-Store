@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Open.GI.hypermart.Models
 {
-    class Category
+    public class Category
     {
     }
 }
