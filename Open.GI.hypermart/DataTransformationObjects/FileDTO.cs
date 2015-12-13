@@ -21,6 +21,19 @@ namespace Open.GI.hypermart.DataTransformationObjects
             Platforms = new HashSet<Platform>();
         }
 
+        public FileDTO(File File )
+        {
+            ID = File.ID;
+            Link = File.Link;
+            StorageType = File.StorageType;
+            FileName = File.FileName;
+            BLOB = File.BLOB;
+            Product = File.Product;
+            ProductID = File.ProductID;
+            Platforms = File.Platforms;
+            Version = File.Version;
+        }
+
         /// <summary>
         /// Gets or sets the identifier.
         /// </summary>

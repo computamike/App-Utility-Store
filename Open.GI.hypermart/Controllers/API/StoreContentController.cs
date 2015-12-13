@@ -31,12 +31,12 @@ namespace Open.GI.hypermart.Controllers
         /// Initializes a new instance of the <see cref="StoreContentController"/> class.
         /// </summary>
         /// <param name="dbContext">The database context.</param>
-        public StoreContentController(HypermartContext dbContext)
+        public StoreContentController(IHypermartContext dbContext)
         {
             db = dbContext;
         }
 
-        private HypermartContext db = new HypermartContext();
+        private IHypermartContext db = new HypermartContext();
 
         /// <summary>
         /// Gets all products.
@@ -45,25 +45,35 @@ namespace Open.GI.hypermart.Controllers
         public IQueryable<ProductDTO> GetAllProducts()
         {
             var x = from b in db.Products
-                    select new ProductDTO()
-                    {
-                        ID = b.ID,
-                        Description = b.Description,
-                        Lead = b.Lead,
-                        Tagline = b.Tagline,
-                        Title = b.Title
-                    };
+                    select new ProductDTO(b);
             
             return x;
 
         }
-        
+
+        /// <summary>
+        /// Gets all products.
+        /// </summary>
+        /// <returns></returns>
+        public ProductDTO GetProducts(int id)
+        {
+          
+            Product product = db.Products.Find(id);
+            if (product == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            return new ProductDTO(product);
+
+        }
+    
+
         
         /// <summary>
         /// Create a New Product
         /// </summary>
         [HttpPost]
-        public ProductDTO AddProduct(Product itemToAdd)
+        public ProductDTO PostProduct(Product itemToAdd)
         {
             try
             {
@@ -73,15 +83,8 @@ namespace Open.GI.hypermart.Controllers
                 }
                 var AddedProduct = db.Products.Add(itemToAdd);
                 db.SaveChanges();
-                return new ProductDTO()
-                {
-                    ID = AddedProduct.ID,
-                    Lead = AddedProduct.Lead,
-                    Description = AddedProduct.Description,
-                    Tagline = AddedProduct.Tagline,
-                    Title = AddedProduct.Title,
-                };
-            }
+                return new ProductDTO(AddedProduct);
+              }
             catch (Exception ex)
             {
 
@@ -89,6 +92,32 @@ namespace Open.GI.hypermart.Controllers
             }
 
         }
+
+
+        [HttpPost]
+        public FileDTO PostProductFile(int ProductID,Open.GI.hypermart.Models.File FileToAdd)
+        {
+            try
+            {
+                Product product = db.Products.Find(ProductID);
+                if (product == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                FileToAdd.Product = product;
+
+                var AddedFile = db.Files.Add(FileToAdd);
+                db.SaveChanges();
+                return new FileDTO(AddedFile);
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception("Cannot add a product file", ex);
+            }
+
+        }
+
 
         /// <summary>
         /// Add A File to a product

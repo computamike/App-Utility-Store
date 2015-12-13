@@ -29,51 +29,42 @@ namespace TestAPI
         //TODO : checking for equality between 2 instances of an object can be done by overriding the equality operator.  This is more convenient that checking each property.
         //
         List<Product> fakeProducts;
+        MockCntext MockDbContext;
+        [SetUp]
         public void Setup()
         {
+            MockDbContext = new MockCntext();
+
+            var p = new MockProducts();
+
+            p.Add(new Product() { ID = 1, Description = "d1", Files = null, Lead = "l1", Screenshots = null, Tagline = "tl1", Title = "title1" });
+            p.Add(new Product() { ID = 2, Description = "d2", Files = null, Lead = "l2", Screenshots = null, Tagline = "tl2", Title = "title2" });
+            p.Add(new Product() { ID = 3, Description = "d3", Files = null, Lead = "l3", Screenshots = null, Tagline = "tl3", Title = "title3" });
+
             
+            
+            MockDbContext.Products = p;  
         }
 
         [Test]
         public void CanListAllApps()
         {
-            fakeProducts = new List<Product>()
-            {
-                new Product(){ID =1,Description="d1",Files = null,Lead="l1",Screenshots = null,Tagline="tl1",Title = "title1"},
-                new Product(){ID =2,Description="d2",Files = null,Lead="l2",Screenshots = null,Tagline="tl2",Title = "title2"},
-                new Product(){ID =3,Description="d3",Files = null,Lead="l3",Screenshots = null,Tagline="tl3",Title = "title3"},
-            };
+            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
 
-
-            var mockedContext = new Mock<Open.GI.hypermart.DAL.HypermartContext>();
-            mockedContext.Setup(c => c.Products).ReturnsDbSet(fakeProducts);
-            var p = mockedContext.Object.Products;
-            
-            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(mockedContext.Object);
-            
+            var ProductToUpdate = CUT.GetProducts(1);
             var AllProducts = CUT.GetAllProducts();
             
             Assert.AreEqual(3, AllProducts.Count(), "Expected 3 products");
 
         }
-
         
-
         [Test]
         public void CanAddNewProduct()
         {
             
             var ProductToAdd = new Product() { ID = 4, Description = "d4", Files = null, Lead = "l4", Screenshots = null, Tagline = "tl4", Title = "title4" };
-            var ExpectedProductDTO = new Open.GI.hypermart.DataTransformationObjects.ProductDTO() 
-            {
-                Description = ProductToAdd.Description,
-                ID = ProductToAdd.ID,
-                Lead = ProductToAdd.Lead,
-                Tagline = ProductToAdd.Tagline,
-                Title = ProductToAdd.Title 
-
+            var ExpectedProductDTO = new Open.GI.hypermart.DataTransformationObjects.ProductDTO(ProductToAdd); 
             
-            };
 
             var mockProspect = new Mock<DbSet<Product>>() ;
             mockProspect.Object.Add(ProductToAdd);
@@ -88,7 +79,7 @@ namespace TestAPI
              
             StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext.Object);
            
-            var res = CUT.AddProduct(ProductToAdd);
+            var res = CUT.PostProduct(ProductToAdd);
             Assert.AreEqual(ExpectedProductDTO.ID, res.ID, "Expected product returned from Add Product call does not match expected product");
             Assert.AreEqual(ExpectedProductDTO.Description, res.Description, "Expected product returned from Add Product call does not match expected product");
             Assert.AreEqual(ExpectedProductDTO.Lead, res.Lead, "Expected prdouct returned from Add Product call does not match expected product");
@@ -96,6 +87,83 @@ namespace TestAPI
             Assert.AreEqual(ExpectedProductDTO.Title, res.Title, "Expected product returned from Add Product call does not match expected product");
 
         }
+
+
+        private class MockProducts : DbSet<Product>, IQueryable<Product>
+        {
+            List<Product> InMemoryList = new List<Product>();
+
+            public override Product Find(params object[] keyValues)
+            {
+                var id = (int)keyValues.Single();
+                return InMemoryList.SingleOrDefault(b => b.ID == id);
+            } 
+            public override Product Add(Product entity)
+            {
+                InMemoryList.Add(entity);
+                return entity;
+            }
+
+
+
+            IEnumerator<Product> IEnumerable<Product>.GetEnumerator()
+            {
+                return InMemoryList.AsQueryable().GetEnumerator();
+            }
+
+            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+            {
+                return InMemoryList.AsQueryable().GetEnumerator();
+            }
+
+            Type IQueryable.ElementType
+            {
+                get { return InMemoryList.AsQueryable().ElementType; }
+            }
+
+            System.Linq.Expressions.Expression IQueryable.Expression
+            {
+                get { return InMemoryList.AsQueryable().Expression; }
+            }
+
+            IQueryProvider IQueryable.Provider
+            {
+                get { return InMemoryList.AsQueryable().Provider; }
+            }
+        }
+
+        private class MockCntext : IHypermartContext
+        {
+            public DbSet<File> Files { get; set; }
+            
+            public DbSet<Platform> Platforms { get; set; }
+
+            public DbSet<Product> Products{get; set; }
+
+            public DbSet<Screenshot> Screenshots{ get; set; }
+           
+
+            public void SaveChanges()
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        [Test]
+        public void CanAddNewProductFile()
+        {
+
+             
+  
+            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
+
+            var ProductToUpdate = CUT.GetProducts(1);
+            
+            
+        }
+
+ 
+
 
         private void  dataAdd(Product obj)
         {

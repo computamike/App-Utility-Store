@@ -14,6 +14,14 @@ namespace Open.GI.hypermart.Helpers
     /// </summary>
     public class AD_Repository
     {
+        private static Open.GI.hypermart.Models.User Resolved = new Models.User
+        {
+            Email = "",
+            username = "User Not Found",
+            Photo = Properties.Resources.ImageNotFound,
+            JobTitle = "Not Found",
+            PhoneNumnber = ""
+        };
         private static string GetName(SearchResult item)
         {
             string x = "Unknown";
@@ -83,20 +91,12 @@ namespace Open.GI.hypermart.Helpers
         /// <returns></returns>
         public static string FriendlyDomainToLdapDomain(string friendlyDomainName)
         {
-            string ldapPath = null;
-            try
-            {
-                DirectoryContext objContext = new DirectoryContext(
-                    DirectoryContextType.Domain, friendlyDomainName);
-                Domain objDomain = Domain.GetDomain(objContext);
-                ldapPath = objDomain.Name;
-            }
-            catch (DirectoryServicesCOMException e)
-            {
-                ldapPath = e.Message.ToString();
-            }
-            return ldapPath;
+            DirectoryContext objContext = new DirectoryContext(
+                DirectoryContextType.Domain, friendlyDomainName);
+            Domain objDomain = Domain.GetDomain(objContext);
+            return objDomain.Name;
         }
+
         /// <summary>
         /// Gets the users.
         /// </summary>
@@ -106,13 +106,14 @@ namespace Open.GI.hypermart.Helpers
         {
             List<User> results = new List<User>();
 
-            var Ldap = FriendlyDomainToLdapDomain("wnet");
+            //var Ldap = FriendlyDomainToLdapDomain("wnet");
+            //var dcs = EnumerateDomains();
+            //var ds = new DirectorySearcher();
 
-            var dcs = EnumerateDomains();
 
-            var ds = new DirectorySearcher();
-
-            DirectoryEntry entry = new DirectoryEntry("LDAP://OU=Users,OU=Development,OU=Departments,DC=wnet,DC=local");
+            DirectoryEntry rootEntry = new DirectoryEntry("LDAP://RootDSE");
+            String str = (string)rootEntry.Properties["defaultNamingContext"][0];
+            DirectoryEntry entry = new DirectoryEntry("LDAP://" + str);
             DirectorySearcher mySearcher = new DirectorySearcher(entry)
             {
                 SearchScope = SearchScope.Subtree,
@@ -139,55 +140,58 @@ namespace Open.GI.hypermart.Helpers
         /// Gets the user.
         /// </summary>
         /// <param name="partialName">The partial name.</param>
-        /// <returns></returns>
+        /// <returns>In the event that the user cannot be resolved, then an Empty user will be returned.</returns>
         public static User getUser(string partialName)
         {
-            if (partialName.Contains('\\'))
+            Resolved.username = partialName;
+            try
             {
-                partialName = partialName.Split('\\')[1];
-            }
-            List<User> results = new List<User>();
-            var Ldap = FriendlyDomainToLdapDomain("wnet");
-            var dcs = EnumerateDomains();
-            var ds = new DirectorySearcher();
-
-            DirectoryEntry rootEntry = new DirectoryEntry("LDAP://RootDSE");
-            String str = (string)rootEntry.Properties["defaultNamingContext"][0];
-            DirectoryEntry entry = new DirectoryEntry("LDAP://" + str);
-
-            //DirectoryEntry entry = new DirectoryEntry("LDAP://OU=Users,OU=Development,OU=Departments,DC=wnet,DC=local");
-            DirectorySearcher mySearcher = new DirectorySearcher(entry)
-            {
-                SearchScope = SearchScope.Subtree,
-                Filter = "(&(objectClass=user)(sAMAccountName=" + partialName + "))"
-            };
-
-
-            SearchResultCollection result = mySearcher.FindAll();
-
-
-
-            foreach (SearchResult item in result)
-            {
-                User p = new User()
+                if (partialName.Contains('\\'))
                 {
-                    username = GetName(item),
-                    Photo = GetPhoto(item),
-                    PhoneNumnber = GetValue(item, "telephonenumber"),
-                    Email = GetValue(item, "mail"),
-                    JobTitle = GetValue(item, "title")
+                    partialName = partialName.Split('\\')[1];
+                }
+                List<User> results = new List<User>();
+                //var Ldap = FriendlyDomainToLdapDomain("wnet");
+                //var dcs = EnumerateDomains();
+                //var ds = new DirectorySearcher();
+
+                DirectoryEntry rootEntry = new DirectoryEntry("LDAP://RootDSE");
+                String str = (string)rootEntry.Properties["defaultNamingContext"][0];
+                DirectoryEntry entry = new DirectoryEntry("LDAP://" + str);
+
+                //DirectoryEntry entry = new DirectoryEntry("LDAP://OU=Users,OU=Development,OU=Departments,DC=wnet,DC=local");
+                DirectorySearcher mySearcher = new DirectorySearcher(entry)
+                {
+                    SearchScope = SearchScope.Subtree,
+                    Filter = "(&(objectClass=user)(sAMAccountName=" + partialName + "))"
                 };
-                results.Add(p);
+                
+                SearchResultCollection result = mySearcher.FindAll();
+
+                if (result.Count>=1 )
+                {
+                    return new User()
+                    {
+                        username = GetName(result[0]),
+                        Photo = GetPhoto(result[0]),
+                        PhoneNumnber = GetValue(result[0], "telephonenumber"),
+                        Email = GetValue(result[0], "mail"),
+                        JobTitle = GetValue(result[0], "title")
+                    };
+
+                    
+                }
+
+                return Resolved;
             }
-            //if (partialName == "mhingley")
-            //{
-            //    results.Clear();
-            //    var mhPhoto = Resources.mhingley;
-            //    results.Add(new User() { PhoneNumnber = "07791751829", Photo = mhPhoto, username = "mike hingley" });
-            //}
+            catch (Exception)
+            {
+                return Resolved;
+            }
 
 
-            return results.FirstOrDefault<User>();
+
+
 
 
 

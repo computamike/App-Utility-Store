@@ -11,7 +11,7 @@ namespace Open.GI.hypermart.DAL
     /// </summary>
     /// <seealso cref="System.Data.Entity.DbContext" />
     /// <seealso cref="Open.GI.hypermart.DAL.IHypermartContext" />
-    public partial class HypermartContext : DbContext, Open.GI.hypermart.DAL.IHypermartContext
+    public partial class HypermartContext : DbContext, IHypermartContext
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="HypermartContext"/> class.
@@ -75,6 +75,13 @@ namespace Open.GI.hypermart.DAL
                 .HasMany(e => e.Screenshots)
                 .WithOptional(e => e.Product)
                 .HasForeignKey(e => e.Product_ID);
+        }
+
+
+        public new void SaveChanges()
+        {
+            base.SaveChanges();
+            //throw new NotImplementedException();
         }
     }
 }

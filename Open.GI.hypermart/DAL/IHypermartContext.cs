@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Data.Entity;
 namespace Open.GI.hypermart.DAL
 {
     /// <summary>
     /// Interface describing the functionality of the Database Context
     /// </summary>
-    public interface IHypermartContext
+    public interface IHypermartContext 
     {
         /// <summary>
         /// Gets or sets the files.
@@ -34,5 +35,7 @@ namespace Open.GI.hypermart.DAL
         /// The screenshots.
         /// </value>
         System.Data.Entity.DbSet<Open.GI.hypermart.Models.Screenshot> Screenshots { get; set; }
+
+        void SaveChanges();
     }
 }

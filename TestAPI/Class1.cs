@@ -35,11 +35,13 @@ namespace TestAPI
             if (server != null)
                 server.Dispose();
         }
+  
         [Test]
         public void DoTestewW()
         {
             Assert.AreEqual(true ,true);
         }
+ 
         //[Test]
         //public async Task CanListApps()
         //{

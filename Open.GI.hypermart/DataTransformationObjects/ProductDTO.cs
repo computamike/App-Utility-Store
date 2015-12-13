@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Open.GI.hypermart.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,15 @@ namespace Open.GI.hypermart.DataTransformationObjects
     /// </summary>
     public class ProductDTO
     {
+        public ProductDTO(Product Base)
+        {
+            this.ID = Base.ID;
+            this.Description = Base.Description;
+            this.Lead = Base.Lead;
+            this.Tagline = Base.Lead;
+            this.Title = Base.Title;
+        }
+
         /// <summary>
         /// Gets or sets the identifier.
         /// </summary>
