@@ -88,7 +88,23 @@ namespace TestAPI
 
         }
 
+       [Test]
+        public void CanAddNewProductFile()
+        {
+           StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
+           var ProductToUpdate = CUT.GetProducts(1);
+           var NewFile = new  Open.GI.hypermart.Models.File()
+           {
+               FileName = "FooBar.exe"
+               Link = "http://www.bbc.co.uk"
+               Platforms
+           }
+               
+           CUT.AddFile(ProductToUpdate.ID, NewFile);
+            
+        }
 
+ 
         private class MockProducts : DbSet<Product>, IQueryable<Product>
         {
             protected List<Product> InMemoryList = new List<Product>();
@@ -194,19 +210,6 @@ namespace TestAPI
             {
                 throw new NotImplementedException();
             }
-        }
-
-        [Test]
-        public void CanAddNewProductFile()
-        {
-
-             
-  
-            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
-
-            var ProductToUpdate = CUT.GetProducts(1);
-            
-            
         }
 
  
