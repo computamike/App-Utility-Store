@@ -30,9 +30,33 @@ namespace TestAPI
         //
         List<Product> fakeProducts;
         MockCntext MockDbContext;
+        List<Platform> platforms;
         [SetUp]
         public void Setup()
         {
+            // Add platforms - at this stage add generic (such as WINDOWS) and specific (such as WINDOWS 32 BIT) - this might change
+             platforms = new List<Platform>
+            {
+                new Platform{ID = "Windows",Platform1 = "Windows"},
+                new Platform{ID = "Win_32",Platform1 = "Windows (32 bit)"},
+                new Platform{ID = "Win_64",Platform1 = "Windows (64 bit)"},
+                                
+                new Platform{ID = "Win_8_32",Platform1 = "Windows 8 (32 bit)"},
+                new Platform{ID = "Win_8_64",Platform1 = "Windows 8 (64 bit)"},
+                                
+                new Platform{ID = "Win_10_32",Platform1 = "Windows 10 (32 bit)"},
+                new Platform{ID = "Win_10_64",Platform1 = "Windows 10 (64 bit)"},
+                
+                new Platform{ID = "Linux",Platform1 = "Linux"},
+                new Platform{ID = "Linux32",Platform1 = "Linux (32 bit)"},
+                new Platform{ID = "Linux64",Platform1 = "Linux (32 bit)"},
+               
+                new Platform{ID = "Apple",Platform1 = "Apple"}
+
+
+            };
+
+
             MockDbContext = new MockCntext();
 
             var p = new ProdustList();
@@ -93,15 +117,17 @@ namespace TestAPI
         {
            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
            var ProductToUpdate = CUT.GetProducts(1);
-           var NewFile = new  Open.GI.hypermart.Models.File()
+           var OSC1 = new File
            {
-               FileName = "FooBar.exe"
-               Link = "http://www.bbc.co.uk"
-               Platforms
-           }
-               
-           CUT.AddFile(ProductToUpdate.ID, NewFile);
-            
+               StorageType = storageType.RemoteShare,
+               FileName = "OpenSuiteClient.msi",
+               Link = @"\\bsdrel\thearchives\OpenSuiteClient\5.1.0\Cut03\OpenSuiteClient.msi",
+               Platforms = new List<Platform> { platforms.Where(f => f.Platform1 == "Windows").First(), platforms.Where(f => f.Platform1 == "Linux").First() }
+           };
+
+
+          // CUT.AddFile(ProductToUpdate.ID, OSC1);
+          // CUT.GetFiles(ProductToUpdate.ID);
         }
 
  

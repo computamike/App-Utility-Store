@@ -66,9 +66,19 @@ namespace Open.GI.hypermart.Controllers
             return new ProductDTO(product);
 
         }
-    
 
-        
+        /// <summary>
+        /// Gets all products.
+        /// </summary>
+        /// <returns></returns>
+        public FileDTO GetFiles(int id)
+        {
+
+            Product product = db.Products.Find(id);
+            return new FileDTO (product.Files.FirstOrDefault());
+
+        }
+            
         /// <summary>
         /// Create a New Product
         /// </summary>
