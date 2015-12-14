@@ -35,7 +35,7 @@ namespace TestAPI
         {
             MockDbContext = new MockCntext();
 
-            var p = new MockProducts();
+            var p = new ProdustList();
 
             p.Add(new Product() { ID = 1, Description = "d1", Files = null, Lead = "l1", Screenshots = null, Tagline = "tl1", Title = "title1" });
             p.Add(new Product() { ID = 2, Description = "d2", Files = null, Lead = "l2", Screenshots = null, Tagline = "tl2", Title = "title2" });
@@ -91,7 +91,7 @@ namespace TestAPI
 
         private class MockProducts : DbSet<Product>, IQueryable<Product>
         {
-            List<Product> InMemoryList = new List<Product>();
+            protected List<Product> InMemoryList = new List<Product>();
 
             public override Product Find(params object[] keyValues)
             {
@@ -103,7 +103,6 @@ namespace TestAPI
                 InMemoryList.Add(entity);
                 return entity;
             }
-
 
 
             IEnumerator<Product> IEnumerable<Product>.GetEnumerator()
@@ -131,6 +130,54 @@ namespace TestAPI
                 get { return InMemoryList.AsQueryable().Provider; }
             }
         }
+
+
+        private class ProdustList : MockDBSet<Product>
+        {
+            public override Product Find(params object[] keyValues)
+            {
+                var id = (int)keyValues.Single();
+                return this.SingleOrDefault(b => b.ID == id);
+            }
+        }
+
+        private class MockDBSet<T> : DbSet<T>, IQueryable<T> where T : class 
+        {
+            List<T> InMemoryList = new List<T>();
+            
+ 
+            public override T Add(T entity)
+            {
+                InMemoryList.Add(entity);
+                return entity;
+            }
+
+            IEnumerator<T> IEnumerable<T>.GetEnumerator()
+            {
+                return InMemoryList.AsQueryable().GetEnumerator();
+            }
+
+            System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+            {
+                return InMemoryList.AsQueryable().GetEnumerator();
+            }
+
+            Type IQueryable.ElementType
+            {
+                get { return InMemoryList.AsQueryable().ElementType; }
+            }
+
+            System.Linq.Expressions.Expression IQueryable.Expression
+            {
+                get { return InMemoryList.AsQueryable().Expression; }
+            }
+
+            IQueryProvider IQueryable.Provider
+            {
+                get { return InMemoryList.AsQueryable().Provider; }
+            }
+        }
+
 
         private class MockCntext : IHypermartContext
         {
