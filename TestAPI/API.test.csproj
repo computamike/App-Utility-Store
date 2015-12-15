@@ -114,9 +114,6 @@
   <ItemGroup>
     <Compile Include="APIHost.cs" />
     <Compile Include="ControllerTests.cs" />
-    <Compile Include="DBContextMocking.cs" />
-    <Compile Include="Moqs\EntityFrameworkMockHelper.cs" />
-    <Compile Include="Moqs\MockedDBContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceStatus\Reference.cs">
       <AutoGen>True</AutoGen>
