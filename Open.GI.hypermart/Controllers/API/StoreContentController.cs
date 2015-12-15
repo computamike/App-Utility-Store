@@ -68,14 +68,21 @@ namespace Open.GI.hypermart.Controllers
         }
 
         /// <summary>
-        /// Gets all products.
+        /// Gets all files for a product.
         /// </summary>
         /// <returns></returns>
-        public FileDTO GetFiles(int id)
+        public List<FileDTO> GetFiles(int id)
         {
+            var Result = new List<FileDTO>();
 
-            Product product = db.Products.Find(id);
-            return new FileDTO (product.Files.FirstOrDefault());
+            var files = db.Files.Where(x => x.ProductID == id);
+           foreach (var item in files)
+           {
+               Result.Add(new FileDTO(item));
+               
+           }
+
+           return Result;
 
         }
             

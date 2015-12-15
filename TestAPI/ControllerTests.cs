@@ -64,10 +64,14 @@ namespace TestAPI
             p.Add(new Product() { ID = 1, Description = "d1", Files = null, Lead = "l1", Screenshots = null, Tagline = "tl1", Title = "title1" });
             p.Add(new Product() { ID = 2, Description = "d2", Files = null, Lead = "l2", Screenshots = null, Tagline = "tl2", Title = "title2" });
             p.Add(new Product() { ID = 3, Description = "d3", Files = null, Lead = "l3", Screenshots = null, Tagline = "tl3", Title = "title3" });
-
-            
-            
             MockDbContext.Products = p;  
+            var ProductFiles = new FilesList();
+
+            var ProductForFile=  MockDbContext.Products.Find(1);
+            ProductFiles.Add(new File { FileName = "Foo.exe", ID = 1, ProductID = 1, Product = ProductForFile });
+
+            MockDbContext.Files = ProductFiles;  
+           
         }
 
         [Test]
@@ -85,25 +89,18 @@ namespace TestAPI
         [Test]
         public void CanAddNewProduct()
         {
-            
+            //Arrange
             var ProductToAdd = new Product() { ID = 4, Description = "d4", Files = null, Lead = "l4", Screenshots = null, Tagline = "tl4", Title = "title4" };
             var ExpectedProductDTO = new Open.GI.hypermart.DataTransformationObjects.ProductDTO(ProductToAdd); 
             
-
-            var mockProspect = new Mock<DbSet<Product>>() ;
-            mockProspect.Object.Add(ProductToAdd);
-
-            var MockDbContext = EntityFrameworkMockHelper.GetMockContext<HypermartContext>();
-            MockDbContext.Object.Products.Add(new Product() { ID = 1, Description = "d1", Files = null, Lead = "l1", Screenshots = null, Tagline = "tl1", Title = "title1" });
-            MockDbContext.Object.Products.Add(new Product() { ID = 2, Description = "d2", Files = null, Lead = "l2", Screenshots = null, Tagline = "tl2", Title = "title2" });
-            MockDbContext.Object.Products.Add(new Product() { ID = 3, Description = "d3", Files = null, Lead = "l3", Screenshots = null, Tagline = "tl3", Title = "title3" });
-
-            MockDbContext.Setup(m => m.Set<Product>()).Returns(mockProspect.Object );
-            MockDbContext.Setup(m=> m.Products.Add(It.IsAny<Product>())).Returns(ProductToAdd);
-             
-            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext.Object);
+            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
            
+            //Act
             var res = CUT.PostProduct(ProductToAdd);
+            var AllProducts = CUT.GetAllProducts();
+
+            //Assert
+            Assert.AreEqual(4, AllProducts.Count(), "Expected 3 products");
             Assert.AreEqual(ExpectedProductDTO.ID, res.ID, "Expected product returned from Add Product call does not match expected product");
             Assert.AreEqual(ExpectedProductDTO.Description, res.Description, "Expected product returned from Add Product call does not match expected product");
             Assert.AreEqual(ExpectedProductDTO.Lead, res.Lead, "Expected prdouct returned from Add Product call does not match expected product");
@@ -115,19 +112,24 @@ namespace TestAPI
        [Test]
         public void CanAddNewProductFile()
         {
+           //Arrange
            StoreContentController CUT = new Open.GI.hypermart.Controllers.StoreContentController(MockDbContext);
            var ProductToUpdate = CUT.GetProducts(1);
            var OSC1 = new File
            {
+               ProductID = ProductToUpdate.ID,
                StorageType = storageType.RemoteShare,
                FileName = "OpenSuiteClient.msi",
                Link = @"\\bsdrel\thearchives\OpenSuiteClient\5.1.0\Cut03\OpenSuiteClient.msi",
                Platforms = new List<Platform> { platforms.Where(f => f.Platform1 == "Windows").First(), platforms.Where(f => f.Platform1 == "Linux").First() }
            };
 
-
-          // CUT.AddFile(ProductToUpdate.ID, OSC1);
-          // CUT.GetFiles(ProductToUpdate.ID);
+           //Act
+           CUT.AddFile(ProductToUpdate.ID, OSC1);
+         
+           //Assert
+           var x = CUT.GetFiles(ProductToUpdate.ID);
+           Assert.AreEqual(2, x.Count, "There should be 2 files in the store");
         }
 
  
@@ -183,6 +185,17 @@ namespace TestAPI
             }
         }
 
+        private class FilesList : MockDBSet<File>
+        {
+            public override File Find(params object[] keyValues)
+            {
+                var id = (int)keyValues.Single();
+                return this.SingleOrDefault(b => b.ID == id);
+            }
+        }
+
+        
+        
         private class MockDBSet<T> : DbSet<T>, IQueryable<T> where T : class 
         {
             List<T> InMemoryList = new List<T>();
@@ -234,7 +247,7 @@ namespace TestAPI
 
             public void SaveChanges()
             {
-                throw new NotImplementedException();
+               // throw new NotImplementedException();
             }
         }
 
