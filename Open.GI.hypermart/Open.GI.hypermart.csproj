@@ -254,6 +254,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="Properties\PublishProfiles\ogi-enterpriseappstore.pubxml" />
     <None Include="Resources\default-user.png" />
     <None Include="Resources\Download1.jpg" />
     <None Include="Resources\Download2.jpg" />
