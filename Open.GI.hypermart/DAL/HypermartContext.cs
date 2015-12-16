@@ -78,6 +78,9 @@ namespace Open.GI.hypermart.DAL
         }
 
 
+        /// <summary>
+        /// In a DB Context object, this should save all changes made in this context to the underlying database
+        /// </summary>
         public new void SaveChanges()
         {
             base.SaveChanges();

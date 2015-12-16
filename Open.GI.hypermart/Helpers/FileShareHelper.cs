@@ -56,6 +56,17 @@ namespace Open.GI.hypermart.Helpers
     public class FileShareHelper
     {
         /// <summary>
+        /// Create a Folder - used to create a file System for storing products\files\versions
+        /// </summary>
+        /// <param name="FolderName"></param>
+        public static void CreateFolder(String FolderName)
+        {
+            var RootPath = HostingEnvironment.ApplicationPhysicalPath;
+            CreateFolder(FolderName, RootPath);
+
+        }
+
+        /// <summary>
         /// Creates the share.
         /// </summary>
         /// <param name="FolderName">Name of the folder.</param>
@@ -67,20 +78,7 @@ namespace Open.GI.hypermart.Helpers
             
             var RootPath = HostingEnvironment.ApplicationPhysicalPath;
             // Does folder exist?
-            var StoreLocation = System.IO.Path.Combine(RootPath, FolderName);
-            if (!System.IO.Directory.Exists(StoreLocation))
-            {
-                var ServiceProcess = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-                SecurityIdentifier everyone = new SecurityIdentifier(WellKnownSidType.WorldSid, null);
-                DirectorySecurity StoreSecurity = new DirectorySecurity();
-
-                StoreSecurity.AddAccessRule(new FileSystemAccessRule(everyone, FileSystemRights.Write, AccessControlType.Deny ));
-                StoreSecurity.AddAccessRule(new FileSystemAccessRule(everyone, FileSystemRights.Read, AccessControlType.Allow));
-                StoreSecurity.AddAccessRule(new FileSystemAccessRule(ServiceProcess, FileSystemRights.FullControl  , AccessControlType.Allow));
-                
-                System.IO.Directory.CreateDirectory(StoreLocation, StoreSecurity);
-            }
-            // Create FileShare
+            var StoreLocation = CreateFolder(FolderName, RootPath);
 
             ManagementClass managementClass = new ManagementClass("Win32_Share");
             ManagementBaseObject inParams = managementClass.GetMethodParameters("Create");
@@ -112,6 +110,25 @@ namespace Open.GI.hypermart.Helpers
 
 
             
+        }
+
+        private static string CreateFolder(string FolderName, string RootPath)
+        {
+            var StoreLocation = System.IO.Path.Combine(RootPath, FolderName);
+            if (!System.IO.Directory.Exists(StoreLocation))
+            {
+                var ServiceProcess = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
+                SecurityIdentifier everyone = new SecurityIdentifier(WellKnownSidType.WorldSid, null);
+                DirectorySecurity StoreSecurity = new DirectorySecurity();
+
+                StoreSecurity.AddAccessRule(new FileSystemAccessRule(everyone, FileSystemRights.Write, AccessControlType.Deny));
+                StoreSecurity.AddAccessRule(new FileSystemAccessRule(everyone, FileSystemRights.Read, AccessControlType.Allow));
+                StoreSecurity.AddAccessRule(new FileSystemAccessRule(ServiceProcess, FileSystemRights.FullControl, AccessControlType.Allow));
+
+                System.IO.Directory.CreateDirectory(StoreLocation, StoreSecurity);
+            }
+            // Create FileShare
+            return StoreLocation;
         }
 
         /// <summary>

@@ -5,7 +5,13 @@ namespace Open.GI.hypermart.Areas.HelpPage
     /// </summary>
     public enum SampleDirection
     {
+        /// <summary>
+        /// The request
+        /// </summary>
         Request = 0,
+        /// <summary>
+        /// The response
+        /// </summary>
         Response
     }
 }

@@ -25,6 +25,10 @@ namespace Open.GI.hypermart.Areas.HelpPage
     /// </summary>
     public static class HelpPageConfig
     {
+        /// <summary>
+        /// Registers the specified configuration.
+        /// </summary>
+        /// <param name="config">The configuration.</param>
         [SuppressMessage("Microsoft.Globalization", "CA1303:Do not pass literals as localized parameters",
             MessageId = "Open.GI.hypermart.Areas.HelpPage.TextSample.#ctor(System.String)",
             Justification = "End users may choose to merge this string with existing localized resources.")]

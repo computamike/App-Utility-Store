@@ -36,6 +36,9 @@ namespace Open.GI.hypermart.DAL
         /// </value>
         System.Data.Entity.DbSet<Open.GI.hypermart.Models.Screenshot> Screenshots { get; set; }
 
+        /// <summary>
+        /// In a DB Context object, this should save all changes made in this context to the underlying database
+        /// </summary>
         void SaveChanges();
     }
 }

@@ -111,6 +111,14 @@ namespace Open.GI.hypermart.Controllers
         }
 
 
+        /// <summary>
+        /// Posts the product file.
+        /// </summary>
+        /// <param name="ProductID">The product identifier.</param>
+        /// <param name="FileToAdd">The file to add.</param>
+        /// <returns></returns>
+        /// <exception cref="System.Web.Http.HttpResponseException"></exception>
+        /// <exception cref="System.Exception">Cannot add a product file</exception>
         [HttpPost]
         public FileDTO PostProductFile(int ProductID,Open.GI.hypermart.Models.File FileToAdd)
         {

@@ -25,6 +25,11 @@ namespace Open.GI.hypermart
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
+            var s = System.Configuration.ConfigurationManager.AppSettings["ShareFolderName"]; 
+            Helpers.FileShareHelper.CreateFolder (s);
+             
+              
             //Helpers.FileShareHelper.DeleteShare("ServerStore");
             //Helpers.FileShareHelper.CreateShare("Storage", "ServerStore", "Hypermart File Storage");
 

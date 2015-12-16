@@ -35,18 +35,37 @@ namespace Open.GI.hypermart.Areas.HelpPage
             _documentNavigator = xpath.CreateNavigator();
         }
 
+        /// <summary>
+        /// Gets the documentation.
+        /// </summary>
+        /// <param name="controllerDescriptor">The controller descriptor.</param>
+        /// <returns></returns>
         public string GetDocumentation(HttpControllerDescriptor controllerDescriptor)
         {
             XPathNavigator typeNode = GetTypeNode(controllerDescriptor.ControllerType);
             return GetTagValue(typeNode, "summary");
         }
 
+        /// <summary>
+        /// Gets the documentation based on <see cref="T:System.Web.Http.Controllers.HttpActionDescriptor" />.
+        /// </summary>
+        /// <param name="actionDescriptor">The action descriptor.</param>
+        /// <returns>
+        /// The documentation for the controller.
+        /// </returns>
         public virtual string GetDocumentation(HttpActionDescriptor actionDescriptor)
         {
             XPathNavigator methodNode = GetMethodNode(actionDescriptor);
             return GetTagValue(methodNode, "summary");
         }
 
+        /// <summary>
+        /// Gets the documentation based on <see cref="T:System.Web.Http.Controllers.HttpParameterDescriptor" />.
+        /// </summary>
+        /// <param name="parameterDescriptor">The parameter descriptor.</param>
+        /// <returns>
+        /// The documentation for the controller.
+        /// </returns>
         public virtual string GetDocumentation(HttpParameterDescriptor parameterDescriptor)
         {
             ReflectedHttpParameterDescriptor reflectedParameterDescriptor = parameterDescriptor as ReflectedHttpParameterDescriptor;
@@ -67,12 +86,22 @@ namespace Open.GI.hypermart.Areas.HelpPage
             return null;
         }
 
+        /// <summary>
+        /// Gets the response documentation.
+        /// </summary>
+        /// <param name="actionDescriptor">The action descriptor.</param>
+        /// <returns></returns>
         public string GetResponseDocumentation(HttpActionDescriptor actionDescriptor)
         {
             XPathNavigator methodNode = GetMethodNode(actionDescriptor);
             return GetTagValue(methodNode, "returns");
         }
 
+        /// <summary>
+        /// Gets the documentation.
+        /// </summary>
+        /// <param name="member">The member.</param>
+        /// <returns></returns>
         public string GetDocumentation(MemberInfo member)
         {
             string memberName = String.Format(CultureInfo.InvariantCulture, "{0}.{1}", GetTypeName(member.DeclaringType), member.Name);
@@ -82,6 +111,11 @@ namespace Open.GI.hypermart.Areas.HelpPage
             return GetTagValue(propertyNode, "summary");
         }
 
+        /// <summary>
+        /// Gets the documentation.
+        /// </summary>
+        /// <param name="type">The type.</param>
+        /// <returns></returns>
         public string GetDocumentation(Type type)
         {
             XPathNavigator typeNode = GetTypeNode(type);

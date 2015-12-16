@@ -21,6 +21,10 @@ namespace Open.GI.hypermart.DataTransformationObjects
             Platforms = new HashSet<Platform>();
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="FileDTO"/> class.
+        /// </summary>
+        /// <param name="File">The file.</param>
         public FileDTO(File File )
         {
             ID = File.ID;

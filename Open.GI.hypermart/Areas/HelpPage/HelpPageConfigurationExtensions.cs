@@ -16,6 +16,9 @@ using Open.GI.hypermart.Areas.HelpPage.Models;
 
 namespace Open.GI.hypermart.Areas.HelpPage
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class HelpPageConfigurationExtensions
     {
         private const string ApiModelPrefix = "MS_HelpPageApiModel_";

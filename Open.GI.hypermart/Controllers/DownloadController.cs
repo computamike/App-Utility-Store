@@ -30,10 +30,10 @@ namespace Open.GI.hypermart.Controllers
         public FileResult Download(int id)
         {
 
-            if (id == null)
-            {
-                throw new HttpException("Cannot find file ");
-            }
+            //if (id == null)
+            //{
+            //    throw new HttpException("Cannot find file ");
+            //}
             Open.GI.hypermart.Models.File   downloadFile = db.Files.Find(id);
             if (downloadFile == null)
             {

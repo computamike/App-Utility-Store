@@ -13,24 +13,46 @@ namespace Open.GI.hypermart.Areas.HelpPage.Controllers
     {
         private const string ErrorViewName = "Error";
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HelpController"/> class.
+        /// </summary>
         public HelpController()
             : this(GlobalConfiguration.Configuration)
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HelpController"/> class.
+        /// </summary>
+        /// <param name="config">The configuration.</param>
         public HelpController(HttpConfiguration config)
         {
             Configuration = config;
         }
 
+        /// <summary>
+        /// Gets the configuration.
+        /// </summary>
+        /// <value>
+        /// The configuration.
+        /// </value>
         public HttpConfiguration Configuration { get; private set; }
 
+        /// <summary>
+        /// Indexes this instance.
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             ViewBag.DocumentationProvider = Configuration.Services.GetDocumentationProvider();
             return View(Configuration.Services.GetApiExplorer().ApiDescriptions);
         }
 
+        /// <summary>
+        /// APIs the specified API identifier.
+        /// </summary>
+        /// <param name="apiId">The API identifier.</param>
+        /// <returns></returns>
         public ActionResult Api(string apiId)
         {
             if (!String.IsNullOrEmpty(apiId))
@@ -45,6 +67,11 @@ namespace Open.GI.hypermart.Areas.HelpPage.Controllers
             return View(ErrorViewName);
         }
 
+        /// <summary>
+        /// Resources the model.
+        /// </summary>
+        /// <param name="modelName">Name of the model.</param>
+        /// <returns></returns>
         public ActionResult ResourceModel(string modelName)
         {
             if (!String.IsNullOrEmpty(modelName))

@@ -86,6 +86,10 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
 
         private Lazy<IModelDocumentationProvider> _documentationProvider;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ModelDescriptionGenerator"/> class.
+        /// </summary>
+        /// <param name="config">The configuration.</param>
         public ModelDescriptionGenerator(HttpConfiguration config)
         {
             if (config == null)
@@ -97,6 +101,12 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
             GeneratedModels = new Dictionary<string, ModelDescription>(StringComparer.OrdinalIgnoreCase);
         }
 
+        /// <summary>
+        /// Gets the generated models.
+        /// </summary>
+        /// <value>
+        /// The generated models.
+        /// </value>
         public Dictionary<string, ModelDescription> GeneratedModels { get; private set; }
 
         private IModelDocumentationProvider DocumentationProvider
@@ -107,6 +117,11 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
             }
         }
 
+        /// <summary>
+        /// Gets the or create model description.
+        /// </summary>
+        /// <param name="modelType">Type of the model.</param>
+        /// <returns></returns>
         public ModelDescription GetOrCreateModelDescription(Type modelType)
         {
             if (modelType == null)

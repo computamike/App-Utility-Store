@@ -123,6 +123,12 @@ namespace Open.GI.hypermart.Areas.HelpPage
         /// </summary>
         public HashSet<string> ParameterNames { get; private set; }
 
+        /// <summary>
+        /// Gets the type of the parameter.
+        /// </summary>
+        /// <value>
+        /// The type of the parameter.
+        /// </value>
         public Type ParameterType { get; private set; }
 
         /// <summary>
@@ -130,6 +136,13 @@ namespace Open.GI.hypermart.Areas.HelpPage
         /// </summary>
         public SampleDirection? SampleDirection { get; private set; }
 
+        /// <summary>
+        /// Determines whether the specified <see cref="System.Object" />, is equal to this instance.
+        /// </summary>
+        /// <param name="obj">The <see cref="System.Object" /> to compare with this instance.</param>
+        /// <returns>
+        ///   <c>true</c> if the specified <see cref="System.Object" /> is equal to this instance; otherwise, <c>false</c>.
+        /// </returns>
         public override bool Equals(object obj)
         {
             HelpPageSampleKey otherKey = obj as HelpPageSampleKey;
@@ -146,6 +159,12 @@ namespace Open.GI.hypermart.Areas.HelpPage
                 ParameterNames.SetEquals(otherKey.ParameterNames);
         }
 
+        /// <summary>
+        /// Returns a hash code for this instance.
+        /// </summary>
+        /// <returns>
+        /// A hash code for this instance, suitable for use in hashing algorithms and data structures like a hash table. 
+        /// </returns>
         public override int GetHashCode()
         {
             int hashCode = ControllerName.ToUpperInvariant().GetHashCode() ^ ActionName.ToUpperInvariant().GetHashCode();
