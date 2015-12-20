@@ -44,9 +44,9 @@
             </div>
 
 
-            @Html.LabelFor(model => model.ScreenShots, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Screenshots, htmlAttributes: new { @class = "control-label col-md-2" })
             <div id="Gallery">
-                @foreach (var item in Model.ScreenShots)
+                @foreach (var item in Model.Screenshots)
                 {
                     var img = String.Format("data:image/jpg;base64,{0}", Convert.ToBase64String(item.ScreenShot1));
                     <img src="@img" alt="...">
