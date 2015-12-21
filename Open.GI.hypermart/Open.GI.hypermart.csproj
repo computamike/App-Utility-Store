@@ -203,6 +203,11 @@
     <Compile Include="Helpers\PlatformHelper.cs" />
     <Compile Include="Helpers\RssActionResult.cs" />
     <Compile Include="DAL\HypermartContext.cs" />
+    <Compile Include="Migrations\201512200139292_Init.cs" />
+    <Compile Include="Migrations\201512200139292_Init.Designer.cs">
+      <DependentUpon>201512200139292_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\File.cs" />
     <Compile Include="Models\Platform.cs" />
@@ -314,6 +319,9 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Migrations\201512200139292_Init.resx">
+      <DependentUpon>201512200139292_Init.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
