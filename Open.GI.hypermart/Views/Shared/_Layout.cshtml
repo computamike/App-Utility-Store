@@ -6,6 +6,7 @@
     <title>@ViewBag.Title- Open GI HyperMart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/dropzonecss")
     @Scripts.Render("~/bundles/modernizr")
     <meta name="description" content="The description of my page" />
 </head>
@@ -25,6 +26,8 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Products")</li>
+
                 </ul>
                 <p class="nav navbar-text navbar-right">Hello, @Open.GI.hypermart.Helpers.AD_Repository.getUser(User.Identity.Name).username!</p>
             </div>
@@ -40,6 +43,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/dropzonescripts")
     @RenderSection("scripts", required: false)
 </body>
 </html>

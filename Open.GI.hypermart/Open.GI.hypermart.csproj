@@ -203,9 +203,9 @@
     <Compile Include="Helpers\PlatformHelper.cs" />
     <Compile Include="Helpers\RssActionResult.cs" />
     <Compile Include="DAL\HypermartContext.cs" />
-    <Compile Include="Migrations\201512200139292_Init.cs" />
-    <Compile Include="Migrations\201512200139292_Init.Designer.cs">
-      <DependentUpon>201512200139292_Init.cs</DependentUpon>
+    <Compile Include="Migrations\201601020040124_InitialCreate.cs" />
+    <Compile Include="Migrations\201601020040124_InitialCreate.Designer.cs">
+      <DependentUpon>201601020040124_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -273,6 +273,14 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\dropzone.js" />
+    <Content Include="Scripts\dropzone\basic.css" />
+    <Content Include="Scripts\dropzone\basic.min.css" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.js" />
+    <Content Include="Scripts\dropzone\dropzone-amd-module.min.js" />
+    <Content Include="Scripts\dropzone\dropzone.css" />
+    <Content Include="Scripts\dropzone\dropzone.js" />
+    <Content Include="Scripts\dropzone\dropzone.min.css" />
+    <Content Include="Scripts\dropzone\dropzone.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -319,8 +327,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201512200139292_Init.resx">
-      <DependentUpon>201512200139292_Init.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201601020040124_InitialCreate.resx">
+      <DependentUpon>201601020040124_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
