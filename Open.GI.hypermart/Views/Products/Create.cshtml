@@ -1,11 +1,47 @@
 ﻿@model Open.GI.hypermart.Models.Product
-
 @{
     ViewBag.Title = "Create";
 }
+
+<script type="text/javascript">
+    //File Upload response from the server
+    Dropzone.options.dropzoneForm = {
+        maxFiles: 2,
+        url: "WebFormDropzoneDemo.aspx",
+        init: function () {
+            this.on("maxfilesexceeded", function (data) {
+                var res = eval('(' + data.xhr.responseText + ')');
+            });
+            this.on("addedfile", function (file) {
+                // Create the remove button
+                var removeButton = Dropzone.createElement("<button>Remove file</button>");
+                // Capture the Dropzone instance as closure.
+                var _this = this;
+                // Listen to the click event
+                removeButton.addEventListener("click", function (e) {
+                // Make sure the button click doesn't submit the form:
+                e.preventDefault();
+                e.stopPropagation();
+                // Remove the file preview.
+                _this.removeFile(file);
+                // If you want to the delete the file on the server as well,
+                    // you can do the AJAX request here.
+                });
+                // Add the button to the file preview element.
+                file.previewElement.appendChild(removeButton);
+            });
+        }
+    };
+</script>
+
+
+
+
+
+
 <h2>Create</h2>
 
-@using (Html.BeginForm(null, null, FormMethod.Post, new { @class="dropzone",enctype = "multipart/form-data" }))
+@using (Html.BeginForm(null, null, FormMethod.Post, new {enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
@@ -49,6 +85,9 @@
             @Html.LabelFor(model => model.Screenshots, htmlAttributes: new { @class = "control-label col-md-2" })
             
         </div>
+
+
+        <input type="file" name="file2" class="dropzone" multiple />
 
 
         @*<div class="form-group">

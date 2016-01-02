@@ -80,15 +80,17 @@ namespace Open.GI.hypermart.Controllers
                 db.SaveChanges();
               
                 // add screenshots
-                foreach (string fileName in Request.Files)
+
+                for (int i = 0; i < Request.Files.Count; i++)
                 {
-                    HttpPostedFileBase file = Request.Files[fileName];
-                    if (file !=null && file.ContentLength >0)
+                    HttpPostedFileBase file = Request.Files[i];
+                    if (file != null && file.ContentLength > 0)
                     {
+                        file.InputStream.Position = 0;
                         Screenshot Screen = new Screenshot();
                         Screen.ProductID = product.ID;
                         Screen.Product = product;
-                        using(var memoryStream = new MemoryStream())
+                        using (var memoryStream = new MemoryStream())
                         {
                             file.InputStream.CopyTo(memoryStream);
                             Screen.ScreenShot1 = memoryStream.ToArray();
@@ -97,6 +99,7 @@ namespace Open.GI.hypermart.Controllers
                         db.SaveChanges();
                     }
                 }
+                
                 return RedirectToAction("Index");
             }
 
