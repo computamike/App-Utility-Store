@@ -1,0 +1,63 @@
+﻿@model IEnumerable<Open.GI.hypermart.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<p>You searched for @(ViewData["SearchTerm"])</p>
+<p>
+
+    Search results currently do no work - searching is something that is being worked on.
+
+</p>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tagline)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lead)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SourceCode)
+        </th>
+        <th></th>
+    </tr>
+
+@*@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tagline)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lead)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SourceCode)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}*@
+
+</table>

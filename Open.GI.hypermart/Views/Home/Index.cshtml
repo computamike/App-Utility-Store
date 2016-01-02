@@ -3,35 +3,49 @@
 }
 
 
-
-<div class="row">
-    <div class="col-md-12">
-        <h2>Latest Updates</h2>
-        <div class="carousel slide" id="carousel-999583">
-            <ol class="carousel-indicators">
-                <li class="" data-slide-to="0" data-target="#carousel-999583"></li>
-                <li data-slide-to="1" data-target="#carousel-999583" class=""></li>
-                <li data-slide-to="2" data-target="#carousel-999583" class="active"></li>
-            </ol>
-            <div class="carousel-inner">
-                 <div class="item active">
-                    <img alt="Carousel Bootstrap Third" src="http://www.fillmurray.com/1600/500">
-                    <div class="carousel-caption">
-                        <h4>Third Thumbnail label</h4>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    </div>
-                </div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Search</h2>
+            <div class="input-group text-center">
+                <input type="text" class="form-control input-lg" name="SearchTerm" id="SearchTerm" placeholder="Find cool stuff on the store">
+                <span class="input-group-btn">
+                    <button type='submit' class="btn btn-lg btn-primary"    formaction='@Url.Action("Index","Search")'>Go.</button>
+                </span>
             </div>
-
-            <a class="left carousel-control" href="#carousel-999583" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-            </a>
-            <a class="right carousel-control" href="#carousel-999583" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-            </a>
         </div>
     </div>
-</div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Latest Updates</h2>
+            <div class="carousel slide" id="carousel-999583">
+                <ol class="carousel-indicators">
+                    <li class="" data-slide-to="0" data-target="#carousel-999583"></li>
+                    <li data-slide-to="1" data-target="#carousel-999583" class=""></li>
+                    <li data-slide-to="2" data-target="#carousel-999583" class="active"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img alt="Carousel Bootstrap Third" src="http://www.fillmurray.com/1600/500">
+                        <div class="carousel-caption">
+                            <h4>Third Thumbnail label</h4>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#carousel-999583" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#carousel-999583" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <div class="row">
         <div class="col-md-4">
@@ -52,3 +66,9 @@
             <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
         </div>
     </div>
+
+
+}
+
+
+

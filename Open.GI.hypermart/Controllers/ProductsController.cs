@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Open.GI.hypermart.DAL;
 using Open.GI.hypermart.Models;
+using System.IO;
 
 namespace Open.GI.hypermart.Controllers
 {
@@ -70,12 +71,32 @@ namespace Open.GI.hypermart.Controllers
         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,Version")] Product product)
+        public ActionResult Create([Bind(Include = "ID,Title,Description,Tagline,SourceCode")] Product product)
         {
             if (ModelState.IsValid)
             {
+
                 db.Products.Add(product);
                 db.SaveChanges();
+              
+                // add screenshots
+                foreach (string fileName in Request.Files)
+                {
+                    HttpPostedFileBase file = Request.Files[fileName];
+                    if (file !=null && file.ContentLength >0)
+                    {
+                        Screenshot Screen = new Screenshot();
+                        Screen.ProductID = product.ID;
+                        Screen.Product = product;
+                        using(var memoryStream = new MemoryStream())
+                        {
+                            file.InputStream.CopyTo(memoryStream);
+                            Screen.ScreenShot1 = memoryStream.ToArray();
+                        }
+                        db.Screenshots.Add(Screen);
+                        db.SaveChanges();
+                    }
+                }
                 return RedirectToAction("Index");
             }
 
