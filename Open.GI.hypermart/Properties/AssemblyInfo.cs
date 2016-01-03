@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using Open.GI.hypermart.Attributes;
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -13,7 +14,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright © Open GI Ltd. 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-
+// THIS LINE LINKS THE APPLICATION TO THE STORE (PRODUCT ID AND FILE ID)
+[assembly: StoreAttribute(1,1)]
 // Setting ComVisible to false makes the types in this assembly not visible
 // to COM components.  If you need to access a type in this assembly from
 // COM, set the ComVisible attribute to true on that type.

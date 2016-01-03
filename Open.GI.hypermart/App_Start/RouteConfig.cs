@@ -33,6 +33,11 @@ namespace Open.GI.hypermart
                 defaults: new {  Controller = "Search",action="Index"}
                 );
 
+            routes.MapRoute(
+                name: "API Default",
+                url: "api/{controller}/{id}",
+                defaults: new { id = UrlParameter.Optional }
+                );
 
             routes.MapRoute(
                 name: "Default",

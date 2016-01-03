@@ -13,9 +13,6 @@ namespace TestAPI
         
         public void Configuration(IAppBuilder app)
         {
-
-            
-
             // Configure Web API for self-host. 
             var config = new HttpConfiguration();
             config.Routes.MapHttpRoute(

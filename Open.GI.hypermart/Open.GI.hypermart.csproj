@@ -181,9 +181,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Attributes\StoreAttribute.cs" />
     <Compile Include="Controllers\API\StoreContentController.cs" />
     <Compile Include="Controllers\API\UserController.cs" />
-    <Compile Include="Controllers\API\ValuesController1.cs" />
+    <Compile Include="Controllers\API\ValuesController.cs" />
     <Compile Include="Controllers\DownloadController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NugetController.cs" />

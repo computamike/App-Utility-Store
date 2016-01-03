@@ -5,3 +5,15 @@
 <h3>@ViewBag.Message</h3>
 
 <p>Use this area to provide additional information.</p>
+@using Open.GI.hypermart.Attributes
+@using System.Reflection
+
+@{
+    StoreAttribute attributes = (StoreAttribute)ViewContext.Controller.GetType().Assembly.GetCustomAttribute(typeof(StoreAttribute));
+    var f = attributes.ProductID;
+ 
+}
+
+@ViewContext.Controller.GetType().Assembly.GetName().FullName
+<p>STORE PRODUCT ID =  @attributes.ProductID</p>
+<p>STORE FILE ID = @attributes.FileID</p>
