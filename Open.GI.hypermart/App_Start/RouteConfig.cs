@@ -19,7 +19,12 @@ namespace Open.GI.hypermart
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-      
+            
+            routes.MapRoute(
+                name: "Default",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+            );
             routes.MapRoute(
                 name: "ADUser",
                 url: "{controller}/{action}/{userid}",
@@ -39,11 +44,7 @@ namespace Open.GI.hypermart
                 defaults: new { id = UrlParameter.Optional }
                 );
 
-            routes.MapRoute(
-                name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
-            );
+
         }
     }
 }

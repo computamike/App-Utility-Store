@@ -32,7 +32,7 @@ namespace Open.GI.hypermart
 
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/Fyotx.css",
                       "~/Content/site.css"));
@@ -40,10 +40,12 @@ namespace Open.GI.hypermart
             // Adding support for DropZone
             bundles.Add(new ScriptBundle("~/bundles/dropzonescripts").Include(
                      "~/Scripts/dropzone/dropzone.js"));
-            
-            bundles.Add(new StyleBundle("~/Content/dropzonescss").Include(
-                     "~/Scripts/dropzone/css/basic.css",
-                     "~/Scripts/dropzone/css/dropzone.css"));
+
+
+            var DZSB = new StyleBundle("~/bundles/dropzonecss");
+            DZSB.Include("~/Scripts/dropzone/basic.css",
+                     "~/Scripts/dropzone/dropzone.css");
+            bundles.Add(DZSB);
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

@@ -12,12 +12,11 @@ namespace Open.GI.hypermart.Controllers.API
     /// </summary>
     /// <seealso cref="System.Web.Http.ApiController" />
     public class ValuesController : ApiController
-    {
-        [Route("api/")]
-        /// <summary>
+    {   /// <summary>
         /// Gets all of the values
         /// </summary>
         /// <returns></returns>
+        [Route("api/Values/GetByStatus")]
         public IEnumerable<string> GetByStatus(int Status)
         {
             return new string[] { "valueGBS1", "valueGBS2" };
