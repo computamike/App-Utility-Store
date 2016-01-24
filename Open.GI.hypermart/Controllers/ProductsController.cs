@@ -75,10 +75,6 @@ namespace Open.GI.hypermart.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                db.Products.Add(product);
-                db.SaveChanges();
-              
                 // add screenshots
 
                 for (int i = 0; i < Request.Files.Count; i++)
@@ -95,11 +91,12 @@ namespace Open.GI.hypermart.Controllers
                             file.InputStream.CopyTo(memoryStream);
                             Screen.ScreenShot1 = memoryStream.ToArray();
                         }
-                        db.Screenshots.Add(Screen);
-                        db.SaveChanges();
+                        product.Screenshots.Add(Screen);
                     }
                 }
                 
+                db.Products.Add(product);
+                db.SaveChanges();
                 return RedirectToAction("Index");
             }
 

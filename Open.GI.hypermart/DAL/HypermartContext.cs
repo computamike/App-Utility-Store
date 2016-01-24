@@ -66,15 +66,11 @@ namespace Open.GI.hypermart.DAL
         /// </remarks>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<File>()
-                .HasMany(e => e.Platforms)
-                .WithMany(e => e.Files)
-                .Map(m => m.ToTable("FilePlatform").MapLeftKey("Files_ID").MapRightKey("Platforms_ID"));
+            //modelBuilder.Entity<File>()
+            //    .HasMany(e => e.Platforms)
+            //    .WithMany(e => e.Files)
+            //    .Map(m => m.ToTable("FilePlatform").MapLeftKey("Files_ID").MapRightKey("Platforms_ID"));
 
-            modelBuilder.Entity<Product>()
-                .HasMany(e => e.Screenshots)
-                .WithOptional(e => e.Product)
-                .HasForeignKey(e => e.Product_ID);
         }
 
 

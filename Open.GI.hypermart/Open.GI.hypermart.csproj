@@ -218,9 +218,13 @@
     <Compile Include="Helpers\PlatformHelper.cs" />
     <Compile Include="Helpers\RssActionResult.cs" />
     <Compile Include="DAL\HypermartContext.cs" />
-    <Compile Include="Migrations\201601020040124_InitialCreate.cs" />
-    <Compile Include="Migrations\201601020040124_InitialCreate.Designer.cs">
-      <DependentUpon>201601020040124_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201601190010001_Initial.cs" />
+    <Compile Include="Migrations\201601190010001_Initial.Designer.cs">
+      <DependentUpon>201601190010001_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601232152258_Table Naming Changes.cs" />
+    <Compile Include="Migrations\201601232152258_Table Naming Changes.Designer.cs">
+      <DependentUpon>201601232152258_Table Naming Changes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -343,8 +347,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201601020040124_InitialCreate.resx">
-      <DependentUpon>201601020040124_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201601190010001_Initial.resx">
+      <DependentUpon>201601190010001_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601232152258_Table Naming Changes.resx">
+      <DependentUpon>201601232152258_Table Naming Changes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

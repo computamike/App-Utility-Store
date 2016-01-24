@@ -3,10 +3,10 @@ namespace Open.GI.hypermart.Migrations
     using System;
     using System.Data.Entity.Migrations;
     /// <summary>
-    /// 
+    /// Initial Migration - settin up the tables and links
     /// </summary>
     /// <seealso cref="System.Data.Entity.Migrations.DbMigration" />
-    public partial class InitialCreate : DbMigration
+    public partial class Initial : DbMigration
     {
         /// <summary>
         /// Operations to be performed during the upgrade process.
@@ -23,10 +23,10 @@ namespace Open.GI.hypermart.Migrations
                         BLOB = c.Binary(),
                         Link = c.String(),
                         Version = c.String(maxLength: 50),
-                        ProductID = c.Int(),
+                        ProductID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Products", t => t.ProductID)
+                .ForeignKey("dbo.Products", t => t.ProductID, cascadeDelete: true)
                 .Index(t => t.ProductID);
             
             CreateTable(
@@ -56,13 +56,12 @@ namespace Open.GI.hypermart.Migrations
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
-                        ProductID = c.Int(nullable: false),
                         ScreenShot1 = c.Binary(nullable: false),
-                        Product_ID = c.Int(),
+                        ProductID = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Products", t => t.Product_ID)
-                .Index(t => t.Product_ID);
+                .ForeignKey("dbo.Products", t => t.ProductID, cascadeDelete: true)
+                .Index(t => t.ProductID);
             
             CreateTable(
                 "dbo.FilePlatform",
@@ -78,18 +77,19 @@ namespace Open.GI.hypermart.Migrations
                 .Index(t => t.Platforms_ID);
             
         }
+
         /// <summary>
         /// Operations to be performed during the downgrade process.
         /// </summary>
         public override void Down()
         {
-            DropForeignKey("dbo.Screenshots", "Product_ID", "dbo.Products");
+            DropForeignKey("dbo.Screenshots", "ProductID", "dbo.Products");
             DropForeignKey("dbo.Files", "ProductID", "dbo.Products");
             DropForeignKey("dbo.FilePlatform", "Platforms_ID", "dbo.Platforms");
             DropForeignKey("dbo.FilePlatform", "Files_ID", "dbo.Files");
             DropIndex("dbo.FilePlatform", new[] { "Platforms_ID" });
             DropIndex("dbo.FilePlatform", new[] { "Files_ID" });
-            DropIndex("dbo.Screenshots", new[] { "Product_ID" });
+            DropIndex("dbo.Screenshots", new[] { "ProductID" });
             DropIndex("dbo.Files", new[] { "ProductID" });
             DropTable("dbo.FilePlatform");
             DropTable("dbo.Screenshots");

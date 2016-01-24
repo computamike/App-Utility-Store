@@ -2,7 +2,6 @@ namespace Open.GI.hypermart.Migrations
 {
     using Open.GI.hypermart.Models;
     using System;
-    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -11,8 +10,7 @@ namespace Open.GI.hypermart.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "Open.GI.hypermart.DAL.HypermartContext";
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Open.GI.hypermart.DAL.HypermartContext context)
@@ -29,9 +27,9 @@ namespace Open.GI.hypermart.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-            // Add platforms - at this stage add generic (such as WINDOWS) and specific (such as WINDOWS 32 BIT) - this might change
-            var platforms = new List<Platform>
-            {
+            //-
+
+            context.Platforms.AddOrUpdate( pltfrm => pltfrm.ID,
                 new Platform{ID = "Windows",Platform1 = "Windows"},
                 new Platform{ID = "Win_32",Platform1 = "Windows (32 bit)"},
                 new Platform{ID = "Win_64",Platform1 = "Windows (64 bit)"},
@@ -47,11 +45,11 @@ namespace Open.GI.hypermart.Migrations
                 new Platform{ID = "Linux64",Platform1 = "Linux (32 bit)"},
                
                 new Platform{ID = "Apple",Platform1 = "Apple"}
-
-
-            };
-            platforms.ForEach(platform => context.Platforms.Add(platform));
             
+            );
+
+
+
         }
     }
 }
