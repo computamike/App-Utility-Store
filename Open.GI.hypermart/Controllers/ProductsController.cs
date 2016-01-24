@@ -71,7 +71,7 @@ namespace Open.GI.hypermart.Controllers
         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,Description,Tagline,SourceCode")] Product product)
+        public ActionResult Create([Bind(Include = "ID,Title,Description,Tagline,SourceCode,Lead,")] Product product)
         {
             if (ModelState.IsValid)
             {
