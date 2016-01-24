@@ -97,7 +97,19 @@ namespace Open.GI.hypermart.Controllers
                 
                 db.Products.Add(product);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+
+                if (Request.Files.Count == 0)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    var t = RedirectToAction("Index");
+                    //return RedirectToAction("Index");
+                    //return View(product);
+                    return Json(new { ErrorMessage = "", RedirectURL = Url.Action("Index",null, null, Request.Url.Scheme) });
+                }
+                
             }
 
             return View(product);

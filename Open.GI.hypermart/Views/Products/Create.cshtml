@@ -80,7 +80,7 @@
 
     $(document).ready(function () {
         console.log("ready!");
-        $('input[type="submit"]').prop('disabled', true);
+         
         //-
 
         Dropzone.options.dropzoneform = { // The camelized version of the ID of the form element
@@ -103,7 +103,13 @@
                 {
                     e.preventDefault();
                     e.stopPropagation
-                    myDropzone.processQueue();
+                    if (myDropzone.files.length > 0) {
+                        myDropzone.processQueue();
+                    }
+                    else
+                    {
+                        $('form#dropzoneform').submit();
+                    }
 
                 });
 
@@ -122,6 +128,13 @@
                     $('input[type="submit"]').prop('disabled', true);
                     // Show submit button here and/or inform user to click it.
                 });
+                myDropzone.on("successmultiple", function (files, response) {
+                    debugger;
+                    window.location.replace(response.RedirectURL);
+                    // Show submit button here and/or inform user to click it.
+                });
+
+
 
 
             }
