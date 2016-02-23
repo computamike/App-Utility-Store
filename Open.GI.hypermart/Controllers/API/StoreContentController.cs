@@ -45,7 +45,14 @@ namespace Open.GI.hypermart.Controllers
         public IQueryable<ProductDTO> GetAllProducts()
         {
             var x = from b in db.Products
-                    select new ProductDTO(b);
+                    select new ProductDTO
+                    {
+                        Description = b.Description,
+                        ID  = b.ID,
+                        Lead = b.Lead,
+                        Tagline = b.Tagline ,
+                        Title = b.Title 
+                    };
             
             return x;
 
@@ -98,6 +105,11 @@ namespace Open.GI.hypermart.Controllers
                 {
                     itemToAdd.Screenshots = null;
                 }
+                //itemToAdd.Screenshots = new List<Screenshot>();
+                //itemToAdd.Files = new List<Open.GI.hypermart.Models.File>();
+                //itemToAdd.SourceCode = "";
+                db = new HypermartContext();
+
                 var AddedProduct = db.Products.Add(itemToAdd);
                 db.SaveChanges();
                 return new ProductDTO(AddedProduct);
@@ -167,6 +179,23 @@ namespace Open.GI.hypermart.Controllers
                 Version = AddedFile.Version 
             };
         }
+  
+        /// <summary>
+        /// Deletes the product.
+        /// </summary>
+        /// <param name="ProductID">The product identifier.</param>
+        [HttpPost]
+        public void DeleteProduct(int ProductID )
+        {
+            var productToDelete =  db.Products.Find(ProductID);
+
+            var ps = db.Products;
+ 
+
+            var res = db.Products.Remove(productToDelete);
+            db.SaveChanges();
+        }
+
 
         
         /// <summary>

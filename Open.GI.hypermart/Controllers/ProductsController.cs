@@ -18,7 +18,13 @@ namespace Open.GI.hypermart.Controllers
     /// <seealso cref="System.Web.Mvc.Controller" />
     public class ProductsController : Controller
     {
-        private HypermartContext db = new HypermartContext();
+        /// <summary>
+        /// </summary>
+        /// <value>
+        /// The database.
+        /// </value>
+        public IHypermartContext db { get; set; }
+        
 
         // GET: Products
         /// <summary>
@@ -76,7 +82,6 @@ namespace Open.GI.hypermart.Controllers
             if (ModelState.IsValid)
             {
                 // add screenshots
-
                 for (int i = 0; i < Request.Files.Count; i++)
                 {
                     HttpPostedFileBase file = Request.Files[i];
@@ -105,13 +110,10 @@ namespace Open.GI.hypermart.Controllers
                 else
                 {
                     var t = RedirectToAction("Index");
-                    //return RedirectToAction("Index");
-                    //return View(product);
+                    
                     return Json(new { ErrorMessage = "", RedirectURL = Url.Action("Index",null, null, Request.Url.Scheme) });
                 }
-                
             }
-
             return View(product);
         }
 
@@ -149,8 +151,9 @@ namespace Open.GI.hypermart.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
-                db.SaveChanges();
+                var d = db as DbContext;
+                d.Entry(product).State = EntityState.Modified;
+                d.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(product);

@@ -15,6 +15,13 @@ namespace Open.GI.hypermart.DataTransformationObjects
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductDTO"/> class.
         /// </summary>
+        public ProductDTO()
+        {
+
+        }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductDTO"/> class.
+        /// </summary>
         /// <param name="Base">The base.</param>
         public ProductDTO(Product Base)
         {
