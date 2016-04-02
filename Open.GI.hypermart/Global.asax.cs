@@ -20,6 +20,8 @@ namespace Open.GI.hypermart
         /// </summary>
         protected void Application_Start()
         {
+            //Microsoft.Practices.Unity.UnityContainer container = new Microsoft.Practices.Unity.UnityContainer();
+            //Registration.RegisterDependencies(container);
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);

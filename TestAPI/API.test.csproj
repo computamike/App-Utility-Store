@@ -152,8 +152,10 @@
   <ItemGroup>
     <Compile Include="APIHost.cs" />
     <Compile Include="ControllerTests.cs" />
+    <Compile Include="ControllerTestsUsingMOQ.cs" />
     <Compile Include="FakeDbSet.cs" />
     <Compile Include="FakeHypermartContext.cs" />
+    <Compile Include="InMemoryTests.cs" />
     <Compile Include="main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestAPITests.cs" />

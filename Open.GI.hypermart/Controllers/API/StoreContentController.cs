@@ -81,7 +81,7 @@ namespace Open.GI.hypermart.Controllers
         public List<FileDTO> GetFiles(int id)
         {
             var Result = new List<FileDTO>();
-
+            var f = db.Files;
             var files = db.Files.Where(x => x.ProductID == id);
            foreach (var item in files)
            {
@@ -105,11 +105,7 @@ namespace Open.GI.hypermart.Controllers
                 {
                     itemToAdd.Screenshots = null;
                 }
-                //itemToAdd.Screenshots = new List<Screenshot>();
-                //itemToAdd.Files = new List<Open.GI.hypermart.Models.File>();
-                //itemToAdd.SourceCode = "";
-                db = new HypermartContext();
-
+                
                 var AddedProduct = db.Products.Add(itemToAdd);
                 db.SaveChanges();
                 return new ProductDTO(AddedProduct);

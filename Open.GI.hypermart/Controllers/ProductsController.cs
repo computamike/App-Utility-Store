@@ -24,8 +24,22 @@ namespace Open.GI.hypermart.Controllers
         /// The database.
         /// </value>
         public IHypermartContext db { get; set; }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductsController"/> class.
+        /// </summary>
+        public ProductsController()
+        {
+             //db = new HypermartContext();
+        }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductsController"/> class.
+        /// </summary>
+        /// <param name="db">The database.</param>
+        public ProductsController(IHypermartContext db)
+        {
+           this.db = db;
+        }
         
-
         // GET: Products
         /// <summary>
         /// Indexes this instance.
