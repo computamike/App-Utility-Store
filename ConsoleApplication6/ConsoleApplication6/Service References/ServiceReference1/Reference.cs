@@ -9,129 +9,129 @@
 //------------------------------------------------------------------------------
 
 namespace ConsoleApplication6.ServiceReference1 {
-    using System.Runtime.Serialization;
-    using System;
     
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="CompositeType", Namespace="http://schemas.datacontract.org/2004/07/FakeAPILayer")]
-    [System.SerializableAttribute()]
-    public partial class CompositeType : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
-        
-        [System.NonSerializedAttribute()]
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private bool BoolValueField;
-        
-        [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private string StringValueField;
-        
-        [global::System.ComponentModel.BrowsableAttribute(false)]
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
-            get {
-                return this.extensionDataField;
-            }
-            set {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public bool BoolValue {
-            get {
-                return this.BoolValueField;
-            }
-            set {
-                if ((this.BoolValueField.Equals(value) != true)) {
-                    this.BoolValueField = value;
-                    this.RaisePropertyChanged("BoolValue");
-                }
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string StringValue {
-            get {
-                return this.StringValueField;
-            }
-            set {
-                if ((object.ReferenceEquals(this.StringValueField, value) != true)) {
-                    this.StringValueField = value;
-                    this.RaisePropertyChanged("StringValue");
-                }
-            }
-        }
-        
-        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
-        
-        protected void RaisePropertyChanged(string propertyName) {
-            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if ((propertyChanged != null)) {
-                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
-        }
-    }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
-    public interface IService1 {
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.StatusSoap")]
+    public interface StatusSoap {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
-        string GetData(int value);
+        // CODEGEN: Generating message contract since element name HelloWorldResult from namespace http://tempuri.org/ is not marked nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
+        ConsoleApplication6.ServiceReference1.HelloWorldResponse HelloWorld(ConsoleApplication6.ServiceReference1.HelloWorldRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetData", ReplyAction="http://tempuri.org/IService1/GetDataResponse")]
-        System.Threading.Tasks.Task<string> GetDataAsync(int value);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        ConsoleApplication6.ServiceReference1.CompositeType GetDataUsingDataContract(ConsoleApplication6.ServiceReference1.CompositeType composite);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
-        System.Threading.Tasks.Task<ConsoleApplication6.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(ConsoleApplication6.ServiceReference1.CompositeType composite);
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface IService1Channel : ConsoleApplication6.ServiceReference1.IService1, System.ServiceModel.IClientChannel {
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
+        System.Threading.Tasks.Task<ConsoleApplication6.ServiceReference1.HelloWorldResponse> HelloWorldAsync(ConsoleApplication6.ServiceReference1.HelloWorldRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class Service1Client : System.ServiceModel.ClientBase<ConsoleApplication6.ServiceReference1.IService1>, ConsoleApplication6.ServiceReference1.IService1 {
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class HelloWorldRequest {
         
-        public Service1Client() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
+        public ConsoleApplication6.ServiceReference1.HelloWorldRequestBody Body;
+        
+        public HelloWorldRequest() {
         }
         
-        public Service1Client(string endpointConfigurationName) : 
+        public HelloWorldRequest(ConsoleApplication6.ServiceReference1.HelloWorldRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute()]
+    public partial class HelloWorldRequestBody {
+        
+        public HelloWorldRequestBody() {
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class HelloWorldResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://tempuri.org/", Order=0)]
+        public ConsoleApplication6.ServiceReference1.HelloWorldResponseBody Body;
+        
+        public HelloWorldResponse() {
+        }
+        
+        public HelloWorldResponse(ConsoleApplication6.ServiceReference1.HelloWorldResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="http://tempuri.org/")]
+    public partial class HelloWorldResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string HelloWorldResult;
+        
+        public HelloWorldResponseBody() {
+        }
+        
+        public HelloWorldResponseBody(string HelloWorldResult) {
+            this.HelloWorldResult = HelloWorldResult;
+        }
+    }
+    
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface StatusSoapChannel : ConsoleApplication6.ServiceReference1.StatusSoap, System.ServiceModel.IClientChannel {
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class StatusSoapClient : System.ServiceModel.ClientBase<ConsoleApplication6.ServiceReference1.StatusSoap>, ConsoleApplication6.ServiceReference1.StatusSoap {
+        
+        public StatusSoapClient() {
+        }
+        
+        public StatusSoapClient(string endpointConfigurationName) : 
                 base(endpointConfigurationName) {
         }
         
-        public Service1Client(string endpointConfigurationName, string remoteAddress) : 
+        public StatusSoapClient(string endpointConfigurationName, string remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public StatusSoapClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(endpointConfigurationName, remoteAddress) {
         }
         
-        public Service1Client(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public StatusSoapClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
         }
         
-        public string GetData(int value) {
-            return base.Channel.GetData(value);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ConsoleApplication6.ServiceReference1.HelloWorldResponse ConsoleApplication6.ServiceReference1.StatusSoap.HelloWorld(ConsoleApplication6.ServiceReference1.HelloWorldRequest request) {
+            return base.Channel.HelloWorld(request);
         }
         
-        public System.Threading.Tasks.Task<string> GetDataAsync(int value) {
-            return base.Channel.GetDataAsync(value);
+        public string HelloWorld() {
+            ConsoleApplication6.ServiceReference1.HelloWorldRequest inValue = new ConsoleApplication6.ServiceReference1.HelloWorldRequest();
+            inValue.Body = new ConsoleApplication6.ServiceReference1.HelloWorldRequestBody();
+            ConsoleApplication6.ServiceReference1.HelloWorldResponse retVal = ((ConsoleApplication6.ServiceReference1.StatusSoap)(this)).HelloWorld(inValue);
+            return retVal.Body.HelloWorldResult;
         }
         
-        public ConsoleApplication6.ServiceReference1.CompositeType GetDataUsingDataContract(ConsoleApplication6.ServiceReference1.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContract(composite);
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<ConsoleApplication6.ServiceReference1.HelloWorldResponse> ConsoleApplication6.ServiceReference1.StatusSoap.HelloWorldAsync(ConsoleApplication6.ServiceReference1.HelloWorldRequest request) {
+            return base.Channel.HelloWorldAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ConsoleApplication6.ServiceReference1.CompositeType> GetDataUsingDataContractAsync(ConsoleApplication6.ServiceReference1.CompositeType composite) {
-            return base.Channel.GetDataUsingDataContractAsync(composite);
+        public System.Threading.Tasks.Task<ConsoleApplication6.ServiceReference1.HelloWorldResponse> HelloWorldAsync() {
+            ConsoleApplication6.ServiceReference1.HelloWorldRequest inValue = new ConsoleApplication6.ServiceReference1.HelloWorldRequest();
+            inValue.Body = new ConsoleApplication6.ServiceReference1.HelloWorldRequestBody();
+            return ((ConsoleApplication6.ServiceReference1.StatusSoap)(this)).HelloWorldAsync(inValue);
         }
     }
 }

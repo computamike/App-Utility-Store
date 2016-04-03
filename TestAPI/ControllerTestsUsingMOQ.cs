@@ -40,14 +40,14 @@ namespace TestAPI
 
             mockEFContext.Setup(x => x.Products).Returns(mockSet.Object);
 
-            var apiRatings = new Ratings();
-            var RatingTemplate = apiRatings.GetRatingTemplate(1, 1);
+            var apiRatings = new RatingsController();
+            var RatingTemplate = apiRatings.GetRatings();
 
             RatingTemplate.ProductID = 1;
             RatingTemplate.FileID = 1;
 
 
-            apiRatings.AddRating(RatingTemplate, mockEFContext.Object);
+            //apiRatings.AddRating(RatingTemplate, mockEFContext.Object);
 
         }
 

@@ -204,7 +204,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Attributes\StoreAttribute.cs" />
-    <Compile Include="Controllers\API\Ratings.cs" />
+    <Compile Include="Controllers\API\RatingsController.cs" />
     <Compile Include="Controllers\API\StoreContentController.cs" />
     <Compile Include="Controllers\API\UserController.cs" />
     <Compile Include="Controllers\API\ValuesController.cs" />
