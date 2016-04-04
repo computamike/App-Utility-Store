@@ -418,6 +418,8 @@ namespace TestAPI
             public IDbSet<Product> Products{get; set; }
 
             public IDbSet<Screenshot> Screenshots{ get; set; }
+
+            public IDbSet<Rating> Ratings { get; set; }
            
 
             public void SaveChanges()

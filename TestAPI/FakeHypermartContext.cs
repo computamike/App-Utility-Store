@@ -23,7 +23,7 @@ namespace TestAPI
             Platforms = new InMemoryDbSet<Platform>();//{ FindFunction = (a, i) => a.FirstOrDefault(x => x.ID == i.Cast<int>().First()) };
             Products = new InMemoryDbSet<Product> { FindFunction = (a, i) => a.FirstOrDefault(x => x.ID == i.Cast<int>().First()) };
             Screenshots = new InMemoryDbSet<Screenshot> { FindFunction = (a, i) => a.FirstOrDefault(x => x.ID == i.Cast<int>().First()) };
-   
+            Ratings = new InMemoryDbSet<Rating> ();
         }
         
         public IDbSet<File> Files { get; set; }
@@ -33,6 +33,8 @@ namespace TestAPI
         public IDbSet<Product> Products { get; set; }
 
         public IDbSet<Screenshot> Screenshots { get; set; }
+
+        public IDbSet<Rating > Ratings{ get; set; }
 
         void IHypermartContext.SaveChanges()
         {

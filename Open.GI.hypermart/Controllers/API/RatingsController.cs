@@ -37,18 +37,30 @@ namespace Open.GI.hypermart.Controllers.API
         [HttpPost]
         public void PostRatings(RatingInformationDTO RatingToAdd)
         {
-            try
-            {
-                // do stuff to store the rating here 
-            }
-            catch (Exception ex)
-            {
+            var user = RequestContext.Principal;
 
-                throw new Exception("Cannot add a rating", ex);
+            //try
+            //{
+            
+
+            foreach (RatingDTO rating in RatingToAdd.Ratings)
+            {   Models.Rating newRating = new Models.Rating();
+                newRating.ProductID = RatingToAdd.ProductID;
+                newRating.userID = user.Identity.Name;
+                newRating.RatingCategory = rating.RatedArea;
+                newRating.rating = rating.Score;
+                db.Ratings.Add(newRating);
+                db.SaveChanges();
             }
+            
+            // do stuff to store the rating here 
+
+            //catch (Exception ex)
+            //{
+            //    throw new Exception("Cannot add a rating", ex);
+            //}
 
         }
-    
-    
     }
+
 }

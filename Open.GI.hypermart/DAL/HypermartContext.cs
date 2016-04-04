@@ -48,7 +48,14 @@ namespace Open.GI.hypermart.DAL
         /// The screenshots.
         /// </value>
         public virtual IDbSet<Screenshot> Screenshots { get; set; }
-
+        /// <summary>
+        /// Gets or sets the ratings.
+        /// </summary>
+        /// <value>
+        /// The ratings.
+        /// </value>
+        public virtual IDbSet<Rating> Ratings { get; set; }
+        
         /// <summary>
         /// This method is called when the model for a derived context has been initialized, but
         /// before the model has been locked down and used to initialize the context.  The default
@@ -82,5 +89,8 @@ namespace Open.GI.hypermart.DAL
             base.SaveChanges();
             //throw new NotImplementedException();
         }
+
+
+       
     }
 }

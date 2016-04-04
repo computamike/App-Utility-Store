@@ -31,6 +31,8 @@ namespace ConsoleApplication6
             APIReference api = new APIReference();
             RatingInformationDTO  RI = api.GetRatingsInformation();
             
+            // Set up application
+            RI.ProductID = 1;
             bool Running = true;
             bool Send = false;
             System.ConsoleKeyInfo menuup;
@@ -102,6 +104,7 @@ namespace ConsoleApplication6
                     case ConsoleKey.Enter:
                         Send = true;
                         Running = false;
+
                         api.sd(RI);
                         break;
                 }
@@ -127,8 +130,29 @@ namespace ConsoleApplication6
     {
         public void sd(RatingInformationDTO Ratings)
         {
-            var client = new RestClient("http://localhost.fiddler:12672/api/Ratings");
- 
+            var client = new RestClient("http://localhost:12672/api/Ratings");
+            client.Authenticator = new NtlmAuthenticator();
+            client.AddDefaultHeader("Host", "localhost:12672");
+            client.AddDefaultHeader("Cache-Control", "max-age=0");
+            client.AddDefaultHeader("Accept", "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8");
+            client.AddDefaultHeader("Upgrade-Insecure-Requests", "1");
+            client.AddDefaultHeader("User-Agent", "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36");
+            client.AddDefaultHeader("Accept-Encoding", "gzip, deflate, sdch");
+            client.AddDefaultHeader("Accept-Language", "en-GB,en;q=0.8,en-US;q=0.6");
+
+            var request = new RestRequest("PostRatings", Method.POST);
+            request.RequestFormat = DataFormat.Json;
+            request.AddBody(Ratings);
+
+            var response = client.Execute<RatingInformationDTO>(request);
+
+
+            //var s = JsonConvert.SerializeObject(Ratings);
+            //request.AddBody(s);
+            //IRestResponse response = client.Execute(request);
+            // RatingToAdd
+
+
         }
         public RatingInformationDTO GetRatingsInformation()
         {

@@ -36,6 +36,15 @@ namespace Open.GI.hypermart.DAL
         /// The screenshots.
         /// </value>
         System.Data.Entity.IDbSet<Open.GI.hypermart.Models.Screenshot> Screenshots { get; set; }
+        /// <summary>
+        /// Gets or sets the ratings.
+        /// </summary>
+        /// <value>
+        /// The ratings.
+        /// </value>
+        System.Data.Entity.IDbSet<Open.GI.hypermart.Models.Rating> Ratings { get; set; }
+
+
 
         /// <summary>
         /// In a DB Context object, this should save all changes made in this context to the underlying database
