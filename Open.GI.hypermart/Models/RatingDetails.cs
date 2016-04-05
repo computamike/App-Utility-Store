@@ -10,7 +10,7 @@ namespace Open.GI.hypermart.Models
     /// <summary>
     /// Model for storing rating information
     /// </summary>
-    public class Rating
+    public class RatingDetails
     {
         /// <summary>
         /// Gets or sets the user identifier.
@@ -20,7 +20,14 @@ namespace Open.GI.hypermart.Models
         /// </value>
         [Key, Column(Order = 0)]
         public string userID { get; set; }
-        
+        /// <summary>
+        /// Gets or sets the rating category.
+        /// </summary>
+        /// <value>
+        /// The rating category.
+        /// </value>
+        [Key, Column(Order = 1)]
+        public string RatingCategory { get; set; }
         /// <summary>
         /// Gets or sets the product identifier.
         /// </summary>
@@ -39,14 +46,15 @@ namespace Open.GI.hypermart.Models
         [ForeignKey("ProductID")]
         public Product RatedProduct { get; set; }
 
-
         /// <summary>
-        /// Gets or sets the comments.
+        /// Gets or sets the rating.
         /// </summary>
         /// <value>
-        /// The comments.
+        /// The rating.
         /// </value>
-        public string Comments { get; set; }
+        public int rating { get; set; }
+
+ 
 
     }
 }

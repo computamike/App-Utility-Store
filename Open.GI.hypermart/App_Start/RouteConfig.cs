@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -39,10 +40,19 @@ namespace Open.GI.hypermart
                 );
 
             routes.MapRoute(
+                name: "SubResource",
+                url: "api/{controller}/{action}/{id}",
+                defaults: new {id = RouteParameter.Optional }
+                );
+
+
+
+            routes.MapRoute(
                 name: "API Default",
                 url: "api/{controller}/{id}",
-                defaults: new { id = UrlParameter.Optional }
+                defaults: new { id = RouteParameter.Optional }
                 );
+
 
 
         }

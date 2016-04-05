@@ -42,14 +42,15 @@ namespace Open.GI.hypermart.Controllers.API
             //try
             //{
             
-
+            
             foreach (RatingDTO rating in RatingToAdd.Ratings)
-            {   Models.Rating newRating = new Models.Rating();
+            {
+                Models.RatingDetails newRating = new Models.RatingDetails();
                 newRating.ProductID = RatingToAdd.ProductID;
                 newRating.userID = user.Identity.Name;
                 newRating.RatingCategory = rating.RatedArea;
                 newRating.rating = rating.Score;
-                db.Ratings.Add(newRating);
+                db.RatingDetails.Add(newRating);
                 db.SaveChanges();
             }
             

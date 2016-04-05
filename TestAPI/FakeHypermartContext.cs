@@ -36,6 +36,8 @@ namespace TestAPI
 
         public IDbSet<Rating > Ratings{ get; set; }
 
+        public IDbSet<RatingDetails> RatingDetails { get; set; }
+
         void IHypermartContext.SaveChanges()
         {
             // Do nothing 
