@@ -188,11 +188,11 @@
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DAL\HypermartInitializer.cs" />
     <Compile Include="DAL\IHypermartContext.cs" />
-    <Compile Include="DataTransformationObjects\FileDTO.cs" />
-    <Compile Include="DataTransformationObjects\ProductDTO.cs" />
-    <Compile Include="DataTransformationObjects\RatingDTO.cs" />
-    <Compile Include="DataTransformationObjects\RatingInformationDTO.cs" />
-    <Compile Include="DataTransformationObjects\UserDTO.cs" />
+    <Compile Include="Docs\DataTransformationObjects\FileDTO.cs" />
+    <Compile Include="Docs\DataTransformationObjects\ProductDTO.cs" />
+    <Compile Include="Docs\DataTransformationObjects\RatingDTO.cs" />
+    <Compile Include="Docs\DataTransformationObjects\RatingInformationDTO.cs" />
+    <Compile Include="Docs\DataTransformationObjects\UserDTO.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +259,7 @@
     <None Include="Resources\Photo-book-750x500.jpg" />
     <None Include="Resources\drawing-1.png" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="ReadMe.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\dropzone.js" />
