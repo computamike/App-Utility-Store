@@ -1,0 +1,237 @@
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}{}\section{Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller Class Reference}
+\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}\index{Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller@{Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller}}
+
+
+This is the Open\+G\+I \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i}{A\+P\+I} layer for interacting with the Store(\+Ading content etc). Some of the calls here relating to updates and creation will require a session token.  
+
+
+Inheritance diagram for Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a01bad24ca04f869ec58d136ff35b2d13}{Store\+Content\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}{Store\+Content\+Controller} class. \end{DoxyCompactList}\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ad8b3b3f13892bbb028eb21b7e240d7e2}{Store\+Content\+Controller} (\hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context}{I\+Hypermart\+Context} db\+Context)
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}{Store\+Content\+Controller} class. \end{DoxyCompactList}\item 
+I\+Queryable$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_product_d_t_o}{Product\+D\+T\+O} $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ac0cf1a9777a6cb4978fbd1507dea8bbf}{Get\+All\+Products} ()
+\begin{DoxyCompactList}\small\item\em Gets all products. \end{DoxyCompactList}\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_product_d_t_o}{Product\+D\+T\+O} \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ad3f08d02ef5cfef7ebc87820568a2ee5}{Get\+Products} (int id)
+\begin{DoxyCompactList}\small\item\em Gets all products. \end{DoxyCompactList}\item 
+List$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_file_d_t_o}{File\+D\+T\+O} $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ae0b56b375fd34ca44fd3d7c32be04c04}{Get\+Files} (int id)
+\begin{DoxyCompactList}\small\item\em Gets all files for a product. \end{DoxyCompactList}\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_product_d_t_o}{Product\+D\+T\+O} \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ac11817b427cdc3139f1a1022791d9697}{Post\+Product} (\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_product}{Product} item\+To\+Add)
+\begin{DoxyCompactList}\small\item\em Create a New Product \end{DoxyCompactList}\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_file_d_t_o}{File\+D\+T\+O} \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_aeab9cb977ea719d1baa4610b3bc6a631}{Post\+Product\+File} (int Product\+I\+D, \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_file}{Open.\+G\+I.\+hypermart.\+Models.\+File} File\+To\+Add)
+\begin{DoxyCompactList}\small\item\em Posts the product file. \end{DoxyCompactList}\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_file_d_t_o}{File\+D\+T\+O} \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a36a438b2ab2cbb1d937b6a4c5bd8b17d}{Add\+File} (int Product\+I\+D, \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_file}{Open.\+G\+I.\+hypermart.\+Models.\+File} File\+To\+Add)
+\begin{DoxyCompactList}\small\item\em Add A File to a product \end{DoxyCompactList}\item 
+void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a7c5b861d456ae7b592165634a07c6738}{Add\+Screen\+Shot} (int Product\+I\+D)
+\begin{DoxyCompactList}\small\item\em Add a Screenshot to an Product \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the Open\+G\+I \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i}{A\+P\+I} layer for interacting with the Store(\+Ading content etc). Some of the calls here relating to updates and creation will require a session token. 
+
+
+
+Definition at line 19 of file Store\+Content\+Controller.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a01bad24ca04f869ec58d136ff35b2d13}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Store\+Content\+Controller@{Store\+Content\+Controller}}
+\index{Store\+Content\+Controller@{Store\+Content\+Controller}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Store\+Content\+Controller()}]{\setlength{\rightskip}{0pt plus 5cm}Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Store\+Content\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a01bad24ca04f869ec58d136ff35b2d13}
+
+
+Initializes a new instance of the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}{Store\+Content\+Controller} class. 
+
+
+
+Definition at line 25 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ad8b3b3f13892bbb028eb21b7e240d7e2}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Store\+Content\+Controller@{Store\+Content\+Controller}}
+\index{Store\+Content\+Controller@{Store\+Content\+Controller}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Store\+Content\+Controller(\+I\+Hypermart\+Context db\+Context)}]{\setlength{\rightskip}{0pt plus 5cm}Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Store\+Content\+Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Hypermart\+Context}}]{db\+Context}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ad8b3b3f13892bbb028eb21b7e240d7e2}
+
+
+Initializes a new instance of the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller}{Store\+Content\+Controller} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em db\+Context} & The database context.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Store\+Content\+Controller.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a36a438b2ab2cbb1d937b6a4c5bd8b17d}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Add\+File@{Add\+File}}
+\index{Add\+File@{Add\+File}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Add\+File(int Product\+I\+D, Open.\+G\+I.\+hypermart.\+Models.\+File File\+To\+Add)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+D\+T\+O} Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Add\+File (
+\begin{DoxyParamCaption}
+\item[{int}]{Product\+I\+D, }
+\item[{{\bf Open.\+G\+I.\+hypermart.\+Models.\+File}}]{File\+To\+Add}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a36a438b2ab2cbb1d937b6a4c5bd8b17d}
+
+
+Add A File to a product 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Product\+I\+D} & \\
+\hline
+{\em File\+To\+Add} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a7c5b861d456ae7b592165634a07c6738}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Add\+Screen\+Shot@{Add\+Screen\+Shot}}
+\index{Add\+Screen\+Shot@{Add\+Screen\+Shot}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Add\+Screen\+Shot(int Product\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Add\+Screen\+Shot (
+\begin{DoxyParamCaption}
+\item[{int}]{Product\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_a7c5b861d456ae7b592165634a07c6738}
+
+
+Add a Screenshot to an Product 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Product\+I\+D} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 177 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ac0cf1a9777a6cb4978fbd1507dea8bbf}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Get\+All\+Products@{Get\+All\+Products}}
+\index{Get\+All\+Products@{Get\+All\+Products}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Get\+All\+Products()}]{\setlength{\rightskip}{0pt plus 5cm}I\+Queryable$<${\bf Product\+D\+T\+O}$>$ Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Get\+All\+Products (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ac0cf1a9777a6cb4978fbd1507dea8bbf}
+
+
+Gets all products. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 45 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ae0b56b375fd34ca44fd3d7c32be04c04}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Get\+Files@{Get\+Files}}
+\index{Get\+Files@{Get\+Files}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Get\+Files(int id)}]{\setlength{\rightskip}{0pt plus 5cm}List$<${\bf File\+D\+T\+O}$>$ Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Get\+Files (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ae0b56b375fd34ca44fd3d7c32be04c04}
+
+
+Gets all files for a product. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 74 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ad3f08d02ef5cfef7ebc87820568a2ee5}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Get\+Products@{Get\+Products}}
+\index{Get\+Products@{Get\+Products}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Get\+Products(int id)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product\+D\+T\+O} Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Get\+Products (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ad3f08d02ef5cfef7ebc87820568a2ee5}
+
+
+Gets all products. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ac11817b427cdc3139f1a1022791d9697}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Post\+Product@{Post\+Product}}
+\index{Post\+Product@{Post\+Product}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Post\+Product(\+Product item\+To\+Add)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Product\+D\+T\+O} Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Post\+Product (
+\begin{DoxyParamCaption}
+\item[{{\bf Product}}]{item\+To\+Add}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_ac11817b427cdc3139f1a1022791d9697}
+
+
+Create a New Product 
+
+
+
+Definition at line 93 of file Store\+Content\+Controller.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_aeab9cb977ea719d1baa4610b3bc6a631}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}!Post\+Product\+File@{Post\+Product\+File}}
+\index{Post\+Product\+File@{Post\+Product\+File}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}}
+\subsubsection[{Post\+Product\+File(int Product\+I\+D, Open.\+G\+I.\+hypermart.\+Models.\+File File\+To\+Add)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf File\+D\+T\+O} Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller.\+Post\+Product\+File (
+\begin{DoxyParamCaption}
+\item[{int}]{Product\+I\+D, }
+\item[{{\bf Open.\+G\+I.\+hypermart.\+Models.\+File}}]{File\+To\+Add}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_store_content_controller_aeab9cb977ea719d1baa4610b3bc6a631}
+
+
+Posts the product file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Product\+I\+D} & The product identifier.\\
+\hline
+{\em File\+To\+Add} & The file to add.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em System.\+Web.\+Http.\+Http\+Response\+Exception} & \\
+\hline
+{\em System.\+Exception} & Cannot add a product file\\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 123 of file Store\+Content\+Controller.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\hyperlink{_store_content_controller_8cs}{Store\+Content\+Controller.\+cs}\end{DoxyCompactItemize}

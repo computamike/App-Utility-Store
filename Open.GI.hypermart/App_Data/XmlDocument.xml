@@ -1,0 +1,1635 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Open.GI.hypermart</name>
+    </assembly>
+    <members>
+        <member name="T:Open.GI.hypermart.BundleConfig">
+            <summary>
+            ASP.NET MVC Bundle configuration
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.BundleConfig.RegisterBundles(System.Web.Optimization.BundleCollection)">
+            <summary>
+            Registers the bundles.
+            </summary>
+            <param name="bundles">The bundles.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.FilterConfig">
+            <summary>
+            Class for filter configuration
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.FilterConfig.RegisterGlobalFilters(System.Web.Mvc.GlobalFilterCollection)">
+            <summary>
+            Registers the global filters.
+            </summary>
+            <param name="filters">The filters.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.RouteConfig">
+            <summary>
+            MVC - Route Registration
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.RouteConfig.RegisterRoutes(System.Web.Routing.RouteCollection)">
+            <summary>
+            Registers the routes.
+            </summary>
+            <param name="routes">The routes.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.App_Start.UnityConfig">
+            <summary>
+            Specifies the Unity configuration for the main container.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.App_Start.UnityConfig.GetConfiguredContainer">
+            <summary>
+            Gets the configured Unity container.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.App_Start.UnityConfig.RegisterTypes(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>Registers the type mappings with the Unity container.</summary>
+            <param name="container">The unity container to configure.</param>
+            <remarks>There is no need to register concrete types such as controllers or API controllers (unless you want to 
+            change the defaults), as Unity allows resolving a concrete type even if it was not previously registered.</remarks>
+        </member>
+        <member name="T:Open.GI.hypermart.App_Start.UnityWebActivator">
+            <summary>Provides the bootstrapping for integrating Unity with ASP.NET MVC.</summary>
+        </member>
+        <member name="M:Open.GI.hypermart.App_Start.UnityWebActivator.Start">
+            <summary>Integrates Unity when the application starts.</summary>
+        </member>
+        <member name="M:Open.GI.hypermart.App_Start.UnityWebActivator.Shutdown">
+            <summary>Disposes the Unity container when the application is shut down.</summary>
+        </member>
+        <member name="T:Open.GI.hypermart.WebApiConfig">
+            <summary>
+            Configuring Web API layer
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            Registers the specified configuration.
+            </summary>
+            <param name="config">The configuration.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.Attributes.StoreAttribute">
+            <summary>
+            Custom attribute, assignable to an assembly that can store information connecting this .NET assembly to a Hypermarket Store entry.
+            </summary>
+            <seealso cref="T:System.Attribute"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Attributes.StoreAttribute.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Attributes.StoreAttribute"/> class.
+            </summary>
+            <param name="ProductID">The product identifier.</param>
+            <param name="FileID">The file identifier.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.Attributes.StoreAttribute.ProductID">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>
+            The product identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Attributes.StoreAttribute.FileID">
+            <summary>
+            Gets or sets the file identifier.
+            </summary>
+            <value>
+            The file identifier.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.API.RatingsController">
+            <summary>
+            Ratings Controller
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.RatingsController.GetRatings">
+            <summary>
+            Gets the ratings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.RatingsController.PostRatings(Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO)">
+            <summary>
+            Create a New Product
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.StoreContentController">
+            <summary>
+            This is the OpenGI API layer for interacting with the Store(Ading content etc).  Some of the calls here relating to updates and creation will require a session token.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Controllers.StoreContentController"/> class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.#ctor(Open.GI.hypermart.DAL.IHypermartContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Controllers.StoreContentController"/> class.
+            </summary>
+            <param name="dbContext">The database context.</param>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.GetAllProducts">
+            <summary>
+            Gets all products.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.PostProduct(Open.GI.hypermart.Models.Product)">
+            <summary>
+            Create a New Product
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.PostProductFile(System.Int32,Open.GI.hypermart.Models.File)">
+            <summary>
+            Posts the product file.
+            </summary>
+            <param name="ProductID">The product identifier.</param>
+            <param name="FileToAdd">The file to add.</param>
+            <returns></returns>
+            <exception cref="T:System.Web.Http.HttpResponseException"></exception>
+            <exception cref="T:System.Exception">Cannot add a product file</exception>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.AddFile(System.Int32,Open.GI.hypermart.Models.File)">
+            <summary>
+            Add A File to a product
+            </summary>
+            <param name="ProductID"></param>
+            <param name="FileToAdd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.DeleteProduct(System.Int32)">
+            <summary>
+            Deletes the product.
+            </summary>
+            <param name="ProductID">The product identifier.</param>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.AddScreenShot(System.Int32)">
+            <summary>
+            Add a Screenshot to an Product
+            </summary>
+            <param name="ProductID"></param>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.GetRatings">
+            <summary>
+            Gets the ratings.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.PostRatings(Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO)">
+            <summary>
+            Create a New Product Rating
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.API.UserController">
+            <summary>
+            This is the OpenGI API layer for interacting with users.  This API layer allows user details to be retireved from Active Directory.
+            </summary>
+            <remarks>
+            Required minimal configuration, but does require a directory services of sorts - this should work with the Active Directory Lightweight Directory Services (to be confirmed).
+            </remarks>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.UserController.Details(System.String)">
+            <summary>
+            Retrieves the user information from the directory.
+            </summary>
+            <param name="userid"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.API.ValuesController">
+            <summary>
+            Values Controller
+            </summary>
+            <seealso cref="T:System.Web.Http.ApiController"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.ValuesController.GetByStatus(System.Int32)">
+            <summary>
+            Gets all of the values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.ValuesController.Get">
+            <summary>
+            Gets all of the values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.ValuesController.Get(System.Int32)">
+            <summary>
+            Gets the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.ValuesController.Post(System.String)">
+            <summary>
+            Posts the specified value.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            Puts the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.API.ValuesController.Delete(System.Int32)">
+            <summary>
+            Deletes the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.DownloadController">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:System.Web.Mvc.Controller"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.DownloadController.Download(System.Int32)">
+            <summary>
+            Downloads the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+            <exception cref="T:System.Web.HttpException">
+            Cannot find file 
+            or
+            Cannot find file - can't get remote link.
+            </exception>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.HomeController">
+            <summary>
+            ASP.NET MVC Home Controller
+            </summary>
+            <seealso cref="T:System.Web.Mvc.Controller"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.HomeController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.HomeController.About">
+            <summary>
+            Abouts this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.HomeController.Contact">
+            <summary>
+            Contacts this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.NugetController">
+            <summary>
+            An attempt to create a Nuget controller (phase 2)
+            </summary>
+            <seealso cref="T:System.Web.Mvc.Controller"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.NugetController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.NugetController.Packages">
+            <summary>
+            Packageses this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.ProductsController">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:System.Web.Mvc.Controller"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Controllers.ProductsController"/> class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.#ctor(Open.GI.hypermart.DAL.IHypermartContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Controllers.ProductsController"/> class.
+            </summary>
+            <param name="db">The database.</param>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Index">
+            <summary>
+            Indexes this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Details(System.Nullable{System.Int32})">
+            <summary>
+            Detailses the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Create">
+            <summary>
+            Creates this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Create(Open.GI.hypermart.Models.Product)">
+            <summary>
+            Creates the specified product.
+            </summary>
+            <param name="product">The product.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Edit(System.Nullable{System.Int32})">
+            <summary>
+            Edits the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Edit(Open.GI.hypermart.Models.Product)">
+            <summary>
+            Edits the specified product.
+            </summary>
+            <param name="product">The product.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Delete(System.Nullable{System.Int32})">
+            <summary>
+            Deletes the specified identifier.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.DeleteConfirmed(System.Int32)">
+            <summary>
+            Deletes the confirmed.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.ProductsController.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged resources and optionally releases managed resources.
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.Controllers.ProductsController.db">
+            <summary>
+            </summary>
+            <value>
+            The database.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.SearchController">
+            <summary>
+            Performs searches against the Product metadata (possibly also against the user database) - to be decided
+            </summary>
+            <seealso cref="T:System.Web.Mvc.Controller"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.SearchController.Index(System.String)">
+            <summary>
+            Indexes the specified search term. (performs a search, returns a list of results)
+            </summary>
+            <param name="SearchTerm">The search term.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Controllers.UserController">
+            <summary>
+            User Controller
+            </summary>
+            <seealso cref="T:System.Web.Mvc.Controller"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Controllers.UserController.Details(System.String)">
+            <summary>
+            Detailses the specified userid.
+            </summary>
+            <param name="userid">The userid.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.DAL.HypermartInitializer">
+            <summary>
+            Hypermart Initializer
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DAL.HypermartInitializer.Seed(Open.GI.hypermart.DAL.HypermartContext)">
+            <summary>
+            Seeds the database with content.
+            </summary>
+            <param name="context">The context.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.DAL.IHypermartContext">
+            <summary>
+            Interface describing the functionality of the Database Context
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DAL.IHypermartContext.SaveChanges">
+            <summary>
+            In a DB Context object, this should save all changes made in this context to the underlying database
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.IHypermartContext.Files">
+            <summary>
+            Gets or sets the files.
+            </summary>
+            <value>
+            The files.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.IHypermartContext.Platforms">
+            <summary>
+            Gets or sets the platforms.
+            </summary>
+            <value>
+            The platforms.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.IHypermartContext.Products">
+            <summary>
+            Gets or sets the products.
+            </summary>
+            <value>
+            The products.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.IHypermartContext.Screenshots">
+            <summary>
+            Gets or sets the screenshots.
+            </summary>
+            <value>
+            The screenshots.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.IHypermartContext.Ratings">
+            <summary>
+            Gets or sets the ratings.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.IHypermartContext.RatingDetails">
+            <summary>
+            Gets or sets the ratings.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.DataTransformationObjects.FileDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.FileDTO.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.FileDTO"/> class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.FileDTO.#ctor(Open.GI.hypermart.Models.File)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.FileDTO"/> class.
+            </summary>
+            <param name="File">The file.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.StorageType">
+            <summary>
+            Gets or sets the type of the storage.
+            </summary>
+            <value>
+            The type of the storage.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.FileName">
+            <summary>
+            Gets or sets the name of the file.
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.BLOB">
+            <summary>
+            Gets or sets the BLOB.
+            </summary>
+            <value>
+            The BLOB.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.Link">
+            <summary>
+            Gets or sets the link.
+            </summary>
+            <value>
+            The link.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+            <value>
+            The version.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.ProductID">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>
+            The product identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.Product">
+            <summary>
+            Gets or sets the product.
+            </summary>
+            <value>
+            The product.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.FileDTO.Platforms">
+            <summary>
+            Gets or sets the platforms.
+            </summary>
+            <value>
+            The platforms.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.DataTransformationObjects.ProductDTO">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.ProductDTO.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.ProductDTO"/> class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.ProductDTO.#ctor(Open.GI.hypermart.Models.Product)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.ProductDTO"/> class.
+            </summary>
+            <param name="Base">The base.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.ProductDTO.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.ProductDTO.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>
+            The title.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.ProductDTO.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.ProductDTO.Tagline">
+            <summary>
+            Gets or sets the tagline.
+            </summary>
+            <value>
+            The tagline.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.ProductDTO.Lead">
+            <summary>
+            Gets or sets the lead.
+            </summary>
+            <value>
+            The lead.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.DataTransformationObjects.RatingDTO">
+            <summary>
+            Rating detail DTO
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.RatingDTO.#ctor(System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.RatingDTO"/> class.
+            </summary>
+            <param name="RatedArea">The rated area.</param>
+            <param name="score">The score.</param>
+            <param name="outof">The outof.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingDTO.RatedArea">
+            <summary>
+            Gets or sets the rated area.
+            </summary>
+            <value>
+            The rated area.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingDTO.Score">
+            <summary>
+            Gets or sets the score.
+            </summary>
+            <value>
+            The score.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingDTO.OutOf">
+            <summary>
+            Gets or sets the out of.
+            </summary>
+            <value>
+            The out of.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO">
+            <summary>
+            Rating information DTO
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO"/> class.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO.ProductID">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>
+            The product identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO.FileID">
+            <summary>
+            Gets or sets the file identifier.
+            </summary>
+            <value>
+            The file identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO.Ratings">
+            <summary>
+            Gets or sets the ratings.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO.CommentTitle">
+            <summary>
+            Gets or sets the comment title.
+            </summary>
+            <value>
+            The comment title.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO.Comment">
+            <summary>
+            Gets or sets the comment.
+            </summary>
+            <value>
+            The comment.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.DataTransformationObjects.UserDTO">
+            <summary>
+            Class for Over-the-wire transmission of user information.  If a user cannot be found, then an Unknown User will be returned.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.UserDTO.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.UserDTO"/> class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DataTransformationObjects.UserDTO.#ctor(Open.GI.hypermart.Models.User)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DataTransformationObjects.UserDTO"/> class.
+            </summary>
+            <param name="UserToWrap">The user to wrap.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.UserDTO.username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>
+            The username.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.UserDTO.PhoneNumnber">
+            <summary>
+            Gets or sets the phone numnber.
+            </summary>
+            <value>
+            The phone numnber.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.UserDTO.Photo_byteArray">
+            <summary>
+            Base 64 encoded png image.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.UserDTO.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>
+            The email.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DataTransformationObjects.UserDTO.JobTitle">
+            <summary>
+            Gets or sets the job title.
+            </summary>
+            <value>
+            The job title.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.MvcApplication">
+            <summary>
+            Main MVC Application Class
+            </summary>
+            <seealso cref="T:System.Web.HttpApplication"/>
+        </member>
+        <member name="M:Open.GI.hypermart.MvcApplication.Application_Start">
+            <summary>
+            ASP.NET MVC Application start method
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.AD_Repository">
+            <summary>
+            Active Directory Repository
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.AD_Repository.EnumerateDomains">
+            <summary>
+            Enumerates the domains.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.AD_Repository.FriendlyDomainToLdapDomain(System.String)">
+            <summary>
+            Friendlies the domain to LDAP domain.
+            </summary>
+            <param name="friendlyDomainName">Name of the friendly domain.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.AD_Repository.GetUsers(System.String)">
+            <summary>
+            Gets the users.
+            </summary>
+            <param name="partialName">The partial name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.AD_Repository.getUser(System.String)">
+            <summary>
+            Gets the user.
+            </summary>
+            <param name="partialName">The partial name.</param>
+            <returns>In the event that the user cannot be resolved, then an Empty user will be returned.</returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.ManagementType">
+            <summary>
+            File Share helper (create and manage file shares)
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.DiskDrive">
+            <summary>
+            The disk drive
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.PrintQueue">
+            <summary>
+            The print queue
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.DEVICE">
+            <summary>
+            The device
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.IPC">
+            <summary>
+            The ipc
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.DISK_DRIVE_ADMIN">
+            <summary>
+            The dis k_ driv e_ admin
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.PRINT_QUEUE_ADMIN">
+            <summary>
+            The prin t_ queu e_ admin
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.DEVICE_ADMIN">
+            <summary>
+            The devic e_ admin
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Helpers.ManagementType.IPC_ADMIN">
+            <summary>
+            The ip c_ admin
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.FileShareHelper">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.FileShareHelper.CreateFolder(System.String)">
+            <summary>
+            Create a Folder - used to create a file System for storing products\files\versions
+            </summary>
+            <param name="FolderName"></param>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.FileShareHelper.CreateShare(System.String,System.String,System.String)">
+            <summary>
+            Creates the share.
+            </summary>
+            <param name="FolderName">Name of the folder.</param>
+            <param name="ShareName">Name of the share.</param>
+            <param name="Description">The description.</param>
+            <exception cref="T:System.Exception">Unable to share directory.</exception>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.FileShareHelper.DeleteShare(System.String)">
+            <summary>
+            Deletes the share.
+            </summary>
+            <param name="FolderName">Name of the folder.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.ImageHelper">
+            <summary>
+            Image Helpers - manage images.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.ImageHelper.ImageToB64(System.Web.Mvc.HtmlHelper,System.Drawing.Image)">
+            <summary>
+            Converts a Image into a base64 representation of an image - probably should consider caching this to disk, and returning an Image element that references the image instead - work on that later
+            </summary>
+            <param name="html"></param>
+            <param name="ImageToConvert">Image element to convert.</param>
+            <returns>a PNG object that represents the image</returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.ImageHelper.ImageToB64(System.Drawing.Image)">
+            <summary>
+            Images to Base 64 string.
+            </summary>
+            <param name="ImageToConvert">The image to convert.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.ImageHelper.ImageToByteArray(System.Drawing.Image)">
+            <summary>
+            Images to byte array.
+            </summary>
+            <param name="imageIn">The image in.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.ImageHelper.TESTExtension(System.Drawing.Bitmap)">
+            <summary>
+            Tests the extension.
+            </summary>
+            <param name="foo">The foo.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.ImageHelper.ImageToByteArray(System.Drawing.Bitmap)">
+            <summary>
+            Images to byte array.
+            </summary>
+            <param name="imageIn">The image in.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.ImageHelper.byteArrayToImage(System.Byte[])">
+            <summary>
+            Bytes the array to image.
+            </summary>
+            <param name="byteArrayIn">The byte array in.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.PlatformHelper">
+            <summary>
+            Platform helper Class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.PlatformHelper.GetPlatformString(System.String)">
+            <summary>
+            Gets the platform string.
+            </summary>
+            <param name="PlatformShortCode">The platform short code.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.AtomActionResult">
+            <summary>
+            Creates an ATOM Result
+            </summary>
+            <seealso cref="T:System.Web.Mvc.ActionResult"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.AtomActionResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            Enables processing of the result of an action method by a custom type that inherits from the <see cref="T:System.Web.Mvc.ActionResult" /> class.
+            </summary>
+            <param name="context">The context in which the result is executed. The context information includes the controller, HTTP content, request context, and route data.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.Helpers.AtomActionResult.Feed">
+            <summary>
+            Gets or sets the feed.
+            </summary>
+            <value>
+            The feed.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Helpers.RssActionResult">
+            <summary>
+            RSS Action Results
+            </summary>
+            <seealso cref="T:System.Web.Mvc.ActionResult"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Helpers.RssActionResult.ExecuteResult(System.Web.Mvc.ControllerContext)">
+            <summary>
+            Enables processing of the result of an action method by a custom type that inherits from the <see cref="T:System.Web.Mvc.ActionResult" /> class.
+            </summary>
+            <param name="context">The context in which the result is executed. The context information includes the controller, HTTP content, request context, and route data.</param>
+        </member>
+        <member name="P:Open.GI.hypermart.Helpers.RssActionResult.Feed">
+            <summary>
+            Gets or sets the feed.
+            </summary>
+            <value>
+            The feed.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.DAL.HypermartContext">
+            <summary>
+            Hypermart Context
+            </summary>
+            <seealso cref="T:System.Data.Entity.DbContext"/>
+            <seealso cref="T:Open.GI.hypermart.DAL.IHypermartContext"/>
+        </member>
+        <member name="M:Open.GI.hypermart.DAL.HypermartContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.DAL.HypermartContext"/> class.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.DAL.HypermartContext.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>
+            This method is called when the model for a derived context has been initialized, but
+            before the model has been locked down and used to initialize the context.  The default
+            implementation of this method does nothing, but it can be overridden in a derived class
+            such that the model can be further configured before it is locked down.
+            </summary>
+            <param name="modelBuilder">The builder that defines the model for the context being created.</param>
+            <remarks>
+            Typically, this method is called only once when the first instance of a derived context
+            is created.  The model for that context is then cached and is for all further instances of
+            the context in the app domain.  This caching can be disabled by setting the ModelCaching
+            property on the given ModelBuidler, but note that this can seriously degrade performance.
+            More control over caching is provided through use of the DbModelBuilder and DbContextFactory
+            classes directly.
+            </remarks>
+        </member>
+        <member name="M:Open.GI.hypermart.DAL.HypermartContext.SaveChanges">
+            <summary>
+            In a DB Context object, this should save all changes made in this context to the underlying database
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.HypermartContext.Files">
+            <summary>
+            Gets or sets the files.
+            </summary>
+            <value>
+            The files.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.HypermartContext.Platforms">
+            <summary>
+            Gets or sets the platforms.
+            </summary>
+            <value>
+            The platforms.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.HypermartContext.Products">
+            <summary>
+            Gets or sets the products.
+            </summary>
+            <value>
+            The products.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.HypermartContext.Screenshots">
+            <summary>
+            Gets or sets the screenshots.
+            </summary>
+            <value>
+            The screenshots.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.HypermartContext.Ratings">
+            <summary>
+            Gets or sets the ratings.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.DAL.HypermartContext.RatingDetails">
+            <summary>
+            Gets or sets the ratings.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Migrations.Initial">
+            <summary>
+            Initial Migration - settin up the tables and links
+            </summary>
+            <seealso cref="T:System.Data.Entity.Migrations.DbMigration"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Migrations.Initial.Up">
+            <summary>
+            Operations to be performed during the upgrade process.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Migrations.Initial.Down">
+            <summary>
+            Operations to be performed during the downgrade process.
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Migrations.TableNamingChanges">
+            <summary>
+            Renaming tables and columns
+            </summary>
+            <seealso cref="T:System.Data.Entity.Migrations.DbMigration"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Migrations.TableNamingChanges.Up">
+            <summary>
+            Operations to be performed during the upgrade process.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Migrations.TableNamingChanges.Down">
+            <summary>
+            Operations to be performed during the downgrade process.
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Migrations.AddRatings">
+            <summary>
+            Add Ratings Tables.
+            </summary>
+            <seealso cref="T:System.Data.Entity.Migrations.DbMigration"/>
+        </member>
+        <member name="M:Open.GI.hypermart.Migrations.AddRatings.Up">
+            <summary>
+            Operations to be performed during the upgrade process.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Migrations.AddRatings.Down">
+            <summary>
+            Operations to be performed during the downgrade process.
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.Category">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.File">
+            <summary>
+            Model Class representing a File.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Models.File.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Models.File"/> class.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.StorageType">
+            <summary>
+            Gets or sets the type of the storage.
+            </summary>
+            <value>
+            The type of the storage.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.FileName">
+            <summary>
+            Gets or sets the name of the file.
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.BLOB">
+            <summary>
+            Gets or sets the BLOB.
+            </summary>
+            <value>
+            The BLOB.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.Link">
+            <summary>
+            Gets or sets the link.
+            </summary>
+            <value>
+            The link.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.Version">
+            <summary>
+            Gets or sets the version.
+            </summary>
+            <value>
+            The version.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.ProductID">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>
+            The product identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.Product">
+            <summary>
+            Gets or sets the product.
+            </summary>
+            <value>
+            The product.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.File.Platforms">
+            <summary>
+            Gets or sets the platforms.
+            </summary>
+            <value>
+            The platforms.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.Platform">
+            <summary>
+            Model Class for platform.
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Models.Platform.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Models.Platform"/> class.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Platform.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Platform.Platform1">
+            <summary>
+            Gets or sets the platform1.
+            </summary>
+            <value>
+            The platform1.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Platform.Files">
+            <summary>
+            Gets or sets the files.
+            </summary>
+            <value>
+            The files.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.Product">
+            <summary>
+            Product Model Class
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Models.Product.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Open.GI.hypermart.Models.Product"/> class.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>
+            The title.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Tagline">
+            <summary>
+            Gets or sets the tagline.
+            </summary>
+            <value>
+            The tagline.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Lead">
+            <summary>
+            Gets or sets the lead.
+            </summary>
+            <value>
+            The lead.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.SourceCode">
+            <summary>
+            Gets or sets the source code location for the project.
+            </summary>
+            <value>
+            The source code.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Maintainers">
+            <summary>
+            Gets or sets the maintainers.
+            </summary>
+            <value>
+            The maintainers.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Files">
+            <summary>
+            Gets or sets the files.
+            </summary>
+            <value>
+            The files.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Screenshots">
+            <summary>
+            Gets or sets the screenshots.
+            </summary>
+            <value>
+            The screenshots.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Product.Ratings">
+            <summary>
+            Gets or sets the ratings.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.RatingDetails">
+            <summary>
+            Model for storing rating information
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.userID">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.RatingCategory">
+            <summary>
+            Gets or sets the rating category.
+            </summary>
+            <value>
+            The rating category.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.ProductID">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>
+            The product identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.RatedProduct">
+            <summary>
+            Gets or sets the rated product.
+            </summary>
+            <value>
+            The rated product.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.rating">
+            <summary>
+            Gets or sets the rating.
+            </summary>
+            <value>
+            The rating.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.Rating">
+            <summary>
+            Model for storing rating information
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Rating.userID">
+            <summary>
+            Gets or sets the user identifier.
+            </summary>
+            <value>
+            The user identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Rating.ProductID">
+            <summary>
+            Gets or sets the product identifier.
+            </summary>
+            <value>
+            The product identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Rating.RatedProduct">
+            <summary>
+            Gets or sets the rated product.
+            </summary>
+            <value>
+            The rated product.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Rating.Comments">
+            <summary>
+            Gets or sets the comments.
+            </summary>
+            <value>
+            The comments.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.Screenshot">
+            <summary>
+            Screen Shot Model Class
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Screenshot.ID">
+            <summary>
+            Gets or sets the identifier.
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Screenshot.ScreenShot1">
+            <summary>
+            Gets or sets the screen shot1.
+            </summary>
+            <value>
+            The screen shot1.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Screenshot.ProductID">
+            <summary>
+            Gets or sets the product_ identifier.
+            </summary>
+            <value>
+            The product_ identifier.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Screenshot.Product">
+            <summary>
+            Gets or sets the product.
+            </summary>
+            <value>
+            The product.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.storageType">
+            <summary>
+            Type of storage used.
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Models.storageType.InternalBLOB">
+            <summary>
+            The internal BLOB store 
+            </summary>
+        </member>
+        <member name="F:Open.GI.hypermart.Models.storageType.RemoteShare">
+            <summary>
+            The remote share
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.Tag">
+            <summary>
+            HyperMart -  Tagging.  Tagging seems simple - it is after all a collection of strings that the user can choose to asociate with a file.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.Tag.Name">
+            <summary>
+            The Tag to save or associate with a file - this might simplify to a Text collection (unsure)
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Models.User">
+            <summary>
+            User Model Class
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.User.username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+            <value>
+            The username.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.User.PhoneNumnber">
+            <summary>
+            Gets or sets the phone numnber.
+            </summary>
+            <value>
+            The phone numnber.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.User.Photo">
+            <summary>
+            Gets or sets the photo.
+            </summary>
+            <value>
+            The photo.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.User.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>
+            The email.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.User.JobTitle">
+            <summary>
+            Gets or sets the job title.
+            </summary>
+            <value>
+            The job title.
+            </value>
+        </member>
+        <member name="T:Open.GI.hypermart.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Apple">
+            <summary>
+              Looks up a localized string similar to fa-apple.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Download1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Download2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.download3">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.ImageNotFound">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Linux">
+            <summary>
+              Looks up a localized string similar to fa-linux.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Linux32">
+            <summary>
+              Looks up a localized string similar to fa-linux.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Linux64">
+            <summary>
+              Looks up a localized string similar to fa-linux.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.NoScreenShot">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Win_10_32">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Win_10_64">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Win_32">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Win_64">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Win_8_32">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Win_8_64">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="P:Open.GI.hypermart.Properties.Resources.Windows">
+            <summary>
+              Looks up a localized string similar to fa-windows.
+            </summary>
+        </member>
+        <member name="T:Open.GI.hypermart.Registration">
+            <summary>
+            Register system dependencies
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Registration.RegisterDependencies(Microsoft.Practices.Unity.IUnityContainer)">
+            <summary>
+            Registers the dependencies.
+            </summary>
+            <param name="container">The container.</param>
+        </member>
+        <member name="T:Open.GI.hypermart.Status">
+            <summary>
+            Summary description for Status
+            </summary>
+        </member>
+        <member name="M:Open.GI.hypermart.Status.HelloWorld">
+            <summary>
+            This is the Hello World method.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
