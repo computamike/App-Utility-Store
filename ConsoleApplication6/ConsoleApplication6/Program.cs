@@ -34,7 +34,7 @@ namespace ConsoleApplication6
             // Set up application
             RI.ProductID = 1;
             bool Running = true;
-            bool Send = false;
+            
             System.ConsoleKeyInfo menuup;
             int selected = 0;
             do
@@ -102,7 +102,7 @@ namespace ConsoleApplication6
                         break;
 
                     case ConsoleKey.Enter:
-                        Send = true;
+                        
                         Running = false;
 
                         api.sd(RI);
