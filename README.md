@@ -4,3 +4,5 @@
 [![Join the chat at https://gitter.im/computamike/App-Utility-Store](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/computamike/App-Utility-Store?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 A Proof of Concept for an App-Utility Store
 
+This application source is hosted in GitHub, but build services are provided by Visual Studio Team Services.
+
