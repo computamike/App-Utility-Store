@@ -50,8 +50,8 @@ namespace TestAPI
         //
         //TODO : checking for equality between 2 instances of an object can be done by overriding the equality operator.  This is more convenient that checking each property.
         //
-        List<Product> fakeProducts;
-        MockCntext MockDbContext;
+        //List<Product> fakeProducts;
+        //MockCntext MockDbContext;
         List<Platform> platforms;
 
         private IQueryable<Product> Products;
@@ -442,12 +442,12 @@ namespace TestAPI
 
 
 
-        private void  dataAdd(Product obj)
-        {
-            fakeProducts.Add(obj);
+        //private void  dataAdd(Product obj)
+        //{
+        //    fakeProducts.Add(obj);
              
 
-        }
+        //}
     
     }
 }

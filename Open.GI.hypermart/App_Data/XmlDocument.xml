@@ -1099,7 +1099,7 @@
         </member>
         <member name="T:Open.GI.hypermart.Migrations.AddRatings">
             <summary>
-            Add Ratings Tables.
+            Migration - Add Ratings Support.
             </summary>
             <seealso cref="T:System.Data.Entity.Migrations.DbMigration"/>
         </member>
@@ -1361,9 +1361,17 @@
             The rated product.
             </value>
         </member>
-        <member name="P:Open.GI.hypermart.Models.RatingDetails.rating">
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.Rating">
             <summary>
             Gets or sets the rating.
+            </summary>
+            <value>
+            The rating.
+            </value>
+        </member>
+        <member name="P:Open.GI.hypermart.Models.RatingDetails.OutOf">
+            <summary>
+            Gets or sets the rating (out of).
             </summary>
             <value>
             The rating.

@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication6", "Cons
 		{4089EEDD-3AE9-4E59-B365-2D29439E5856} = {4089EEDD-3AE9-4E59-B365-2D29439E5856}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HypermartPublish", "HypermartPublish\HypermartPublish.csproj", "{64FD1D3E-554C-4DFD-9180-33197092BEF8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{1A20B8C1-981E-495A-8122-9446C384D081}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A20B8C1-981E-495A-8122-9446C384D081}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A20B8C1-981E-495A-8122-9446C384D081}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FD1D3E-554C-4DFD-9180-33197092BEF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FD1D3E-554C-4DFD-9180-33197092BEF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FD1D3E-554C-4DFD-9180-33197092BEF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FD1D3E-554C-4DFD-9180-33197092BEF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

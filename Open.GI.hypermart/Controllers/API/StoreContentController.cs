@@ -269,7 +269,7 @@ namespace Open.GI.hypermart.Controllers
                 newRating.ProductID = RatingToAdd.ProductID;
                 newRating.userID = user.Identity.Name;
                 newRating.RatingCategory = rating.RatedArea;
-                newRating.rating = rating.Score;
+                newRating.Rating = rating.Score;
                 db.RatingDetails.Add(newRating);
                 db.SaveChanges();
             }

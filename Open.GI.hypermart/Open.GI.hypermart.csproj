@@ -211,9 +211,9 @@
     <Compile Include="Migrations\201601232152258_Table Naming Changes.Designer.cs">
       <DependentUpon>201601232152258_Table Naming Changes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201604062226321_AddRatings.cs" />
-    <Compile Include="Migrations\201604062226321_AddRatings.Designer.cs">
-      <DependentUpon>201604062226321_AddRatings.cs</DependentUpon>
+    <Compile Include="Migrations\201604082352403_AddRatings.cs" />
+    <Compile Include="Migrations\201604082352403_AddRatings.Designer.cs">
+      <DependentUpon>201604082352403_AddRatings.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -324,8 +324,8 @@
     <EmbeddedResource Include="Migrations\201601232152258_Table Naming Changes.resx">
       <DependentUpon>201601232152258_Table Naming Changes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604062226321_AddRatings.resx">
-      <DependentUpon>201604062226321_AddRatings.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201604082352403_AddRatings.resx">
+      <DependentUpon>201604082352403_AddRatings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

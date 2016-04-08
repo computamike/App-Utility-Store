@@ -96,7 +96,16 @@ namespace Open.GI.hypermart.DAL
         /// </summary>
         public new void SaveChanges()
         {
-            base.SaveChanges();
+            try
+            {
+                base.SaveChanges();
+            }
+            catch (Exception ex )
+            {
+                
+                throw ex;
+            }
+            
             //throw new NotImplementedException();
         }
 
