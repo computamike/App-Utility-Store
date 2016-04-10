@@ -105,7 +105,7 @@ namespace ConsoleApplication6
                         
                         Running = false;
 
-                        api.sd(RI);
+                        api.SendRatings(RI);
                         break;
                 }
 

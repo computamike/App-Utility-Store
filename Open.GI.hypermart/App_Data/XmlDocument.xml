@@ -1324,6 +1324,14 @@
             The ratings.
             </value>
         </member>
+        <member name="P:Open.GI.hypermart.Models.Product.RatingsDetail">
+            <summary>
+            Gets or sets the ratings Detail.
+            </summary>
+            <value>
+            The ratings.
+            </value>
+        </member>
         <member name="T:Open.GI.hypermart.Models.RatingDetails">
             <summary>
             Model for storing rating information

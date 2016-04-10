@@ -68,6 +68,9 @@ namespace Open.GI.hypermart.Controllers
             {
                 return HttpNotFound();
             }
+
+            var foo = product.RatingsDetail.Select(x => x.userID).Distinct().Count();
+
             return View(product);
         }
 

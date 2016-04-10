@@ -20,7 +20,7 @@ namespace ConsoleApplication6
             baseAddress = API_Address;
             client = new RestClient(baseAddress);
         }
-        public void sd(RatingInformationDTO Ratings)
+        public void SendRatings(RatingInformationDTO Ratings)
         { 
             client.Authenticator = new NtlmAuthenticator();
             client.AddDefaultHeader("Host", "localhost:12672");
@@ -38,10 +38,6 @@ namespace ConsoleApplication6
             var response = client.Execute<RatingInformationDTO>(request);
 
 
-            //var s = JsonConvert.SerializeObject(Ratings);
-            //request.AddBody(s);
-            //IRestResponse response = client.Execute(request);
-            // RatingToAdd
 
 
         }
