@@ -42,61 +42,68 @@ namespace Open.GI.hypermart.Controllers
         /// Gets all products.
         /// </summary>
         /// <returns></returns>
+        [HttpGet]
+        [ActionName("GetAllProducts")]
         public IQueryable<ProductDTO> GetAllProducts()
         {
             var x = from b in db.Products
                     select new ProductDTO
                     {
                         Description = b.Description,
-                        ID  = b.ID,
+                        ID = b.ID,
                         Lead = b.Lead,
-                        Tagline = b.Tagline ,
-                        Title = b.Title 
+                        Tagline = b.Tagline,
+                        Title = b.Title
                     };
-            
+
             return x;
 
         }
 
-        /// <summary>
-        /// Gets all products.
-        /// </summary>
-        /// <returns></returns>
-        public ProductDTO GetProducts(int id)
-        {
+        ///// <summary>
+        ///// Gets all products.
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //[ActionName("GetProducts")]
+        //public ProductDTO GetProducts(int id)
+        //{
           
-            Product product = db.Products.Find(id);
-            if (product == null)
-            {
-                throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-            return new ProductDTO(product);
+        //    Product product = db.Products.Find(id);
+        //    if (product == null)
+        //    {
+        //        throw new HttpResponseException(HttpStatusCode.NotFound);
+        //    }
+        //    return new ProductDTO(product);
 
-        }
+        //}
 
-        /// <summary>
-        /// Gets all files for a product.
-        /// </summary>
-        /// <returns></returns>
-        public List<FileDTO> GetFiles(int id)
-        {
-            var Result = new List<FileDTO>();
-            var f = db.Files;
-            var files = db.Files.Where(x => x.ProductID == id);
-           foreach (var item in files)
-           {
-               Result.Add(new FileDTO(item));
+        ///// <summary>
+        ///// Gets all files for a product.
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //[ActionName("GetFiles")]
+        //public List<FileDTO> GetFiles(int id)
+        //{
+        //    var Result = new List<FileDTO>();
+        //    var f = db.Files;
+        //    var files = db.Files.Where(x => x.ProductID == id);
+        //   foreach (var item in files)
+        //   {
+        //       Result.Add(new FileDTO(item));
                
-           }
+        //   }
 
-           return Result;
+        //   return Result;
 
-        }
+        //}
             
         /// <summary>
         /// Create a New Product
         /// </summary>
         [HttpPost]
+        [ActionName("PostProduct")]
         public ProductDTO PostProduct(Product itemToAdd)
         {
             try
@@ -128,6 +135,7 @@ namespace Open.GI.hypermart.Controllers
         /// <exception cref="System.Web.Http.HttpResponseException"></exception>
         /// <exception cref="System.Exception">Cannot add a product file</exception>
         [HttpPost]
+        [ActionName("PostProductFile")]
         public FileDTO PostProductFile(int ProductID,Open.GI.hypermart.Models.File FileToAdd)
         {
             try
@@ -159,6 +167,7 @@ namespace Open.GI.hypermart.Controllers
         /// <param name="FileToAdd"></param>
         /// <returns></returns>
         [HttpPost]
+        [ActionName("AddFile")]
         public FileDTO AddFile(int ProductID, Open.GI.hypermart.Models.File FileToAdd )
         {
             var AddedFile = db.Files.Add(FileToAdd);
@@ -181,6 +190,7 @@ namespace Open.GI.hypermart.Controllers
         /// </summary>
         /// <param name="ProductID">The product identifier.</param>
         [HttpPost]
+        [ActionName("DeleteProduct")]
         public void DeleteProduct(int ProductID )
         {
             var productToDelete =  db.Products.Find(ProductID);
@@ -191,14 +201,13 @@ namespace Open.GI.hypermart.Controllers
             var res = db.Products.Remove(productToDelete);
             db.SaveChanges();
         }
-
-
-        
+                
         /// <summary>
         /// Add a Screenshot to an Product
         /// </summary>
         /// <param name="ProductID"></param>
         [HttpPost]
+        [ActionName("AddScreenShot")]
         public void AddScreenShot(int ProductID)
         {
             var result = new HttpResponseMessage(HttpStatusCode.OK);
@@ -224,6 +233,59 @@ namespace Open.GI.hypermart.Controllers
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotAcceptable, "This request is not properly formatted"));
             }
         }
+
+        /// <summary>
+        /// Gets the ratings.
+        /// </summary>
+        /// <returns></returns>
+        [HttpGet]
+        [ActionName("GetRatings")]
+        public RatingInformationDTO GetRatings()
+        {
+            RatingInformationDTO RI = new RatingInformationDTO();
+            RI.Ratings.Add(new RatingDTO("Usability", 0, 5));
+            RI.Ratings.Add(new RatingDTO("Reliability", 0, 5));
+            RI.Ratings.Add(new RatingDTO("Activity", 0, 5));
+            RI.Ratings.Add(new RatingDTO("Availability", 0, 5));
+            return RI;
+        }
+
+        /// <summary>
+        /// Create a New Product Rating
+        /// </summary>
+        [HttpPost]
+        [ActionName("PostRatings")]
+        public void PostRatings(RatingInformationDTO RatingToAdd)
+        {
+            var user = RequestContext.Principal;
+
+            //try
+            //{
+
+
+            foreach (RatingDTO rating in RatingToAdd.Ratings)
+            {
+                Models.RatingDetails newRating = new Models.RatingDetails();
+                newRating.ProductID = RatingToAdd.ProductID;
+                newRating.userID = user.Identity.Name;
+                newRating.RatingCategory = rating.RatedArea;
+                newRating.Rating = rating.Score;
+                db.RatingDetails.Add(newRating);
+                db.SaveChanges();
+            }
+
+            // do stuff to store the rating here 
+
+            //catch (Exception ex)
+            //{
+            //    throw new Exception("Cannot add a rating", ex);
+            //}
+
+        }
+
+
+
+
     }
 }
 
