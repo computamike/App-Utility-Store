@@ -68,10 +68,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <EmbeddedResource Include="Scripts\jquery-2.2.2.intellisense.js" />
+    <EmbeddedResource Include="Scripts\jquery-2.2.2.js" />
+    <EmbeddedResource Include="Scripts\jquery-2.2.2.min.js" />
     <Content Include="Tasks\AppStorePublish\icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="extension.vsomanifest" />
+    <None Include="packages.config" />
+    <EmbeddedResource Include="Scripts\jquery-2.2.2.min.map" />
     <None Include="source.extension.vsixmanifest">
       <SubType>Designer</SubType>
     </None>
@@ -101,6 +106,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="Tasks\AppStorePublish\Publish.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\VSSDK\Microsoft.VsSDK.targets" Condition="'$(VSToolsPath)' != ''" />
