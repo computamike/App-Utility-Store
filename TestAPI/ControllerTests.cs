@@ -420,9 +420,7 @@ namespace TestAPI
             public IDbSet<Screenshot> Screenshots{ get; set; }
 
             public IDbSet<Rating> Ratings { get; set; }
-
-            public IDbSet<RatingDetails> RatingDetails{get;set;}
-
+           
 
             public void SaveChanges()
             {
@@ -433,9 +431,6 @@ namespace TestAPI
             {
                 // Do nothing
             }
-
-
-         
         }
 
  
