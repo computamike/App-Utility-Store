@@ -28,7 +28,7 @@ namespace ConsoleApplication6
         static void Main(string[] args)
         {
             // from the service - a ratingsInformation object will be sent to the user:
-            API_Proxy api = new API_Proxy("http://localhost:12672/api/Ratings");
+            API_Proxy api = new API_Proxy("http://localhost.fiddler:12672/api/StoreContent");
             RatingInformationDTO  RI = api.GetRatingsInformation();
             
             // Set up application

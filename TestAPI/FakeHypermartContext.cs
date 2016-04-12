@@ -44,9 +44,9 @@ namespace TestAPI
            // throw new NotImplementedException();
         }
 
-        //public void Dispose()
-        //{// do nothing
-        //    throw new NotImplementedException();
-        //}
+        public void Dispose()
+        {// do nothing
+            throw new NotImplementedException();
+        }
     }
 }
