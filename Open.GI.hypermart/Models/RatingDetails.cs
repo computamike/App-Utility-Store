@@ -52,15 +52,8 @@ namespace Open.GI.hypermart.Models
         /// <value>
         /// The rating.
         /// </value>
-        public int Rating { get; set; }
+        public int rating { get; set; }
 
-        /// <summary>
-        /// Gets or sets the rating (out of).
-        /// </summary>
-        /// <value>
-        /// The rating.
-        /// </value>
-        public int OutOf { get; set; }
  
 
     }

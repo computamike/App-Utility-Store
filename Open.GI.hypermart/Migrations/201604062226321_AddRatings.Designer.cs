@@ -13,7 +13,7 @@ namespace Open.GI.hypermart.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201604082352403_AddRatings"; }
+            get { return "201604062226321_AddRatings"; }
         }
         
         string IMigrationMetadata.Source
