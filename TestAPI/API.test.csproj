@@ -182,7 +182,7 @@
     <EmbeddedResource Include="img100.jpg" />
     <EmbeddedResource Include="img101.png" />
     <EmbeddedResource Include="img102.jpg" />
-    <Content Include="QUnitTest.js" />
+    <Content Include="QUnit.Test.js" />
     <Content Include="scripts\boot.js" />
     <Content Include="scripts\console.js" />
     <Content Include="scripts\jasmine-html.js" />
