@@ -19,6 +19,9 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
     public class ModelDescriptionGenerator
     {
         // Modify this to support more data annotation attributes.
+        /// <summary>
+        /// The annotation text generator
+        /// </summary>
         private readonly IDictionary<Type, Func<object, string>> AnnotationTextGenerator = new Dictionary<Type, Func<object, string>>
         {
             { typeof(RequiredAttribute), a => "Required" },
@@ -85,7 +88,6 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
         };
 
         private Lazy<IModelDocumentationProvider> _documentationProvider;
-
         /// <summary>
         /// Initializes a new instance of the <see cref="ModelDescriptionGenerator"/> class.
         /// </summary>
@@ -100,7 +102,6 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
             _documentationProvider = new Lazy<IModelDocumentationProvider>(() => config.Services.GetDocumentationProvider() as IModelDocumentationProvider);
             GeneratedModels = new Dictionary<string, ModelDescription>(StringComparer.OrdinalIgnoreCase);
         }
-
         /// <summary>
         /// Gets the generated models.
         /// </summary>
@@ -116,7 +117,6 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
                 return _documentationProvider.Value;
             }
         }
-
         /// <summary>
         /// Gets the or create model description.
         /// </summary>

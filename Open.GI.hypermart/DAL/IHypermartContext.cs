@@ -44,6 +44,13 @@ namespace Open.GI.hypermart.DAL
         /// </value>
         System.Data.Entity.IDbSet<Open.GI.hypermart.Models.Rating> Ratings { get; set; }
 
+        /// <summary>
+        /// Gets or sets the rating details.
+        /// </summary>
+        /// <value>
+        /// The rating details.
+        /// </value>
+        System.Data.Entity.IDbSet<Open.GI.hypermart.Models.RatingDetails> RatingDetails { get; set; }
 
 
         /// <summary>

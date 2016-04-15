@@ -36,15 +36,22 @@ namespace TestAPI
 
         public IDbSet<Rating > Ratings{ get; set; }
 
+        public IDbSet<RatingDetails> RatingDetails{ get; set; }
+
+
         void IHypermartContext.SaveChanges()
         {
             // Do nothing 
            // throw new NotImplementedException();
         }
 
-        public void Dispose()
-        {// do nothing
-            throw new NotImplementedException();
+        //public void Dispose()
+        //{// do nothing
+        //    throw new NotImplementedException();
+        //}
+
+
+        
         }
     }
-}
+ 

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using Microsoft.Owin.Hosting;
 using System.Net.Http;
+using Microsoft.Owin.Host.HttpListener;
 namespace TestAPI
 {
     /// <summary>
@@ -21,6 +22,11 @@ namespace TestAPI
         [SetUp]
         public void Setup()
         {
+            // This uber silly code is needed to ensure the Owin HttpListener assembly 
+            // is properly copied to the output directory by using it, utterly redonkulous.
+            var uberSillyNecessity = typeof(OwinHttpListener);
+            if (uberSillyNecessity != null) { }
+
             _webApp = WebApp.Start<APIHost>(Address + port);
             client = new HttpClient { BaseAddress = new Uri(Address + port) };
         }

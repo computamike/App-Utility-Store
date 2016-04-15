@@ -8,7 +8,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
     public class TextSample
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="TextSample"/> class.
+        /// Initializes a new instance of the <see cref="TextSample" /> class.
         /// </summary>
         /// <param name="text">The text.</param>
         /// <exception cref="System.ArgumentNullException">text</exception>

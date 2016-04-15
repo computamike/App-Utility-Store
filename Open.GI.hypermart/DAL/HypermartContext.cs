@@ -55,7 +55,15 @@ namespace Open.GI.hypermart.DAL
         /// The ratings.
         /// </value>
         public virtual IDbSet<Rating> Ratings { get; set; }
-        
+        /// <summary>
+        /// Gets or sets the rating details.
+        /// </summary>
+        /// <value>
+        /// The rating details.
+        /// </value>
+        public virtual IDbSet<RatingDetails> RatingDetails { get; set; }
+
+
         /// <summary>
         /// This method is called when the model for a derived context has been initialized, but
         /// before the model has been locked down and used to initialize the context.  The default

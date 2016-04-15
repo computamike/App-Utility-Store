@@ -8,9 +8,10 @@ namespace Open.GI.hypermart.Areas.HelpPage
     public class ImageSample
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ImageSample"/> class.
+        /// Initializes a new instance of the <see cref="ImageSample" /> class.
         /// </summary>
         /// <param name="src">The URL of an image.</param>
+        /// <exception cref="System.ArgumentNullException">src</exception>
         public ImageSample(string src)
         {
             if (src == null)
