@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="build-tasks" Version="0.0.1" Language="en-US" Publisher="mikehingley" />
+    <DisplayName>TPT - Titanium Publishing Tools</DisplayName>
+    <Description xml:space="preserve">Publish built files to the in-development app store.</Description>
+    <Categories>Build and release</Categories>
+    <Icon>images\icon.png</Icon>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="http://www.titaniumbunker.com" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Issues" Value="https://github.com/computamike/App-Utility-Store" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/computamike/App-Utility-Store" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Repository" Value="https://github.com/computamike/App-Utility-Store" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#5c2d91" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+    </Properties>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,13.0)" />
+  </Installation>
+  <Dependencies>
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Services.Icons.Default" d:Source="File" Path="images/icon.png" Addressable="true"/>
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" d:Source="File" Path="docs/extension-overview.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

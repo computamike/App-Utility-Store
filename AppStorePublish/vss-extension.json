@@ -1,0 +1,36 @@
+{
+    "manifestVersion": 1,
+    "id": "build-tasks",
+    "name": "TPT - Titanium Publishing Tools",
+    "version": "0.0.1",
+    "publisher": "mikehingley",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "Publish built files to the in-development Enterprise App Store.",
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "images\\icon.png"        
+    },
+    "files": [
+        {
+            "path": "AppStorePublish"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "7af0d1a6d13f478fbcdd6a1b99258d56",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "Send to AppStore"
+            }
+        }
+	]
+}
