@@ -177,18 +177,36 @@
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="content\jasmine.css" />
-    <Content Include="content\qunit.css" />
+    <Content Include="content\jasmine.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="content\qunit.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="img100.jpg" />
     <EmbeddedResource Include="img101.png" />
     <EmbeddedResource Include="img102.jpg" />
-    <Content Include="QUnit.Test.js" />
-    <Content Include="scripts\boot.js" />
-    <Content Include="scripts\console.js" />
-    <Content Include="scripts\jasmine-html.js" />
-    <Content Include="scripts\jasmine.js" />
-    <Content Include="scripts\qunit.js" />
-    <Content Include="scripts\_references.js" />
+    <Content Include="QUnit.Test.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\boot.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\console.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\jasmine-html.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\jasmine.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\qunit.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scripts\_references.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
