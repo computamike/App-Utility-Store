@@ -2,14 +2,12 @@ namespace Open.GI.hypermart.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;
-
     /// <summary>
-    /// Apply migrations - Ratings
+    /// Ratings Support
     /// </summary>
     /// <seealso cref="System.Data.Entity.Migrations.DbMigration" />
-    public partial class AddRatings : DbMigration
+    public partial class Ratings : DbMigration
     {
-
         /// <summary>
         /// Operations to be performed during the upgrade process.
         /// </summary>
@@ -20,10 +18,12 @@ namespace Open.GI.hypermart.Migrations
                 c => new
                     {
                         userID = c.String(nullable: false, maxLength: 128),
+                        RatingCategory = c.String(nullable: false, maxLength: 128),
                         ProductID = c.Int(nullable: false),
+                        rating = c.Int(nullable: false),
                         Comments = c.String(),
                     })
-                .PrimaryKey(t => new { t.userID, t.ProductID })
+                .PrimaryKey(t => new { t.userID, t.RatingCategory, t.ProductID })
                 .ForeignKey("dbo.Products", t => t.ProductID, cascadeDelete: true)
                 .Index(t => t.ProductID);
             
@@ -41,7 +41,6 @@ namespace Open.GI.hypermart.Migrations
                 .Index(t => t.ProductID);
             
         }
-
         /// <summary>
         /// Operations to be performed during the downgrade process.
         /// </summary>

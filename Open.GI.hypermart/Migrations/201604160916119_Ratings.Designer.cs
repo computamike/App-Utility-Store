@@ -7,13 +7,13 @@ namespace Open.GI.hypermart.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddRatings : IMigrationMetadata
+    public sealed partial class Ratings : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddRatings));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Ratings));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604062226321_AddRatings"; }
+            get { return "201604160916119_Ratings"; }
         }
         
         string IMigrationMetadata.Source

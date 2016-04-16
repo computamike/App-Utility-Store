@@ -2213,18 +2213,18 @@
             Operations to be performed during the downgrade process.
             </summary>
         </member>
-        <member name="T:Open.GI.hypermart.Migrations.AddRatings">
+        <member name="T:Open.GI.hypermart.Migrations.Ratings">
             <summary>
-            Apply migrations - Ratings
+            Ratings Support
             </summary>
             <seealso cref="T:System.Data.Entity.Migrations.DbMigration"/>
         </member>
-        <member name="M:Open.GI.hypermart.Migrations.AddRatings.Up">
+        <member name="M:Open.GI.hypermart.Migrations.Ratings.Up">
             <summary>
             Operations to be performed during the upgrade process.
             </summary>
         </member>
-        <member name="M:Open.GI.hypermart.Migrations.AddRatings.Down">
+        <member name="M:Open.GI.hypermart.Migrations.Ratings.Down">
             <summary>
             Operations to be performed during the downgrade process.
             </summary>
