@@ -160,24 +160,30 @@
 }
 
 <table class="table">
-        @foreach (var item in res.Ratings)
+    @if (Model.RatingsDetail.Count > 0)
+    {
+        foreach (var item in res.Ratings)
         {
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.RatedArea)</td>
                 @{
-            var s = item.RatedArea;
-            var avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea).Average(z => z.Rating);
-             
+                    var s = item.RatedArea;
+                    var avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea).Average(z => z.rating);
                 }
-
                 <td>
-                
-                    <input id="input-7-md" class="rating rating-loading" value="3" data-min="0" data-max="5" data-step="0.5" data-size="md">
+                <input id="input-7-md" class="rating rating-loading" value="3" data-min="0" data-max="5" data-step="0.5" data-size="md">
+                @(avg) / @Html.DisplayFor(modelItem => item.OutOf)
+                </td>
 
-                @(avg) / @Html.DisplayFor(modelItem => item.OutOf)</td>
-                 
             </tr>
         }
+    }
+    else 
+    {
+    <tr>NO RATINGS</tr>
+    }
+
+
 </table>
 
 
