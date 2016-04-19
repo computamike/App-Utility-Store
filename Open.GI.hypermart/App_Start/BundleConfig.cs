@@ -48,11 +48,10 @@ namespace Open.GI.hypermart
 
             // Adding support for Star Rating...
             bundles.Add(new ScriptBundle("~/bundles/starrating").Include(
-                "~/Scripts/bootstrap-star-rating/js/star-rating.js"));
+                "~/Scripts/star-rating/star-rating.js"));
             
             var SRSB = new StyleBundle("~/bundles/star-rating");
-            SRSB.Include("~/Scripts/star-rating/star-rating.css",
-                     "~/Scripts/bootstrap-star-rating/css/star-rating.css");
+            SRSB.Include("~/Scripts/star-rating/star-rating.css");
             bundles.Add(SRSB);
 
             // Set EnableOptimizations to false for debugging. For more information,
