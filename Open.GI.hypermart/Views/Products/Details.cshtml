@@ -220,15 +220,9 @@
                 <div class="row">
                     <div class="col-md-1">@item.Key</div>
                     <div class="col-md-11">
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped active" role="progressbar"
-                                 aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:@perdnt%">
-                                @item.Value
-                            </div>
-                        </div>
+                        <input id="input-id" data-displayonly="true" value="@item.Value" data-show-clear="true" data-show-caption="false" data-size="xs" name="input-1" data-theme="krajee-fa" class="rating rating-loading" data-animate="false" data-min="0" data-stars="5" data-max="5" data-step="1"> 
                     </div>
                 </div>
-
             }
 
 
@@ -238,23 +232,10 @@
     </div>
 
 <span class="star-rating">  
-    <input type="radio" name="rating" value="1"><i></i> 
-    <input type="radio" name="rating" value="2"><i></i>    
-    <input type="radio" name="rating" value="3"><i></i>
-    <input type="radio" name="rating" value="4"><i></i>
-    <input type="radio" name="rating" value="5"><i></i>
-    <input type="radio" name="rating" value="6"><i></i>
-    <input type="radio" name="rating" value="7"><i></i>
-    <input type="radio" name="rating" value="8"><i></i>
-    <input type="radio" name="rating" value="9"><i></i>
-    <input type="radio" name="rating" value="10"><i></i>
-    <input type="radio" name="rating" value="11"><i></i>
-    <input type="radio" name="rating" value="12"><i></i>
-    <input type="radio" name="rating" value="13"><i></i>
-    <input type="radio" name="rating" value="14"><i></i>
-    <input type="radio" name="rating" value="15"><i></i>
-</span>
+    <label for="input-1" class="control-label">Rate This</label>
+     <input id="foobar" data-show-clear="true" data-show-caption="false" data-size="xs" name="input-1" data-theme="krajee-fa" class="rating rating-loading" data-animate="false" data-min="0" data-stars="5" data-max="5" data-step="1"></span>
 
+     
      
         <div class="row">
 
@@ -265,56 +246,100 @@
     @foreach (var item in res.Ratings)
     {
         <div class="row">
-            <div class="col-md-2">@item.RatedArea </div>
+            <div class="col-md-2">@item.RatedArea</div>
             <div class="col-lg-10">
                 <span class="star-rating">
-                    @for (int i = 0; i < 15; i++)
-                    {
-                        <input type="radio" name="@item.RatedArea" value="@i"><i></i>
-                    }
-        
-                </span>
-
+                    <input id="input-id"  data-rated-area="@item.RatedArea" data-show-clear="true" data-show-caption="false" data-size="xs" name="input-1" data-theme="krajee-fa" class="foobar rating rating-loading" data-animate="false" data-min="0" data-stars="5" data-max="5" data-step="1">
+                 </span>
             </div>
         </div>
-
     }
 
-
-        <div class="row">
-
-            <div class="col-lg-12">
-                <h3 class="page-header">Related Projects</h3>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
-                </a>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="#">
-                    <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
-                </a>
-            </div>
-
-        </div>
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header">Related Projects</h3>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <a href="#">
+            <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
+        </a>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <a href="#">
+            <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
+        </a>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <a href="#">
+            <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
+        </a>
+    </div>
+    <div class="col-sm-3 col-xs-6">
+        <a href="#">
+            <img class="img-responsive portfolio-item" src="http://www.fillmurray.com/500/300" alt="">
+        </a>
+    </div>
+</div>
 
 
         <p>
             @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
             @Html.ActionLink("Back to List", "Index")
         </p>
+ 
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/starrating")
+<script type="text/javascript">
+    console.log("hello world");
+
+    $(".foobar").on('rating.change', function (event, value, caption) {
+        var area = event.currentTarget.attributes['data-rated-area'].nodeValue;
+        var OutOf = 5;
+        var score = value;
+        var Data =
+            {
+
+                "ProductID": 0, "FileID": 0, "Ratings": [{ "RatedArea": "Usability", "Score": 0, "OutOf": 5 },
+                { "RatedArea": "Reliability", "Score": 0, "OutOf": 5 },
+                { "RatedArea": "Activity", "Score": 0, "OutOf": 5 },
+                { "RatedArea": "Availability", "Score": 0, "OutOf": 5 }],
+                "CommentTitle": null,
+                "Comment": null
+            }
+
+        var Data =
+   {
+       "ProductID": 1,
+       "FileID": 0,
+       "Ratings": [
+           { "RatedArea": area, "Score": score, "OutOf": 5 }
+       ],
+       "CommentTitle": null,
+       "Comment": null
+   }
+ 
+
+        var markers = [];
+        $.ajax({
+            url: '/api/Ratings',
+            type: 'POST',
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify(Data),
+            success: function (data) { alert(data); },
+            failure: function (errMsg) { alert(errMsg); }
+        });
+
+        console.log("Rating...");
+ 
+    });
+
+    $(".foobar").on('rating.clear', function (event) {
+        debugger;
+        console.log("rating.clear");
+    });
+
+
+
+
+</script>
