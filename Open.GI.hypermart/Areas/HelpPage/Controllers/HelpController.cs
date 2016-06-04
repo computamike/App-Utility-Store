@@ -9,14 +9,10 @@ namespace Open.GI.hypermart.Areas.HelpPage.Controllers
     /// <summary>
     /// The controller that will handle requests for the help page.
     /// </summary>
-    /// <seealso cref="System.Web.Mvc.Controller" />
     public class HelpController : Controller
     {
-        /// <summary>
-        /// The error view name
-        /// </summary>
         private const string ErrorViewName = "Error";
-
+ 
         /// <summary>
         /// Initializes a new instance of the <see cref="HelpController"/> class.
         /// </summary>

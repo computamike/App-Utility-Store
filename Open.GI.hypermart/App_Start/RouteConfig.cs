@@ -40,7 +40,7 @@ namespace Open.GI.hypermart
 
             routes.MapRoute(
                 name: "API Default",
-                url: "api/{controller}/{id}",
+                url: "api/{controller}/{action}/{id}",
                 defaults: new { id = UrlParameter.Optional }
                 );
 

@@ -9,7 +9,7 @@ namespace Open.GI.hypermart.Areas.HelpPage.ModelDescriptions
     public class ParameterDescription
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ParameterDescription" /> class.
+        /// Initializes a new instance of the <see cref="ParameterDescription"/> class.
         /// </summary>
         public ParameterDescription()
         {

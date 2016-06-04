@@ -1,6 +1,7 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
+using System.Web.Http;
 
 namespace Open.GI.hypermart.App_Start
 {
@@ -38,6 +39,7 @@ namespace Open.GI.hypermart.App_Start
 
             // TODO: Register your types here
             // container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterInstance<HttpConfiguration>(GlobalConfiguration.Configuration);
         }
     }
 }

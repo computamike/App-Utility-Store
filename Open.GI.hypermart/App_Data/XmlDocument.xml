@@ -83,9 +83,7 @@
             Generates an URI-friendly ID for the <see cref="T:System.Web.Http.Description.ApiDescription"/>. E.g. "Get-Values-id_name" instead of "GetValues/{id}?name={name}"
             </summary>
             <param name="description">The <see cref="T:System.Web.Http.Description.ApiDescription"/>.</param>
-            <returns>
-            The ID as a string.
-            </returns>
+            <returns>The ID as a string.</returns>
         </member>
         <member name="T:Open.GI.hypermart.Areas.HelpPage.HelpPageConfig">
             <summary>
@@ -103,12 +101,6 @@
         <member name="T:Open.GI.hypermart.Areas.HelpPage.Controllers.HelpController">
             <summary>
             The controller that will handle requests for the help page.
-            </summary>
-            <seealso cref="T:System.Web.Mvc.Controller"/>
-        </member>
-        <member name="F:Open.GI.hypermart.Areas.HelpPage.Controllers.HelpController.ErrorViewName">
-            <summary>
-            The error view name
             </summary>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.Controllers.HelpController.#ctor">
@@ -170,11 +162,6 @@
         <member name="T:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions">
             <summary>
             
-            </summary>
-        </member>
-        <member name="F:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.ApiModelPrefix">
-            <summary>
-            The API model prefix
             </summary>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.SetDocumentationProvider(System.Web.Http.HttpConfiguration,System.Web.Http.Description.IDocumentationProvider)">
@@ -297,9 +284,7 @@
             Gets the help page sample generator.
             </summary>
             <param name="config">The <see cref="T:System.Web.Http.HttpConfiguration"/>.</param>
-            <returns>
-            The help page sample generator.
-            </returns>
+            <returns>The help page sample generator.</returns>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.SetHelpPageSampleGenerator(System.Web.Http.HttpConfiguration,Open.GI.hypermart.Areas.HelpPage.HelpPageSampleGenerator)">
             <summary>
@@ -313,9 +298,7 @@
             Gets the model description generator.
             </summary>
             <param name="config">The configuration.</param>
-            <returns>
-            The <see cref="T:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"/>
-            </returns>
+            <returns>The <see cref="T:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"/></returns>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.GetHelpPageApiModel(System.Web.Http.HttpConfiguration,System.String)">
             <summary>
@@ -326,83 +309,6 @@
             <returns>
             An <see cref="T:Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel"/>
             </returns>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateApiModel(System.Web.Http.Description.ApiDescription,System.Web.Http.HttpConfiguration)">
-            <summary>
-            Generates the API model.
-            </summary>
-            <param name="apiDescription">The API description.</param>
-            <param name="config">The configuration.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateUriParameters(Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel,Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator)">
-            <summary>
-            Generates the URI parameters.
-            </summary>
-            <param name="apiModel">The API model.</param>
-            <param name="modelGenerator">The model generator.</param>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.IsBindableWithTypeConverter(System.Type)">
-            <summary>
-            Determines whether [is bindable with type converter] [the specified parameter type].
-            </summary>
-            <param name="parameterType">Type of the parameter.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.AddParameterDescription(Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel,System.Web.Http.Description.ApiParameterDescription,Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescription)">
-            <summary>
-            Adds the parameter description.
-            </summary>
-            <param name="apiModel">The API model.</param>
-            <param name="apiParameter">The API parameter.</param>
-            <param name="typeDescription">The type description.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateRequestModelDescription(Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel,Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator,Open.GI.hypermart.Areas.HelpPage.HelpPageSampleGenerator)">
-            <summary>
-            Generates the request model description.
-            </summary>
-            <param name="apiModel">The API model.</param>
-            <param name="modelGenerator">The model generator.</param>
-            <param name="sampleGenerator">The sample generator.</param>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateResourceDescription(Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel,Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator)">
-            <summary>
-            Generates the resource description.
-            </summary>
-            <param name="apiModel">The API model.</param>
-            <param name="modelGenerator">The model generator.</param>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.GenerateSamples(Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel,Open.GI.hypermart.Areas.HelpPage.HelpPageSampleGenerator)">
-            <summary>
-            Generates the samples.
-            </summary>
-            <param name="apiModel">The API model.</param>
-            <param name="sampleGenerator">The sample generator.</param>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.TryGetResourceParameter(System.Web.Http.Description.ApiDescription,System.Web.Http.HttpConfiguration,System.Web.Http.Description.ApiParameterDescription@,System.Type@)">
-            <summary>
-            Tries the get resource parameter.
-            </summary>
-            <param name="apiDescription">The API description.</param>
-            <param name="config">The configuration.</param>
-            <param name="parameterDescription">The parameter description.</param>
-            <param name="resourceType">Type of the resource.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.InitializeModelDescriptionGenerator(System.Web.Http.HttpConfiguration)">
-            <summary>
-            Initializes the model description generator.
-            </summary>
-            <param name="config">The configuration.</param>
-            <returns></returns>
-        </member>
-        <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageConfigurationExtensions.LogInvalidSampleAsError(Open.GI.hypermart.Areas.HelpPage.Models.HelpPageApiModel,System.Object)">
-            <summary>
-            Logs the invalid sample as error.
-            </summary>
-            <param name="apiModel">The API model.</param>
-            <param name="sample">The sample.</param>
         </member>
         <member name="T:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.CollectionModelDescription">
             <summary>
@@ -566,11 +472,6 @@
             Generates model descriptions for given types.
             </summary>
         </member>
-        <member name="F:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.AnnotationTextGenerator">
-            <summary>
-            The annotation text generator
-            </summary>
-        </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator.#ctor(System.Web.Http.HttpConfiguration)">
             <summary>
             Initializes a new instance of the <see cref="T:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator"/> class.
@@ -596,7 +497,6 @@
             <summary>
             Use this attribute to change the name of the <see cref="T:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescription"/> generated for a type.
             </summary>
-            <seealso cref="T:System.Attribute"/>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelNameAttribute.#ctor(System.String)">
             <summary>
@@ -859,7 +759,6 @@
             Creates a new <see cref="T:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey"/> based on media type.
             </summary>
             <param name="mediaType">The media type.</param>
-            <exception cref="T:System.ArgumentNullException">mediaType</exception>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,System.Type)">
             <summary>
@@ -867,7 +766,6 @@
             </summary>
             <param name="mediaType">The media type.</param>
             <param name="type">The CLR type.</param>
-            <exception cref="T:System.ArgumentNullException">type</exception>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey.#ctor(Open.GI.hypermart.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
             <summary>
@@ -877,14 +775,6 @@
             <param name="controllerName">Name of the controller.</param>
             <param name="actionName">Name of the action.</param>
             <param name="parameterNames">The parameter names.</param>
-            <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">sampleDirection</exception>
-            <exception cref="T:System.ArgumentNullException">
-            controllerName
-            or
-            actionName
-            or
-            parameterNames
-            </exception>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey.#ctor(System.Net.Http.Headers.MediaTypeHeaderValue,Open.GI.hypermart.Areas.HelpPage.SampleDirection,System.String,System.String,System.Collections.Generic.IEnumerable{System.String})">
             <summary>
@@ -895,7 +785,6 @@
             <param name="controllerName">Name of the controller.</param>
             <param name="actionName">Name of the action.</param>
             <param name="parameterNames">The parameter names.</param>
-            <exception cref="T:System.ArgumentNullException">mediaType</exception>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey.Equals(System.Object)">
             <summary>
@@ -942,9 +831,6 @@
             <summary>
             Gets the parameter names.
             </summary>
-            <value>
-            The parameter names.
-            </value>
         </member>
         <member name="P:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey.ParameterType">
             <summary>
@@ -958,9 +844,6 @@
             <summary>
             Gets the <see cref="P:Open.GI.hypermart.Areas.HelpPage.HelpPageSampleKey.SampleDirection"/>.
             </summary>
-            <value>
-            The sample direction.
-            </value>
         </member>
         <member name="T:Open.GI.hypermart.Areas.HelpPage.ImageSample">
             <summary>
@@ -972,7 +855,6 @@
             Initializes a new instance of the <see cref="T:Open.GI.hypermart.Areas.HelpPage.ImageSample"/> class.
             </summary>
             <param name="src">The URL of an image.</param>
-            <exception cref="T:System.ArgumentNullException">src</exception>
         </member>
         <member name="M:Open.GI.hypermart.Areas.HelpPage.ImageSample.Equals(System.Object)">
             <summary>
@@ -1291,12 +1173,6 @@
             Add a Screenshot to an Product
             </summary>
             <param name="ProductID"></param>
-        </member>
-        <member name="M:Open.GI.hypermart.Controllers.StoreContentController.GetRatings">
-            <summary>
-            Gets the ratings.
-            </summary>
-            <returns></returns>
         </member>
         <member name="M:Open.GI.hypermart.Controllers.StoreContentController.PostRatings(Open.GI.hypermart.DataTransformationObjects.RatingInformationDTO)">
             <summary>

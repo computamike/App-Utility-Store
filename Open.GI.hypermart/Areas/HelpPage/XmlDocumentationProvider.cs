@@ -34,6 +34,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
             XPathDocument xpath = new XPathDocument(documentPath);
             _documentNavigator = xpath.CreateNavigator();
         }
+
         /// <summary>
         /// Gets the documentation.
         /// </summary>
@@ -44,6 +45,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
             XPathNavigator typeNode = GetTypeNode(controllerDescriptor.ControllerType);
             return GetTagValue(typeNode, "summary");
         }
+
         /// <summary>
         /// Gets the documentation based on <see cref="T:System.Web.Http.Controllers.HttpActionDescriptor" />.
         /// </summary>
@@ -56,6 +58,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
             XPathNavigator methodNode = GetMethodNode(actionDescriptor);
             return GetTagValue(methodNode, "summary");
         }
+
         /// <summary>
         /// Gets the documentation based on <see cref="T:System.Web.Http.Controllers.HttpParameterDescriptor" />.
         /// </summary>
@@ -82,6 +85,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
 
             return null;
         }
+
         /// <summary>
         /// Gets the response documentation.
         /// </summary>
@@ -92,6 +96,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
             XPathNavigator methodNode = GetMethodNode(actionDescriptor);
             return GetTagValue(methodNode, "returns");
         }
+
         /// <summary>
         /// Gets the documentation.
         /// </summary>
@@ -105,6 +110,7 @@ namespace Open.GI.hypermart.Areas.HelpPage
             XPathNavigator propertyNode = _documentNavigator.SelectSingleNode(selectExpression);
             return GetTagValue(propertyNode, "summary");
         }
+
         /// <summary>
         /// Gets the documentation.
         /// </summary>

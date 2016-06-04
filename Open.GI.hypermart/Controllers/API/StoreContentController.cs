@@ -61,6 +61,24 @@ namespace Open.GI.hypermart.Controllers
         }
 
         ///// <summary>
+        ///// Gets the ratings.
+        ///// </summary>
+        ///// <returns></returns>
+        //[HttpGet]
+        //[ActionName("GetRatings")]
+        //public RatingInformationDTO GetRatings()
+        //{
+        //    RatingInformationDTO RI = new RatingInformationDTO();
+        //    RI.Ratings.Add(new RatingDTO("Usability", 0, 5));
+        //    RI.Ratings.Add(new RatingDTO("Reliability", 0, 5));
+        //    RI.Ratings.Add(new RatingDTO("Activity", 0, 5));
+        //    RI.Ratings.Add(new RatingDTO("Availability", 0, 5));
+        //    return RI;
+        //}
+
+
+
+        ///// <summary>
         ///// Gets all products.
         ///// </summary>
         ///// <returns></returns>
@@ -234,21 +252,6 @@ namespace Open.GI.hypermart.Controllers
             }
         }
 
-        /// <summary>
-        /// Gets the ratings.
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [ActionName("GetRatings")]
-        public RatingInformationDTO GetRatings()
-        {
-            RatingInformationDTO RI = new RatingInformationDTO();
-            RI.Ratings.Add(new RatingDTO("Usability", 0, 5));
-            RI.Ratings.Add(new RatingDTO("Reliability", 0, 5));
-            RI.Ratings.Add(new RatingDTO("Activity", 0, 5));
-            RI.Ratings.Add(new RatingDTO("Availability", 0, 5));
-            return RI;
-        }
 
         /// <summary>
         /// Create a New Product Rating
