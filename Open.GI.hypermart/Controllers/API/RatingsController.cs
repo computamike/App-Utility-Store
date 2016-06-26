@@ -30,8 +30,24 @@ namespace Open.GI.hypermart.Controllers.API
             RI.Ratings.Add(new RatingDTO("Availability", 0, 5));
             return RI;
         }
+        /// <summary>
+        /// Gets my ratings.
+        /// </summary>
+        /// <param name="userID">The user identifier.</param>
+        /// <param name="productID">The product identifier.</param>
+        /// <returns></returns>
+        public RatingInformationDTO GetMyRatings(string userID, int productID)
+        {
+            var y = db.RatingDetails.Where( x=> x.ProductID == productID && x.userID == userID);
+            RatingInformationDTO RI = new RatingInformationDTO();
+            foreach (Models.RatingDetails   item in y)
+            {
+                RI.Ratings.Add(new RatingDTO(item.RatingCategory,item.rating,5));
+              
+            }
 
-
+            return RI;
+        }
 
 
         /// <summary>
@@ -53,7 +69,17 @@ namespace Open.GI.hypermart.Controllers.API
                 newRating.userID = user.Identity.Name;
                 newRating.RatingCategory = rating.RatedArea;
                 newRating.rating = rating.Score;
-                db.RatingDetails.Add(newRating);
+
+
+                if (db.RatingDetails.Any(x => x.ProductID == newRating.ProductID && x.userID == newRating.userID && x.RatingCategory == newRating.RatingCategory))
+                {
+                    db.RatingDetails.Single(x => x.ProductID == newRating.ProductID && x.userID == newRating.userID && x.RatingCategory == newRating.RatingCategory).rating = newRating.rating;
+                }
+                else
+                {
+                    db.RatingDetails.Add(newRating);
+                }
+                                
                 db.SaveChanges();
             }
             

@@ -16,12 +16,11 @@ namespace Open.GI.hypermart.Controllers
     /// <summary>
     /// This is the OpenGI API layer for interacting with the Store(Ading content etc).  Some of the calls here relating to updates and creation will require a session token.
     /// </summary>
-    public class StoreContentController : ApiController
+    public class StoreContentControllerCopy : ApiController
     {
         private IHypermartContext db = new HypermartContext();
 
  
-
         /// <summary>
         /// Gets all products.
         /// </summary>
