@@ -38,7 +38,9 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Lead)
+
+            @{ Html.RenderAction("Details", "User", new { userid = item.Lead }); }
+           
         </td>
 
 

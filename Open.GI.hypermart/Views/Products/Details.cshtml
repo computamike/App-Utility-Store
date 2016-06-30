@@ -159,7 +159,7 @@
         var avg = new Double();
         if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Count() > 0)
         {
-            avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea && x.rating != 0).Average(z => z.rating);
+            avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Average(z => z.rating);
         }
         else
         {

@@ -38,7 +38,8 @@ namespace Open.GI.hypermart.Controllers.API
         /// <returns></returns>
         public RatingInformationDTO GetMyRatings(string userID, int productID)
         {
-            var y = db.RatingDetails.Where( x=> x.ProductID == productID && x.userID == userID);
+            var ImpliedUser = User.Identity.Name;
+            var y = db.RatingDetails.Where(x => x.ProductID == productID && x.userID == ImpliedUser);
             RatingInformationDTO RI = new RatingInformationDTO();
             foreach (Models.RatingDetails   item in y)
             {
