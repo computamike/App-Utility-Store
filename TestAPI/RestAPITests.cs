@@ -135,9 +135,17 @@ namespace TestAPI
         [Test]
         public void testRestCallSpecificGetByS()
         {
-                var client = new HttpClient { BaseAddress = new Uri("http://localhost:" + port) };
+            string baseAddress = "http://localhost:8088/";
+            // Start OWIN host 
+            using (WebApp.Start<APIHost>(url: baseAddress))
+            {
+                var client = new HttpClient { BaseAddress = new Uri(baseAddress) };
                 var response = client.GetAsync("/api/Values/GetByStatus?id=123").Result;
                 var body = response.Content.ReadAsStringAsync().Result;
+            
+            }
+
+
         }
     }
 }
