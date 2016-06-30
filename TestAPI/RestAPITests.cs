@@ -25,6 +25,20 @@ namespace TestAPI
         }
 
         [Test]
+        public void testMVCHomeCall()
+        {
+            const int port = 8086;
+            using (WebApp.Start<APIHost>("http://localhost:" + port))
+            {
+                var client = new HttpClient { BaseAddress = new Uri("http://localhost:" + port) };
+                var response = client.GetAsync("/home").Result;
+                var body = response.Content.ReadAsStringAsync().Result;
+                Assert.AreEqual(System.Net.HttpStatusCode.OK, response.StatusCode,"NOT OK");
+            }
+        }
+
+
+        [Test]
         public void testRestCallSpecificCall()
         {
             const int port = 8086;
