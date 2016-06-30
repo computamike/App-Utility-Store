@@ -97,5 +97,21 @@ namespace Open.GI.hypermart.Models
         /// </value>
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Screenshot> Screenshots { get; set; }
+        /// <summary>
+        /// Gets or sets the ratings.
+        /// </summary>
+        /// <value>
+        /// The ratings.
+        /// </value>
+        public virtual ICollection<Rating> Ratings{ get; set; }
+
+        /// <summary>
+        /// Gets or sets the ratings Detail.
+        /// </summary>
+        /// <value>
+        /// The ratings.
+        /// </value>
+        public virtual ICollection<RatingDetails> RatingsDetail { get; set; }
+
     }
 }

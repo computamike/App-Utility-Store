@@ -26,28 +26,43 @@ namespace Open.GI.hypermart.DAL
         /// <value>
         /// The files.
         /// </value>
-        public virtual DbSet<File> Files { get; set; }
+        public virtual IDbSet<File> Files { get; set; }
         /// <summary>
         /// Gets or sets the platforms.
         /// </summary>
         /// <value>
         /// The platforms.
         /// </value>
-        public virtual DbSet<Platform> Platforms { get; set; }
+        public virtual IDbSet<Platform> Platforms { get; set; }
         /// <summary>
         /// Gets or sets the products.
         /// </summary>
         /// <value>
         /// The products.
         /// </value>
-        public virtual DbSet<Product> Products { get; set; }
+        public virtual IDbSet<Product> Products { get; set; }
         /// <summary>
         /// Gets or sets the screenshots.
         /// </summary>
         /// <value>
         /// The screenshots.
         /// </value>
-        public virtual DbSet<Screenshot> Screenshots { get; set; }
+        public virtual IDbSet<Screenshot> Screenshots { get; set; }
+        /// <summary>
+        /// Gets or sets the ratings.
+        /// </summary>
+        /// <value>
+        /// The ratings.
+        /// </value>
+        public virtual IDbSet<Rating> Ratings { get; set; }
+        /// <summary>
+        /// Gets or sets the rating details.
+        /// </summary>
+        /// <value>
+        /// The rating details.
+        /// </value>
+        public virtual IDbSet<RatingDetails> RatingDetails { get; set; }
+
 
         /// <summary>
         /// This method is called when the model for a derived context has been initialized, but
@@ -66,15 +81,11 @@ namespace Open.GI.hypermart.DAL
         /// </remarks>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<File>()
-                .HasMany(e => e.Platforms)
-                .WithMany(e => e.Files)
-                .Map(m => m.ToTable("FilePlatform").MapLeftKey("Files_ID").MapRightKey("Platforms_ID"));
+            //modelBuilder.Entity<File>()
+            //    .HasMany(e => e.Platforms)
+            //    .WithMany(e => e.Files)
+            //    .Map(m => m.ToTable("FilePlatform").MapLeftKey("Files_ID").MapRightKey("Platforms_ID"));
 
-            modelBuilder.Entity<Product>()
-                .HasMany(e => e.Screenshots)
-                .WithOptional(e => e.Product)
-                .HasForeignKey(e => e.Product_ID);
         }
 
 
@@ -86,5 +97,8 @@ namespace Open.GI.hypermart.DAL
             base.SaveChanges();
             //throw new NotImplementedException();
         }
+
+
+       
     }
 }

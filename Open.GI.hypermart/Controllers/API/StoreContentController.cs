@@ -18,7 +18,6 @@ namespace Open.GI.hypermart.Controllers
     /// </summary>
     public class StoreContentController : ApiController
     {
-
         /// <summary>
         /// Initializes a new instance of the <see cref="StoreContentController"/> class.
         /// </summary>
@@ -38,6 +37,8 @@ namespace Open.GI.hypermart.Controllers
 
         private IHypermartContext db = new HypermartContext();
 
+ 
+
         /// <summary>
         /// Gets all products.
         /// </summary>
@@ -45,19 +46,28 @@ namespace Open.GI.hypermart.Controllers
         public IQueryable<ProductDTO> GetAllProducts()
         {
             var x = from b in db.Products
-                    select new ProductDTO(b);
-            
+                    select new ProductDTO
+                    {
+                        Description = b.Description,
+                        ID = b.ID,
+                        Lead = b.Lead,
+                        Tagline = b.Tagline,
+                        Title = b.Title
+                    };
+
             return x;
 
         }
-
+        
         /// <summary>
-        /// Gets all products.
+        /// Gets a product.
         /// </summary>
+        /// <param name="id">The identifier.</param>
         /// <returns></returns>
-        public ProductDTO GetProducts(int id)
+        /// <exception cref="HttpResponseException"></exception>
+        public ProductDTO GetProduct(int id)
         {
-          
+
             Product product = db.Products.Find(id);
             if (product == null)
             {
@@ -74,22 +84,21 @@ namespace Open.GI.hypermart.Controllers
         public List<FileDTO> GetFiles(int id)
         {
             var Result = new List<FileDTO>();
-
+            var f = db.Files;
             var files = db.Files.Where(x => x.ProductID == id);
-           foreach (var item in files)
-           {
-               Result.Add(new FileDTO(item));
-               
-           }
+            foreach (var item in files)
+            {
+                Result.Add(new FileDTO(item));
 
-           return Result;
+            }
+
+            return Result;
 
         }
             
         /// <summary>
         /// Create a New Product
         /// </summary>
-        [HttpPost]
         public ProductDTO PostProduct(Product itemToAdd)
         {
             try
@@ -98,6 +107,7 @@ namespace Open.GI.hypermart.Controllers
                 {
                     itemToAdd.Screenshots = null;
                 }
+                
                 var AddedProduct = db.Products.Add(itemToAdd);
                 db.SaveChanges();
                 return new ProductDTO(AddedProduct);
@@ -119,7 +129,6 @@ namespace Open.GI.hypermart.Controllers
         /// <returns></returns>
         /// <exception cref="System.Web.Http.HttpResponseException"></exception>
         /// <exception cref="System.Exception">Cannot add a product file</exception>
-        [HttpPost]
         public FileDTO PostProductFile(int ProductID,Open.GI.hypermart.Models.File FileToAdd)
         {
             try
@@ -151,6 +160,7 @@ namespace Open.GI.hypermart.Controllers
         /// <param name="FileToAdd"></param>
         /// <returns></returns>
         [HttpPost]
+        [ActionName("AddFile")]
         public FileDTO AddFile(int ProductID, Open.GI.hypermart.Models.File FileToAdd )
         {
             var AddedFile = db.Files.Add(FileToAdd);
@@ -167,13 +177,30 @@ namespace Open.GI.hypermart.Controllers
                 Version = AddedFile.Version 
             };
         }
+  
+        /// <summary>
+        /// Deletes the product.
+        /// </summary>
+        /// <param name="ProductID">The product identifier.</param>
+        [HttpPost]
+        [ActionName("DeleteProduct")]
+        public void DeleteProduct(int ProductID )
+        {
+            var productToDelete =  db.Products.Find(ProductID);
 
-        
+            var ps = db.Products;
+ 
+
+            var res = db.Products.Remove(productToDelete);
+            db.SaveChanges();
+        }
+                
         /// <summary>
         /// Add a Screenshot to an Product
         /// </summary>
         /// <param name="ProductID"></param>
         [HttpPost]
+        [ActionName("AddScreenShot")]
         public void AddScreenShot(int ProductID)
         {
             var result = new HttpResponseMessage(HttpStatusCode.OK);
@@ -198,6 +225,40 @@ namespace Open.GI.hypermart.Controllers
             {
                 throw new HttpResponseException(Request.CreateResponse(HttpStatusCode.NotAcceptable, "This request is not properly formatted"));
             }
+        }
+
+
+        /// <summary>
+        /// Create a New Product Rating
+        /// </summary>
+        [HttpPost]
+        [ActionName("PostRatings")]
+        public void PostRatings(RatingInformationDTO RatingToAdd)
+        {
+            var user = RequestContext.Principal;
+
+            //try
+            //{
+
+
+            foreach (RatingDTO rating in RatingToAdd.Ratings)
+            {
+                Models.RatingDetails newRating = new Models.RatingDetails();
+                newRating.ProductID = RatingToAdd.ProductID;
+                newRating.userID = user.Identity.Name;
+                newRating.RatingCategory = rating.RatedArea;
+                newRating.rating = rating.Score;
+                db.RatingDetails.Add(newRating);
+                db.SaveChanges();
+            }
+
+            // do stuff to store the rating here 
+
+            //catch (Exception ex)
+            //{
+            //    throw new Exception("Cannot add a rating", ex);
+            //}
+
         }
     }
 }

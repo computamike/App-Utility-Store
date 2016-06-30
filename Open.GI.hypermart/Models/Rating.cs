@@ -27,15 +27,24 @@ namespace Open.GI.hypermart.Models
         /// The rating category.
         /// </value>
         [Key, Column(Order = 1)]
-        public Category RatingCategory { get; set; }
+        public string RatingCategory { get; set; }
         /// <summary>
         /// Gets or sets the product identifier.
         /// </summary>
         /// <value>
         /// The product identifier.
         /// </value>
-        [ForeignKey("Product")]
+        [Key, Column(Order = 2)]
         public int ProductID { get; set; }
+
+        /// <summary>
+        /// Gets or sets the rated product.
+        /// </summary>
+        /// <value>
+        /// The rated product.
+        /// </value>
+        [ForeignKey("ProductID")]
+        public Product RatedProduct { get; set; }
 
         /// <summary>
         /// Gets or sets the rating.

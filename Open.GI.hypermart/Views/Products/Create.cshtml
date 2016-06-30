@@ -4,80 +4,7 @@
 }
 
 
-<script type="text/javascript">
-    Dropzone.options.myAwesomeDropzone = { // The camelized version of the ID of the form element
 
-        // The configuration we've talked about above
-        autoProcessQueue: false,
-        uploadMultiple: true,
-        parallelUploads: 100,
-        maxFiles: 100,
-
-        // The setting up of the dropzone
-        init: function () {
-            var myDropzone = this;
-
-            // First change the button to actually tell Dropzone to process the queue.
-            this.element.querySelector("button[type=submit]").addEventListener("click", function (e) {
-                // Make sure that the form isn't actually being sent.
-                e.preventDefault();
-                e.stopPropagation();
-                myDropzone.processQueue();
-            });
-
-            // Listen to the sendingmultiple event. In this case, it's the sendingmultiple event instead
-            // of the sending event because uploadMultiple is set to true.
-            this.on("sendingmultiple", function () {
-                // Gets triggered when the form is actually being sent.
-                // Hide the success button or the complete form.
-            });
-            this.on("successmultiple", function (files, response) {
-                // Gets triggered when the files have successfully been sent.
-                // Redirect user or notify of success.
-            });
-            this.on("errormultiple", function (files, response) {
-                // Gets triggered when there was an error sending the files.
-                // Maybe show form again, and notify user of error
-            });
-        }
-
-    }
-
-</script>
-
-@*<script type="text/javascript">
-    //File Upload response from the server
-    Dropzone.options.myAwesomeDropzone = {
-        autoProcessQueue: false,
-        uploadMultiple: true,
-        parallelUploads: 100,
-        maxFiles: 10,
-                
-        init: function () {
-            this.on("maxfilesexceeded", function (data) {
-                var res = eval('(' + data.xhr.responseText + ')');
-            });
-            this.on("addedfile", function (file) {
-                // Create the remove button
-                var removeButton = Dropzone.createElement("<button>Remove file</button>");
-                // Capture the Dropzone instance as closure.
-                var _this = this;
-                // Listen to the click event
-                removeButton.addEventListener("click", function (e) {
-                // Make sure the button click doesn't submit the form:
-                e.preventDefault();
-                e.stopPropagation();
-                // Remove the file preview.
-                _this.removeFile(file);
-                // If you want to the delete the file on the server as well,
-                    // you can do the AJAX request here.
-                });
-                // Add the button to the file preview element.
-                file.previewElement.appendChild(removeButton);
-            });
-        }
-    };
-</script>*@
 
 
 
@@ -86,7 +13,7 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm(null, null, FormMethod.Post, new {@class="dropzone",id ="my-awesome-dropzone",enctype = "multipart/form-data" }))
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @class = "dropzone", id = "dropzoneform", enctype = "multipart/form-data" }))
 {
     @Html.AntiForgeryToken()
 
@@ -105,7 +32,7 @@
         <div class="form-group">
             @Html.LabelFor(model => model.Tagline, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.EditorFor(model => model.Tagline, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.Tagline, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -118,10 +45,10 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Lead, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                @Html.EditorFor(model => model.Lead, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Lead, "", new { @class = "text-danger" })
             </div>
         </div>
 
@@ -134,18 +61,9 @@
         <div class="dropzone-previews"></div>
        
 
-
-        @*<div class="form-group">
-            @Html.LabelFor(model => model.Version, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
-                @Html.EditorFor(model => model.Version, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Version, "", new { @class = "text-danger" })
-            </div>
-        </div>*@
-
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <input type="submit" id="saveProduct" value="Create" class="btn btn-default" />
             </div>
         </div>
     </div>
@@ -157,4 +75,80 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        console.log("ready!");
+         
+        //-
+
+        Dropzone.options.dropzoneform = { // The camelized version of the ID of the form element
+
+            // The configuration we've talked about above
+            autoProcessQueue: false,
+            enqueueForUpload:false,
+            uploadMultiple: true,
+            addRemoveLinks: true,
+            maxFiles: 10,
+            parallelUploads: 10,
+            maxFilesize:1,
+            init: function ()
+            {
+                var myDropzone = this;
+                console.log("DropZone Initialization");
+
+                // Bypass the standard Submit button - process the queue first.
+                $('input[type="submit"]').on("click", function (e)
+                {
+                    e.preventDefault();
+                    e.stopPropagation
+                    if (myDropzone.files.length > 0) {
+                        myDropzone.processQueue();
+                    }
+                    else
+                    {
+                        $('form#dropzoneform').submit();
+                    }
+
+                });
+
+                myDropzone.on("addedfile", function () {
+                    $('input[type="submit"]').prop('disabled', false);
+                    // Show submit button here and/or inform user to click it.
+                });
+
+                myDropzone.on("dragstart", function () {
+                    $('input[type="submit"]').prop('disabled', true);
+                    // Show submit button here and/or inform user to click it.
+                });
+
+
+                myDropzone.on("drop", function () {
+                    $('input[type="submit"]').prop('disabled', true);
+                    // Show submit button here and/or inform user to click it.
+                });
+                myDropzone.on("successmultiple", function (files, response) {
+                    debugger;
+                    window.location.replace(response.RedirectURL);
+                    // Show submit button here and/or inform user to click it.
+                });
+
+
+
+
+            }
+
+
+        };
+
+        //-
+
+
+    });
+
+    //File Upload response from the server
+
+</script>
+
 }

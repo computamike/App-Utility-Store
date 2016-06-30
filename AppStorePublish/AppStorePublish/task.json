@@ -1,0 +1,42 @@
+{
+  "id": "7af0d1a6d13f478fbcdd6a1b99258d56",
+  "name": "CopyPublishBuildArtifacts",
+  "friendlyName": "Copy and Publish Build Artifacts",
+  "description": "Copy Build artifacts to staging folder then publish Build artifacts to the server or a file share using minimatch patterns",
+  "helpMarkDown": "[More Information](http://go.microsoft.com/fwlink/?LinkID=613725)",
+  "category": "Utility",
+  "visibility": ["Build"],
+  "author": "Microsoft Corporation",
+  "version": {
+    "Major": 1,
+    "Minor": 0,
+    "Patch": 22
+  },
+  "demands": [ ],
+  "minimumAgentVersion": "1.83.0",
+  "inputs": [
+    {
+      "name": "ApplicationStoreAddress",
+      "type": "string",
+      "label": "Path",
+      "defaultValue": "http://ogi-enterpriseappstore.azurewebsites.net/",
+      "required": false,
+      "helpMarkDown": "Store to Send files to"
+    }
+  ],
+  "instanceNameFormat": "Copy Publish Artifact: $(ArtifactName)",
+  "execution": {
+    "PowerShell": {
+      "target": "$(currentDirectory)\\CopyPublishBuildArtifacts.ps1",
+      "argumentFormat": "",
+      "workingDirectory": "$(currentDirectory)",
+      "platforms": [
+        "windows"
+      ]
+    },
+    "Node": {
+      "target": "copypublishbuildartifacts.js",
+      "argumentFormat": ""
+    }
+  }
+}

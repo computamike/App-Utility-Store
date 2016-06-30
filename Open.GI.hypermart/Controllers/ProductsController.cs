@@ -18,8 +18,28 @@ namespace Open.GI.hypermart.Controllers
     /// <seealso cref="System.Web.Mvc.Controller" />
     public class ProductsController : Controller
     {
-        private HypermartContext db = new HypermartContext();
-
+        /// <summary>
+        /// </summary>
+        /// <value>
+        /// The database.
+        /// </value>
+        public IHypermartContext db { get; set; }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductsController"/> class.
+        /// </summary>
+        public ProductsController()
+        {
+             //db = new HypermartContext();
+        }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ProductsController"/> class.
+        /// </summary>
+        /// <param name="db">The database.</param>
+        public ProductsController(IHypermartContext db)
+        {
+           this.db = db;
+        }
+        
         // GET: Products
         /// <summary>
         /// Indexes this instance.
@@ -48,6 +68,9 @@ namespace Open.GI.hypermart.Controllers
             {
                 return HttpNotFound();
             }
+
+            var foo = product.RatingsDetail.Select(x => x.userID).Distinct().Count();
+
             return View(product);
         }
 
@@ -71,16 +94,11 @@ namespace Open.GI.hypermart.Controllers
         /// <returns></returns>
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,Description,Tagline,SourceCode")] Product product)
+        public ActionResult Create([Bind(Include = "ID,Title,Description,Tagline,SourceCode,Lead,")] Product product)
         {
             if (ModelState.IsValid)
             {
-
-                db.Products.Add(product);
-                db.SaveChanges();
-              
                 // add screenshots
-
                 for (int i = 0; i < Request.Files.Count; i++)
                 {
                     HttpPostedFileBase file = Request.Files[i];
@@ -95,14 +113,24 @@ namespace Open.GI.hypermart.Controllers
                             file.InputStream.CopyTo(memoryStream);
                             Screen.ScreenShot1 = memoryStream.ToArray();
                         }
-                        db.Screenshots.Add(Screen);
-                        db.SaveChanges();
+                        product.Screenshots.Add(Screen);
                     }
                 }
                 
-                return RedirectToAction("Index");
-            }
+                db.Products.Add(product);
+                db.SaveChanges();
 
+                if (Request.Files.Count == 0)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    var t = RedirectToAction("Index");
+                    
+                    return Json(new { ErrorMessage = "", RedirectURL = Url.Action("Index",null, null, Request.Url.Scheme) });
+                }
+            }
             return View(product);
         }
 
@@ -140,8 +168,9 @@ namespace Open.GI.hypermart.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(product).State = EntityState.Modified;
-                db.SaveChanges();
+                var d = db as DbContext;
+                d.Entry(product).State = EntityState.Modified;
+                d.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(product);

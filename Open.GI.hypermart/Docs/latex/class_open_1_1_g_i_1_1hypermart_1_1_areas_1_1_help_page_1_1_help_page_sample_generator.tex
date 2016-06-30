@@ -1,0 +1,355 @@
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator}{}\section{Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator Class Reference}
+\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator}\index{Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator@{Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator}}
+
+
+This class will generate the samples for the help page.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa3984bba40389ce2ca9530e02a6a2eff}{Help\+Page\+Sample\+Generator} ()
+\begin{DoxyCompactList}\small\item\em Initializes a new instance of the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator}{Help\+Page\+Sample\+Generator} class. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ Media\+Type\+Header\+Value, object $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1ae2a75ff1221fb53031799fbf2e4e65}{Get\+Sample\+Requests} (Api\+Description api)
+\begin{DoxyCompactList}\small\item\em Gets the request body samples for a given Api\+Description. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ Media\+Type\+Header\+Value, object $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_ac1b28b1a321875fe574c8db544326551}{Get\+Sample\+Responses} (Api\+Description api)
+\begin{DoxyCompactList}\small\item\em Gets the response body samples for a given Api\+Description. \end{DoxyCompactList}\item 
+virtual I\+Dictionary$<$ Media\+Type\+Header\+Value, object $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa427225f9c3a32e667b908b071537f10}{Get\+Sample} (Api\+Description api, \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_a96790152101b7f9c7e4ff518bb45c822}{Sample\+Direction} sample\+Direction)
+\begin{DoxyCompactList}\small\item\em Gets the request or response body samples. \end{DoxyCompactList}\item 
+virtual object \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aafd6b28c8518482fe8d7826d4a36a2bf}{Get\+Action\+Sample} (string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, Type type, Media\+Type\+Formatter formatter, Media\+Type\+Header\+Value media\+Type, \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_a96790152101b7f9c7e4ff518bb45c822}{Sample\+Direction} sample\+Direction)
+\begin{DoxyCompactList}\small\item\em Search for samples that are provided directly through \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a6e94135c5b0f1c91af7a2662aa40d713}{Action\+Samples}. \end{DoxyCompactList}\item 
+virtual object \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_ae69a2233e30b8e1799fe175bc0e65821}{Get\+Sample\+Object} (Type type)
+\begin{DoxyCompactList}\small\item\em Gets the sample object that will be serialized by the formatters. First, it will look at the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1a16afd9020493bb00d793ed79d0a056}{Sample\+Objects}. If no sample object is found, it will try to create one using Default\+Sample\+Object\+Factory (which wraps an \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_object_generator}{Object\+Generator}) and other factories in \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}{Sample\+Object\+Factories}. \end{DoxyCompactList}\item 
+virtual Type \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a64f0926946de3989be80507e6189fdc8}{Resolve\+Http\+Request\+Message\+Type} (Api\+Description api)
+\begin{DoxyCompactList}\small\item\em Resolves the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. \end{DoxyCompactList}\item 
+virtual Type \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa2027a7a15a18958eb23c9a9d2407cda}{Resolve\+Type} (Api\+Description api, string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_a96790152101b7f9c7e4ff518bb45c822}{Sample\+Direction} sample\+Direction, out Collection$<$ Media\+Type\+Formatter $>$ formatters)
+\begin{DoxyCompactList}\small\item\em Resolves the type of the action parameter or return value when Http\+Request\+Message or Http\+Response\+Message is used. \end{DoxyCompactList}\item 
+virtual object \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a2612cc414813ea500d4822a4cd17731a}{Write\+Sample\+Object\+Using\+Formatter} (Media\+Type\+Formatter formatter, object value, Type type, Media\+Type\+Header\+Value media\+Type)
+\begin{DoxyCompactList}\small\item\em Writes the sample object using formatter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+I\+Dictionary$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_key}{Help\+Page\+Sample\+Key}, Type $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a62bbf2941b3a4e2db28a546ae2fc5857}{Actual\+Http\+Message\+Types}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets C\+L\+R types that are used as the content of Http\+Request\+Message or Http\+Response\+Message. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_key}{Help\+Page\+Sample\+Key}, object $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a6e94135c5b0f1c91af7a2662aa40d713}{Action\+Samples}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the objects that are used directly as samples for certain actions. \end{DoxyCompactList}\item 
+I\+Dictionary$<$ Type, object $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1a16afd9020493bb00d793ed79d0a056}{Sample\+Objects}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets the objects that are serialized as samples by the supported formatters. \end{DoxyCompactList}\item 
+I\+List$<$ Func$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator}{Help\+Page\+Sample\+Generator}, Type, object $>$ $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}{Sample\+Object\+Factories}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets factories for the objects that the supported formatters will serialize as samples. Processed in order, stopping when the factory successfully returns a non-\/ object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class will generate the samples for the help page. 
+
+
+
+Definition at line 21 of file Help\+Page\+Sample\+Generator.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa3984bba40389ce2ca9530e02a6a2eff}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Help\+Page\+Sample\+Generator@{Help\+Page\+Sample\+Generator}}
+\index{Help\+Page\+Sample\+Generator@{Help\+Page\+Sample\+Generator}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Help\+Page\+Sample\+Generator()}]{\setlength{\rightskip}{0pt plus 5cm}Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Help\+Page\+Sample\+Generator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa3984bba40389ce2ca9530e02a6a2eff}
+
+
+Initializes a new instance of the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator}{Help\+Page\+Sample\+Generator} class. 
+
+
+
+Definition at line 26 of file Help\+Page\+Sample\+Generator.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aafd6b28c8518482fe8d7826d4a36a2bf}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Action\+Sample@{Get\+Action\+Sample}}
+\index{Get\+Action\+Sample@{Get\+Action\+Sample}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Get\+Action\+Sample(string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, Type type, Media\+Type\+Formatter formatter, Media\+Type\+Header\+Value media\+Type, Sample\+Direction sample\+Direction)}]{\setlength{\rightskip}{0pt plus 5cm}virtual object Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Get\+Action\+Sample (
+\begin{DoxyParamCaption}
+\item[{string}]{controller\+Name, }
+\item[{string}]{action\+Name, }
+\item[{I\+Enumerable$<$ string $>$}]{parameter\+Names, }
+\item[{Type}]{type, }
+\item[{Media\+Type\+Formatter}]{formatter, }
+\item[{Media\+Type\+Header\+Value}]{media\+Type, }
+\item[{{\bf Sample\+Direction}}]{sample\+Direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aafd6b28c8518482fe8d7826d4a36a2bf}
+
+
+Search for samples that are provided directly through \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a6e94135c5b0f1c91af7a2662aa40d713}{Action\+Samples}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+{\em type} & The C\+L\+R type.\\
+\hline
+{\em formatter} & The formatter.\\
+\hline
+{\em media\+Type} & The media type.\\
+\hline
+{\em sample\+Direction} & The value indicating whether the sample is for a request or for a response.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sample that matches the parameters.
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa427225f9c3a32e667b908b071537f10}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample@{Get\+Sample}}
+\index{Get\+Sample@{Get\+Sample}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Get\+Sample(\+Api\+Description api, Sample\+Direction sample\+Direction)}]{\setlength{\rightskip}{0pt plus 5cm}virtual I\+Dictionary$<$Media\+Type\+Header\+Value, object$>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Get\+Sample (
+\begin{DoxyParamCaption}
+\item[{Api\+Description}]{api, }
+\item[{{\bf Sample\+Direction}}]{sample\+Direction}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa427225f9c3a32e667b908b071537f10}
+
+
+Gets the request or response body samples. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & The Api\+Description.\\
+\hline
+{\em sample\+Direction} & The value indicating whether the sample is for a request or for a response.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The samples keyed by media type.
+\end{DoxyReturn}
+
+
+Definition at line 90 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_ae69a2233e30b8e1799fe175bc0e65821}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample\+Object@{Get\+Sample\+Object}}
+\index{Get\+Sample\+Object@{Get\+Sample\+Object}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Get\+Sample\+Object(\+Type type)}]{\setlength{\rightskip}{0pt plus 5cm}virtual object Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Get\+Sample\+Object (
+\begin{DoxyParamCaption}
+\item[{Type}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_ae69a2233e30b8e1799fe175bc0e65821}
+
+
+Gets the sample object that will be serialized by the formatters. First, it will look at the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1a16afd9020493bb00d793ed79d0a056}{Sample\+Objects}. If no sample object is found, it will try to create one using Default\+Sample\+Object\+Factory (which wraps an \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_object_generator}{Object\+Generator}) and other factories in \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}{Sample\+Object\+Factories}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sample object.
+\end{DoxyReturn}
+
+
+Definition at line 178 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1ae2a75ff1221fb53031799fbf2e4e65}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample\+Requests@{Get\+Sample\+Requests}}
+\index{Get\+Sample\+Requests@{Get\+Sample\+Requests}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Get\+Sample\+Requests(\+Api\+Description api)}]{\setlength{\rightskip}{0pt plus 5cm}I\+Dictionary$<$Media\+Type\+Header\+Value, object$>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Get\+Sample\+Requests (
+\begin{DoxyParamCaption}
+\item[{Api\+Description}]{api}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1ae2a75ff1221fb53031799fbf2e4e65}
+
+
+Gets the request body samples for a given Api\+Description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & The Api\+Description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The samples keyed by media type.
+\end{DoxyReturn}
+
+
+Definition at line 69 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_ac1b28b1a321875fe574c8db544326551}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Get\+Sample\+Responses@{Get\+Sample\+Responses}}
+\index{Get\+Sample\+Responses@{Get\+Sample\+Responses}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Get\+Sample\+Responses(\+Api\+Description api)}]{\setlength{\rightskip}{0pt plus 5cm}I\+Dictionary$<$Media\+Type\+Header\+Value, object$>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Get\+Sample\+Responses (
+\begin{DoxyParamCaption}
+\item[{Api\+Description}]{api}
+\end{DoxyParamCaption}
+)}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_ac1b28b1a321875fe574c8db544326551}
+
+
+Gets the response body samples for a given Api\+Description. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & The Api\+Description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The samples keyed by media type.
+\end{DoxyReturn}
+
+
+Definition at line 79 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a64f0926946de3989be80507e6189fdc8}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Resolve\+Http\+Request\+Message\+Type@{Resolve\+Http\+Request\+Message\+Type}}
+\index{Resolve\+Http\+Request\+Message\+Type@{Resolve\+Http\+Request\+Message\+Type}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Resolve\+Http\+Request\+Message\+Type(\+Api\+Description api)}]{\setlength{\rightskip}{0pt plus 5cm}virtual Type Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Resolve\+Http\+Request\+Message\+Type (
+\begin{DoxyParamCaption}
+\item[{Api\+Description}]{api}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a64f0926946de3989be80507e6189fdc8}
+
+
+Resolves the actual type of System.\+Net.\+Http.\+Object\+Content$<$\+T$>$ passed to the System.\+Net.\+Http.\+Http\+Request\+Message in an action. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & The Api\+Description.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The type.
+\end{DoxyReturn}
+
+
+Definition at line 215 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa2027a7a15a18958eb23c9a9d2407cda}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Resolve\+Type@{Resolve\+Type}}
+\index{Resolve\+Type@{Resolve\+Type}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Resolve\+Type(\+Api\+Description api, string controller\+Name, string action\+Name, I\+Enumerable$<$ string $>$ parameter\+Names, Sample\+Direction sample\+Direction, out Collection$<$ Media\+Type\+Formatter $>$ formatters)}]{\setlength{\rightskip}{0pt plus 5cm}virtual Type Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Resolve\+Type (
+\begin{DoxyParamCaption}
+\item[{Api\+Description}]{api, }
+\item[{string}]{controller\+Name, }
+\item[{string}]{action\+Name, }
+\item[{I\+Enumerable$<$ string $>$}]{parameter\+Names, }
+\item[{{\bf Sample\+Direction}}]{sample\+Direction, }
+\item[{out Collection$<$ Media\+Type\+Formatter $>$}]{formatters}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_aa2027a7a15a18958eb23c9a9d2407cda}
+
+
+Resolves the type of the action parameter or return value when Http\+Request\+Message or Http\+Response\+Message is used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em api} & The Api\+Description.\\
+\hline
+{\em controller\+Name} & Name of the controller.\\
+\hline
+{\em action\+Name} & Name of the action.\\
+\hline
+{\em parameter\+Names} & The parameter names.\\
+\hline
+{\em sample\+Direction} & The value indicating whether the sample is for a request or a response.\\
+\hline
+{\em formatters} & The formatters.\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 234 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a2612cc414813ea500d4822a4cd17731a}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Write\+Sample\+Object\+Using\+Formatter@{Write\+Sample\+Object\+Using\+Formatter}}
+\index{Write\+Sample\+Object\+Using\+Formatter@{Write\+Sample\+Object\+Using\+Formatter}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Write\+Sample\+Object\+Using\+Formatter(\+Media\+Type\+Formatter formatter, object value, Type type, Media\+Type\+Header\+Value media\+Type)}]{\setlength{\rightskip}{0pt plus 5cm}virtual object Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Write\+Sample\+Object\+Using\+Formatter (
+\begin{DoxyParamCaption}
+\item[{Media\+Type\+Formatter}]{formatter, }
+\item[{object}]{value, }
+\item[{Type}]{type, }
+\item[{Media\+Type\+Header\+Value}]{media\+Type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a2612cc414813ea500d4822a4cd17731a}
+
+
+Writes the sample object using formatter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em formatter} & The formatter.\\
+\hline
+{\em value} & The value.\\
+\hline
+{\em type} & The type.\\
+\hline
+{\em media\+Type} & Type of the media.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Definition at line 288 of file Help\+Page\+Sample\+Generator.\+cs.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a6e94135c5b0f1c91af7a2662aa40d713}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Action\+Samples@{Action\+Samples}}
+\index{Action\+Samples@{Action\+Samples}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Action\+Samples}]{\setlength{\rightskip}{0pt plus 5cm}I\+Dictionary$<${\bf Help\+Page\+Sample\+Key}, object$>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Action\+Samples\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a6e94135c5b0f1c91af7a2662aa40d713}
+
+
+Gets the objects that are used directly as samples for certain actions. 
+
+
+
+Definition at line 45 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a62bbf2941b3a4e2db28a546ae2fc5857}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Actual\+Http\+Message\+Types@{Actual\+Http\+Message\+Types}}
+\index{Actual\+Http\+Message\+Types@{Actual\+Http\+Message\+Types}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Actual\+Http\+Message\+Types}]{\setlength{\rightskip}{0pt plus 5cm}I\+Dictionary$<${\bf Help\+Page\+Sample\+Key}, Type$>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Actual\+Http\+Message\+Types\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a62bbf2941b3a4e2db28a546ae2fc5857}
+
+
+Gets C\+L\+R types that are used as the content of Http\+Request\+Message or Http\+Response\+Message. 
+
+
+
+Definition at line 40 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Sample\+Object\+Factories@{Sample\+Object\+Factories}}
+\index{Sample\+Object\+Factories@{Sample\+Object\+Factories}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Sample\+Object\+Factories}]{\setlength{\rightskip}{0pt plus 5cm}I\+List$<$Func$<${\bf Help\+Page\+Sample\+Generator}, Type, object$>$ $>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Sample\+Object\+Factories\hspace{0.3cm}{\ttfamily [get]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}
+
+
+Gets factories for the objects that the supported formatters will serialize as samples. Processed in order, stopping when the factory successfully returns a non-\/ object. 
+
+Collection includes just \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_object_generator_a118924d1ff5f565e6e9c2893d36f35d2}{Object\+Generator.\+Generate\+Object(\+Type)} initially. Use 
+\begin{DoxyCode}
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}{SampleObjectFactories}.Insert(0, func)
+\end{DoxyCode}
+ to provide an override and 
+\begin{DoxyCode}
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a659aa13a69376385d931264d06fbd398}{SampleObjectFactories}.Add(func)
+\end{DoxyCode}
+ to provide a fallback.
+
+Definition at line 62 of file Help\+Page\+Sample\+Generator.\+cs.
+
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1a16afd9020493bb00d793ed79d0a056}{}\index{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}!Sample\+Objects@{Sample\+Objects}}
+\index{Sample\+Objects@{Sample\+Objects}!Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator@{Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}}
+\subsubsection[{Sample\+Objects}]{\setlength{\rightskip}{0pt plus 5cm}I\+Dictionary$<$Type, object$>$ Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator.\+Sample\+Objects\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\label{class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_sample_generator_a1a16afd9020493bb00d793ed79d0a056}
+
+
+Gets the objects that are serialized as samples by the supported formatters. 
+
+
+
+Definition at line 50 of file Help\+Page\+Sample\+Generator.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\hyperlink{_help_page_sample_generator_8cs}{Help\+Page\+Sample\+Generator.\+cs}\end{DoxyCompactItemize}

@@ -40,12 +40,21 @@ namespace Open.GI.hypermart
             // Adding support for DropZone
             bundles.Add(new ScriptBundle("~/bundles/dropzonescripts").Include(
                      "~/Scripts/dropzone/dropzone.js"));
-
-
+           
             var DZSB = new StyleBundle("~/bundles/dropzonecss");
             DZSB.Include("~/Scripts/dropzone/basic.css",
                      "~/Scripts/dropzone/dropzone.css");
             bundles.Add(DZSB);
+
+            // Adding support for Star Rating...
+            bundles.Add(new ScriptBundle("~/bundles/starrating").Include(
+                "~/Scripts/bootstrap-star-rating/js/star-rating.js"));
+            
+            var SRSB = new StyleBundle("~/bundles/star-rating");
+            SRSB.Include("~/Scripts/bootstrap-star-rating/css/star-rating.css");
+            SRSB.Include("~/Scripts/bootstrap-star-rating/css/theme-krajee-svg.css");
+            SRSB.Include("~/Scripts/bootstrap-star-rating/css/theme-krajee-fa.css");
+            bundles.Add(SRSB);
 
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862

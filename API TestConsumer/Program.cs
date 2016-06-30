@@ -19,6 +19,10 @@ namespace API_TestConsumer
 
             // Test that a new Product can be called.
             AddProduct();
+
+            // Test that a Rating can be provided.
+
+             
            
         }
 

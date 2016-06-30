@@ -1,0 +1,64 @@
+\hypertarget{_scripts_2profile_8js}{}\section{C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.G\+I.\+hypermart/\+Scripts/\+Profile.js File Reference}
+\label{_scripts_2profile_8js}\index{C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/\+Profile.\+js@{C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/\+Profile.\+js}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+body \hyperlink{_scripts_2profile_8js_ad62a4114b909fc90630949f615c2cd40}{popover} (\{selector\+: \textquotesingle{}\mbox{[}user-\/profile\mbox{]}\textquotesingle{}, html\+:true, placement\+: \textquotesingle{}bottom\textquotesingle{}, delay\+:\{show\+:0, hide\+:0\}, trigger\+: \textquotesingle{}click\textquotesingle{}, animation\+:false, content\+:function()\{return \$(\textquotesingle{}\#\textquotesingle{}+\$(this).attr(\textquotesingle{}profile-\/content\textquotesingle{})).html();\}\})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+var \hyperlink{_scripts_2profile_8js_a55aa2933ec8dff41c4a8c73f80099fba}{original\+Leave} = \$.\hyperlink{_scripts_2profile_8js_a7ec6ed49cdcf955711ce08378d81d713}{fn.\+popover.\+Constructor.\+prototype.\+leave}
+\item 
+\hyperlink{_scripts_2jquery-1_810_82_8min_8js_a37b9e1ceee4c6d2616fa6081784b5468}{fn} \hyperlink{_scripts_2profile_8js_ad62a4114b909fc90630949f615c2cd40}{popover} \hyperlink{_scripts_2bootstrap_8min_8js_a0545907c609a48549a0cf5d4c692f851}{Constructor} \hyperlink{_scripts_2jquery-1_810_82_8js_ab5e5d0976552f788d31448ed049ae4a4}{prototype} \hyperlink{_scripts_2profile_8js_a7ec6ed49cdcf955711ce08378d81d713}{leave}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_scripts_2profile_8js_ad62a4114b909fc90630949f615c2cd40}{}\index{Scripts/profile.\+js@{Scripts/profile.\+js}!popover@{popover}}
+\index{popover@{popover}!Scripts/profile.\+js@{Scripts/profile.\+js}}
+\subsubsection[{popover(\lcurly{}selector\+: \textquotesingle{}[user-\/profile]\textquotesingle{}, html\+:true, placement\+: \textquotesingle{}bottom\textquotesingle{}, delay\+:\lcurly{}show\+:0, hide\+:0\rcurly{}, trigger\+: \textquotesingle{}click\textquotesingle{}, animation\+:false, content\+:function()\lcurly{}return \$(\textquotesingle{}\#\textquotesingle{}+\$(this).\+attr(\textquotesingle{}profile-\/content\textquotesingle{})).\+html();\rcurly{}\rcurly{})}]{\setlength{\rightskip}{0pt plus 5cm}body popover (
+\begin{DoxyParamCaption}
+\item[{\{selector\+: \textquotesingle{}\mbox{[}user-\/profile\mbox{]}\textquotesingle{}, html\+:true, placement\+: \textquotesingle{}bottom\textquotesingle{}, delay\+:\{show\+:0, hide\+:0\}, trigger\+: \textquotesingle{}click\textquotesingle{}, animation\+:false, content\+:function()\{return \$(\textquotesingle{}\#\textquotesingle{}+\$(this).attr(\textquotesingle{}profile-\/content\textquotesingle{})).html();\}\}}]{}
+\end{DoxyParamCaption}
+)}\label{_scripts_2profile_8js_ad62a4114b909fc90630949f615c2cd40}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_scripts_2profile_8js_a7ec6ed49cdcf955711ce08378d81d713}{}\index{Scripts/profile.\+js@{Scripts/profile.\+js}!leave@{leave}}
+\index{leave@{leave}!Scripts/profile.\+js@{Scripts/profile.\+js}}
+\subsubsection[{leave}]{\setlength{\rightskip}{0pt plus 5cm}{\bf fn} {\bf popover} {\bf Constructor} {\bf prototype} leave}\label{_scripts_2profile_8js_a7ec6ed49cdcf955711ce08378d81d713}
+{\bfseries Initial value\+:}
+\begin{DoxyCode}
+= \textcolor{keyword}{function} (obj) \{
+    var \textcolor{keyword}{self} = obj instanceof this.constructor ?
+        obj : $(obj.currentTarget)[this.type](this.getDelegateOptions()).data(\textcolor{stringliteral}{'bs.'} + this.type)
+    var container, timeout;
+
+    \hyperlink{_scripts_2profile_8js_a55aa2933ec8dff41c4a8c73f80099fba}{originalLeave}.call(\textcolor{keyword}{this}, obj);
+
+    \textcolor{keywordflow}{if} (obj.currentTarget) \{
+        container = $(obj.currentTarget).siblings(\textcolor{stringliteral}{'.popover'})
+        timeout = \textcolor{keyword}{self}.timeout;
+        container.one(\textcolor{stringliteral}{'mouseenter'}, \textcolor{keyword}{function} () \{
+            
+            clearTimeout(timeout);
+            
+            container.one(\textcolor{stringliteral}{'mouseleave'}, \textcolor{keyword}{function} () \{
+                $.fn.popover.Constructor.prototype.leave.call(\textcolor{keyword}{self}, \textcolor{keyword}{self});
+            \});
+        \})
+    \}
+\}
+\end{DoxyCode}
+
+
+Definition at line 2 of file Profile.\+js.
+
+\hypertarget{_scripts_2profile_8js_a55aa2933ec8dff41c4a8c73f80099fba}{}\index{Scripts/profile.\+js@{Scripts/profile.\+js}!original\+Leave@{original\+Leave}}
+\index{original\+Leave@{original\+Leave}!Scripts/profile.\+js@{Scripts/profile.\+js}}
+\subsubsection[{original\+Leave}]{\setlength{\rightskip}{0pt plus 5cm}var original\+Leave = \$.{\bf fn.\+popover.\+Constructor.\+prototype.\+leave}}\label{_scripts_2profile_8js_a55aa2933ec8dff41c4a8c73f80099fba}
+
+
+Definition at line 1 of file Profile.\+js.
+

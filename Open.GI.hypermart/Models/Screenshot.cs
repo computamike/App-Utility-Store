@@ -19,13 +19,6 @@ namespace Open.GI.hypermart.Models
         /// </value>
         public int ID { get; set; }
 
-        /// <summary>
-        /// Gets or sets the product identifier.
-        /// </summary>
-        /// <value>
-        /// The product identifier.
-        /// </value>
-        public int ProductID { get; set; }
 
         /// <summary>
         /// Gets or sets the screen shot1.
@@ -42,7 +35,7 @@ namespace Open.GI.hypermart.Models
         /// <value>
         /// The product_ identifier.
         /// </value>
-        public int? Product_ID { get; set; }
+        public int ProductID { get; set; }
 
         /// <summary>
         /// Gets or sets the product.
@@ -50,6 +43,6 @@ namespace Open.GI.hypermart.Models
         /// <value>
         /// The product.
         /// </value>
-        public virtual Product Product { get; set; }
+        public Product Product { get; set; }
     }
 }

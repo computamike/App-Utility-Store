@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     @Styles.Render("~/bundles/css")
     @Styles.Render("~/bundles/dropzonecss")
+    @Styles.Render("~/bundles/star-rating")
     @Scripts.Render("~/bundles/modernizr")
+
     <meta name="description" content="The description of my page" />
 </head>
 <body>
@@ -44,6 +46,9 @@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/dropzonescripts")
+
+ 
     @RenderSection("scripts", required: false)
+ 
 </body>
 </html>

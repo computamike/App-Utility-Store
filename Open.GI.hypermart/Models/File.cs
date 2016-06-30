@@ -75,7 +75,7 @@ namespace Open.GI.hypermart.Models
         /// <value>
         /// The product identifier.
         /// </value>
-        public int? ProductID { get; set; }
+        public int ProductID { get; set; }
 
         /// <summary>
         /// Gets or sets the product.
@@ -83,7 +83,7 @@ namespace Open.GI.hypermart.Models
         /// <value>
         /// The product.
         /// </value>
-        public virtual Product Product { get; set; }
+        public Product Product { get; set; }
 
         /// <summary>
         /// Gets or sets the platforms.

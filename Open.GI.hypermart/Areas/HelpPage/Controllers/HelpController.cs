@@ -12,7 +12,7 @@ namespace Open.GI.hypermart.Areas.HelpPage.Controllers
     public class HelpController : Controller
     {
         private const string ErrorViewName = "Error";
-
+ 
         /// <summary>
         /// Initializes a new instance of the <see cref="HelpController"/> class.
         /// </summary>

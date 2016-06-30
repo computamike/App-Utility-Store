@@ -7,6 +7,8 @@ using System.Web.Http;
 using Owin;
 using Open.GI.hypermart.Controllers;
 using System.Web;
+using System.Web.Http;
+
 using System.Web.Mvc;
 using System.Web.Routing;
 
@@ -14,38 +16,26 @@ namespace TestAPI
 {
     public class APIHost
     {
-        
-        public void Configuration(IAppBuilder app)
+
+        public void Configuration(IAppBuilder appBuilder)
         {
             // Configure Web API for self-host. 
-            var config = new HttpConfiguration();
-            
-            RouteCollection routes = new RouteCollection();
-            
-            routes.MapHttpRoute(
+            HttpConfiguration config = new HttpConfiguration();
+            config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { controller="API", id = RouteParameter.Optional }
+                defaults: new { id = RouteParameter.Optional }
             );
 
-            routes.MapRoute(
+            config.Routes.MapHttpRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional });
-
-
-            foreach (RouteBase item in routes)
-            {
-
-                config.Routes.Add(System.Guid.NewGuid().ToString(), item);
-
-                 
-		 	}
+                routeTemplate: "{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+);
 
 
 
-
-            app.UseWebApi(config);
+            appBuilder.UseWebApi(config); 
         }
     }
 }
