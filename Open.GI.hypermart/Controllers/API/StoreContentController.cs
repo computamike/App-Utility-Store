@@ -10,6 +10,7 @@ using System.IO;
 using System.Drawing;
 using Open.GI.hypermart.Helpers;
 using Open.GI.hypermart.DataTransformationObjects;
+using System.Data.Entity.Validation;
 
 namespace Open.GI.hypermart.Controllers
 {
@@ -36,13 +37,12 @@ namespace Open.GI.hypermart.Controllers
         }
 
         private IHypermartContext db = new HypermartContext();
-
- 
-
+        
         /// <summary>
         /// Gets all products.
         /// </summary>
         /// <returns></returns>
+        [Route("api/StoreContent/GetAllProducts")]
         public IQueryable<ProductDTO> GetAllProducts()
         {
             var x = from b in db.Products
@@ -96,9 +96,11 @@ namespace Open.GI.hypermart.Controllers
 
         }
             
+        
         /// <summary>
         /// Create a New Product
         /// </summary>
+        [Route("api/StoreContent/PostProduct")]
         public ProductDTO PostProduct(Product itemToAdd)
         {
             try
@@ -112,10 +114,23 @@ namespace Open.GI.hypermart.Controllers
                 db.SaveChanges();
                 return new ProductDTO(AddedProduct);
               }
-            catch (Exception ex)
+            catch (DbEntityValidationException ex)
             {
 
-                throw new Exception("Cannot add a product", ex);
+                string BigError = "";
+                foreach (var validationErrors in ex.EntityValidationErrors)
+                {
+                    foreach (var validationError in validationErrors.ValidationErrors)
+                    {
+                        BigError = BigError + string.Format("Property: {0} Error: {1}...",
+                                                validationError.PropertyName,
+                                                validationError.ErrorMessage);
+    
+                    }
+                }
+
+
+                throw new Exception("Cannot add a product." + BigError, ex);
             }
 
         }

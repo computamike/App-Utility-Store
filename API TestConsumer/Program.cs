@@ -1,5 +1,6 @@
 ﻿using Open.GI.hypermart.Models;
 using RestSharp;
+using RestSharp.Authenticators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,8 +13,8 @@ namespace API_TestConsumer
     {
         static void Main(string[] args)
         {
-            ServiceReference1.StatusSoapClient sc = new ServiceReference1.StatusSoapClient();
-            var s = sc.HelloWorld();
+            //ServiceReference1.StatusSoapClient sc = new ServiceReference1.StatusSoapClient();
+            //var s = sc.HelloWorld();
             // Test that the All Products call returns all products
             TestGetAllProducts();
 
@@ -22,22 +23,25 @@ namespace API_TestConsumer
 
             // Test that a Rating can be provided.
 
-             
+            Console.ReadLine();
            
         }
 
         private static void AddProduct()
         {
-            var client = new RestClient("http://localhost:12672/api/api");
+
+            var client = new RestClient("http://localhost:12672/api/StoreContent");
+            client.Authenticator = new NtlmAuthenticator(System.Net.CredentialCache.DefaultNetworkCredentials);
 
             Product itemToAdd = new Product();
             itemToAdd.Title = "Open GI Application Store";
             itemToAdd.Description = "A discoverable way to find applications in Open GI";
             itemToAdd.Lead = @"wnet\mhingley";
             itemToAdd.Tagline = "Approved software store";
-                       
-            
-            var request = new RestRequest("AddProduct", Method.POST);
+
+
+            var request = new RestRequest("PostProduct", Method.POST);
+            request.RequestFormat = DataFormat.Json;
             request.AddObject(itemToAdd);
 
             IRestResponse response = client.Execute(request);
@@ -51,7 +55,8 @@ namespace API_TestConsumer
 
         private static void TestGetAllProducts()
         {
-            var client = new RestClient("http://localhost:12672/api/api");
+            var client = new RestClient("http://localhost:12672/api/StoreContent");
+            client.Authenticator = new NtlmAuthenticator(System.Net.CredentialCache.DefaultNetworkCredentials);
             var request = new RestRequest("GetAllProducts", Method.GET);
             var response = client.Execute(request);
             Console.WriteLine(response.Content);
