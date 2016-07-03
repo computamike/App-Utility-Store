@@ -147,6 +147,7 @@
     </Compile>
     <Compile Include="Setup.cs" />
     <Compile Include="StreamResourceInfo.cs" />
+    <Compile Include="web API tests\ratings_api_tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Open.GI.hypermart\Open.GI.hypermart.csproj">
@@ -217,6 +218,9 @@
     <Content Include="scripts\_references.js">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mvc tests\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

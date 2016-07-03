@@ -13,7 +13,7 @@ namespace Open.GI.hypermart.Controllers.API
     /// Ratings Controller
     /// </summary>
     /// <seealso cref="System.Web.Http.ApiController" />
-    public class RatingsController : ApiController
+    public class oldRatingsController : ApiController
     {
         private IHypermartContext db = new HypermartContext();
 
