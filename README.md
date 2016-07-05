@@ -11,3 +11,7 @@ This application source is hosted in GitHub, but
 * Hosting is provided by Microsoft Azure
 
 ![Build results from Visual Studio Team Services](https://raw.githubusercontent.com/computamike/App-Utility-Store/master/App%20Store%20Build%20(08-04-2016).png)
+
+# REST API
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8c2f4ed313e01eb93559)
