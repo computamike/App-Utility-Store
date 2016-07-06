@@ -15,3 +15,4 @@ This application source is hosted in GitHub, but
 # REST API
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8c2f4ed313e01eb93559)
+[![Run in Postman(Azure Hosted)](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/8c2f4ed313e01eb93559#?env%5BAzure%20Hosted%5D=W3sia2V5IjoiYmFzZXVybCIsInZhbHVlIjoiaHR0cDovL29naS1lbnRlcnByaXNlYXBwc3RvcmUuYXp1cmV3ZWJzaXRlcy5uZXQiLCJ0eXBlIjoidGV4dCIsImVuYWJsZWQiOnRydWV9XQ==)
