@@ -144,6 +144,23 @@ namespace Open.GI.hypermart.Controllers.API
             }
             base.Dispose(disposing);
         }
+
+        // GET: api/Products        
+        /// <summary>
+        /// Searches for a product.
+        /// </summary>
+        /// <returns></returns>
+        public IQueryable<Product> GetProducts(string SearchTerm)
+        {
+            var TitleMatches = db.Products.Where(x => x.Title.Contains(SearchTerm.Trim()));
+            var DescriptionMatches = db.Products.Where(x => x.Description.Contains(SearchTerm.Trim()));
+
+            var result = TitleMatches.Union(DescriptionMatches);
+            return result;
+        }
+        
+        
+        
         /// <summary>
         /// Products the exists.
         /// </summary>
@@ -153,5 +170,8 @@ namespace Open.GI.hypermart.Controllers.API
         {
             return db.Products.Count(e => e.ID == id) > 0;
         }
+    
+    
+    
     }
 }
