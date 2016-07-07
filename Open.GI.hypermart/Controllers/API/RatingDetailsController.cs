@@ -10,6 +10,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Open.GI.hypermart.DAL;
 using Open.GI.hypermart.Models;
+using Open.GI.hypermart.DataTransformationObjects;
 
 namespace Open.GI.hypermart.Controllers.API
 {
@@ -49,14 +50,18 @@ namespace Open.GI.hypermart.Controllers.API
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
         [ResponseType(typeof(RatingDetails))]
-        public IHttpActionResult GetRatingDetails(string id)
+        public IHttpActionResult GetRatingDetails(int id)
         {
-            RatingDetails ratingDetails = db.RatingDetails.Find(id);
+
+            var ImpliedUser = User.Identity.Name;
+            var ratingDetails = db.RatingDetails.Where(x => x.ProductID == id && x.userID == ImpliedUser);
+             
+            
             if (ratingDetails == null)
             {
                 return NotFound();
             }
-
+        
             return Ok(ratingDetails);
         }
 
@@ -100,6 +105,8 @@ namespace Open.GI.hypermart.Controllers.API
 
             return StatusCode(HttpStatusCode.NoContent);
         }
+
+ 
 
         // POST: api/RatingDetails        
         /// <summary>
