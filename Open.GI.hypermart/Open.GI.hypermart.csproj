@@ -202,8 +202,8 @@
     <Compile Include="Attributes\StoreAttribute.cs" />
     <Compile Include="Controllers\API\FilesController.cs" />
     <Compile Include="Controllers\API\ProductsController.cs" />
-    <Compile Include="Controllers\API\oldRatingsController.cs" />
     <Compile Include="Controllers\API\RatingDetailsController.cs" />
+    <Compile Include="Controllers\API\RatingsController.cs" />
     <Compile Include="Controllers\API\ScreenshotsController.cs" />
     <Compile Include="Controllers\API\StoreContentController.cs" />
     <Compile Include="Controllers\API\UserController.cs" />

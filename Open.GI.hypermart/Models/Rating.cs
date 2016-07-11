@@ -52,6 +52,8 @@ namespace Open.GI.hypermart.Models
         /// <value>
         /// The rating.
         /// </value>
+        /// 
+        //TODO : This should be a double.
         public int rating { get; set; }
 
         /// <summary>

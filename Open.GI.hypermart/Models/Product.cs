@@ -5,11 +5,12 @@ namespace Open.GI.hypermart.Models
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
+    using System.Linq;
 
     /// <summary>
     /// Product Model Class
     /// </summary>
-    public partial class Product
+    public  class Product
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Product"/> class.
@@ -17,6 +18,8 @@ namespace Open.GI.hypermart.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Product()
         {
+            //AverageRating = new List<RatingDetails>();
+            MyRating    = new List<RatingDetails>();
             Files = new HashSet<File>();
             Screenshots = new HashSet<Screenshot>();
         }
@@ -112,6 +115,62 @@ namespace Open.GI.hypermart.Models
         /// The ratings.
         /// </value>
         public virtual ICollection<RatingDetails> RatingsDetail { get; set; }
+
+        /// <summary>
+        /// Gets the average rating.
+        /// </summary>
+        /// <value>
+        /// The average rating.
+        /// </value>
+        [NotMapped]
+        public virtual ICollection<RatingDetails> AverageRating
+        {
+            get {
+                //return 9876;
+                // work out the average based on the ratings...
+                List<RatingDetails> AverageResults = new List<RatingDetails>();
+                // 1. Get Rating Areas...
+                var RatingAreas = this.Ratings.Select(x => x.RatingCategory).Distinct();
+                foreach (var Area in RatingAreas)
+                {
+                    var avg = this.Ratings.Where(x => x.RatingCategory == Area).Average(z => z.rating);
+                    AverageResults.Add(new RatingDetails() { ProductID = this.ID, RatingCategory = Area, rating = (int)avg });
+                }
+
+                return AverageResults;
+                //foreach (var item in this.Ratings)
+                //{
+                //    var avg = new Double();
+                //    if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Count() > 0)
+                //    {
+                //        avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Average(z => z.rating);
+                //    }
+                //    else
+                //    {
+                //        avg = 0;
+                //    }
+
+                //    AvgRatings.Add(item.RatedArea, avg);
+                //}
+
+
+            }
+
+        }
+        /// <summary>
+        /// Gets my rating.
+        /// </summary>
+        /// <value>
+        /// My rating.
+        /// </value>
+        [NotMapped]
+        public virtual ICollection<RatingDetails> MyRating
+        {
+            get;
+            set;
+        }
+
+       
 
     }
 }

@@ -69,7 +69,16 @@ namespace Open.GI.hypermart.Controllers
                 return HttpNotFound();
             }
 
-            var foo = product.RatingsDetail.Select(x => x.userID).Distinct().Count();
+            //Populate the Ratings
+            List<RatingDetails> result = new List<RatingDetails>();
+            var user = User.Identity.Name;
+            var myratings = product.Ratings.Where(x => x.userID == user).OrderBy(x => x.RatingCategory);
+            foreach (Rating Area in myratings)
+            {
+                result.Add(new RatingDetails() { ProductID = product.ID, RatingCategory = Area.RatingCategory, rating = Area.rating, userID = Area.userID });
+            }
+            product.MyRating = result; 
+
 
             return View(product);
         }

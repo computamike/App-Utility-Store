@@ -20,6 +20,14 @@ namespace Open.GI.hypermart.Controllers.API
     public class ProductsController : ApiController
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="ProductsController"/> class.
+        /// </summary>
+        public ProductsController()
+        {
+            db.Configuration.LazyLoadingEnabled = false;
+            
+        }
+        /// <summary>
         /// </summary>
         private HypermartContext db = new HypermartContext();
 

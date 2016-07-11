@@ -140,34 +140,34 @@
 
 <!-- RATINGS HERE-->
 @{
-    var RatesController = new RatingsController();
-    var reviewCount = Model.RatingsDetail.Select(x => x.userID).Distinct().Count();
-    var res =     RatesController.GetRatings();
-    var myRatings = RatesController.GetMyRatings(@"LENOVO-PC\Mike", 1);
+    //var RatesController = new RatingsController();
+    //var reviewCount = Model.RatingsDetail.Select(x => x.userID).Distinct().Count();
+    //var res =     RatesController.GetRatings();
+    //var myRatings = RatesController.GetMyRatings(@"LENOVO-PC\Mike", 1);
 
-    foreach (var item in myRatings.Ratings)
-    {
-        res.Ratings.Single(x => x.RatedArea == item.RatedArea).Score = item.Score;
-    }
+    //foreach (var item in myRatings.Ratings)
+    //{
+    //    res.Ratings.Single(x => x.RatedArea == item.RatedArea).Score = item.Score;
+    //}
 }
 
 
 @{
-    var AvgRatings = new Dictionary<string, Double>();
-    foreach (var item in res.Ratings)
-    {
-        var avg = new Double();
-        if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Count() > 0)
-        {
-            avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Average(z => z.rating);
-        }
-        else
-        {
-            avg = 0;
-        }
+    //var AvgRatings = new Dictionary<string, Double>();
+    //foreach (var item in res.Ratings)
+    //{
+    //    var avg = new Double();
+    //    if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Count() > 0)
+    //    {
+    //        avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Average(z => z.rating);
+    //    }
+    //    else
+    //    {
+    //        avg = 0;
+    //    }
 
-        AvgRatings.Add(item.RatedArea, avg);
-    }
+    //    AvgRatings.Add(item.RatedArea, avg);
+    //}
 }
 
 
@@ -176,7 +176,7 @@
 
 
 
-    @if (Model.RatingsDetail.Count > 0)
+    @*@if (Model.RatingsDetail.Count > 0)
     {
         foreach (var item in res.Ratings)
         {
@@ -188,7 +188,7 @@
             }
         }
 
-    }
+    }*@
     
     
  
@@ -207,21 +207,15 @@
     </div>
     <div class="row">
         <div class="HISTOGRAM col-md-12">
-            
-            @foreach (var item in AvgRatings)
+            @foreach (var item in Model.AverageRating)
             {
-                var perdnt = ( item.Value/5) * 100;
                 <div class="row">
-                    <div class="col-md-2">@item.Key</div>
+                    <div class="col-md-2">@item.RatingCategory</div>
                     <div class="col-md-10">
-                        <input value="@item.Value" data-show-caption="false" data-display-only="true" data-size="xs" data-theme="krajee-fa" class="rating rating-loading" data-min="0" data-stars="5" data-max="5" data-step="1"> 
+                        <input value="@item.rating" data-show-caption="false" data-display-only="true" data-size="xs" data-theme="krajee-fa" class="rating rating-loading" data-min="0" data-stars="5" data-max="5" data-step="1">
                     </div>
                 </div>
             }
-
-
-
-
         </div>
     </div>
 
@@ -234,13 +228,13 @@
                 <h3 class="page-header">Rate</h3>
             </div>
          </div>
-    @foreach (var item in res.Ratings)
+@foreach (var item in Model.MyRating )
     {
         <div class="row">
-            <div class="col-md-2">@item.RatedArea</div>
+            <div class="col-md-2">@item.RatingCategory</div>
             <div class="col-lg-10">
                 <span class="star-rating">
-                    <input id="input-id" value="@item.Score"  data-rated-area="@item.RatedArea" data-show-clear="true" data-show-caption="false" data-size="xs" name="input-1" data-theme="krajee-fa" class="foobar rating rating-loading" data-animate="false" data-min="0" data-stars="5" data-max="5" data-step="1">
+                    <input id="input-id" value="@item.rating"  data-rated-area="@item.RatingCategory" data-show-clear="true" data-show-caption="false" data-size="xs" name="input-1" data-theme="krajee-fa" class="foobar rating rating-loading" data-animate="false" data-min="0" data-stars="5" data-max="5" data-step="1">
                  </span>
             </div>
         </div>
