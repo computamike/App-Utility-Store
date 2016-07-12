@@ -7,11 +7,11 @@ using System.Web.Http;
 
 namespace Open.GI.hypermart.Controllers.API
 {
-    [Obsolete("This is a simple test controller and should be removed prior to go-live")]
-    /// <summary>
+       /// <summary>
     /// Values Controller
     /// </summary>
-    /// <seealso cref="System.Web.Http.ApiController" />
+    /// <seealso cref="System.Web.Http.ApiController" /> 
+    [Obsolete("This is a simple test controller and should be removed prior to go-live")]
     public class ValuesController : ApiController
     {   /// <summary>
         /// Gets all of the values
