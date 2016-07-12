@@ -31,10 +31,6 @@ namespace Open.GI.hypermart.DataTransformationObjects
             this.Tagline = prod.Lead;
             this.Title = prod.Title;
             this.ScreenShot = new List<byte[]>();
-            foreach (var screenshot in prod.Screenshots )
-            {
-                this.ScreenShot.Add(screenshot.ScreenShot1);
-            }
         }
 
 

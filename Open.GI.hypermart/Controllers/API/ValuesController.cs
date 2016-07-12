@@ -7,6 +7,7 @@ using System.Web.Http;
 
 namespace Open.GI.hypermart.Controllers.API
 {
+    [Obsolete("This is a simple test controller and should be removed prior to go-live")]
     /// <summary>
     /// Values Controller
     /// </summary>

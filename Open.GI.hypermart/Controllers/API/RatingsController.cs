@@ -15,7 +15,7 @@ using Open.GI.hypermart.DataTransformationObjects;
 namespace Open.GI.hypermart.Controllers.API
 {
     /// <summary>
-    /// 
+    ///  REST API layer for interacting with files.
     /// </summary>
     /// <seealso cref="System.Web.Http.ApiController" />
     public class RatingsController : ApiController

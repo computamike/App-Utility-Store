@@ -14,7 +14,7 @@ using Open.GI.hypermart.Models;
 namespace Open.GI.hypermart.Controllers.API
 {
     /// <summary>
-    /// 
+    ///  REST API layer for interacting with screenshots.
     /// </summary>
     /// <seealso cref="System.Web.Http.ApiController" />
     public class ScreenshotsController : ApiController

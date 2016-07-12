@@ -11,7 +11,7 @@ using System.Web.Mvc;
 namespace Open.GI.hypermart.Controllers
 {
     /// <summary>
-    /// 
+    /// Controller responsible for serving donwload files to the user.
     /// </summary>
     /// <seealso cref="System.Web.Mvc.Controller" />
     public class DownloadController : Controller

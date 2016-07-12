@@ -14,6 +14,7 @@ using System.Data.Entity.Validation;
 
 namespace Open.GI.hypermart.Controllers
 {
+    [Obsolete("This controller will be removed - much of the functionality is being provided by other API controllers.")]
     /// <summary>
     /// This is the OpenGI API layer for interacting with the Store(Ading content etc).  Some of the calls here relating to updates and creation will require a session token.
     /// </summary>
