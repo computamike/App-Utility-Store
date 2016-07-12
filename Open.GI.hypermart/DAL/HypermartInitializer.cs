@@ -60,7 +60,7 @@ namespace Open.GI.hypermart.DAL
                 new Product
                 { 
                     Title = "Open Suite Client", 
-                    Tagline="Access and integfrate OGI and OFFICE", 
+                    Tagline="Access and integrate OGI and Office", 
                     Description = "THIS IS A COOL APP - EVERYONE SHOULD DOWNLOAD IT",
                     Lead="mhingley",
                     Screenshots = 

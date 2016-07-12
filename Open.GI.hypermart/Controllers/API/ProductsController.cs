@@ -10,6 +10,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Open.GI.hypermart.DAL;
 using Open.GI.hypermart.Models;
+using Open.GI.hypermart.DataTransformationObjects;
 
 namespace Open.GI.hypermart.Controllers.API
 {
@@ -36,9 +37,11 @@ namespace Open.GI.hypermart.Controllers.API
         /// Gets the products.
         /// </summary>
         /// <returns></returns>
-        public IQueryable<Product> GetProducts()
+        public IEnumerable<ProductDTO> GetProducts()
         {
-            return db.Products;
+            var products  = db.Products.Include(b=> b.Screenshots).ToList();
+            var dto = products.Select( x=> new ProductDTO(x));
+            return dto; 
         }
 
         // GET: api/Products/5        
@@ -47,7 +50,7 @@ namespace Open.GI.hypermart.Controllers.API
         /// </summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
-        [ResponseType(typeof(Product))]
+        [ResponseType(typeof(ProductDTO))]
         public IHttpActionResult GetProduct(int id)
         {
             Product product = db.Products.Find(id);
@@ -56,7 +59,9 @@ namespace Open.GI.hypermart.Controllers.API
                 return NotFound();
             }
 
-            return Ok(product);
+            
+
+            return Ok(new ProductDTO(product));
         }
 
         // PUT: api/Products/5        

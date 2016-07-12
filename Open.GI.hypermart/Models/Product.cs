@@ -116,6 +116,10 @@ namespace Open.GI.hypermart.Models
         /// </value>
         public virtual ICollection<RatingDetails> RatingsDetail { get; set; }
 
+ 
+        
+        
+        
         /// <summary>
         /// Gets the average rating.
         /// </summary>
@@ -125,36 +129,27 @@ namespace Open.GI.hypermart.Models
         [NotMapped]
         public virtual ICollection<RatingDetails> AverageRating
         {
-            get {
+            get
+            {
                 //return 9876;
                 // work out the average based on the ratings...
                 List<RatingDetails> AverageResults = new List<RatingDetails>();
                 // 1. Get Rating Areas...
-                var RatingAreas = this.Ratings.Select(x => x.RatingCategory).Distinct();
-                foreach (var Area in RatingAreas)
+                
+                if (this.Ratings != null)
                 {
-                    var avg = this.Ratings.Where(x => x.RatingCategory == Area).Average(z => z.rating);
-                    AverageResults.Add(new RatingDetails() { ProductID = this.ID, RatingCategory = Area, rating = (int)avg });
+                    var RatingAreas = this.Ratings.Select(x => x.RatingCategory).Distinct();
+                    foreach (var Area in RatingAreas)
+                    {
+                        var avg = this.Ratings.Where(x => x.RatingCategory == Area).Average(z => z.rating);
+                        AverageResults.Add(new RatingDetails() { ProductID = this.ID, RatingCategory = Area, rating = (int)avg });
+                    }
                 }
 
                 return AverageResults;
-                //foreach (var item in this.Ratings)
-                //{
-                //    var avg = new Double();
-                //    if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Count() > 0)
-                //    {
-                //        avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Average(z => z.rating);
-                //    }
-                //    else
-                //    {
-                //        avg = 0;
-                //    }
-
-                //    AvgRatings.Add(item.RatedArea, avg);
-                //}
-
-
             }
+            set{}
+
 
         }
         /// <summary>

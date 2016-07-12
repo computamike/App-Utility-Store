@@ -220,6 +220,7 @@
     <Compile Include="Docs\DataTransformationObjects\ProductDTO.cs" />
     <Compile Include="Docs\DataTransformationObjects\RatingDTO.cs" />
     <Compile Include="Docs\DataTransformationObjects\RatingInformationDTO.cs" />
+    <Compile Include="Docs\DataTransformationObjects\ScreenShotDTO.cs" />
     <Compile Include="Docs\DataTransformationObjects\UserDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -267,6 +268,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\hypermart.mdf" />
+    <Content Include="App_Data\hypermart_log.ldf">
+      <DependentUpon>hypermart.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -383,7 +388,6 @@
     <Content Include="Views\Search\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="NewFolder1\" />
     <Folder Include="Tests\" />
     <Folder Include="Views\Download\" />

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -30,7 +31,8 @@ namespace Open.GI.hypermart
             
             var s = System.Configuration.ConfigurationManager.AppSettings["ShareFolderName"]; 
             Helpers.FileShareHelper.CreateFolder (s);
-             
+            
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Serialize;
               
             //Helpers.FileShareHelper.DeleteShare("ServerStore");
             //Helpers.FileShareHelper.CreateShare("Storage", "ServerStore", "Hypermart File Storage");

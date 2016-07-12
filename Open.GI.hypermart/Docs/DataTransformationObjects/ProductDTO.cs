@@ -22,15 +22,24 @@ namespace Open.GI.hypermart.DataTransformationObjects
         /// <summary>
         /// Initializes a new instance of the <see cref="ProductDTO"/> class.
         /// </summary>
-        /// <param name="Base">The base.</param>
-        public ProductDTO(Product Base)
+        /// <param name="prod">The base.</param>
+        public ProductDTO(Product prod)
         {
-            this.ID = Base.ID;
-            this.Description = Base.Description;
-            this.Lead = Base.Lead;
-            this.Tagline = Base.Lead;
-            this.Title = Base.Title;
+            this.ID = prod.ID;
+            this.Description = prod.Description;
+            this.Lead = prod.Lead;
+            this.Tagline = prod.Lead;
+            this.Title = prod.Title;
+            this.ScreenShot = new List<byte[]>();
+            foreach (var screenshot in prod.Screenshots )
+            {
+                this.ScreenShot.Add(screenshot.ScreenShot1);
+            }
         }
+
+
+    
+
 
         /// <summary>
         /// Gets or sets the identifier.
@@ -72,6 +81,12 @@ namespace Open.GI.hypermart.DataTransformationObjects
         /// The lead.
         /// </value>
         public string Lead { get; set; }
+
+        /// <summary>
+        /// Screen Shot
+        /// </summary>
+        public List<byte[]> ScreenShot { get; set; }
+   
 
      
 
