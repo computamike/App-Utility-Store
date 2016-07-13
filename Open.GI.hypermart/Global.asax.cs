@@ -32,7 +32,7 @@ namespace Open.GI.hypermart
             var s = System.Configuration.ConfigurationManager.AppSettings["ShareFolderName"]; 
             Helpers.FileShareHelper.CreateFolder (s);
             
-            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Serialize;
+            GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore ;
               
             //Helpers.FileShareHelper.DeleteShare("ServerStore");
             //Helpers.FileShareHelper.CreateShare("Storage", "ServerStore", "Hypermart File Storage");

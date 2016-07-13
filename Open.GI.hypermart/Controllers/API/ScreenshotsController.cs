@@ -10,6 +10,7 @@ using System.Web.Http;
 using System.Web.Http.Description;
 using Open.GI.hypermart.DAL;
 using Open.GI.hypermart.Models;
+using Open.GI.hypermart.Docs.DataTransformationObjects;
 
 namespace Open.GI.hypermart.Controllers.API
 {
@@ -20,15 +21,24 @@ namespace Open.GI.hypermart.Controllers.API
     public class ScreenshotsController : ApiController
     {
         private HypermartContext db = new HypermartContext();
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ScreenshotsController"/> class.
+        /// </summary>
+        public ScreenshotsController()
+        {
+            db.Configuration.LazyLoadingEnabled = false;
+        }
 
         // GET: api/Screenshots        
         /// <summary>
         /// Gets the screenshots.
         /// </summary>
         /// <returns></returns>
-        public IQueryable<Screenshot> GetScreenshots()
+        public IEnumerable<ScreenShotDTO> GetScreenshots()
         {
-            return db.Screenshots;
+            return new List<ScreenShotDTO>();
+
+            //return db.Screenshots;
         }
 
         // GET: api/Screenshots/5        
@@ -97,15 +107,15 @@ namespace Open.GI.hypermart.Controllers.API
         /// <param name="screenshot">The screenshot.</param>
         /// <returns></returns>
         [ResponseType(typeof(Screenshot))]
-        public IHttpActionResult PostScreenshot(Screenshot screenshot)
+        public IHttpActionResult PostScreenshot(ScreenShotDTO screenshot)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
-            db.Screenshots.Add(screenshot);
-            db.SaveChanges();
+            //db.Screenshots.Add(screenshot);
+            //db.SaveChanges();
 
             return CreatedAtRoute("DefaultApi", new { id = screenshot.ID }, screenshot);
         }
