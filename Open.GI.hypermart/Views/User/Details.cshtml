@@ -5,29 +5,63 @@
 @{
     ViewBag.Title = "Details";
 }
-
-    <a href="#" user-profile profile-content="profile_4">@Model.username</a>
-<div id="profile_4" class="profile">
-    <div class="profile-content">
-        <div class="fade-content">
-            <img src="data:image;base64,@Html.ImageToB64(Model.Photo)" class="img-responsive img-thumbnail" >
-            <div class="info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
-                <span class="name">@Model.username</span><br />
-                <span><strong>Title:</strong>@Model.JobTitle</span><br />
-                <span><strong>Phone:</strong>@Model.PhoneNumnber</span><br />
-                <span><strong>Email:</strong><a href="mailto:@Model.Email">@Model.Email</a></span><br />
-            </div>
-        
-        </div>
+<br />
+<div class="row">
+    <div class="col-md-4"><img src="data:image;base64,@Html.ImageToB64(Model.Photo)" class="img-responsive img-thumbnail">
+    </div><div class="col-md-8">
+              <div class="info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                  <span class="name">@Model.username</span><br />
+                  <span><strong>Title:</strong>@Model.JobTitle</span><br />
+                  <span><strong>Phone:</strong>@Model.PhoneNumnber</span><br />
+                  <span><strong>Email:</strong><a href="mailto:@Model.Email">@Model.Email</a></span><br />
+              </div>
     </div>
 </div>
+<div class="row">
+    <table class="table">
+        <tr>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Title)*@
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Tagline)*@
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Description)*@
+            </th>
+            <th>
+                @*@Html.DisplayNameFor(model => model.Lead)*@
+            </th>
+            <th></th>
+        </tr>
+
+        @*@foreach (var item in Model)
+        {*@
+            <tr>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.Title)*@
+                </td>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.Tagline)*@
+                </td>
+                <td>
+                    @*@Html.DisplayFor(modelItem => item.Description)*@
+                </td>
+                <td>
+
+                    @*@{ Html.RenderAction("popup_Details", "User", new { userid = item.Lead }); }*@
+
+                </td>
 
 
- 
 
-    
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })*@
+                </td>
+            </tr>
+        @*}*@
 
- 
- 
-
- 
+    </table>
+</div>

@@ -25,12 +25,13 @@ namespace Open.GI.hypermart
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-            routes.MapRoute(
-                name: "ADUser",
-                url: "{controller}/{action}/{userid}",
-                defaults: null,
-                constraints: new { userid = @"[^0-9]+" }
-                );
+           
+            //routes.MapRoute(
+            //    name: "ADUser",
+            //    url: "{controller}/{action}/{userid}",
+            //    defaults: null,
+            //    constraints: new { userid = @"[^0-9]+" }
+            //    );
 
             routes.MapRoute(
                 name: "Search",
