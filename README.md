@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/87p37yt7qj37l1jm/branch/master?svg=true)](https://ci.appveyor.com/project/computamike/app-utility-store/branch/master)
+
 ![Latest Build Status](https://enterpriseappstore.visualstudio.com/DefaultCollection/_apis/public/build/definitions/778e5a00-1902-4738-b98b-e7360d5c43b5/4/badge)
 # App-Utility-Store
 
