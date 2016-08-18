@@ -14,6 +14,8 @@ This application source is hosted in GitHub, but
 
 ![Build results from Visual Studio Team Services](https://raw.githubusercontent.com/computamike/App-Utility-Store/master/App%20Store%20Build%20(08-04-2016).png)
 
+This repository is also being monitored by an instance of CodeBrag to allow for code reviews to be performed against changes.
+
 # REST API
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/9364cd32fcae1b3c4f32#?env%5BAzure%20Hosted%5D=W3sia2V5IjoiYmFzZXVybCIsInZhbHVlIjoiaHR0cDovL29naS1lbnRlcnByaXNlYXBwc3RvcmUuYXp1cmV3ZWJzaXRlcy5uZXQiLCJ0eXBlIjoidGV4dCIsImVuYWJsZWQiOnRydWV9XQ==)
