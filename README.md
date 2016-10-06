@@ -14,7 +14,6 @@ This application source is hosted in GitHub, but
 
 ![Build results from Visual Studio Team Services](https://raw.githubusercontent.com/computamike/App-Utility-Store/master/App%20Store%20Build%20(08-04-2016).png)
 
-This repository is also being monitored by an instance of CodeBrag to allow for code reviews to be performed against changes.
 
 # REST API
 
