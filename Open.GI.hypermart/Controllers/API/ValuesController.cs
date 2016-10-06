@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Open.GI.hypermart.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -18,6 +19,7 @@ namespace Open.GI.hypermart.Controllers.API
         /// </summary>
         /// <returns></returns>
         [Route("api/Values/GetByStatus")]
+        [IdentityBasicAuthentication]
         public IEnumerable<string> GetByStatus(int Status)
         {
             return new string[] { "valueGBS1", "valueGBS2" };

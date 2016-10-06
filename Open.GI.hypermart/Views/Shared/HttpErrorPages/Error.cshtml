@@ -1,0 +1,30 @@
+﻿@model Open.GI.hypermart.Models.HttpErrorPage
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Simple HttpErrorPages | MIT X11 License | https://github.com/AndiDittrich/HttpErrorPages -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>We've got some trouble | 401 - Unauthorized</title>
+    @Styles.Render("~/Content/httpErrors")
+
+
+</head>
+
+<body>
+    <div class="cover">
+        <h1>@Model.ErrorTitle <small>Error @Model.ErrorCode</small></h1>
+        <p class="lead">@Model.ErrorDescription</p>
+    </div>
+
+    @Html.Partial("~/Views/Shared/HttpErrorPages/Footer.cshtml");
+
+
+</body>
+</html>
