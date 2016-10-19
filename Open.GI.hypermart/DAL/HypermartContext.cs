@@ -64,6 +64,16 @@ namespace Open.GI.hypermart.DAL
         /// </value>
         public virtual IDbSet<RatingDetails> RatingDetails { get; set; }
 
+        /// <summary>
+        /// Gets or sets the installation  History.
+        /// </summary>
+        /// <value>
+        /// The installation History details.
+        /// </value>
+        public virtual IDbSet<InstallationHistory> InstallationHistory { get; set; }
+
+
+
 
         /// <summary>
         /// This method is called when the model for a derived context has been initialized, but

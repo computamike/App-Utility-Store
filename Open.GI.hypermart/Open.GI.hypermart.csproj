@@ -102,6 +102,7 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Spatial, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -244,9 +245,14 @@
     <Compile Include="Migrations\201604160916119_Ratings.Designer.cs">
       <DependentUpon>201604160916119_Ratings.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201607151537466_Add Installation History.cs" />
+    <Compile Include="Migrations\201607151537466_Add Installation History.Designer.cs">
+      <DependentUpon>201607151537466_Add Installation History.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\File.cs" />
+    <Compile Include="Models\InstallationHistory.cs" />
     <Compile Include="Models\Platform.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Rating.cs" />
@@ -268,6 +274,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\hypermart.mdf" />
+    <Content Include="App_Data\hypermart_log.ldf">
+      <DependentUpon>hypermart.mdf</DependentUpon>
+    </Content>
     <Content Include="Areas\HelpPage\HelpPage.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
@@ -384,7 +394,6 @@
     <Content Include="Views\Search\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="NewFolder1\" />
     <Folder Include="Tests\" />
     <Folder Include="Views\Download\" />
@@ -403,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604160916119_Ratings.resx">
       <DependentUpon>201604160916119_Ratings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201607151537466_Add Installation History.resx">
+      <DependentUpon>201607151537466_Add Installation History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

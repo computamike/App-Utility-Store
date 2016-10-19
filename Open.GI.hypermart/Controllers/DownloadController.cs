@@ -30,11 +30,18 @@ namespace Open.GI.hypermart.Controllers
         public FileResult Download(int id)
         {
 
+            Open.GI.hypermart.Models.File downloadFile = db.Files.Find(id);
+            //write the Installation History....
+            InstallationHistory IH = new InstallationHistory();
+            IH.InstallationDate = DateTime.Now;
+            IH.InstalledFile = downloadFile;
+            db.InstallationHistory.Add(IH);
+            db.SaveChanges();
             //if (id == null)
             //{
             //    throw new HttpException("Cannot find file ");
             //}
-            Open.GI.hypermart.Models.File   downloadFile = db.Files.Find(id);
+            
             if (downloadFile == null)
             {
                 throw new HttpException("Cannot find file - can't get remote link.");
