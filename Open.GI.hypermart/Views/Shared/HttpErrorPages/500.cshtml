@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Simple HttpErrorPages | MIT X11 License | https://github.com/AndiDittrich/HttpErrorPages -->
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>We've got some trouble | 500 - Unauthorized</title>
+    @Styles.Render("~/Content/httpErrors")
+
+
+</head>
+
+<body>
+
+    <div class="cover">
+        <h1>Webservice currently unavailable <small>Error 500</small></h1>
+        <p class="lead">
+            An unexpected condition was encountered.<br />
+            Our service team has been dispatched to bring it back online.
+        </p>
+    </div>
+    @Html.Partial("Footer");
+    <footer>
+        <p>Technical Contact: <a href="mailto:x@example.com">x@example.com</a></p>
+    </footer>
+
+</body>
+</html>

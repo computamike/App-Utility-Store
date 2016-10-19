@@ -20,7 +20,33 @@ namespace Open.GI.hypermart.Controllers
             JobTitle = "Not Found",
             PhoneNumnber = ""        };
 
+        /// <summary>
+        /// Detailses the specified userid.
+        /// </summary>
+        /// <param name="id">The userid.</param>
+        /// <returns></returns>
+        public ActionResult Details(string id)
+        {
+            notFounduser.username = id;
+            try
+            {
 
+                var user = Helpers.AD_Repository.getUser(id);
+                if (user == null)
+                    return View(notFounduser);
+                return View("Details",user);
+            }
+            catch (Exception)
+            {
+
+                return View(notFounduser);
+            }
+
+
+
+
+             
+        }
 
         /// <summary>
         /// Detailses the specified userid.
@@ -28,7 +54,7 @@ namespace Open.GI.hypermart.Controllers
         /// <param name="userid">The userid.</param>
         /// <returns></returns>
         [ChildActionOnly]
-        public ActionResult Details(string userid)
+        public ActionResult popup_Details(string userid)
         {
             notFounduser.username = userid;
             try
@@ -46,6 +72,8 @@ namespace Open.GI.hypermart.Controllers
             }
 
         }
+
+
 
     }
 }

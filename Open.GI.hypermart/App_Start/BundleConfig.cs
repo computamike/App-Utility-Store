@@ -56,6 +56,10 @@ namespace Open.GI.hypermart
             SRSB.Include("~/Scripts/bootstrap-star-rating/css/theme-krajee-fa.css");
             bundles.Add(SRSB);
 
+            bundles.Add(new StyleBundle("~/Content/httpErrors").Include(
+          "~/Content/HttpErrorPages/Layout.css"));
+
+
             // Set EnableOptimizations to false for debugging. For more information,
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = false;

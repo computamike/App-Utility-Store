@@ -33,7 +33,7 @@ namespace Open.GI.hypermart
             Helpers.FileShareHelper.CreateFolder (s);
             
             GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore ;
-              
+             // Let's slap the Oauth Set up here eventually. 
             //Helpers.FileShareHelper.DeleteShare("ServerStore");
             //Helpers.FileShareHelper.CreateShare("Storage", "ServerStore", "Hypermart File Storage");
 

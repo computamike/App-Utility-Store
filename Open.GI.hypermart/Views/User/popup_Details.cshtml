@@ -1,0 +1,33 @@
+﻿@using Open.GI.hypermart.Models;
+@using Open.GI.hypermart.Helpers;
+
+@model User
+@{
+    ViewBag.Title = "Details";
+}
+
+<a href="#" user-profile profile-content="profile_4">@Model.username</a>
+<div id="profile_4" class="profile">
+    <div class="profile-content">
+        <div class="fade-content">
+            <img src="data:image;base64,@Html.ImageToB64(Model.Photo)" class="img-responsive img-thumbnail" >
+            <div class="info" style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                <span class="name">@Model.username</span><br />
+                <span><strong>Title:</strong>@Model.JobTitle</span><br />
+                <span><strong>Phone:</strong>@Model.PhoneNumnber</span><br />
+                <span><strong>Email:</strong><a href="mailto:@Model.Email">@Model.Email</a></span><br />
+            </div>
+        
+        </div>
+    </div>
+</div>
+
+
+ 
+
+    
+
+ 
+ 
+
+ 
