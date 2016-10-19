@@ -34,7 +34,7 @@ namespace Open.GI.hypermart.Controllers
             //write the Installation History....
             InstallationHistory IH = new InstallationHistory();
             IH.InstallationDate = DateTime.Now;
-            IH.InstalledFile = downloadFile;
+            IH.FileID = downloadFile.ID;
             db.InstallationHistory.Add(IH);
             db.SaveChanges();
             //if (id == null)
