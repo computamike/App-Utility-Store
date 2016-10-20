@@ -48,7 +48,16 @@ namespace Open.GI.hypermart.Migrations
             
             );
 
-
+            var testProduct = new Product()
+            {
+                ID = 1,
+                Lead = "mhingley",
+                Description = "Desc",
+                Tagline = "Teg line",
+                Title = "Title",
+                SourceCode = "http://github.com"
+            };
+            context.Products.Add(testProduct);
 
         }
     }

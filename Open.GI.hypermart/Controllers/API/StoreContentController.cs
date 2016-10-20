@@ -274,12 +274,12 @@ namespace Open.GI.hypermart.Controllers
 
             foreach (RatingDTO rating in RatingToAdd.Ratings)
             {
-                Models.RatingDetails newRating = new Models.RatingDetails();
+                Models.Rating newRating = new Models.Rating();
                 newRating.ProductID = RatingToAdd.ProductID;
                 newRating.userID = user.Identity.Name;
                 newRating.RatingCategory = rating.RatedArea;
                 newRating.rating = rating.Score;
-                db.RatingDetails.Add(newRating);
+                //db.RatingDetails.Add(newRating);
                 db.SaveChanges();
             }
 

@@ -19,7 +19,7 @@ namespace Open.GI.hypermart.Models
         public Product()
         {
             //AverageRating = new List<RatingDetails>();
-            MyRating    = new List<RatingDetails>();
+            MyRating = new List<Rating>();
             Files = new HashSet<File>();
             Screenshots = new HashSet<Screenshot>();
         }
@@ -108,13 +108,13 @@ namespace Open.GI.hypermart.Models
         /// </value>
         public virtual ICollection<Rating> Ratings{ get; set; }
 
-        /// <summary>
-        /// Gets or sets the ratings Detail.
-        /// </summary>
-        /// <value>
-        /// The ratings.
-        /// </value>
-        public virtual ICollection<RatingDetails> RatingsDetail { get; set; }
+        // <summary>
+        // Gets or sets the ratings Detail.
+        // </summary>
+        // <value>
+        // The ratings.
+        // </value>
+        //public virtual ICollection<RatingDetails> RatingsDetail { get; set; }
 
  
         
@@ -127,13 +127,13 @@ namespace Open.GI.hypermart.Models
         /// The average rating.
         /// </value>
         [NotMapped]
-        public virtual ICollection<RatingDetails> AverageRating
+        public virtual ICollection<Rating> AverageRating
         {
             get
             {
                 //return 9876;
                 // work out the average based on the ratings...
-                List<RatingDetails> AverageResults = new List<RatingDetails>();
+                List<Rating> AverageResults = new List<Rating>();
                 // 1. Get Rating Areas...
                 
                 if (this.Ratings != null)
@@ -145,8 +145,8 @@ namespace Open.GI.hypermart.Models
                         if(this.Ratings.Where(x => x.RatingCategory == Area).Where(t=> t.rating !=0).Count() != 0)
                         {
                             avg = this.Ratings.Where(x => x.RatingCategory == Area).Where(t=> t.rating !=0).Average(t=> t.rating);
-                        } 
-                        AverageResults.Add(new RatingDetails() { ProductID = this.ID, RatingCategory = Area, rating = (int)avg });
+                        }
+                        AverageResults.Add(new Rating() { ProductID = this.ID, RatingCategory = Area, rating = avg });
                     }
                 }
 
@@ -163,7 +163,7 @@ namespace Open.GI.hypermart.Models
         /// My rating.
         /// </value>
         [NotMapped]
-        public virtual ICollection<RatingDetails> MyRating
+        public virtual ICollection<Rating> MyRating
         {
             get;
             set;

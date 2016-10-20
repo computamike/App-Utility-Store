@@ -7,13 +7,13 @@ namespace Open.GI.hypermart.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Unknown : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Unknown));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "201610201627247_Unknown"; }
+            get { return "201610201858128_Initial"; }
         }
         
         string IMigrationMetadata.Source

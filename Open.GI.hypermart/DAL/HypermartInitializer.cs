@@ -76,8 +76,8 @@ namespace Open.GI.hypermart.DAL
                     Tagline="Access and integrate OGI and Office", 
                     Description = "THIS IS A COOL APP - EVERYONE SHOULD DOWNLOAD IT",
                     Lead="mhingley",
-                    MyRating = new List<RatingDetails>(),
-                    AverageRating = new List<RatingDetails>(),
+                    MyRating = new List<Rating>(),
+                    AverageRating = new List<Rating>(),
                     Screenshots = 
                     {
                         new Screenshot{ScreenShot1  =Properties.Resources.Download1.ImageToByteArray()},

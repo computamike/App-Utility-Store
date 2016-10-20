@@ -56,13 +56,13 @@ namespace Open.GI.hypermart.DAL
         /// The ratings.
         /// </value>
         public virtual IDbSet<Rating> Ratings { get; set; }
-        /// <summary>
-        /// Gets or sets the rating details.
-        /// </summary>
-        /// <value>
-        /// The rating details.
-        /// </value>
-        public virtual IDbSet<RatingDetails> RatingDetails { get; set; }
+        // <summary>
+        // Gets or sets the rating details.
+        // </summary>
+        // <value>
+        // The rating details.
+        // </value>
+        //public virtual IDbSet<RatingDetails> RatingDetails { get; set; }
 
         /// <summary>
         /// Gets or sets the installation  History.

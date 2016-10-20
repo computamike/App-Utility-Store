@@ -53,8 +53,7 @@ namespace Open.GI.hypermart.Models
         /// The rating.
         /// </value>
         /// 
-        //TODO : This should be a double.
-        public int rating { get; set; }
+        public double rating { get; set; }
 
         /// <summary>
         /// Gets or sets the comments.

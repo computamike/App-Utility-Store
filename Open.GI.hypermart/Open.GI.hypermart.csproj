@@ -246,7 +246,7 @@
     <Compile Include="Controllers\API\AccountController.cs" />
     <Compile Include="Controllers\API\FilesController.cs" />
     <Compile Include="Controllers\API\ProductsController.cs" />
-    <Compile Include="Controllers\API\RatingDetailsController.cs" />
+    <None Include="Controllers\API\RatingDetailsController.cs" />
     <Compile Include="Controllers\API\RatingsController.cs" />
     <Compile Include="Controllers\API\ScreenshotsController.cs" />
     <Compile Include="Controllers\API\StoreContentController.cs" />
@@ -280,25 +280,9 @@
     <Compile Include="DAL\HypermartContext.cs" />
     <Compile Include="Helpers\Search.cs" />
     <Compile Include="Helpers\ViewRenderer.cs" />
-    <Compile Include="Migrations\201601190010001_Initial.cs" />
-    <Compile Include="Migrations\201601190010001_Initial.Designer.cs">
-      <DependentUpon>201601190010001_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201601232152258_Table Naming Changes.cs" />
-    <Compile Include="Migrations\201601232152258_Table Naming Changes.Designer.cs">
-      <DependentUpon>201601232152258_Table Naming Changes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201604160916119_Ratings.cs" />
-    <Compile Include="Migrations\201604160916119_Ratings.Designer.cs">
-      <DependentUpon>201604160916119_Ratings.cs</DependentUpon>
-    </Compile>
-    <None Include="Migrations\201607151537466_Add Installation History.cs" />
-    <Compile Include="Migrations\201607151537466_Add Installation History.Designer.cs">
-      <DependentUpon>201607151537466_Add Installation History.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610201627247_Unknown.cs" />
-    <Compile Include="Migrations\201610201627247_Unknown.Designer.cs">
-      <DependentUpon>201610201627247_Unknown.cs</DependentUpon>
+    <Compile Include="Migrations\201610201858128_Initial.cs" />
+    <Compile Include="Migrations\201610201858128_Initial.Designer.cs">
+      <DependentUpon>201610201858128_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -308,7 +292,7 @@
     <Compile Include="Models\Platform.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\Rating.cs" />
-    <Compile Include="Models\RatingDetails.cs" />
+    <None Include="Models\RatingDetails.cs" />
     <Compile Include="Models\Screenshot.cs" />
     <Compile Include="Models\Service.cs" />
     <Compile Include="Models\StorageType.cs" />
@@ -471,20 +455,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201601190010001_Initial.resx">
-      <DependentUpon>201601190010001_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201601232152258_Table Naming Changes.resx">
-      <DependentUpon>201601232152258_Table Naming Changes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201604160916119_Ratings.resx">
-      <DependentUpon>201604160916119_Ratings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201607151537466_Add Installation History.resx">
-      <DependentUpon>201607151537466_Add Installation History.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610201627247_Unknown.resx">
-      <DependentUpon>201610201627247_Unknown.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610201858128_Initial.resx">
+      <DependentUpon>201610201858128_Initial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

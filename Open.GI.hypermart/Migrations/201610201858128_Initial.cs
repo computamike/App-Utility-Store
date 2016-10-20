@@ -3,7 +3,7 @@ namespace Open.GI.hypermart.Migrations
     using System;
     using System.Data.Entity.Migrations;
     /// <summary>
-    /// Initial Migration - settin up the tables and links
+    /// 
     /// </summary>
     /// <seealso cref="System.Data.Entity.Migrations.DbMigration" />
     public partial class Initial : DbMigration
@@ -52,6 +52,20 @@ namespace Open.GI.hypermart.Migrations
                 .PrimaryKey(t => t.ID);
             
             CreateTable(
+                "dbo.Ratings",
+                c => new
+                    {
+                        userID = c.String(nullable: false, maxLength: 128),
+                        RatingCategory = c.String(nullable: false, maxLength: 128),
+                        ProductID = c.Int(nullable: false),
+                        rating = c.Double(nullable: false),
+                        Comments = c.String(),
+                    })
+                .PrimaryKey(t => new { t.userID, t.RatingCategory, t.ProductID })
+                .ForeignKey("dbo.Products", t => t.ProductID, cascadeDelete: true)
+                .Index(t => t.ProductID);
+            
+            CreateTable(
                 "dbo.Screenshots",
                 c => new
                     {
@@ -64,35 +78,49 @@ namespace Open.GI.hypermart.Migrations
                 .Index(t => t.ProductID);
             
             CreateTable(
-                "dbo.FilePlatform",
+                "dbo.InstallationHistories",
                 c => new
                     {
-                        Files_ID = c.Int(nullable: false),
-                        Platforms_ID = c.String(nullable: false, maxLength: 10),
+                        userID = c.String(nullable: false, maxLength: 128),
+                        ProductID = c.Int(nullable: false),
+                        FileID = c.Int(nullable: false),
+                        InstallationDate = c.DateTime(nullable: false),
                     })
-                .PrimaryKey(t => new { t.Files_ID, t.Platforms_ID })
-                .ForeignKey("dbo.Files", t => t.Files_ID, cascadeDelete: true)
-                .ForeignKey("dbo.Platforms", t => t.Platforms_ID, cascadeDelete: true)
-                .Index(t => t.Files_ID)
-                .Index(t => t.Platforms_ID);
+                .PrimaryKey(t => new { t.userID, t.ProductID, t.FileID });
+            
+            CreateTable(
+                "dbo.PlatformFiles",
+                c => new
+                    {
+                        Platform_ID = c.String(nullable: false, maxLength: 10),
+                        File_ID = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => new { t.Platform_ID, t.File_ID })
+                .ForeignKey("dbo.Platforms", t => t.Platform_ID, cascadeDelete: true)
+                .ForeignKey("dbo.Files", t => t.File_ID, cascadeDelete: true)
+                .Index(t => t.Platform_ID)
+                .Index(t => t.File_ID);
             
         }
-
         /// <summary>
         /// Operations to be performed during the downgrade process.
         /// </summary>
         public override void Down()
         {
             DropForeignKey("dbo.Screenshots", "ProductID", "dbo.Products");
+            DropForeignKey("dbo.Ratings", "ProductID", "dbo.Products");
             DropForeignKey("dbo.Files", "ProductID", "dbo.Products");
-            DropForeignKey("dbo.FilePlatform", "Platforms_ID", "dbo.Platforms");
-            DropForeignKey("dbo.FilePlatform", "Files_ID", "dbo.Files");
-            DropIndex("dbo.FilePlatform", new[] { "Platforms_ID" });
-            DropIndex("dbo.FilePlatform", new[] { "Files_ID" });
+            DropForeignKey("dbo.PlatformFiles", "File_ID", "dbo.Files");
+            DropForeignKey("dbo.PlatformFiles", "Platform_ID", "dbo.Platforms");
+            DropIndex("dbo.PlatformFiles", new[] { "File_ID" });
+            DropIndex("dbo.PlatformFiles", new[] { "Platform_ID" });
             DropIndex("dbo.Screenshots", new[] { "ProductID" });
+            DropIndex("dbo.Ratings", new[] { "ProductID" });
             DropIndex("dbo.Files", new[] { "ProductID" });
-            DropTable("dbo.FilePlatform");
+            DropTable("dbo.PlatformFiles");
+            DropTable("dbo.InstallationHistories");
             DropTable("dbo.Screenshots");
+            DropTable("dbo.Ratings");
             DropTable("dbo.Products");
             DropTable("dbo.Platforms");
             DropTable("dbo.Files");
