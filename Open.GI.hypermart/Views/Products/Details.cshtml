@@ -140,15 +140,24 @@
 
 <!-- RATINGS HERE-->
 @{
+    
+    //var RatesDetailController = new RatingDetailsController();
+    //var xy = RatesDetailController.GetRatingDetails();
+    
     //var RatesController = new RatingsController();
     //var reviewCount = Model.RatingsDetail.Select(x => x.userID).Distinct().Count();
     //var res =     RatesController.GetRatings();
+    
+    
+    
+    
+    //var myRatings = RatesController.GetRating("mhingley");
     //var myRatings = RatesController.GetMyRatings(@"LENOVO-PC\Mike", 1);
 
-    //foreach (var item in myRatings.Ratings)
+    //foreach (var item in RatesController.GetAvailableRatingAreas())
     //{
     //    res.Ratings.Single(x => x.RatedArea == item.RatedArea).Score = item.Score;
-    //}
+   // }
 }
 
 
@@ -212,7 +221,7 @@
                 <div class="row">
                     <div class="col-md-2">@item.RatingCategory</div>
                     <div class="col-md-10">
-                        <input value="@item.rating" data-show-caption="false" data-display-only="true" data-size="xs" data-theme="krajee-fa" class="rating rating-loading" data-min="0" data-stars="5" data-max="5" data-step="1">
+                        <input value="@item.rating" data-show-caption="true" data-display-only="true" data-size="xs" data-theme="krajee-fa" class="rating rating-loading" data-min="0" data-stars="5" data-max="5" data-step="0.5">
                     </div>
                 </div>
             }
@@ -225,7 +234,7 @@
         <div class="row">
 
             <div class="col-lg-12">
-                <h3 class="page-header">Rate</h3>
+                <h3 class="page-header">Rate This Project</h3>
             </div>
          </div>
 @foreach (var item in Model.MyRating )

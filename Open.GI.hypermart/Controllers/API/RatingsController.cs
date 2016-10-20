@@ -21,7 +21,19 @@ namespace Open.GI.hypermart.Controllers.API
     public class RatingsController : ApiController
     {
         private HypermartContext db = new HypermartContext();
-        
+
+        /// <summary>
+        /// Gets the rating areas.
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<String> GetAvailableRatingAreas()
+        {
+            return System.Configuration.ConfigurationManager.AppSettings["RatingAreas"].Split('|').ToList();
+            
+        }
+
+
+
         // GET: api/Ratings        
         /// <summary>
         /// Gets the ratings.

@@ -5,19 +5,15 @@ namespace Open.GI.hypermart.Migrations
     using System.Data.Entity.Migrations;
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
-
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <seealso cref="System.Data.Entity.Migrations.Infrastructure.IMigrationMetadata" />
+    
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class AddInstallationHistory : IMigrationMetadata
+    public sealed partial class Unknown : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddInstallationHistory));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Unknown));
         
         string IMigrationMetadata.Id
         {
-            get { return "201607151537466_Add Installation History"; }
+            get { return "201610201627247_Unknown"; }
         }
         
         string IMigrationMetadata.Source

@@ -24,7 +24,7 @@ namespace Open.GI.hypermart.Migrations
                 .PrimaryKey(t => new {t.userID, t.ProductID, t.FileID})
                 .ForeignKey("dbo.Files", t => t.FileID, cascadeDelete: false)
                 .ForeignKey("dbo.Products", t => t.ProductID, cascadeDelete: false)
-                .ForeignKey("dbo.User", t => t.userID, cascadeDelete: false)
+                //.ForeignKey("dbo.User", t => t.userID, cascadeDelete: false)
                 .Index(t => t.ProductID);
         }
         /// <summary>

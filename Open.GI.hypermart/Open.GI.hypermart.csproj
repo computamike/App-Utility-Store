@@ -292,9 +292,13 @@
     <Compile Include="Migrations\201604160916119_Ratings.Designer.cs">
       <DependentUpon>201604160916119_Ratings.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201607151537466_Add Installation History.cs" />
+    <None Include="Migrations\201607151537466_Add Installation History.cs" />
     <Compile Include="Migrations\201607151537466_Add Installation History.Designer.cs">
       <DependentUpon>201607151537466_Add Installation History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610201627247_Unknown.cs" />
+    <Compile Include="Migrations\201610201627247_Unknown.Designer.cs">
+      <DependentUpon>201610201627247_Unknown.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
@@ -456,7 +460,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="API_Scripts\" />
-    <Folder Include="App_Data\" />
     <Folder Include="NewFolder1\" />
     <Folder Include="Tests\" />
     <Folder Include="Views\Download\" />
@@ -479,6 +482,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201607151537466_Add Installation History.resx">
       <DependentUpon>201607151537466_Add Installation History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610201627247_Unknown.resx">
+      <DependentUpon>201610201627247_Unknown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

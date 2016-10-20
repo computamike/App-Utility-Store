@@ -141,7 +141,11 @@ namespace Open.GI.hypermart.Models
                     var RatingAreas = this.Ratings.Select(x => x.RatingCategory).Distinct();
                     foreach (var Area in RatingAreas)
                     {
-                        var avg = this.Ratings.Where(x => x.RatingCategory == Area).Average(z => z.rating);
+                        double avg = 0;
+                        if(this.Ratings.Where(x => x.RatingCategory == Area).Where(t=> t.rating !=0).Count() != 0)
+                        {
+                            avg = this.Ratings.Where(x => x.RatingCategory == Area).Where(t=> t.rating !=0).Average(t=> t.rating);
+                        } 
                         AverageResults.Add(new RatingDetails() { ProductID = this.ID, RatingCategory = Area, rating = (int)avg });
                     }
                 }

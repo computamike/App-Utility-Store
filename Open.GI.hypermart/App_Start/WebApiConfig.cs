@@ -19,7 +19,7 @@ namespace Open.GI.hypermart
         {
             // Web API configuration and services
 
-            config.Filters.Add(new IdentityBasicAuthenticationAttribute());
+           // config.Filters.Add(new IdentityBasicAuthenticationAttribute());
 
             // Web API routes
             config.MapHttpAttributeRoutes();

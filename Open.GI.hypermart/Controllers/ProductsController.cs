@@ -77,7 +77,36 @@ namespace Open.GI.hypermart.Controllers
             {
                 result.Add(new RatingDetails() { ProductID = product.ID, RatingCategory = Area.RatingCategory, rating = Area.rating, userID = Area.userID });
             }
-            product.MyRating = result; 
+            
+            var rd = new API.RatingsController();
+            var Areas = rd.GetAvailableRatingAreas();
+            List<RatingDetails> AvailableResult = new List<RatingDetails>();
+            foreach (var RatingArea in Areas)
+            {
+                if (result.SingleOrDefault(t=> t.RatingCategory == RatingArea ) == null)
+                {
+                    AvailableResult.Add(new RatingDetails() { ProductID = product.ID, RatingCategory = RatingArea, rating = 0, userID = user });
+                }
+                else
+                {
+                    AvailableResult.Add(result.SingleOrDefault(t => t.RatingCategory == RatingArea));
+                }
+
+                
+                if (product.Ratings.Where(t => t.RatingCategory == RatingArea).Count() == 0)
+                {
+
+                    product.Ratings.Add(new Rating() { ProductID = product.ID, RatingCategory = RatingArea, rating = 0, userID = null });
+                }
+
+            }
+             
+
+            
+
+
+            // My ratings.
+            product.MyRating = AvailableResult; 
 
 
             return View(product);

@@ -53,7 +53,20 @@ namespace Open.GI.hypermart.DAL
                 Platforms = new List<Platform>{platforms.Where(f=>f.Platform1 =="Windows").First(),platforms.Where(f=>f.Platform1 =="Linux").First()}
             };
 
+            context.SaveChanges();
 
+
+            var testProduct = new Product()
+            {   ID = 1,
+                Lead = "mhingley",
+                Description = "Desc",
+                Tagline = "Teg line",
+                Title = "Title",
+                SourceCode = "http://github.com"
+            };
+
+            
+            context.Products.Add(testProduct);
 
             var products = new List<Product>
             {
@@ -63,6 +76,8 @@ namespace Open.GI.hypermart.DAL
                     Tagline="Access and integrate OGI and Office", 
                     Description = "THIS IS A COOL APP - EVERYONE SHOULD DOWNLOAD IT",
                     Lead="mhingley",
+                    MyRating = new List<RatingDetails>(),
+                    AverageRating = new List<RatingDetails>(),
                     Screenshots = 
                     {
                         new Screenshot{ScreenShot1  =Properties.Resources.Download1.ImageToByteArray()},
@@ -98,7 +113,7 @@ namespace Open.GI.hypermart.DAL
             };
 
             products.ForEach(p => context.Products.Add(p));
-            
+       
  
         }
     }
