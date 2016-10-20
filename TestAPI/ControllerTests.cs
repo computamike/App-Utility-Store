@@ -421,7 +421,7 @@ namespace TestAPI
 
             public IDbSet<Rating> Ratings { get; set; }
             
-            public IDbSet<RatingDetails> RatingDetails{ get; set; }
+            //public IDbSet<RatingDetails> RatingDetails{ get; set; }
 
             public void SaveChanges()
             {

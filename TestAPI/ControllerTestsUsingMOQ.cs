@@ -31,31 +31,31 @@ namespace TestAPI
             mockSet.As<IQueryable<Product>>().Setup(m => m.ElementType).Returns(Products.ElementType);
             mockSet.As<IQueryable<Product>>().Setup(m => m.GetEnumerator()).Returns(Products.GetEnumerator());
 
-            var Ratings = new List<RatingDetails>
-            {
-                new RatingDetails{ ProductID = 1, RatingCategory="RatingCategory", userID="User1", rating =5}
-            }.AsQueryable();
+            //var Ratings = new List<RatingDetails>
+            //{
+            //    new RatingDetails{ ProductID = 1, RatingCategory="RatingCategory", userID="User1", rating =5}
+            //}.AsQueryable();
 
-            var mockRatingsSet = new Mock<DbSet<RatingDetails>>();
-            mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.Provider).Returns(Ratings.Provider);
-            mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.Expression).Returns(Ratings.Expression);
-            mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.ElementType).Returns(Ratings.ElementType);
-            mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.GetEnumerator()).Returns(Ratings.GetEnumerator());
+            //var mockRatingsSet = new Mock<DbSet<RatingDetails>>();
+            //mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.Provider).Returns(Ratings.Provider);
+            //mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.Expression).Returns(Ratings.Expression);
+            //mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.ElementType).Returns(Ratings.ElementType);
+            //mockRatingsSet.As<IQueryable<RatingDetails>>().Setup(m => m.GetEnumerator()).Returns(Ratings.GetEnumerator());
 
             //mockEFContext.Setup(x => x.Products).Returns(mockSet.Object);
-            mockEFContext.Setup(x => x.RatingDetails).Returns(mockRatingsSet.Object);
+            //mockEFContext.Setup(x => x.RatingDetails).Returns(mockRatingsSet.Object);
 
             mockEFContext.Setup(x => x.SaveChanges()).Verifiable();
 
-            var apiRatings = new RatingDetailsController(mockEFContext.Object as HypermartContext);
+            //var apiRatings = new RatingDetailsController(mockEFContext.Object as HypermartContext);
 
-            var allRatings = apiRatings.GetRatingDetails();
+           //; var allRatings = apiRatings.GetRatingDetails();
 
-            RatingDetails RD = new RatingDetails();
-            RD.userID = "userID";
-            RD.RatingCategory = "RatingCategory";
+            //RatingDetails RD = new RatingDetails();
+            //RD.userID = "userID";
+            //RD.RatingCategory = "RatingCategory";
 
-            apiRatings.PostRatingDetails(RD);
+            //apiRatings.PostRatingDetails(RD);
             mockEFContext.VerifyAll();
         }
 
