@@ -145,6 +145,7 @@
   <ItemGroup>
     <Compile Include="APIHost.cs" />
     <Compile Include="App_Start\Class1.cs" />
+    <Compile Include="Controllers\ProductsControllerTests.cs" />
     <Compile Include="ControllerTests.cs" />
     <Compile Include="ControllerTestsUsingMOQ.cs" />
     <Compile Include="FakeDbSet.cs" />
