@@ -284,7 +284,7 @@
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/bundles/starrating")
 <script type="text/javascript">
-    
+
     function updateOrAddRating(event,value) {
         var area = event.currentTarget.attributes['data-rated-area'].nodeValue;
         var OutOf = 5;
@@ -301,7 +301,7 @@
             }
         var markers = [];
         $.ajax({
-            url: '/api/Ratings',
+            url: '@Url.Content("~/")/api/Ratings',
             type: 'POST',
             dataType: "json",
             contentType: "application/json",
