@@ -2,19 +2,11 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Index</h2>
 <p>You searched for @(ViewData["SearchTerm"])</p>
-<p>
-
-    Search results currently do no work - searching is something that is being worked on.
-
-</p>
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
@@ -48,13 +40,14 @@
             @Html.DisplayFor(modelItem => item.Description)
         </td>
         <td>
+            <div class="row">
+                <div class="HISTOGRAM col-md-12">
+                    @Html.Display("", "Rating")
+                </div>
+            </div>
 
-            @{ Html.RenderAction("Details", "User", new { userid = item.Lead }); }
-
+ 
         </td>
-
-
-
         <td>
             @Html.ActionLink("Edit","Edit","Products", new { id = item.ID },null) |
             @Html.ActionLink("Details", "Details", "Products", new { id = item.ID }, null) |
@@ -64,3 +57,5 @@
 }
 
 </table>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/starrating")

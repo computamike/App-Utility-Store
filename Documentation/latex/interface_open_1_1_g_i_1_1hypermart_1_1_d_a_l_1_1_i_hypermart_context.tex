@@ -1,0 +1,111 @@
+\hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context}{}\section{Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context Interface Reference}
+\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context}\index{Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context@{Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context}}
+
+
+Interface describing the functionality of the Database Context  
+
+
+Inheritance diagram for Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_aacc5015260d97950f2a10d7673873304}{Save\+Changes} ()
+\begin{DoxyCompactList}\small\item\em In a DB Context object, this should save all changes made in this context to the underlying database \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+System.\+Data.\+Entity.\+I\+Db\+Set$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_file}{Open.\+G\+I.\+hypermart.\+Models.\+File} $>$ \hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a43675ffb78127ee6af56534c51d593c5}{Files}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the files. \end{DoxyCompactList}\item 
+System.\+Data.\+Entity.\+I\+Db\+Set$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_platform}{Open.\+G\+I.\+hypermart.\+Models.\+Platform} $>$ \hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a555845fae4537e83a55b431d87b6642e}{Platforms}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the platforms. \end{DoxyCompactList}\item 
+System.\+Data.\+Entity.\+I\+Db\+Set$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_product}{Open.\+G\+I.\+hypermart.\+Models.\+Product} $>$ \hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_addebf65ed282146ad46149f0a4575ec7}{Products}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the products. \end{DoxyCompactList}\item 
+System.\+Data.\+Entity.\+I\+Db\+Set$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_screenshot}{Open.\+G\+I.\+hypermart.\+Models.\+Screenshot} $>$ \hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_ab60981916a8ecd6e871be2f4cb699b19}{Screenshots}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the screenshots. \end{DoxyCompactList}\item 
+System.\+Data.\+Entity.\+I\+Db\+Set$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_rating}{Open.\+G\+I.\+hypermart.\+Models.\+Rating} $>$ \hyperlink{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a4e1ab8903a144091a90920c6e3e62d32}{Ratings}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Gets or sets the ratings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface describing the functionality of the Database Context 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_aacc5015260d97950f2a10d7673873304}{}\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_aacc5015260d97950f2a10d7673873304} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}!Save\+Changes@{Save\+Changes}}
+\index{Save\+Changes@{Save\+Changes}!Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}}
+\subsubsection{\texorpdfstring{Save\+Changes()}{SaveChanges()}}
+{\footnotesize\ttfamily void Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context.\+Save\+Changes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+In a DB Context object, this should save all changes made in this context to the underlying database 
+
+
+
+Implemented in \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_hypermart_context_a53edb75fbc2507fc97eaf26e36d92f42}{Open.\+G\+I.\+hypermart.\+D\+A\+L.\+Hypermart\+Context}.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a43675ffb78127ee6af56534c51d593c5}{}\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a43675ffb78127ee6af56534c51d593c5} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}!Files@{Files}}
+\index{Files@{Files}!Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}}
+\subsubsection{\texorpdfstring{Files}{Files}}
+{\footnotesize\ttfamily System.\+Data.\+Entity.\+I\+Db\+Set$<$\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_file}{Open.\+G\+I.\+hypermart.\+Models.\+File}$>$ Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context.\+Files\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the files. 
+
+The files. \hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a555845fae4537e83a55b431d87b6642e}{}\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a555845fae4537e83a55b431d87b6642e} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}!Platforms@{Platforms}}
+\index{Platforms@{Platforms}!Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}}
+\subsubsection{\texorpdfstring{Platforms}{Platforms}}
+{\footnotesize\ttfamily System.\+Data.\+Entity.\+I\+Db\+Set$<$\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_platform}{Open.\+G\+I.\+hypermart.\+Models.\+Platform}$>$ Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context.\+Platforms\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the platforms. 
+
+The platforms. \hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_addebf65ed282146ad46149f0a4575ec7}{}\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_addebf65ed282146ad46149f0a4575ec7} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}!Products@{Products}}
+\index{Products@{Products}!Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}}
+\subsubsection{\texorpdfstring{Products}{Products}}
+{\footnotesize\ttfamily System.\+Data.\+Entity.\+I\+Db\+Set$<$\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_product}{Open.\+G\+I.\+hypermart.\+Models.\+Product}$>$ Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context.\+Products\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the products. 
+
+The products. \hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a4e1ab8903a144091a90920c6e3e62d32}{}\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_a4e1ab8903a144091a90920c6e3e62d32} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}!Ratings@{Ratings}}
+\index{Ratings@{Ratings}!Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}}
+\subsubsection{\texorpdfstring{Ratings}{Ratings}}
+{\footnotesize\ttfamily System.\+Data.\+Entity.\+I\+Db\+Set$<$\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_rating}{Open.\+G\+I.\+hypermart.\+Models.\+Rating}$>$ Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context.\+Ratings\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the ratings. 
+
+The ratings. \hypertarget{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_ab60981916a8ecd6e871be2f4cb699b19}{}\label{interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context_ab60981916a8ecd6e871be2f4cb699b19} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}!Screenshots@{Screenshots}}
+\index{Screenshots@{Screenshots}!Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context@{Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}}
+\subsubsection{\texorpdfstring{Screenshots}{Screenshots}}
+{\footnotesize\ttfamily System.\+Data.\+Entity.\+I\+Db\+Set$<$\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_screenshot}{Open.\+G\+I.\+hypermart.\+Models.\+Screenshot}$>$ Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context.\+Screenshots\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Gets or sets the screenshots. 
+
+The screenshots. 
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+D\+A\+L/\hyperlink{_i_hypermart_context_8cs}{I\+Hypermart\+Context.\+cs}\end{DoxyCompactItemize}

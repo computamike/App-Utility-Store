@@ -1,0 +1,166 @@
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller}{}\section{Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller Class Reference}
+\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller}\index{Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller@{Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller}}
+
+
+R\+E\+ST \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i}{A\+PI} layer for interacting with files.  
+
+
+Inheritance diagram for Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+Enumerable$<$ String $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a628d4db60f8c5ea8bbf03db08ee67178}{Get\+Available\+Rating\+Areas} ()
+\begin{DoxyCompactList}\small\item\em Gets the rating areas. \end{DoxyCompactList}\item 
+I\+Queryable$<$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_rating}{Rating} $>$ \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_aa3ff04acf50d3bf4765f462c7fbdaf2b}{Get\+Ratings} ()
+\begin{DoxyCompactList}\small\item\em Gets the ratings. \end{DoxyCompactList}\item 
+I\+Http\+Action\+Result \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a79b77391187930a8c148fd4c3ae8e2f0}{Get\+Rating} (string id)
+\begin{DoxyCompactList}\small\item\em Gets the rating. \end{DoxyCompactList}\item 
+I\+Http\+Action\+Result \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a35f91cb72bc50655eae8e19780adb980}{Put\+Rating} (string id, \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_rating}{Rating} rating)
+\begin{DoxyCompactList}\small\item\em Puts the rating. \end{DoxyCompactList}\item 
+I\+Http\+Action\+Result \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a9d6b1b9e543bf0272c559a928a39541c}{Post\+Rating} (\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_rating_information_d_t_o}{Rating\+Information\+D\+TO} Rating\+To\+Add)
+\begin{DoxyCompactList}\small\item\em Posts the rating. \end{DoxyCompactList}\item 
+I\+Http\+Action\+Result \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_aaf06db00da369f94fb3bffbc05a3491f}{Delete\+Rating} (string id)
+\begin{DoxyCompactList}\small\item\em Deletes the rating. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_abb9f3f53bdc7109192217e3dc99532a7}{Dispose} (bool disposing)
+\begin{DoxyCompactList}\small\item\em Releases the unmanaged resources that are used by the object and, optionally, releases the managed resources. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+R\+E\+ST \hyperlink{namespace_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i}{A\+PI} layer for interacting with files. 
+
+\begin{DoxySeeAlso}{See also}
+System.\+Web.\+Http.\+Api\+Controller
+
+
+\end{DoxySeeAlso}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_aaf06db00da369f94fb3bffbc05a3491f}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_aaf06db00da369f94fb3bffbc05a3491f} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Delete\+Rating@{Delete\+Rating}}
+\index{Delete\+Rating@{Delete\+Rating}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Delete\+Rating()}{DeleteRating()}}
+{\footnotesize\ttfamily I\+Http\+Action\+Result Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Delete\+Rating (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Deletes the rating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_abb9f3f53bdc7109192217e3dc99532a7}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_abb9f3f53bdc7109192217e3dc99532a7} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Dispose()}{Dispose()}}
+{\footnotesize\ttfamily override void Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Dispose (\begin{DoxyParamCaption}\item[{bool}]{disposing }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Releases the unmanaged resources that are used by the object and, optionally, releases the managed resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em disposing} & true to release both managed and unmanaged resources; false to release only unmanaged resources.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a628d4db60f8c5ea8bbf03db08ee67178}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a628d4db60f8c5ea8bbf03db08ee67178} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Get\+Available\+Rating\+Areas@{Get\+Available\+Rating\+Areas}}
+\index{Get\+Available\+Rating\+Areas@{Get\+Available\+Rating\+Areas}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Available\+Rating\+Areas()}{GetAvailableRatingAreas()}}
+{\footnotesize\ttfamily I\+Enumerable$<$String$>$ Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Get\+Available\+Rating\+Areas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the rating areas. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a79b77391187930a8c148fd4c3ae8e2f0}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a79b77391187930a8c148fd4c3ae8e2f0} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Get\+Rating@{Get\+Rating}}
+\index{Get\+Rating@{Get\+Rating}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Rating()}{GetRating()}}
+{\footnotesize\ttfamily I\+Http\+Action\+Result Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Get\+Rating (\begin{DoxyParamCaption}\item[{string}]{id }\end{DoxyParamCaption})}
+
+
+
+Gets the rating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_aa3ff04acf50d3bf4765f462c7fbdaf2b}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_aa3ff04acf50d3bf4765f462c7fbdaf2b} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Get\+Ratings@{Get\+Ratings}}
+\index{Get\+Ratings@{Get\+Ratings}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Get\+Ratings()}{GetRatings()}}
+{\footnotesize\ttfamily I\+Queryable$<$\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_rating}{Rating}$>$ Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Get\+Ratings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the ratings. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a9d6b1b9e543bf0272c559a928a39541c}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a9d6b1b9e543bf0272c559a928a39541c} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Post\+Rating@{Post\+Rating}}
+\index{Post\+Rating@{Post\+Rating}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Post\+Rating()}{PostRating()}}
+{\footnotesize\ttfamily I\+Http\+Action\+Result Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Post\+Rating (\begin{DoxyParamCaption}\item[{\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_rating_information_d_t_o}{Rating\+Information\+D\+TO}}]{Rating\+To\+Add }\end{DoxyParamCaption})}
+
+
+
+Posts the rating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Rating\+To\+Add} & The rating.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a35f91cb72bc50655eae8e19780adb980}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_ratings_controller_a35f91cb72bc50655eae8e19780adb980} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}!Put\+Rating@{Put\+Rating}}
+\index{Put\+Rating@{Put\+Rating}!Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller@{Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}}
+\subsubsection{\texorpdfstring{Put\+Rating()}{PutRating()}}
+{\footnotesize\ttfamily I\+Http\+Action\+Result Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller.\+Put\+Rating (\begin{DoxyParamCaption}\item[{string}]{id,  }\item[{\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_rating}{Rating}}]{rating }\end{DoxyParamCaption})}
+
+
+
+Puts the rating. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & The identifier.\\
+\hline
+{\em rating} & The rating.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\hyperlink{_ratings_controller_8cs}{Ratings\+Controller.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+var class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_enum_type_model_description =
+[
+    [ "EnumTypeModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_enum_type_model_description.html#a77a337dadd9fdcee12869c7385bf51dc", null ],
+    [ "Values", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_enum_type_model_description.html#a7b42c1652865a638dd214ba6a1642819", null ]
+];

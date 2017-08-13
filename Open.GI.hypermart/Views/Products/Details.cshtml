@@ -1,6 +1,4 @@
 ﻿@model Open.GI.hypermart.Models.Product
-@using Open.GI.hypermart.Controllers.API;
- 
  
 @{
     ViewBag.Title = "Details";
@@ -139,95 +137,21 @@
 
 
 <!-- RATINGS HERE-->
-@{
-    
-    //var RatesDetailController = new RatingDetailsController();
-    //var xy = RatesDetailController.GetRatingDetails();
-    
-    //var RatesController = new RatingsController();
-    //var reviewCount = Model.RatingsDetail.Select(x => x.userID).Distinct().Count();
-    //var res =     RatesController.GetRatings();
-    
-    
-    
-    
-    //var myRatings = RatesController.GetRating("mhingley");
-    //var myRatings = RatesController.GetMyRatings(@"LENOVO-PC\Mike", 1);
 
-    //foreach (var item in RatesController.GetAvailableRatingAreas())
-    //{
-    //    res.Ratings.Single(x => x.RatedArea == item.RatedArea).Score = item.Score;
-   // }
-}
-
-
-@{
-    //var AvgRatings = new Dictionary<string, Double>();
-    //foreach (var item in res.Ratings)
-    //{
-    //    var avg = new Double();
-    //    if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Count() > 0)
-    //    {
-    //        avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea ).Average(z => z.rating);
-    //    }
-    //    else
-    //    {
-    //        avg = 0;
-    //    }
-
-    //    AvgRatings.Add(item.RatedArea, avg);
-    //}
-}
-
-
- 
- 
-
-
-
-    @*@if (Model.RatingsDetail.Count > 0)
-    {
-        foreach (var item in res.Ratings)
+<div class="row">
+    <div class="col-lg-12">
+        <h3 class="page-header">Ratings</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="HISTOGRAM col-md-12">
+        @foreach (var item in Model.AverageRating)
         {
-            var s = item.RatedArea;
-            Double avg = 0;
-            if (Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea).Count() >0)
-            {
-                avg = Model.RatingsDetail.Where(x => x.RatingCategory == item.RatedArea).Average(z => z.rating);
-            }
+            Html.RenderPartial("Rating", item);
         }
-
-    }*@
-    
-    
- 
-
- 
-
-
-
-
-
-    <div class="row">
-
-        <div class="col-lg-12">
-            <h3 class="page-header">Ratings</h3>
-        </div>
     </div>
-    <div class="row">
-        <div class="HISTOGRAM col-md-12">
-            @foreach (var item in Model.AverageRating)
-            {
-                <div class="row">
-                    <div class="col-md-2">@item.RatingCategory</div>
-                    <div class="col-md-10">
-                        <input value="@item.rating" data-show-caption="true" data-display-only="true" data-size="xs" data-theme="krajee-fa" class="rating rating-loading" data-min="0" data-stars="5" data-max="5" data-step="0.5">
-                    </div>
-                </div>
-            }
-        </div>
-    </div>
-
+</div>
+ 
 
      
      

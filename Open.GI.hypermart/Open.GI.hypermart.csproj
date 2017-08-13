@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
     <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
     <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -307,11 +308,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Registration.cs" />
+    <Compile Include="Services\SearchService.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="Status.asmx.cs">
       <DependentUpon>Status.asmx</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Content Include="Views\Shared\Rating.cshtml" />
+    <Content Include="Views\Shared\Stars.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\hypermart.mdf" />
@@ -352,7 +356,7 @@
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
     <None Include="Properties\PublishProfiles\ogi-enterpriseappstore.pubxml" />
-    <None Include="Resources\default-user.png" />
+    <Resource Include="Resources\default-user.png" />
     <None Include="Resources\Download1.jpg" />
     <None Include="Resources\Download2.jpg" />
     <None Include="Resources\download3.jpg" />

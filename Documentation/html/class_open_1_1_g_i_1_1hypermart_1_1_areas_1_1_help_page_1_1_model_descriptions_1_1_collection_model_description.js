@@ -1,0 +1,4 @@
+var class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_collection_model_description =
+[
+    [ "ElementDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_collection_model_description.html#a4049e2a56d1af746b241c4ae2da109ca", null ]
+];

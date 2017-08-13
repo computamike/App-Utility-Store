@@ -146,10 +146,12 @@
     <Compile Include="APIHost.cs" />
     <Compile Include="App_Start\Class1.cs" />
     <Compile Include="Controllers\ProductsControllerTests.cs" />
+    <Compile Include="Controllers\SearchControllerTests.cs" />
     <Compile Include="ControllerTests.cs" />
     <Compile Include="ControllerTestsUsingMOQ.cs" />
     <Compile Include="FakeDbSet.cs" />
     <Compile Include="FakeHypermartContext.cs" />
+    <Compile Include="GenerateDBSet.cs" />
     <Compile Include="InMemoryTests.cs" />
     <Compile Include="main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -159,6 +161,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Services\SearchServiceTests.cs" />
     <Compile Include="Setup.cs" />
     <Compile Include="StreamResourceInfo.cs" />
     <Compile Include="web API tests\ratings_api_tests.cs" />

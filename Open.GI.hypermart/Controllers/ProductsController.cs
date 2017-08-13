@@ -70,43 +70,43 @@ namespace Open.GI.hypermart.Controllers
             }
 
             //Populate the Ratings
-            List<Rating> result = new List<Rating>();
-            var user = User.Identity.Name;
-            var myratings = product.Ratings.Where(x => x.userID == user).OrderBy(x => x.RatingCategory);
-            foreach (Rating Area in myratings)
-            {
-                result.Add(new Rating() { ProductID = product.ID, RatingCategory = Area.RatingCategory, rating = Area.rating, userID = Area.userID });
-            }
+            //List<Rating> result = new List<Rating>();
+            //var user = User.Identity.Name;
+            //var myratings = product.Ratings.Where(x => x.userID == user).OrderBy(x => x.RatingCategory);
+            //foreach (Rating Area in myratings)
+            //{
+            //    result.Add(new Rating() { ProductID = product.ID, RatingCategory = Area.RatingCategory, rating = Area.rating, userID = Area.userID });
+            //}
             
-            var rd = new API.RatingsController();
-            var Areas = rd.GetAvailableRatingAreas();
-            List<Rating> AvailableResult = new List<Rating>();
-            foreach (var RatingArea in Areas)
-            {
-                if (result.SingleOrDefault(t=> t.RatingCategory == RatingArea ) == null)
-                {
-                    AvailableResult.Add(new Rating() { ProductID = product.ID, RatingCategory = RatingArea, rating = 0, userID = user });
-                }
-                else
-                {
-                    AvailableResult.Add(result.SingleOrDefault(t => t.RatingCategory == RatingArea));
-                }
+            //var rd = new API.RatingsController();
+            //var Areas = rd.GetAvailableRatingAreas();
+            //List<Rating> AvailableResult = new List<Rating>();
+            //foreach (var RatingArea in Areas)
+            //{
+            //    if (result.SingleOrDefault(t=> t.RatingCategory == RatingArea ) == null)
+            //    {
+            //        AvailableResult.Add(new Rating() { ProductID = product.ID, RatingCategory = RatingArea, rating = 0, userID = user });
+            //    }
+            //    else
+            //    {
+            //        AvailableResult.Add(result.SingleOrDefault(t => t.RatingCategory == RatingArea));
+            //    }
 
                 
-                if (product.Ratings.Where(t => t.RatingCategory == RatingArea).Count() == 0)
-                {
+            //    if (product.Ratings.Where(t => t.RatingCategory == RatingArea).Count() == 0)
+            //    {
 
-                    product.Ratings.Add(new Rating() { ProductID = product.ID, RatingCategory = RatingArea, rating = 0, userID = null });
-                }
+            //        product.Ratings.Add(new Rating() { ProductID = product.ID, RatingCategory = RatingArea, rating = 0, userID = null });
+            //    }
 
-            }
+            //}
              
 
             
 
 
-            // My ratings.
-            product.MyRating = AvailableResult; 
+            //// My ratings.
+            //product.MyRating = AvailableResult; 
 
 
             return View(product);

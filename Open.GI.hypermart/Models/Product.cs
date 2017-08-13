@@ -10,7 +10,7 @@ namespace Open.GI.hypermart.Models
     /// <summary>
     /// Product Model Class
     /// </summary>
-    public  class Product
+    public class Product
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Product"/> class.
@@ -115,13 +115,29 @@ namespace Open.GI.hypermart.Models
         // The ratings.
         // </value>
         //public virtual ICollection<RatingDetails> RatingsDetail { get; set; }
+        private ICollection<Rating> CalcuateAverageRating()
+        {
+            // work out the average based on the ratings...
+            List<Rating> AverageResults = new List<Rating>();
+            if (this.Ratings != null)
+            {
+                var RatingAreas = this.Ratings.Select(x => x.RatingCategory).Distinct();
+                foreach (var Area in RatingAreas)
+                {
+                    double avg = 0;
+                    if (this.Ratings.Where(x => x.RatingCategory == Area).Where(t => t.rating != 0).Count() != 0)
+                    {
+                        avg = this.Ratings.Where(x => x.RatingCategory == Area).Where(t => t.rating != 0).Average(t => t.rating);
+                    }
+                    AverageResults.Add(new Rating() { ProductID = this.ID, RatingCategory = Area, rating = avg });
+                }
+            }
+            return AverageResults;
+        }
 
- 
-        
-        
-        
+
         /// <summary>
-        /// Gets the average rating.
+        /// Gets the average ratings for all 
         /// </summary>
         /// <value>
         /// The average rating.
@@ -131,26 +147,11 @@ namespace Open.GI.hypermart.Models
         {
             get
             {
-                //return 9876;
-                // work out the average based on the ratings...
-                List<Rating> AverageResults = new List<Rating>();
-                // 1. Get Rating Areas...
-                
-                if (this.Ratings != null)
-                {
-                    var RatingAreas = this.Ratings.Select(x => x.RatingCategory).Distinct();
-                    foreach (var Area in RatingAreas)
-                    {
-                        double avg = 0;
-                        if(this.Ratings.Where(x => x.RatingCategory == Area).Where(t=> t.rating !=0).Count() != 0)
-                        {
-                            avg = this.Ratings.Where(x => x.RatingCategory == Area).Where(t=> t.rating !=0).Average(t=> t.rating);
-                        }
-                        AverageResults.Add(new Rating() { ProductID = this.ID, RatingCategory = Area, rating = avg });
-                    }
-                }
-
-                return AverageResults;
+                List<Rating> averages = new List<Rating>();
+                averages.Add(new Rating {  RatingCategory = "foo", rating = 4.6});
+                averages.Add(new Rating { RatingCategory = "bar", rating = 2.6 });
+                return averages;
+                //return CalcuateAverageRating();
             }
             set{}
 

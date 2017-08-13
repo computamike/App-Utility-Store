@@ -1,0 +1,5 @@
+var class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_key_value_pair_model_description =
+[
+    [ "KeyModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_key_value_pair_model_description.html#a76ccd9d3ad532ce5a56b52d15d84c324", null ],
+    [ "ValueModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_key_value_pair_model_description.html#a5bcf18b1e78df6ba8b0cbc001a11ace6", null ]
+];

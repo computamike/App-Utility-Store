@@ -1,0 +1,7 @@
+﻿@model Open.GI.hypermart.Models.Rating
+<div class="row">
+    <div class="col-md-2">@Model.RatingCategory</div>
+    <div class="col-md-10">
+        @{Html.RenderPartial("Stars", Model);}
+        </div>
+</div>

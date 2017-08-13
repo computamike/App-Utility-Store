@@ -1,0 +1,7 @@
+var class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_model_description_generator =
+[
+    [ "ModelDescriptionGenerator", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_model_description_generator.html#a56c6ca4b29667cf648929f4bbedca964", null ],
+    [ "GetOrCreateModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_model_description_generator.html#aa693e668d64aa73688aaa4fc080eb525", null ],
+    [ "DocumentationProvider", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_model_description_generator.html#af53246839ad66247e546e908ca06c305", null ],
+    [ "GeneratedModels", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_model_description_generator.html#ad4d703c3da52e11a1e52c12ae04e88a6", null ]
+];

@@ -1,0 +1,5 @@
+var class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_parameter_annotation =
+[
+    [ "AnnotationAttribute", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_parameter_annotation.html#a53e191aedff647b1d7cd63e2bb2219e0", null ],
+    [ "Documentation", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_parameter_annotation.html#a9bfcc6f5d41c3630187373bbf9993fa4", null ]
+];

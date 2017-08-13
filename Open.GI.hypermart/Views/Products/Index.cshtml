@@ -18,7 +18,7 @@
             @Html.DisplayNameFor(model => model.Tagline)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Description)
+            @Html.DisplayNameFor(model => model.AverageRating)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.Lead)
@@ -26,7 +26,8 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
+@foreach (var item in Model)
+{
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
@@ -35,12 +36,10 @@
             @Html.DisplayFor(modelItem => item.Tagline)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Description)
+            @{Html.RenderPartial("Stars",  item.AverageRating.FirstOrDefault());}
         </td>
         <td>
-
             @{ Html.RenderAction("popup_Details", "User", new { userid = item.Lead }); }
-           
         </td>
 
 
@@ -54,3 +53,5 @@
 }
 
 </table>
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/starrating")

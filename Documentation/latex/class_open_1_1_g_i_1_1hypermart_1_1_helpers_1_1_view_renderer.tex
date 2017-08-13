@@ -1,0 +1,356 @@
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer}{}\section{Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer Class Reference}
+\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer}\index{Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer@{Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer}}
+
+
+Class that renders M\+VC views to a string using the standard M\+VC View Engine to render the view.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aabe19f0b091fc4a5a2dbef6c898eaef4}{View\+Renderer} (Controller\+Context controller\+Context=null)
+\begin{DoxyCompactList}\small\item\em Initializes the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer}{View\+Renderer} with a Context. \end{DoxyCompactList}\item 
+string \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af8383dd6d43af50ba6433ea8fa9c03f2}{Render\+View\+To\+String} (string view\+Path, object model=null)
+\begin{DoxyCompactList}\small\item\em Renders a full M\+VC view to a string. Will render with the full M\+VC View engine including running \+\_\+\+View\+Start and merging into \+\_\+\+Layout \end{DoxyCompactList}\item 
+void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af04c462b2dc2f610f0442f8d5718055a}{Render\+View} (string view\+Path, object model, Text\+Writer writer)
+\begin{DoxyCompactList}\small\item\em Renders a full M\+VC view to a writer. Will render with the full M\+VC View engine including running \+\_\+\+View\+Start and merging into \+\_\+\+Layout \end{DoxyCompactList}\item 
+string \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a2afbe1ea2ffd68f08dcd28309fd42744}{Render\+Partial\+View\+To\+String} (string view\+Path, object model=null)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af41730f2378765d4eacaae51b661ed45}{Render\+Partial\+View} (string view\+Path, object model, Text\+Writer writer)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to given Writer. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a855fe4d3baa41ec21747aae42ab62c41}{Render\+View} (string view\+Path, object model=null, Controller\+Context controller\+Context=null)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+static void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aad27a3171dfcb9a9d06351e637e249bf}{Render\+View} (string view\+Path, Text\+Writer writer, object model, Controller\+Context controller\+Context)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to the given writer. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+static string \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aba0a7e3bb189a5f1ce9ca4f8ace9c942}{Render\+View} (string view\+Path, object model, Controller\+Context controller\+Context, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+static void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a54c412e138b0d84aba52d60003fe8f9f}{Render\+View} (string view\+Path, object model, Text\+Writer writer, Controller\+Context controller\+Context, out string error\+Message)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to the given writer. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+static string \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a57700e4f845a9f94635e35f3c495317e}{Render\+Partial\+View} (string view\+Path, object model=null, Controller\+Context controller\+Context=null)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+static void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a4be45c477d06f4c6505f7d8c65bc988a}{Render\+Partial\+View} (string view\+Path, Text\+Writer writer, object model=null, Controller\+Context controller\+Context=null)
+\begin{DoxyCompactList}\small\item\em Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. \end{DoxyCompactList}\item 
+static T \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a886a3c16dcc5798c5c820b87810e8c0f}{Create\+Controller$<$ T $>$} (Route\+Data route\+Data=null, params object\mbox{[}$\,$\mbox{]} parameters)
+\begin{DoxyCompactList}\small\item\em Creates an instance of an M\+VC controller from scratch when no existing Controller\+Context is present \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a2dda3a83d880019292d23e2cef0c8ac9}{Render\+View\+To\+Writer\+Internal} (string view\+Path, Text\+Writer writer, object model=null, bool partial=false)
+\begin{DoxyCompactList}\small\item\em Internal method that handles rendering of either partial or or full views. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Controller\+Context \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_ab42d020bf6988c82880809461bfd303b}{Context}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Required Controller Context \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that renders M\+VC views to a string using the standard M\+VC View Engine to render the view. 
+
+Requires that A\+S\+P.\+N\+ET Http\+Context is present to work, but works outside of the context of M\+VC 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aabe19f0b091fc4a5a2dbef6c898eaef4}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aabe19f0b091fc4a5a2dbef6c898eaef4} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!View\+Renderer@{View\+Renderer}}
+\index{View\+Renderer@{View\+Renderer}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{View\+Renderer()}{ViewRenderer()}}
+{\footnotesize\ttfamily Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+View\+Renderer (\begin{DoxyParamCaption}\item[{Controller\+Context}]{controller\+Context = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Initializes the \hyperlink{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer}{View\+Renderer} with a Context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em controller\+Context} & If you are running within the context of an A\+S\+P.\+N\+ET M\+VC request pass in the controller\textquotesingle{}s context. Only leave out the context if no context is otherwise available. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a886a3c16dcc5798c5c820b87810e8c0f}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a886a3c16dcc5798c5c820b87810e8c0f} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Create\+Controller$<$ T $>$@{Create\+Controller$<$ T $>$}}
+\index{Create\+Controller$<$ T $>$@{Create\+Controller$<$ T $>$}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Create\+Controller$<$ T $>$()}{CreateController< T >()}}
+{\footnotesize\ttfamily static T Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Create\+Controller$<$ T $>$ (\begin{DoxyParamCaption}\item[{Route\+Data}]{route\+Data = {\ttfamily null},  }\item[{params object \mbox{[}$\,$\mbox{]}}]{parameters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Creates an instance of an M\+VC controller from scratch when no existing Controller\+Context is present 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of the controller to create\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+Controller for T
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Invalid\+Operation\+Exception} & thrown if Http\+Context not available\\
+\hline
+\end{DoxyExceptions}
+\begin{Desc}
+\item[Type Constraints]\begin{description}
+\item[{\em T} : {\em Controller}]\item[{\em T} : {\em new()}]\end{description}
+\end{Desc}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af41730f2378765d4eacaae51b661ed45}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af41730f2378765d4eacaae51b661ed45} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+Partial\+View@{Render\+Partial\+View}}
+\index{Render\+Partial\+View@{Render\+Partial\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+Partial\+View()}{RenderPartialView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+Partial\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model,  }\item[{Text\+Writer}]{writer }\end{DoxyParamCaption})}
+
+
+
+Renders a partial M\+VC view to given Writer. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em writer} & Writer to render the view to\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a57700e4f845a9f94635e35f3c495317e}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a57700e4f845a9f94635e35f3c495317e} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+Partial\+View@{Render\+Partial\+View}}
+\index{Render\+Partial\+View@{Render\+Partial\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+Partial\+View()}{RenderPartialView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static string Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+Partial\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model = {\ttfamily null},  }\item[{Controller\+Context}]{controller\+Context = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em controller\+Context} & Active controller context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a4be45c477d06f4c6505f7d8c65bc988a}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a4be45c477d06f4c6505f7d8c65bc988a} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+Partial\+View@{Render\+Partial\+View}}
+\index{Render\+Partial\+View@{Render\+Partial\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+Partial\+View()}{RenderPartialView()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static void Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+Partial\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{Text\+Writer}]{writer,  }\item[{object}]{model = {\ttfamily null},  }\item[{Controller\+Context}]{controller\+Context = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension\\
+\hline
+{\em writer} & Text writer to render view to\\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em controller\+Context} & Active controller context\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a2afbe1ea2ffd68f08dcd28309fd42744}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a2afbe1ea2ffd68f08dcd28309fd42744} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+Partial\+View\+To\+String@{Render\+Partial\+View\+To\+String}}
+\index{Render\+Partial\+View\+To\+String@{Render\+Partial\+View\+To\+String}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+Partial\+View\+To\+String()}{RenderPartialViewToString()}}
+{\footnotesize\ttfamily string Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+Partial\+View\+To\+String (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af04c462b2dc2f610f0442f8d5718055a}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af04c462b2dc2f610f0442f8d5718055a} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View@{Render\+View}}
+\index{Render\+View@{Render\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View()}{RenderView()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily void Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model,  }\item[{Text\+Writer}]{writer }\end{DoxyParamCaption})}
+
+
+
+Renders a full M\+VC view to a writer. Will render with the full M\+VC View engine including running \+\_\+\+View\+Start and merging into \+\_\+\+Layout 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension\\
+\hline
+{\em model} & The model to render the view with\\
+\hline
+{\em writer} & The writer.\\
+\hline
+\end{DoxyParams}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a855fe4d3baa41ec21747aae42ab62c41}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a855fe4d3baa41ec21747aae42ab62c41} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View@{Render\+View}}
+\index{Render\+View@{Render\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View()}{RenderView()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily static string Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model = {\ttfamily null},  }\item[{Controller\+Context}]{controller\+Context = {\ttfamily null} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em controller\+Context} & Active Controller context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aad27a3171dfcb9a9d06351e637e249bf}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aad27a3171dfcb9a9d06351e637e249bf} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View@{Render\+View}}
+\index{Render\+View@{Render\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View()}{RenderView()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily static void Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{Text\+Writer}]{writer,  }\item[{object}]{model,  }\item[{Controller\+Context}]{controller\+Context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renders a partial M\+VC view to the given writer. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em writer} & Writer to render the view to\\
+\hline
+{\em controller\+Context} & Active Controller context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aba0a7e3bb189a5f1ce9ca4f8ace9c942}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_aba0a7e3bb189a5f1ce9ca4f8ace9c942} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View@{Render\+View}}
+\index{Render\+View@{Render\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View()}{RenderView()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily static string Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model,  }\item[{Controller\+Context}]{controller\+Context,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renders a partial M\+VC view to string. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em controller\+Context} & Active Controller context\\
+\hline
+{\em error\+Message} & optional out parameter that captures an error message instead of throwing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a54c412e138b0d84aba52d60003fe8f9f}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a54c412e138b0d84aba52d60003fe8f9f} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View@{Render\+View}}
+\index{Render\+View@{Render\+View}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View()}{RenderView()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily static void Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model,  }\item[{Text\+Writer}]{writer,  }\item[{Controller\+Context}]{controller\+Context,  }\item[{out string}]{error\+Message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Renders a partial M\+VC view to the given writer. Use this method to render a partial view that doesn\textquotesingle{}t merge with \+\_\+\+Layout and doesn\textquotesingle{}t fire \+\_\+\+View\+Start. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to pass to the view\+Renderer\\
+\hline
+{\em controller\+Context} & Active Controller context\\
+\hline
+{\em writer} & Writer to render the view to\\
+\hline
+{\em error\+Message} & optional out parameter that captures an error message instead of throwing\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af8383dd6d43af50ba6433ea8fa9c03f2}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_af8383dd6d43af50ba6433ea8fa9c03f2} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View\+To\+String@{Render\+View\+To\+String}}
+\index{Render\+View\+To\+String@{Render\+View\+To\+String}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View\+To\+String()}{RenderViewToString()}}
+{\footnotesize\ttfamily string Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View\+To\+String (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{object}]{model = {\ttfamily null} }\end{DoxyParamCaption})}
+
+
+
+Renders a full M\+VC view to a string. Will render with the full M\+VC View engine including running \+\_\+\+View\+Start and merging into \+\_\+\+Layout 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & The model to render the view with\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+String of the rendered view or null on error
+\end{DoxyReturn}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a2dda3a83d880019292d23e2cef0c8ac9}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_a2dda3a83d880019292d23e2cef0c8ac9} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Render\+View\+To\+Writer\+Internal@{Render\+View\+To\+Writer\+Internal}}
+\index{Render\+View\+To\+Writer\+Internal@{Render\+View\+To\+Writer\+Internal}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Render\+View\+To\+Writer\+Internal()}{RenderViewToWriterInternal()}}
+{\footnotesize\ttfamily void Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Render\+View\+To\+Writer\+Internal (\begin{DoxyParamCaption}\item[{string}]{view\+Path,  }\item[{Text\+Writer}]{writer,  }\item[{object}]{model = {\ttfamily null},  }\item[{bool}]{partial = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Internal method that handles rendering of either partial or or full views. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em view\+Path} & The path to the view to render. Either in same controller, shared by name or as fully qualified $\sim$/ path including extension \\
+\hline
+{\em model} & Model to render the view with\\
+\hline
+{\em partial} & Determines whether to render a full or partial view\\
+\hline
+{\em writer} & Text writer to render view to\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Property Documentation}
+\hypertarget{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_ab42d020bf6988c82880809461bfd303b}{}\label{class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer_ab42d020bf6988c82880809461bfd303b} 
+\index{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}!Context@{Context}}
+\index{Context@{Context}!Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer@{Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}}
+\subsubsection{\texorpdfstring{Context}{Context}}
+{\footnotesize\ttfamily Controller\+Context Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer.\+Context\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}, {\ttfamily [protected]}}
+
+
+
+Required Controller Context 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\hyperlink{_view_renderer_8cs}{View\+Renderer.\+cs}\end{DoxyCompactItemize}

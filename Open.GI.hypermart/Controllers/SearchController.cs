@@ -1,4 +1,5 @@
 ﻿using Open.GI.hypermart.DAL;
+using Open.GI.hypermart.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,13 +28,13 @@ namespace Open.GI.hypermart.Controllers
         }
 
 
-        /// <summary>
-        /// Standard installer for Search Controller
-        /// </summary>
-        public SearchController()
-        {
+        ///// <summary>
+        ///// Standard installer for Search Controller
+        ///// </summary>
+        //public SearchController()
+        //{
 
-        }
+        //}
         // GET: Search        
         /// <summary>
         /// Indexes the specified search term. (performs a search, returns a list of results)
@@ -41,20 +42,13 @@ namespace Open.GI.hypermart.Controllers
         /// <param name="SearchTerm">The search term.</param>
         /// <returns></returns>
         public ActionResult Index(string SearchTerm)
-        { 
-
-            var TitleMatches  = db.Products.Where(x => x.Title.Contains(SearchTerm.Trim()));
-            var DescriptionMatches  = db.Products.Where(x => x.Description.Contains(SearchTerm.Trim()));
-            
-            var result =TitleMatches.Union(DescriptionMatches);
-  
-
-
-
-
-
+        {
+            SearchService search = new SearchService(db);
+            IQueryable<Models.Product> result = search.PerformSearch(SearchTerm);
             ViewData.Add("SearchTerm", SearchTerm);
             return View(result);
         }
+
+
     }
 }

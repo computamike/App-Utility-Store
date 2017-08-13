@@ -1,0 +1,5 @@
+var class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_complex_type_model_description =
+[
+    [ "ComplexTypeModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_complex_type_model_description.html#a750b8a599e8e45d091aebfb26edfb3cd", null ],
+    [ "Properties", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_complex_type_model_description.html#aef12ede0391a6d743c2f92b1f94d46c2", null ]
+];

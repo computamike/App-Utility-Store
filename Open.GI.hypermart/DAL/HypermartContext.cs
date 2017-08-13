@@ -19,6 +19,7 @@ namespace Open.GI.hypermart.DAL
         public HypermartContext(): base("HypermartContext")
         {
             //Configuration.LazyLoadingEnabled = false;
+            Database.SetInitializer<HypermartContext>(null);
         }
 
         /// <summary>

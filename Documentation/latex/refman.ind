@@ -1,0 +1,1837 @@
+\begin{theindex}
+
+  \item {About}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Home\+Controller}, 
+		\hyperpage{68}
+  \item {Account\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Account\+Controller}, 
+		\hyperpage{25}
+  \item {Action\+Name}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{67}
+  \item {Action\+Samples}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{63}
+  \item {Actual\+Http\+Message\+Types}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{63}
+  \item {Add\+File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{136}
+  \item {Add\+Screen\+Shot}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{136}
+  \item {Annotation\+Attribute}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Annotation}, 
+		\hyperpage{93}
+  \item {Annotations}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Description}, 
+		\hyperpage{94}
+  \item {Api}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Controllers\+::\+Help\+Controller}, 
+		\hyperpage{53}
+  \item {Api\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+  \item {Api\+Identity}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Api\+Identity}, 
+		\hyperpage{29}
+  \item {Application\+\_\+\+Start}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Mvc\+Application}, 
+		\hyperpage{90}
+  \item {Area\+Name}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Area\+Registration}, 
+		\hyperpage{58}
+  \item {Auth\+Context}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Auth\+Context}, 
+		\hyperpage{31}
+  \item {Auth\+Repository}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Auth\+Repository}, 
+		\hyperpage{32}
+  \item {Authentication\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Api\+Identity}, 
+		\hyperpage{29}
+  \item {Average\+Rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+
+  \indexspace
+
+  \item {B\+L\+OB}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{45}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{42}
+
+  \indexspace
+
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+App\+\_\+\+Start/\+Bundle\+Config.\+cs}, 
+		\hyperpage{163}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+App\+\_\+\+Start/\+Filter\+Config.\+cs}, 
+		\hyperpage{163}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+App\+\_\+\+Start/\+Route\+Config.\+cs}, 
+		\hyperpage{163}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+App\+\_\+\+Start/\+Unity\+Config.\+cs}, 
+		\hyperpage{164}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+App\+\_\+\+Start/\+Unity\+Mvc\+Activator.\+cs}, 
+		\hyperpage{164}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+App\+\_\+\+Start/\+Web\+Api\+Config.\+cs}, 
+		\hyperpage{164}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Api\+Description\+Extensions.\+cs}, 
+		\hyperpage{165}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+App\+\_\+\+Start/\+Help\+Page\+Config.\+cs}, 
+		\hyperpage{165}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Controllers/\+Help\+Controller.\+cs}, 
+		\hyperpage{165}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Help\+Page\+Area\+Registration.\+cs}, 
+		\hyperpage{165}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Help\+Page\+Configuration\+Extensions.\+cs}, 
+		\hyperpage{166}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Collection\+Model\+Description.\+cs}, 
+		\hyperpage{166}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Complex\+Type\+Model\+Description.\+cs}, 
+		\hyperpage{166}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Dictionary\+Model\+Description.\+cs}, 
+		\hyperpage{166}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Enum\+Type\+Model\+Description.\+cs}, 
+		\hyperpage{167}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Enum\+Value\+Description.\+cs}, 
+		\hyperpage{167}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+I\+Model\+Documentation\+Provider.\+cs}, 
+		\hyperpage{167}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Key\+Value\+Pair\+Model\+Description.\+cs}, 
+		\hyperpage{167}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Model\+Description.\+cs}, 
+		\hyperpage{168}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Model\+Description\+Generator.\+cs}, 
+		\hyperpage{168}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Model\+Name\+Attribute.\+cs}, 
+		\hyperpage{168}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Model\+Name\+Helper.\+cs}, 
+		\hyperpage{169}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Parameter\+Annotation.\+cs}, 
+		\hyperpage{169}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Parameter\+Description.\+cs}, 
+		\hyperpage{169}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Model\+Descriptions/\+Simple\+Type\+Model\+Description.\+cs}, 
+		\hyperpage{169}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Models/\+Help\+Page\+Api\+Model.\+cs}, 
+		\hyperpage{170}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Help\+Page\+Sample\+Generator.\+cs}, 
+		\hyperpage{170}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Help\+Page\+Sample\+Key.\+cs}, 
+		\hyperpage{170}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Image\+Sample.\+cs}, 
+		\hyperpage{171}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Invalid\+Sample.\+cs}, 
+		\hyperpage{171}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Object\+Generator.\+cs}, 
+		\hyperpage{171}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Sample\+Direction.\+cs}, 
+		\hyperpage{171}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Sample\+Generation/\+Text\+Sample.\+cs}, 
+		\hyperpage{172}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Areas/\+Help\+Page/\+Xml\+Documentation\+Provider.\+cs}, 
+		\hyperpage{172}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Attributes/\+Api\+Identity.\+cs}, 
+		\hyperpage{172}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Attributes/\+Identity\+Basic\+Authentication\+Attribute.\+cs}, 
+		\hyperpage{173}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Attributes/\+Store\+Attribute.\+cs}, 
+		\hyperpage{173}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Account\+Controller.\+cs}, 
+		\hyperpage{173}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Files\+Controller.\+cs}, 
+		\hyperpage{173}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Products\+Controller.\+cs}, 
+		\hyperpage{174}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Rating\+Details\+Controller.\+cs}, 
+		\hyperpage{174}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Ratings\+Controller.\+cs}, 
+		\hyperpage{175}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Screenshots\+Controller.\+cs}, 
+		\hyperpage{175}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Store\+Content\+Controller.\+cs}, 
+		\hyperpage{175}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+User\+Controller.\+cs}, 
+		\hyperpage{175}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+A\+P\+I/\+Values\+Controller.\+cs}, 
+		\hyperpage{176}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+Download\+Controller.\+cs}, 
+		\hyperpage{176}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+Fake\+Controller.\+cs}, 
+		\hyperpage{177}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+Home\+Controller.\+cs}, 
+		\hyperpage{177}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+Nuget\+Controller.\+cs}, 
+		\hyperpage{177}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+Products\+Controller.\+cs}, 
+		\hyperpage{174}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+Search\+Controller.\+cs}, 
+		\hyperpage{177}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Controllers/\+User\+Controller.\+cs}, 
+		\hyperpage{176}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+D\+A\+L/\+Auth\+Context.\+cs}, 
+		\hyperpage{178}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+D\+A\+L/\+Hypermart\+Context.\+cs}, 
+		\hyperpage{178}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+D\+A\+L/\+Hypermart\+Initializer.\+cs}, 
+		\hyperpage{178}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+D\+A\+L/\+I\+Hypermart\+Context.\+cs}, 
+		\hyperpage{179}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+D\+A\+L/\+Store\+Content\+D\+A\+L.\+cs}, 
+		\hyperpage{179}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/\+Data\+Transformation\+Objects/\+File\+D\+T\+O.\+cs}, 
+		\hyperpage{179}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/\+Data\+Transformation\+Objects/\+Product\+D\+T\+O.\+cs}, 
+		\hyperpage{179}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/\+Data\+Transformation\+Objects/\+Rating\+D\+T\+O.\+cs}, 
+		\hyperpage{180}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/\+Data\+Transformation\+Objects/\+Rating\+Information\+D\+T\+O.\+cs}, 
+		\hyperpage{180}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/\+Data\+Transformation\+Objects/\+Screen\+Shot\+D\+T\+O.\+cs}, 
+		\hyperpage{180}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/\+Data\+Transformation\+Objects/\+User\+D\+T\+O.\+cs}, 
+		\hyperpage{181}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/html/dynsections.\+js}, 
+		\hyperpage{181}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Docs/html/jquery.\+js}, 
+		\hyperpage{181}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Global.\+asax.\+cs}, 
+		\hyperpage{181}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+A\+D\+\_\+\+Repository.\+cs}, 
+		\hyperpage{181}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+Auth\+Repository.\+cs}, 
+		\hyperpage{182}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+File\+Share\+Helper.\+cs}, 
+		\hyperpage{182}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+Image\+Helper.\+cs}, 
+		\hyperpage{182}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+Platform\+Helper.\+cs}, 
+		\hyperpage{183}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+Rss\+Action\+Result.\+cs}, 
+		\hyperpage{183}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+Search.\+cs}, 
+		\hyperpage{183}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Helpers/\+View\+Renderer.\+cs}, 
+		\hyperpage{183}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Migrations/201610201858128\+\_\+\+Initial.\+cs}, 
+		\hyperpage{184}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Migrations/201610201858128\+\_\+\+Initial.\+Designer.\+cs}, 
+		\hyperpage{184}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Migrations/\+Configuration.\+cs}, 
+		\hyperpage{184}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Category.\+cs}, 
+		\hyperpage{184}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+File.\+cs}, 
+		\hyperpage{185}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Http\+Error\+Page.\+cs}, 
+		\hyperpage{185}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Installation\+History.\+cs}, 
+		\hyperpage{185}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Platform.\+cs}, 
+		\hyperpage{186}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Product.\+cs}, 
+		\hyperpage{186}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Rating.\+cs}, 
+		\hyperpage{187}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Rating\+Details.\+cs}, 
+		\hyperpage{187}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Screenshot.\+cs}, 
+		\hyperpage{187}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Service.\+cs}, 
+		\hyperpage{188}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Storage\+Type.\+cs}, 
+		\hyperpage{188}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+Tag.\+cs}, 
+		\hyperpage{189}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+User.\+cs}, 
+		\hyperpage{189}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+User\+Model.\+cs}, 
+		\hyperpage{190}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Models/\+W\+S\+User.\+cs}, 
+		\hyperpage{190}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Properties/\+Assembly\+Info.\+cs}, 
+		\hyperpage{190}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Properties/\+Resources.\+Designer.\+cs}, 
+		\hyperpage{190}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Registration.\+cs}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/\+\_\+references.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/\+Product\+Edit.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/\+Profile.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating.\+min.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+\+L\+A\+N\+G.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+de.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+es.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+fr.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+it.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+pt-\/br.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+ro.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+ru.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap-\/star-\/rating/js/star-\/rating\+\_\+locale\+\_\+ua.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/bootstrap.\+min.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/dropzone.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/dropzone/dropzone-\/amd-\/module.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/dropzone/dropzone-\/amd-\/module.\+min.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/dropzone/dropzone.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/dropzone/dropzone.\+min.\+js}, 
+		\hyperpage{192}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery-\/1.\+10.\+2.\+intellisense.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery-\/2.\+2.\+2-\/vsdoc.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery-\/2.\+2.\+2.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery-\/2.\+2.\+2.\+min.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery.\+validate-\/vsdoc.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery.\+validate.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery.\+validate.\+min.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery.\+validate.\+unobtrusive.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/jquery.\+validate.\+unobtrusive.\+min.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/modernizr-\/2.\+6.\+2.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/respond.\+js}, 
+		\hyperpage{193}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/respond.\+min.\+js}, 
+		\hyperpage{194}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Scripts/star-\/rating/star-\/rating.\+js}, 
+		\hyperpage{191}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Startup.\+cs}, 
+		\hyperpage{194}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+Status.\+asmx.\+cs}, 
+		\hyperpage{194}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+File.\+cs}, 
+		\hyperpage{185}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+File\+Platform.\+cs}, 
+		\hyperpage{194}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+Model1.\+Context.\+cs}, 
+		\hyperpage{194}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+Platform.\+cs}, 
+		\hyperpage{186}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+Product.\+cs}, 
+		\hyperpage{186}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+Screenshot.\+cs}, 
+		\hyperpage{188}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+Storage\+Type.\+cs}, 
+		\hyperpage{188}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/\+W\+I\+P/\+User.\+cs}, 
+		\hyperpage{189}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/obj/\+Debug/\+Temporary\+Generated\+File\+\_\+036\+C0\+B5\+B-\/1481-\/4323-\/8\+D20-\/8\+F5\+A\+D\+C\+B23\+D92.\+cs}, 
+		\hyperpage{190}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/obj/\+Debug/\+Temporary\+Generated\+File\+\_\+5937a670-\/0e60-\/4077-\/877b-\/f7221da3dda1.\+cs}, 
+		\hyperpage{190}
+  \item {C\+:/\+Projects/\+App-\/\+Utility-\/\+Store/\+Open.\+G\+I.\+hypermart/obj/\+Debug/\+Temporary\+Generated\+File\+\_\+\+E7\+A71\+F73-\/0\+F8\+D-\/4\+B9\+B-\/\+B56\+E-\/8\+E70\+B10\+B\+C5\+D3.\+cs}, 
+		\hyperpage{190}
+  \item {Comment}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}, 
+		\hyperpage{117}
+  \item {Comment\+Title}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}, 
+		\hyperpage{117}
+  \item {Comments}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}, 
+		\hyperpage{110}
+  \item {Complex\+Type\+Model\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Complex\+Type\+Model\+Description}, 
+		\hyperpage{36}
+  \item {Configuration}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Controllers\+::\+Help\+Controller}, 
+		\hyperpage{54}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Startup}, 
+		\hyperpage{132}
+  \item {Confirm\+Password}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User\+Model}, 
+		\hyperpage{148}
+  \item {Contact}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Home\+Controller}, 
+		\hyperpage{68}
+  \item {Context}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{158}
+  \item {Controller\+Name}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{67}
+  \item {Create}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{103}
+  \item {Create\+Controller$<$ T $>$}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{153}
+  \item {Create\+Folder}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+File\+Share\+Helper}, 
+		\hyperpage{51}
+  \item {Create\+Share}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+File\+Share\+Helper}, 
+		\hyperpage{51}
+
+  \indexspace
+
+  \item {db}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{106}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Search\+Controller}, 
+		\hyperpage{130}
+  \item {Delete}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Values\+Controller}, 
+		\hyperpage{149}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{103}
+  \item {Delete\+Confirmed}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{104}
+  \item {Delete\+File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}, 
+		\hyperpage{49}
+  \item {Delete\+Product}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{107}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{137}
+  \item {Delete\+Rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{119}
+  \item {Delete\+Rating\+Details}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}, 
+		\hyperpage{113}
+  \item {Delete\+Screenshot}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{126}
+  \item {Delete\+Share}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+File\+Share\+Helper}, 
+		\hyperpage{51}
+  \item {Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{101}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+  \item {Details}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+User\+Controller}, 
+		\hyperpage{144}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{104}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+User\+Controller}, 
+		\hyperpage{145}
+  \item {Dispose}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Account\+Controller}, 
+		\hyperpage{26}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}, 
+		\hyperpage{49}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{107}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}, 
+		\hyperpage{114}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{119}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{127}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{104}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Auth\+Repository}, 
+		\hyperpage{32}
+  \item {Documentation}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Value\+Description}, 
+		\hyperpage{40}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description}, 
+		\hyperpage{87}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Annotation}, 
+		\hyperpage{93}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Description}, 
+		\hyperpage{94}
+  \item {Down}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Migrations\+::\+Initial}, 
+		\hyperpage{80}
+  \item {Download}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Download\+Controller}, 
+		\hyperpage{37}
+
+  \indexspace
+
+  \item {Edit}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{105}
+  \item {Element\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Collection\+Model\+Description}, 
+		\hyperpage{35}
+  \item {Email}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}, 
+		\hyperpage{147}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User}, 
+		\hyperpage{143}
+  \item {Enum\+Type\+Model\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Type\+Model\+Description}, 
+		\hyperpage{39}
+  \item {Enumerate\+Domains}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+A\+D\+\_\+\+Repository}, 
+		\hyperpage{27}
+  \item {Equals}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{66}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Image\+Sample}, 
+		\hyperpage{77}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Invalid\+Sample}, 
+		\hyperpage{82}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Text\+Sample}, 
+		\hyperpage{140}
+  \item {Error\+Code}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Http\+Error\+Page}, 
+		\hyperpage{69}
+  \item {Error\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Http\+Error\+Page}, 
+		\hyperpage{69}
+  \item {Error\+Message}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Invalid\+Sample}, 
+		\hyperpage{83}
+  \item {Error\+Messages}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+  \item {Error\+Title}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Http\+Error\+Page}, 
+		\hyperpage{70}
+  \item {Execute\+Result}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Atom\+Action\+Result}, 
+		\hyperpage{30}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Rss\+Action\+Result}, 
+		\hyperpage{123}
+
+  \indexspace
+
+  \item {Feed}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Atom\+Action\+Result}, 
+		\hyperpage{31}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Rss\+Action\+Result}, 
+		\hyperpage{123}
+  \item {File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{42}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File\+Platform}, 
+		\hyperpage{47}
+  \item {File\+D\+TO}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{45}
+  \item {File\+ID}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Store\+Attribute}, 
+		\hyperpage{134}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}, 
+		\hyperpage{118}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Installation\+History}, 
+		\hyperpage{81}
+  \item {File\+Name}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{46}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{42}
+  \item {File\+Platforms}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{43}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{85}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Platform}, 
+		\hyperpage{96}
+  \item {Files}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{72}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}, 
+		\hyperpage{76}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{85}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Platform}, 
+		\hyperpage{96}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+  \item {Files\+\_\+\+ID}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File\+Platform}, 
+		\hyperpage{47}
+  \item {Find\+User}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Auth\+Repository}, 
+		\hyperpage{32}
+  \item {Friendly\+Domain\+To\+Ldap\+Domain}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+A\+D\+\_\+\+Repository}, 
+		\hyperpage{27}
+
+  \indexspace
+
+  \item {Generate\+Object}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}, 
+		\hyperpage{92}
+  \item {Generated\+Models}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}, 
+		\hyperpage{88}
+  \item {Get}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Values\+Controller}, 
+		\hyperpage{150}
+  \item {Get\+Action\+Sample}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{60}
+  \item {Get\+All\+Products}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{137}
+  \item {Get\+Available\+Rating\+Areas}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{120}
+  \item {Get\+By\+Status}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Values\+Controller}, 
+		\hyperpage{150}
+  \item {Get\+Configured\+Container}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+App\+\_\+\+Start\+::\+Unity\+Config}, 
+		\hyperpage{142}
+  \item {Get\+Documentation}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+I\+Model\+Documentation\+Provider}, 
+		\hyperpage{79}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}, 
+		\hyperpage{159--161}
+  \item {Get\+File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}, 
+		\hyperpage{49}
+  \item {Get\+Files}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}, 
+		\hyperpage{49}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{137}
+  \item {Get\+Hash\+Code}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{66}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Image\+Sample}, 
+		\hyperpage{78}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Invalid\+Sample}, 
+		\hyperpage{83}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Text\+Sample}, 
+		\hyperpage{141}
+  \item {Get\+Or\+Create\+Model\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}, 
+		\hyperpage{88}
+  \item {Get\+Product}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{107}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{137}
+  \item {Get\+Products}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{108}
+  \item {Get\+Rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{120}
+  \item {Get\+Rating\+Details}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}, 
+		\hyperpage{114}
+  \item {Get\+Ratings}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{120}
+  \item {Get\+Response\+Documentation}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}, 
+		\hyperpage{161}
+  \item {Get\+Sample}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{60}
+  \item {Get\+Sample\+Object}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{60}
+  \item {Get\+Sample\+Requests}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{61}
+  \item {Get\+Sample\+Responses}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{61}
+  \item {Get\+Screenshot}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{127}
+  \item {Get\+Screenshots}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{127}
+  \item {get\+User}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+A\+D\+\_\+\+Repository}, 
+		\hyperpage{27}
+  \item {Get\+Users}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+A\+D\+\_\+\+Repository}, 
+		\hyperpage{27}
+
+  \indexspace
+
+  \item {Hello\+World}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Status}, \hyperpage{133}
+  \item {Help\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Controllers\+::\+Help\+Controller}, 
+		\hyperpage{53}
+  \item {Help\+Page\+Api\+Model}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{55}
+  \item {Help\+Page\+Sample\+Generator}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{59}
+  \item {Help\+Page\+Sample\+Key}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{65, 66}
+  \item {Hypermart\+Context}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{71}
+
+  \indexspace
+
+  \item {ID}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{46}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{101}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Docs\+::\+Data\+Transformation\+Objects\+::\+Screen\+Shot\+D\+TO}, 
+		\hyperpage{125}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{43}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Platform}, 
+		\hyperpage{96}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Screenshot}, 
+		\hyperpage{124}
+  \item {Image\+Sample}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Image\+Sample}, 
+		\hyperpage{77}
+  \item {Index}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Controllers\+::\+Help\+Controller}, 
+		\hyperpage{54}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Fake\+Controller}, 
+		\hyperpage{41}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Home\+Controller}, 
+		\hyperpage{68}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Nuget\+Controller}, 
+		\hyperpage{91}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{105}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Search\+Controller}, 
+		\hyperpage{130}
+  \item {Installation\+Date}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Installation\+History}, 
+		\hyperpage{81}
+  \item {Installation\+History}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{72}
+  \item {Invalid\+Sample}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Invalid\+Sample}, 
+		\hyperpage{82}
+  \item {Is\+Authenticated}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Api\+Identity}, 
+		\hyperpage{29}
+
+  \indexspace
+
+  \item {Job\+Title}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}, 
+		\hyperpage{147}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User}, 
+		\hyperpage{143}
+
+  \indexspace
+
+  \item {Key\+Model\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Key\+Value\+Pair\+Model\+Description}, 
+		\hyperpage{84}
+
+  \indexspace
+
+  \item {Lead}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{101}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+  \item {Link}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{46}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{43}
+
+  \indexspace
+
+  \item {Maintainers}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+  \item {Management\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers}, \hyperpage{21}
+  \item {Media\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{67}
+  \item {Model1\+Container}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{85}
+  \item {Model\+Description\+Generator}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}, 
+		\hyperpage{88}
+  \item {Model\+Name\+Attribute}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Name\+Attribute}, 
+		\hyperpage{89}
+  \item {Model\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description}, 
+		\hyperpage{87}
+  \item {My\+Rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{98}
+
+  \indexspace
+
+  \item {Name}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Value\+Description}, 
+		\hyperpage{40}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description}, 
+		\hyperpage{87}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Name\+Attribute}, 
+		\hyperpage{89}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Description}, 
+		\hyperpage{94}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Api\+Identity}, 
+		\hyperpage{29}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Service}, 
+		\hyperpage{131}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Tag}, 
+		\hyperpage{139}
+
+  \indexspace
+
+  \item {On\+Action\+Executing}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Identity\+Basic\+Authentication\+Attribute}, 
+		\hyperpage{74}
+  \item {On\+Model\+Creating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{71}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{85}
+  \item {Open}, \hyperpage{15}
+  \item {Open.\+G\+I.\+hypermart}, \hyperpage{15}
+  \item {Open.\+G\+I.\+hypermart.\+App\+\_\+\+Start}, \hyperpage{16}
+  \item {Open.\+G\+I.\+hypermart.\+App\+\_\+\+Start.\+Unity\+Config}, 
+		\hyperpage{142}
+  \item {Open.\+G\+I.\+hypermart.\+Areas}, \hyperpage{16}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page}, \hyperpage{16}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Controllers}, 
+		\hyperpage{17}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Controllers.\+Help\+Controller}, 
+		\hyperpage{52}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Area\+Registration}, 
+		\hyperpage{57}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{58}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{64}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Image\+Sample}, 
+		\hyperpage{77}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Invalid\+Sample}, 
+		\hyperpage{82}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions}, 
+		\hyperpage{18}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Collection\+Model\+Description}, 
+		\hyperpage{34}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Complex\+Type\+Model\+Description}, 
+		\hyperpage{35}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Dictionary\+Model\+Description}, 
+		\hyperpage{36}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Enum\+Type\+Model\+Description}, 
+		\hyperpage{38}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Enum\+Value\+Description}, 
+		\hyperpage{39}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+I\+Model\+Documentation\+Provider}, 
+		\hyperpage{78}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Key\+Value\+Pair\+Model\+Description}, 
+		\hyperpage{84}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Model\+Description}, 
+		\hyperpage{86}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Model\+Description\+Generator}, 
+		\hyperpage{87}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Model\+Name\+Attribute}, 
+		\hyperpage{89}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Parameter\+Annotation}, 
+		\hyperpage{93}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Parameter\+Description}, 
+		\hyperpage{93}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Model\+Descriptions.\+Simple\+Type\+Model\+Description}, 
+		\hyperpage{131}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Models}, 
+		\hyperpage{18}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Models.\+Help\+Page\+Api\+Model}, 
+		\hyperpage{55}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Object\+Generator}, 
+		\hyperpage{92}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Text\+Sample}, 
+		\hyperpage{140}
+  \item {Open.\+G\+I.\+hypermart.\+Areas.\+Help\+Page.\+Xml\+Documentation\+Provider}, 
+		\hyperpage{159}
+  \item {Open.\+G\+I.\+hypermart.\+Attributes}, \hyperpage{18}
+  \item {Open.\+G\+I.\+hypermart.\+Attributes.\+Api\+Identity}, 
+		\hyperpage{28}
+  \item {Open.\+G\+I.\+hypermart.\+Attributes.\+Identity\+Basic\+Authentication\+Attribute}, 
+		\hyperpage{74}
+  \item {Open.\+G\+I.\+hypermart.\+Attributes.\+Store\+Attribute}, 
+		\hyperpage{133}
+  \item {Open.\+G\+I.\+hypermart.\+Bundle\+Config}, \hyperpage{33}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers}, \hyperpage{19}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Account\+Controller}, 
+		\hyperpage{25}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Files\+Controller}, 
+		\hyperpage{48}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Products\+Controller}, 
+		\hyperpage{106}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Rating\+Details\+Controller}, 
+		\hyperpage{112}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Ratings\+Controller}, 
+		\hyperpage{118}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Screenshots\+Controller}, 
+		\hyperpage{126}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+User\+Controller}, 
+		\hyperpage{144}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+P\+I.\+Values\+Controller}, 
+		\hyperpage{149}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+A\+PI}, \hyperpage{19}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Download\+Controller}, 
+		\hyperpage{37}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Fake\+Controller}, 
+		\hyperpage{40}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Home\+Controller}, 
+		\hyperpage{68}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Nuget\+Controller}, 
+		\hyperpage{91}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Products\+Controller}, 
+		\hyperpage{102}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Search\+Controller}, 
+		\hyperpage{129}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+Store\+Content\+Controller}, 
+		\hyperpage{135}
+  \item {Open.\+G\+I.\+hypermart.\+Controllers.\+User\+Controller}, 
+		\hyperpage{145}
+  \item {Open.\+G\+I.\+hypermart.\+D\+A\+L.\+Auth\+Context}, 
+		\hyperpage{31}
+  \item {Open.\+G\+I.\+hypermart.\+D\+A\+L.\+Hypermart\+Context}, 
+		\hyperpage{70}
+  \item {Open.\+G\+I.\+hypermart.\+D\+A\+L.\+Hypermart\+Initializer}, 
+		\hyperpage{73}
+  \item {Open.\+G\+I.\+hypermart.\+D\+A\+L.\+I\+Hypermart\+Context}, 
+		\hyperpage{75}
+  \item {Open.\+G\+I.\+hypermart.\+D\+A\+L.\+Store\+Content\+D\+AL}, 
+		\hyperpage{139}
+  \item {Open.\+G\+I.\+hypermart.\+D\+AL}, \hyperpage{20}
+  \item {Open.\+G\+I.\+hypermart.\+Data\+Transformation\+Objects}, 
+		\hyperpage{20}
+  \item {Open.\+G\+I.\+hypermart.\+Data\+Transformation\+Objects.\+File\+D\+TO}, 
+		\hyperpage{44}
+  \item {Open.\+G\+I.\+hypermart.\+Data\+Transformation\+Objects.\+Product\+D\+TO}, 
+		\hyperpage{100}
+  \item {Open.\+G\+I.\+hypermart.\+Data\+Transformation\+Objects.\+Rating\+D\+TO}, 
+		\hyperpage{115}
+  \item {Open.\+G\+I.\+hypermart.\+Data\+Transformation\+Objects.\+Rating\+Information\+D\+TO}, 
+		\hyperpage{117}
+  \item {Open.\+G\+I.\+hypermart.\+Data\+Transformation\+Objects.\+User\+D\+TO}, 
+		\hyperpage{146}
+  \item {Open.\+G\+I.\+hypermart.\+Docs}, \hyperpage{20}
+  \item {Open.\+G\+I.\+hypermart.\+Docs.\+Data\+Transformation\+Objects}, 
+		\hyperpage{20}
+  \item {Open.\+G\+I.\+hypermart.\+Docs.\+Data\+Transformation\+Objects.\+Screen\+Shot\+D\+TO}, 
+		\hyperpage{125}
+  \item {Open.\+G\+I.\+hypermart.\+Filter\+Config}, \hyperpage{52}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers}, \hyperpage{21}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+A\+D\+\_\+\+Repository}, 
+		\hyperpage{26}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+Atom\+Action\+Result}, 
+		\hyperpage{30}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+Auth\+Repository}, 
+		\hyperpage{32}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+Empty\+Controller}, 
+		\hyperpage{38}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+File\+Share\+Helper}, 
+		\hyperpage{50}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+Rss\+Action\+Result}, 
+		\hyperpage{122}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+Search}, \hyperpage{128}
+  \item {Open.\+G\+I.\+hypermart.\+Helpers.\+View\+Renderer}, 
+		\hyperpage{151}
+  \item {Open.\+G\+I.\+hypermart.\+Migrations}, \hyperpage{22}
+  \item {Open.\+G\+I.\+hypermart.\+Migrations.\+Initial}, 
+		\hyperpage{80}
+  \item {Open.\+G\+I.\+hypermart.\+Models}, \hyperpage{22}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Category}, \hyperpage{34}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+File}, \hyperpage{41}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+File\+Platform}, 
+		\hyperpage{47}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Http\+Error\+Page}, 
+		\hyperpage{69}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Installation\+History}, 
+		\hyperpage{80}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Model1\+Container}, 
+		\hyperpage{85}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Platform}, \hyperpage{95}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Product}, \hyperpage{96}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Rating}, \hyperpage{109}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Rating\+Details}, 
+		\hyperpage{111}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Screenshot}, 
+		\hyperpage{123}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Service}, \hyperpage{130}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+Tag}, \hyperpage{139}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+User}, \hyperpage{142}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+User\+Model}, 
+		\hyperpage{148}
+  \item {Open.\+G\+I.\+hypermart.\+Models.\+W\+S\+User}, 
+		\hyperpage{158}
+  \item {Open.\+G\+I.\+hypermart.\+Mvc\+Application}, \hyperpage{90}
+  \item {Open.\+G\+I.\+hypermart.\+Properties}, \hyperpage{23}
+  \item {Open.\+G\+I.\+hypermart.\+Route\+Config}, \hyperpage{121}
+  \item {Open.\+G\+I.\+hypermart.\+Startup}, \hyperpage{132}
+  \item {Open.\+G\+I.\+hypermart.\+Status}, \hyperpage{132}
+  \item {Open.\+GI}, \hyperpage{15}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+App\+\_\+\+Start\+::\+Unity\+Config}
+    \subitem {Get\+Configured\+Container}, \hyperpage{142}
+    \subitem {Register\+Types}, \hyperpage{142}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page}
+    \subitem {Sample\+Direction}, \hyperpage{17}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Controllers\+::\+Help\+Controller}
+    \subitem {Api}, \hyperpage{53}
+    \subitem {Configuration}, \hyperpage{54}
+    \subitem {Help\+Controller}, \hyperpage{53}
+    \subitem {Index}, \hyperpage{54}
+    \subitem {Resource\+Model}, \hyperpage{54}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Area\+Registration}
+    \subitem {Area\+Name}, \hyperpage{58}
+    \subitem {Register\+Area}, \hyperpage{58}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}
+    \subitem {Action\+Samples}, \hyperpage{63}
+    \subitem {Actual\+Http\+Message\+Types}, \hyperpage{63}
+    \subitem {Get\+Action\+Sample}, \hyperpage{60}
+    \subitem {Get\+Sample}, \hyperpage{60}
+    \subitem {Get\+Sample\+Object}, \hyperpage{60}
+    \subitem {Get\+Sample\+Requests}, \hyperpage{61}
+    \subitem {Get\+Sample\+Responses}, \hyperpage{61}
+    \subitem {Help\+Page\+Sample\+Generator}, \hyperpage{59}
+    \subitem {Resolve\+Http\+Request\+Message\+Type}, \hyperpage{61}
+    \subitem {Resolve\+Type}, \hyperpage{62}
+    \subitem {Sample\+Object\+Factories}, \hyperpage{63}
+    \subitem {Sample\+Objects}, \hyperpage{63}
+    \subitem {Write\+Sample\+Object\+Using\+Formatter}, \hyperpage{62}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}
+    \subitem {Action\+Name}, \hyperpage{67}
+    \subitem {Controller\+Name}, \hyperpage{67}
+    \subitem {Equals}, \hyperpage{66}
+    \subitem {Get\+Hash\+Code}, \hyperpage{66}
+    \subitem {Help\+Page\+Sample\+Key}, \hyperpage{65, 66}
+    \subitem {Media\+Type}, \hyperpage{67}
+    \subitem {Parameter\+Names}, \hyperpage{67}
+    \subitem {Parameter\+Type}, \hyperpage{67}
+    \subitem {Sample\+Direction}, \hyperpage{67}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Image\+Sample}
+    \subitem {Equals}, \hyperpage{77}
+    \subitem {Get\+Hash\+Code}, \hyperpage{78}
+    \subitem {Image\+Sample}, \hyperpage{77}
+    \subitem {Src}, \hyperpage{78}
+    \subitem {To\+String}, \hyperpage{78}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Invalid\+Sample}
+    \subitem {Equals}, \hyperpage{82}
+    \subitem {Error\+Message}, \hyperpage{83}
+    \subitem {Get\+Hash\+Code}, \hyperpage{83}
+    \subitem {Invalid\+Sample}, \hyperpage{82}
+    \subitem {To\+String}, \hyperpage{83}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Collection\+Model\+Description}
+    \subitem {Element\+Description}, \hyperpage{35}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Complex\+Type\+Model\+Description}
+    \subitem {Complex\+Type\+Model\+Description}, \hyperpage{36}
+    \subitem {Properties}, \hyperpage{36}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Type\+Model\+Description}
+    \subitem {Enum\+Type\+Model\+Description}, \hyperpage{39}
+    \subitem {Values}, \hyperpage{39}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Value\+Description}
+    \subitem {Documentation}, \hyperpage{40}
+    \subitem {Name}, \hyperpage{40}
+    \subitem {Value}, \hyperpage{40}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+I\+Model\+Documentation\+Provider}
+    \subitem {Get\+Documentation}, \hyperpage{79}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Key\+Value\+Pair\+Model\+Description}
+    \subitem {Key\+Model\+Description}, \hyperpage{84}
+    \subitem {Value\+Model\+Description}, \hyperpage{84}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description}
+    \subitem {Documentation}, \hyperpage{87}
+    \subitem {Model\+Type}, \hyperpage{87}
+    \subitem {Name}, \hyperpage{87}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Description\+Generator}
+    \subitem {Generated\+Models}, \hyperpage{88}
+    \subitem {Get\+Or\+Create\+Model\+Description}, \hyperpage{88}
+    \subitem {Model\+Description\+Generator}, \hyperpage{88}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Model\+Name\+Attribute}
+    \subitem {Model\+Name\+Attribute}, \hyperpage{89}
+    \subitem {Name}, \hyperpage{89}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Annotation}
+    \subitem {Annotation\+Attribute}, \hyperpage{93}
+    \subitem {Documentation}, \hyperpage{93}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Description}
+    \subitem {Annotations}, \hyperpage{94}
+    \subitem {Documentation}, \hyperpage{94}
+    \subitem {Name}, \hyperpage{94}
+    \subitem {Parameter\+Description}, \hyperpage{94}
+    \subitem {Type\+Description}, \hyperpage{94}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}
+    \subitem {Api\+Description}, \hyperpage{56}
+    \subitem {Error\+Messages}, \hyperpage{56}
+    \subitem {Help\+Page\+Api\+Model}, \hyperpage{55}
+    \subitem {Request\+Body\+Parameters}, \hyperpage{56}
+    \subitem {Request\+Documentation}, \hyperpage{56}
+    \subitem {Request\+Model\+Description}, \hyperpage{56}
+    \subitem {Resource\+Description}, \hyperpage{56}
+    \subitem {Resource\+Properties}, \hyperpage{56}
+    \subitem {Sample\+Requests}, \hyperpage{57}
+    \subitem {Sample\+Responses}, \hyperpage{57}
+    \subitem {Uri\+Parameters}, \hyperpage{57}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Object\+Generator}
+    \subitem {Generate\+Object}, \hyperpage{92}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Text\+Sample}
+    \subitem {Equals}, \hyperpage{140}
+    \subitem {Get\+Hash\+Code}, \hyperpage{141}
+    \subitem {Text}, \hyperpage{141}
+    \subitem {Text\+Sample}, \hyperpage{140}
+    \subitem {To\+String}, \hyperpage{141}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}
+    \subitem {Get\+Documentation}, \hyperpage{159--161}
+    \subitem {Get\+Response\+Documentation}, \hyperpage{161}
+    \subitem {Xml\+Documentation\+Provider}, \hyperpage{159}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Api\+Identity}
+    \subitem {Api\+Identity}, \hyperpage{29}
+    \subitem {Authentication\+Type}, \hyperpage{29}
+    \subitem {Is\+Authenticated}, \hyperpage{29}
+    \subitem {Name}, \hyperpage{29}
+    \subitem {User}, \hyperpage{29}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Identity\+Basic\+Authentication\+Attribute}
+    \subitem {On\+Action\+Executing}, \hyperpage{74}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Store\+Attribute}
+    \subitem {File\+ID}, \hyperpage{134}
+    \subitem {Product\+ID}, \hyperpage{134}
+    \subitem {Store\+Attribute}, \hyperpage{134}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Bundle\+Config}
+    \subitem {Register\+Bundles}, \hyperpage{33}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Account\+Controller}
+    \subitem {Account\+Controller}, \hyperpage{25}
+    \subitem {Dispose}, \hyperpage{26}
+    \subitem {Register}, \hyperpage{26}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}
+    \subitem {Delete\+File}, \hyperpage{49}
+    \subitem {Dispose}, \hyperpage{49}
+    \subitem {Get\+File}, \hyperpage{49}
+    \subitem {Get\+Files}, \hyperpage{49}
+    \subitem {Post\+File}, \hyperpage{50}
+    \subitem {Put\+File}, \hyperpage{50}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}
+    \subitem {Delete\+Product}, \hyperpage{107}
+    \subitem {Dispose}, \hyperpage{107}
+    \subitem {Get\+Product}, \hyperpage{107}
+    \subitem {Get\+Products}, \hyperpage{108}
+    \subitem {Post\+Product}, \hyperpage{108}
+    \subitem {Products\+Controller}, \hyperpage{107}
+    \subitem {Put\+Product}, \hyperpage{109}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}
+    \subitem {Delete\+Rating\+Details}, \hyperpage{113}
+    \subitem {Dispose}, \hyperpage{114}
+    \subitem {Get\+Rating\+Details}, \hyperpage{114}
+    \subitem {Post\+Rating\+Details}, \hyperpage{114}
+    \subitem {Put\+Rating\+Details}, \hyperpage{115}
+    \subitem {Rating\+Details\+Controller}, \hyperpage{113}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}
+    \subitem {Delete\+Rating}, \hyperpage{119}
+    \subitem {Dispose}, \hyperpage{119}
+    \subitem {Get\+Available\+Rating\+Areas}, \hyperpage{120}
+    \subitem {Get\+Rating}, \hyperpage{120}
+    \subitem {Get\+Ratings}, \hyperpage{120}
+    \subitem {Post\+Rating}, \hyperpage{120}
+    \subitem {Put\+Rating}, \hyperpage{121}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}
+    \subitem {Delete\+Screenshot}, \hyperpage{126}
+    \subitem {Dispose}, \hyperpage{127}
+    \subitem {Get\+Screenshot}, \hyperpage{127}
+    \subitem {Get\+Screenshots}, \hyperpage{127}
+    \subitem {Post\+Screenshot}, \hyperpage{127}
+    \subitem {Put\+Screenshot}, \hyperpage{128}
+    \subitem {Screenshots\+Controller}, \hyperpage{126}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+User\+Controller}
+    \subitem {Details}, \hyperpage{144}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Values\+Controller}
+    \subitem {Delete}, \hyperpage{149}
+    \subitem {Get}, \hyperpage{150}
+    \subitem {Get\+By\+Status}, \hyperpage{150}
+    \subitem {Post}, \hyperpage{150}
+    \subitem {Put}, \hyperpage{151}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Download\+Controller}
+    \subitem {Download}, \hyperpage{37}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Fake\+Controller}
+    \subitem {Index}, \hyperpage{41}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Home\+Controller}
+    \subitem {About}, \hyperpage{68}
+    \subitem {Contact}, \hyperpage{68}
+    \subitem {Index}, \hyperpage{68}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Nuget\+Controller}
+    \subitem {Index}, \hyperpage{91}
+    \subitem {Packages}, \hyperpage{91}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}
+    \subitem {Create}, \hyperpage{103}
+    \subitem {db}, \hyperpage{106}
+    \subitem {Delete}, \hyperpage{103}
+    \subitem {Delete\+Confirmed}, \hyperpage{104}
+    \subitem {Details}, \hyperpage{104}
+    \subitem {Dispose}, \hyperpage{104}
+    \subitem {Edit}, \hyperpage{105}
+    \subitem {Index}, \hyperpage{105}
+    \subitem {Products\+Controller}, \hyperpage{103}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Search\+Controller}
+    \subitem {db}, \hyperpage{130}
+    \subitem {Index}, \hyperpage{130}
+    \subitem {Search\+Controller}, \hyperpage{129}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}
+    \subitem {Add\+File}, \hyperpage{136}
+    \subitem {Add\+Screen\+Shot}, \hyperpage{136}
+    \subitem {Delete\+Product}, \hyperpage{137}
+    \subitem {Get\+All\+Products}, \hyperpage{137}
+    \subitem {Get\+Files}, \hyperpage{137}
+    \subitem {Get\+Product}, \hyperpage{137}
+    \subitem {Post\+Product}, \hyperpage{138}
+    \subitem {Post\+Product\+File}, \hyperpage{138}
+    \subitem {Post\+Ratings}, \hyperpage{139}
+    \subitem {Store\+Content\+Controller}, \hyperpage{136}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+User\+Controller}
+    \subitem {Details}, \hyperpage{145}
+    \subitem {popup\+\_\+\+Details}, \hyperpage{146}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Auth\+Context}
+    \subitem {Auth\+Context}, \hyperpage{31}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}
+    \subitem {Files}, \hyperpage{72}
+    \subitem {Hypermart\+Context}, \hyperpage{71}
+    \subitem {Installation\+History}, \hyperpage{72}
+    \subitem {On\+Model\+Creating}, \hyperpage{71}
+    \subitem {Platforms}, \hyperpage{72}
+    \subitem {Products}, \hyperpage{72}
+    \subitem {Ratings}, \hyperpage{73}
+    \subitem {Save\+Changes}, \hyperpage{72}
+    \subitem {Screenshots}, \hyperpage{73}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Initializer}
+    \subitem {Seed}, \hyperpage{73}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}
+    \subitem {Files}, \hyperpage{76}
+    \subitem {Platforms}, \hyperpage{76}
+    \subitem {Products}, \hyperpage{76}
+    \subitem {Ratings}, \hyperpage{76}
+    \subitem {Save\+Changes}, \hyperpage{75}
+    \subitem {Screenshots}, \hyperpage{76}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}
+    \subitem {B\+L\+OB}, \hyperpage{45}
+    \subitem {File\+D\+TO}, \hyperpage{45}
+    \subitem {File\+Name}, \hyperpage{46}
+    \subitem {ID}, \hyperpage{46}
+    \subitem {Link}, \hyperpage{46}
+    \subitem {Platforms}, \hyperpage{46}
+    \subitem {Product}, \hyperpage{46}
+    \subitem {Product\+ID}, \hyperpage{46}
+    \subitem {Storage\+Type}, \hyperpage{47}
+    \subitem {Version}, \hyperpage{47}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}
+    \subitem {Description}, \hyperpage{101}
+    \subitem {ID}, \hyperpage{101}
+    \subitem {Lead}, \hyperpage{101}
+    \subitem {Product\+D\+TO}, \hyperpage{100}
+    \subitem {Screen\+Shot}, \hyperpage{101}
+    \subitem {Tagline}, \hyperpage{101}
+    \subitem {Title}, \hyperpage{101}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+D\+TO}
+    \subitem {Out\+Of}, \hyperpage{116}
+    \subitem {Rated\+Area}, \hyperpage{116}
+    \subitem {Rating\+D\+TO}, \hyperpage{116}
+    \subitem {Score}, \hyperpage{116}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}
+    \subitem {Comment}, \hyperpage{117}
+    \subitem {Comment\+Title}, \hyperpage{117}
+    \subitem {File\+ID}, \hyperpage{118}
+    \subitem {Product\+ID}, \hyperpage{118}
+    \subitem {Rating\+Information\+D\+TO}, \hyperpage{117}
+    \subitem {Ratings}, \hyperpage{118}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}
+    \subitem {Email}, \hyperpage{147}
+    \subitem {Job\+Title}, \hyperpage{147}
+    \subitem {Phone\+Numnber}, \hyperpage{147}
+    \subitem {Photo\+\_\+byte\+Array}, \hyperpage{147}
+    \subitem {User\+D\+TO}, \hyperpage{147}
+    \subitem {username}, \hyperpage{148}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Docs\+::\+Data\+Transformation\+Objects\+::\+Screen\+Shot\+D\+TO}
+    \subitem {ID}, \hyperpage{125}
+    \subitem {Screen\+Shot1}, \hyperpage{125}
+    \subitem {Screen\+Shot\+D\+TO}, \hyperpage{125}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Filter\+Config}
+    \subitem {Register\+Global\+Filters}, \hyperpage{52}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers}
+    \subitem {Management\+Type}, \hyperpage{21}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+A\+D\+\_\+\+Repository}
+    \subitem {Enumerate\+Domains}, \hyperpage{27}
+    \subitem {Friendly\+Domain\+To\+Ldap\+Domain}, \hyperpage{27}
+    \subitem {get\+User}, \hyperpage{27}
+    \subitem {Get\+Users}, \hyperpage{27}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Atom\+Action\+Result}
+    \subitem {Execute\+Result}, \hyperpage{30}
+    \subitem {Feed}, \hyperpage{31}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Auth\+Repository}
+    \subitem {Auth\+Repository}, \hyperpage{32}
+    \subitem {Dispose}, \hyperpage{32}
+    \subitem {Find\+User}, \hyperpage{32}
+    \subitem {Register\+User}, \hyperpage{33}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+File\+Share\+Helper}
+    \subitem {Create\+Folder}, \hyperpage{51}
+    \subitem {Create\+Share}, \hyperpage{51}
+    \subitem {Delete\+Share}, \hyperpage{51}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Rss\+Action\+Result}
+    \subitem {Execute\+Result}, \hyperpage{123}
+    \subitem {Feed}, \hyperpage{123}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}
+    \subitem {Context}, \hyperpage{158}
+    \subitem {Create\+Controller$<$ T $>$}, \hyperpage{153}
+    \subitem {Render\+Partial\+View}, \hyperpage{153, 154}
+    \subitem {Render\+Partial\+View\+To\+String}, \hyperpage{154}
+    \subitem {Render\+View}, \hyperpage{155, 156}
+    \subitem {Render\+View\+To\+String}, \hyperpage{157}
+    \subitem {Render\+View\+To\+Writer\+Internal}, \hyperpage{157}
+    \subitem {View\+Renderer}, \hyperpage{152}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Migrations\+::\+Initial}
+    \subitem {Down}, \hyperpage{80}
+    \subitem {Up}, \hyperpage{80}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models}
+    \subitem {storage\+Type}, \hyperpage{22, 23}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}
+    \subitem {B\+L\+OB}, \hyperpage{42}
+    \subitem {File}, \hyperpage{42}
+    \subitem {File\+Name}, \hyperpage{42}
+    \subitem {File\+Platforms}, \hyperpage{43}
+    \subitem {ID}, \hyperpage{43}
+    \subitem {Link}, \hyperpage{43}
+    \subitem {Platforms}, \hyperpage{43}
+    \subitem {Product}, \hyperpage{43}
+    \subitem {Product\+ID}, \hyperpage{43, 44}
+    \subitem {Storage\+Type}, \hyperpage{44}
+    \subitem {Version}, \hyperpage{44}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File\+Platform}
+    \subitem {File}, \hyperpage{47}
+    \subitem {Files\+\_\+\+ID}, \hyperpage{47}
+    \subitem {Platform}, \hyperpage{47}
+    \subitem {Platforms\+\_\+\+ID}, \hyperpage{48}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Http\+Error\+Page}
+    \subitem {Error\+Code}, \hyperpage{69}
+    \subitem {Error\+Description}, \hyperpage{69}
+    \subitem {Error\+Title}, \hyperpage{70}
+    \subitem {Technical\+Contact}, \hyperpage{70}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Installation\+History}
+    \subitem {File\+ID}, \hyperpage{81}
+    \subitem {Installation\+Date}, \hyperpage{81}
+    \subitem {Product\+ID}, \hyperpage{81}
+    \subitem {user\+ID}, \hyperpage{81}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}
+    \subitem {File\+Platforms}, \hyperpage{85}
+    \subitem {Files}, \hyperpage{85}
+    \subitem {Model1\+Container}, \hyperpage{85}
+    \subitem {On\+Model\+Creating}, \hyperpage{85}
+    \subitem {Platforms}, \hyperpage{86}
+    \subitem {Products}, \hyperpage{86}
+    \subitem {Screenshots}, \hyperpage{86}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Platform}
+    \subitem {File\+Platforms}, \hyperpage{96}
+    \subitem {Files}, \hyperpage{96}
+    \subitem {ID}, \hyperpage{96}
+    \subitem {Platform}, \hyperpage{95}
+    \subitem {Platform1}, \hyperpage{96}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}
+    \subitem {Average\+Rating}, \hyperpage{98}
+    \subitem {Description}, \hyperpage{98}
+    \subitem {Files}, \hyperpage{98}
+    \subitem {ID}, \hyperpage{98}
+    \subitem {Lead}, \hyperpage{98}
+    \subitem {Maintainers}, \hyperpage{98}
+    \subitem {My\+Rating}, \hyperpage{98}
+    \subitem {Product}, \hyperpage{97}
+    \subitem {Ratings}, \hyperpage{99}
+    \subitem {Screenshots}, \hyperpage{99}
+    \subitem {Source\+Code}, \hyperpage{99}
+    \subitem {Tagline}, \hyperpage{99}
+    \subitem {Title}, \hyperpage{99}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}
+    \subitem {Comments}, \hyperpage{110}
+    \subitem {Product\+ID}, \hyperpage{110}
+    \subitem {Rated\+Product}, \hyperpage{110}
+    \subitem {rating}, \hyperpage{110}
+    \subitem {Rating\+Category}, \hyperpage{110}
+    \subitem {user\+ID}, \hyperpage{110}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating\+Details}
+    \subitem {Product\+ID}, \hyperpage{111}
+    \subitem {Rated\+Product}, \hyperpage{111}
+    \subitem {rating}, \hyperpage{111}
+    \subitem {Rating\+Category}, \hyperpage{111}
+    \subitem {user\+ID}, \hyperpage{112}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Screenshot}
+    \subitem {ID}, \hyperpage{124}
+    \subitem {Product}, \hyperpage{124}
+    \subitem {Product\+ID}, \hyperpage{124}
+    \subitem {Screen\+Shot1}, \hyperpage{124}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Service}
+    \subitem {Name}, \hyperpage{131}
+    \subitem {User\+Name}, \hyperpage{131}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Tag}
+    \subitem {Name}, \hyperpage{139}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User}
+    \subitem {Email}, \hyperpage{143}
+    \subitem {Job\+Title}, \hyperpage{143}
+    \subitem {Phone\+Numnber}, \hyperpage{143}
+    \subitem {Photo}, \hyperpage{143}
+    \subitem {username}, \hyperpage{143}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User\+Model}
+    \subitem {Confirm\+Password}, \hyperpage{148}
+    \subitem {Password}, \hyperpage{148}
+    \subitem {User\+Name}, \hyperpage{148}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+W\+S\+User}
+    \subitem {Username}, \hyperpage{158}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Mvc\+Application}
+    \subitem {Application\+\_\+\+Start}, \hyperpage{90}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Route\+Config}
+    \subitem {Register\+Routes}, \hyperpage{122}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Startup}
+    \subitem {Configuration}, \hyperpage{132}
+  \item {Open\+::\+G\+I\+::hypermart\+::\+Status}
+    \subitem {Hello\+World}, \hyperpage{133}
+  \item {Out\+Of}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+D\+TO}, 
+		\hyperpage{116}
+
+  \indexspace
+
+  \item {Packages}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Nuget\+Controller}, 
+		\hyperpage{91}
+  \item {Parameter\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Description}, 
+		\hyperpage{94}
+  \item {Parameter\+Names}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{67}
+  \item {Parameter\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{67}
+  \item {Password}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User\+Model}, 
+		\hyperpage{148}
+  \item {Phone\+Numnber}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}, 
+		\hyperpage{147}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User}, 
+		\hyperpage{143}
+  \item {Photo}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User}, 
+		\hyperpage{143}
+  \item {Photo\+\_\+byte\+Array}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}, 
+		\hyperpage{147}
+  \item {Platform}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File\+Platform}, 
+		\hyperpage{47}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Platform}, 
+		\hyperpage{95}
+  \item {Platform1}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Platform}, 
+		\hyperpage{96}
+  \item {Platforms}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{72}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}, 
+		\hyperpage{76}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{46}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{43}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{86}
+  \item {Platforms\+\_\+\+ID}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File\+Platform}, 
+		\hyperpage{48}
+  \item {popup\+\_\+\+Details}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+User\+Controller}, 
+		\hyperpage{146}
+  \item {Post}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Values\+Controller}, 
+		\hyperpage{150}
+  \item {Post\+File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}, 
+		\hyperpage{50}
+  \item {Post\+Product}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{108}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{138}
+  \item {Post\+Product\+File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{138}
+  \item {Post\+Rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{120}
+  \item {Post\+Rating\+Details}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}, 
+		\hyperpage{114}
+  \item {Post\+Ratings}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{139}
+  \item {Post\+Screenshot}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{127}
+  \item {Product}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{46}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{43}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{97}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Screenshot}, 
+		\hyperpage{124}
+  \item {Product\+D\+TO}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{100}
+  \item {Product\+ID}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Store\+Attribute}, 
+		\hyperpage{134}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{46}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}, 
+		\hyperpage{118}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{43, 44}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Installation\+History}, 
+		\hyperpage{81}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}, 
+		\hyperpage{110}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating\+Details}, 
+		\hyperpage{111}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Screenshot}, 
+		\hyperpage{124}
+  \item {Products}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{72}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}, 
+		\hyperpage{76}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{86}
+  \item {Products\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{107}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Products\+Controller}, 
+		\hyperpage{103}
+  \item {Properties}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Complex\+Type\+Model\+Description}, 
+		\hyperpage{36}
+  \item {Put}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Values\+Controller}, 
+		\hyperpage{151}
+  \item {Put\+File}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Files\+Controller}, 
+		\hyperpage{50}
+  \item {Put\+Product}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Products\+Controller}, 
+		\hyperpage{109}
+  \item {Put\+Rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Ratings\+Controller}, 
+		\hyperpage{121}
+  \item {Put\+Rating\+Details}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}, 
+		\hyperpage{115}
+  \item {Put\+Screenshot}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{128}
+
+  \indexspace
+
+  \item {Rated\+Area}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+D\+TO}, 
+		\hyperpage{116}
+  \item {Rated\+Product}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}, 
+		\hyperpage{110}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating\+Details}, 
+		\hyperpage{111}
+  \item {rating}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}, 
+		\hyperpage{110}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating\+Details}, 
+		\hyperpage{111}
+  \item {Rating\+Category}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}, 
+		\hyperpage{110}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating\+Details}, 
+		\hyperpage{111}
+  \item {Rating\+D\+TO}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+D\+TO}, 
+		\hyperpage{116}
+  \item {Rating\+Details\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Rating\+Details\+Controller}, 
+		\hyperpage{113}
+  \item {Rating\+Information\+D\+TO}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}, 
+		\hyperpage{117}
+  \item {Ratings}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{73}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}, 
+		\hyperpage{76}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+Information\+D\+TO}, 
+		\hyperpage{118}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{99}
+  \item {Register}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Account\+Controller}, 
+		\hyperpage{26}
+  \item {Register\+Area}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Area\+Registration}, 
+		\hyperpage{58}
+  \item {Register\+Bundles}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Bundle\+Config}, 
+		\hyperpage{33}
+  \item {Register\+Global\+Filters}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Filter\+Config}, 
+		\hyperpage{52}
+  \item {Register\+Routes}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Route\+Config}, 
+		\hyperpage{122}
+  \item {Register\+Types}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+App\+\_\+\+Start\+::\+Unity\+Config}, 
+		\hyperpage{142}
+  \item {Register\+User}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+Auth\+Repository}, 
+		\hyperpage{33}
+  \item {Render\+Partial\+View}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{153, 154}
+  \item {Render\+Partial\+View\+To\+String}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{154}
+  \item {Render\+View}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{155, 156}
+  \item {Render\+View\+To\+String}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{157}
+  \item {Render\+View\+To\+Writer\+Internal}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{157}
+  \item {Request\+Body\+Parameters}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+  \item {Request\+Documentation}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+  \item {Request\+Model\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+  \item {Resolve\+Http\+Request\+Message\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{61}
+  \item {Resolve\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{62}
+  \item {Resource\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+  \item {Resource\+Model}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Controllers\+::\+Help\+Controller}, 
+		\hyperpage{54}
+  \item {Resource\+Properties}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{56}
+
+  \indexspace
+
+  \item {Sample\+Direction}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page}, 
+		\hyperpage{17}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Key}, 
+		\hyperpage{67}
+  \item {Sample\+Object\+Factories}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{63}
+  \item {Sample\+Objects}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{63}
+  \item {Sample\+Requests}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{57}
+  \item {Sample\+Responses}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{57}
+  \item {Save\+Changes}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{72}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}, 
+		\hyperpage{75}
+  \item {Score}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Rating\+D\+TO}, 
+		\hyperpage{116}
+  \item {Screen\+Shot}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{101}
+  \item {Screen\+Shot1}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Docs\+::\+Data\+Transformation\+Objects\+::\+Screen\+Shot\+D\+TO}, 
+		\hyperpage{125}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Screenshot}, 
+		\hyperpage{124}
+  \item {Screen\+Shot\+D\+TO}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Docs\+::\+Data\+Transformation\+Objects\+::\+Screen\+Shot\+D\+TO}, 
+		\hyperpage{125}
+  \item {Screenshots}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Context}, 
+		\hyperpage{73}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+I\+Hypermart\+Context}, 
+		\hyperpage{76}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Model1\+Container}, 
+		\hyperpage{86}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{99}
+  \item {Screenshots\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+A\+P\+I\+::\+Screenshots\+Controller}, 
+		\hyperpage{126}
+  \item {Search\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Search\+Controller}, 
+		\hyperpage{129}
+  \item {Seed}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+D\+A\+L\+::\+Hypermart\+Initializer}, 
+		\hyperpage{73}
+  \item {Source\+Code}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{99}
+  \item {Src}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Image\+Sample}, 
+		\hyperpage{78}
+  \item {Storage\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{47}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{44}
+  \item {storage\+Type}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models}, 
+		\hyperpage{22, 23}
+  \item {Store\+Attribute}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Store\+Attribute}, 
+		\hyperpage{134}
+  \item {Store\+Content\+Controller}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Controllers\+::\+Store\+Content\+Controller}, 
+		\hyperpage{136}
+
+  \indexspace
+
+  \item {Tagline}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{101}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{99}
+  \item {Technical\+Contact}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Http\+Error\+Page}, 
+		\hyperpage{70}
+  \item {Text}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Text\+Sample}, 
+		\hyperpage{141}
+  \item {Text\+Sample}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Text\+Sample}, 
+		\hyperpage{140}
+  \item {Title}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+Product\+D\+TO}, 
+		\hyperpage{101}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Product}, 
+		\hyperpage{99}
+  \item {To\+String}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Image\+Sample}, 
+		\hyperpage{78}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Invalid\+Sample}, 
+		\hyperpage{83}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Text\+Sample}, 
+		\hyperpage{141}
+  \item {Type\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Parameter\+Description}, 
+		\hyperpage{94}
+
+  \indexspace
+
+  \item {Up}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Migrations\+::\+Initial}, 
+		\hyperpage{80}
+  \item {Uri\+Parameters}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Models\+::\+Help\+Page\+Api\+Model}, 
+		\hyperpage{57}
+  \item {User}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Attributes\+::\+Api\+Identity}, 
+		\hyperpage{29}
+  \item {User\+D\+TO}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}, 
+		\hyperpage{147}
+  \item {user\+ID}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Installation\+History}, 
+		\hyperpage{81}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating}, 
+		\hyperpage{110}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Rating\+Details}, 
+		\hyperpage{112}
+  \item {User\+Name}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+Service}, 
+		\hyperpage{131}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User\+Model}, 
+		\hyperpage{148}
+  \item {Username}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+W\+S\+User}, 
+		\hyperpage{158}
+  \item {username}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+User\+D\+TO}, 
+		\hyperpage{148}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+User}, 
+		\hyperpage{143}
+
+  \indexspace
+
+  \item {Value}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Value\+Description}, 
+		\hyperpage{40}
+  \item {Value\+Model\+Description}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Key\+Value\+Pair\+Model\+Description}, 
+		\hyperpage{84}
+  \item {Values}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Model\+Descriptions\+::\+Enum\+Type\+Model\+Description}, 
+		\hyperpage{39}
+  \item {Version}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Data\+Transformation\+Objects\+::\+File\+D\+TO}, 
+		\hyperpage{47}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Models\+::\+File}, 
+		\hyperpage{44}
+  \item {View\+Renderer}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Helpers\+::\+View\+Renderer}, 
+		\hyperpage{152}
+
+  \indexspace
+
+  \item {Write\+Sample\+Object\+Using\+Formatter}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Help\+Page\+Sample\+Generator}, 
+		\hyperpage{62}
+
+  \indexspace
+
+  \item {Xml\+Documentation\+Provider}
+    \subitem {Open\+::\+G\+I\+::hypermart\+::\+Areas\+::\+Help\+Page\+::\+Xml\+Documentation\+Provider}, 
+		\hyperpage{159}
+
+\end{theindex}
