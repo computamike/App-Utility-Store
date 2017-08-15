@@ -4,11 +4,9 @@ var searchData=
   ['app_5fstart',['App_Start',['../namespace_open_1_1_g_i_1_1hypermart_1_1_app___start.html',1,'Open::GI::hypermart']]],
   ['areas',['Areas',['../namespace_open_1_1_g_i_1_1hypermart_1_1_areas.html',1,'Open::GI::hypermart']]],
   ['attributes',['Attributes',['../namespace_open_1_1_g_i_1_1hypermart_1_1_attributes.html',1,'Open::GI::hypermart']]],
-  ['controllers',['Controllers',['../namespace_open_1_1_g_i_1_1hypermart_1_1_controllers.html',1,'Open::GI::hypermart']]],
-  ['controllers',['Controllers',['../namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_controllers.html',1,'Open::GI::hypermart::Areas::HelpPage']]],
+  ['controllers',['Controllers',['../namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_controllers.html',1,'Open.GI.hypermart.Areas.HelpPage.Controllers'],['../namespace_open_1_1_g_i_1_1hypermart_1_1_controllers.html',1,'Open.GI.hypermart.Controllers']]],
   ['dal',['DAL',['../namespace_open_1_1_g_i_1_1hypermart_1_1_d_a_l.html',1,'Open::GI::hypermart']]],
-  ['datatransformationobjects',['DataTransformationObjects',['../namespace_open_1_1_g_i_1_1hypermart_1_1_docs_1_1_data_transformation_objects.html',1,'Open::GI::hypermart::Docs']]],
-  ['datatransformationobjects',['DataTransformationObjects',['../namespace_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects.html',1,'Open::GI::hypermart']]],
+  ['datatransformationobjects',['DataTransformationObjects',['../namespace_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects.html',1,'Open.GI.hypermart.DataTransformationObjects'],['../namespace_open_1_1_g_i_1_1hypermart_1_1_docs_1_1_data_transformation_objects.html',1,'Open.GI.hypermart.Docs.DataTransformationObjects']]],
   ['docs',['Docs',['../namespace_open_1_1_g_i_1_1hypermart_1_1_docs.html',1,'Open::GI::hypermart']]],
   ['gi',['GI',['../namespace_open_1_1_g_i.html',1,'Open']]],
   ['helpers',['Helpers',['../namespace_open_1_1_g_i_1_1hypermart_1_1_helpers.html',1,'Open::GI::hypermart']]],
@@ -16,8 +14,8 @@ var searchData=
   ['hypermart',['hypermart',['../namespace_open_1_1_g_i_1_1hypermart.html',1,'Open::GI']]],
   ['migrations',['Migrations',['../namespace_open_1_1_g_i_1_1hypermart_1_1_migrations.html',1,'Open::GI::hypermart']]],
   ['modeldescriptions',['ModelDescriptions',['../namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions.html',1,'Open::GI::hypermart::Areas::HelpPage']]],
-  ['models',['Models',['../namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_models.html',1,'Open::GI::hypermart::Areas::HelpPage']]],
-  ['models',['Models',['../namespace_open_1_1_g_i_1_1hypermart_1_1_models.html',1,'Open::GI::hypermart']]],
+  ['models',['Models',['../namespace_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_models.html',1,'Open.GI.hypermart.Areas.HelpPage.Models'],['../namespace_open_1_1_g_i_1_1hypermart_1_1_models.html',1,'Open.GI.hypermart.Models']]],
   ['open',['Open',['../namespace_open.html',1,'']]],
-  ['properties',['Properties',['../namespace_open_1_1_g_i_1_1hypermart_1_1_properties.html',1,'Open::GI::hypermart']]]
+  ['properties',['Properties',['../namespace_open_1_1_g_i_1_1hypermart_1_1_properties.html',1,'Open::GI::hypermart']]],
+  ['services',['Services',['../namespace_open_1_1_g_i_1_1hypermart_1_1_services.html',1,'Open::GI::hypermart']]]
 ];

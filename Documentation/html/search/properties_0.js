@@ -7,5 +7,6 @@ var searchData=
   ['annotations',['Annotations',['../class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_parameter_description.html#ab64b50d81b22dc90c5d40081722ff711',1,'Open::GI::hypermart::Areas::HelpPage::ModelDescriptions::ParameterDescription']]],
   ['apidescription',['ApiDescription',['../class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_models_1_1_help_page_api_model.html#a80061bc5f25f38dbfbff06705a48372e',1,'Open::GI::hypermart::Areas::HelpPage::Models::HelpPageApiModel']]],
   ['areaname',['AreaName',['../class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_help_page_area_registration.html#a98b4d777a4852021b9a120b1eb5cd08a',1,'Open::GI::hypermart::Areas::HelpPage::HelpPageAreaRegistration']]],
-  ['averagerating',['AverageRating',['../class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_product.html#a550720b35103f77104794a42da348a17',1,'Open::GI::hypermart::Models::Product']]]
+  ['authenticationtype',['AuthenticationType',['../class_open_1_1_g_i_1_1hypermart_1_1_attributes_1_1_api_identity.html#aa3d5a607ebaae15ce9b20556fb633fab',1,'Open::GI::hypermart::Attributes::ApiIdentity']]],
+  ['averagerating',['AverageRating',['../class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_product.html#aa13c2560a38bf25cc01435cef5e2ba7e',1,'Open::GI::hypermart::Models::Product']]]
 ];
