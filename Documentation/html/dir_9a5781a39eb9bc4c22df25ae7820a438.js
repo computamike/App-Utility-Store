@@ -3,6 +3,9 @@ var dir_9a5781a39eb9bc4c22df25ae7820a438 =
     [ "AD_Repository.cs", "_a_d___repository_8cs.html", [
       [ "AD_Repository", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_a_d___repository.html", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_a_d___repository" ]
     ] ],
+    [ "AuthRepository.cs", "_auth_repository_8cs.html", [
+      [ "AuthRepository", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_auth_repository.html", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_auth_repository" ]
+    ] ],
     [ "FileShareHelper.cs", "_file_share_helper_8cs.html", "_file_share_helper_8cs" ],
     [ "ImageHelper.cs", "_image_helper_8cs.html", null ],
     [ "PlatformHelper.cs", "_platform_helper_8cs.html", null ],
@@ -12,5 +15,9 @@ var dir_9a5781a39eb9bc4c22df25ae7820a438 =
     ] ],
     [ "Search.cs", "_search_8cs.html", [
       [ "Search", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_search.html", null ]
+    ] ],
+    [ "ViewRenderer.cs", "_view_renderer_8cs.html", [
+      [ "ViewRenderer", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer.html", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer" ],
+      [ "EmptyController", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_empty_controller.html", null ]
     ] ]
 ];

@@ -5,12 +5,11 @@ var NAVTREE =
       [ "Packages", "namespaces.html", "namespaces" ],
       [ "Package Functions", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
-    [ "Classes", null, [
-      [ "Class List", "annotated.html", "annotated" ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
@@ -20,24 +19,17 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Variables", "globals_vars.html", "globals_vars" ]
-      ] ]
+      [ "File List", "files.html", "files" ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"201601190010001___initial_8_designer_8cs.html",
-"bootstrap_8min_8js.html#a7c192e47b11481e4717b9f1e04eb4420",
-"class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_file_d_t_o.html#af58091e5ba2e9fde7db92f08dc4d3a41",
-"dropzone_8js.html#aa1bcf40569b2634c0dbe49410815374d",
-"jquery-2_82_82-vsdoc_8js.html#a6bf604bb8f2c26858d3e413ccebaa079",
-"namespace_open_1_1_g_i_1_1hypermart_1_1_helpers.html"
+"201610201858128___initial_8_designer_8cs.html",
+"bootstrap_8min_8js_source.html",
+"class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_file_d_t_o.html#ac55a6e7062078277eed54e42b7c29d73",
+"interface_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_i_model_documentation_provider.html#a27d4470da05e52051ae345515c17755a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

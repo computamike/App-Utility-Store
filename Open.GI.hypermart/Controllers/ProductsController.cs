@@ -63,7 +63,9 @@ namespace Open.GI.hypermart.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Product product = db.Products.Find(id);
+            Product product = db.Products.FirstOrDefault(x=> x.ID == id);
+
+
             if (product == null)
             {
                 return HttpNotFound();
@@ -137,9 +139,9 @@ namespace Open.GI.hypermart.Controllers
             if (ModelState.IsValid)
             {
                 // add screenshots
-                for (int i = 0; i < Request.Files.Count; i++)
+
+                foreach (HttpPostedFileBase file in Request.Files)
                 {
-                    HttpPostedFileBase file = Request.Files[i];
                     if (file != null && file.ContentLength > 0)
                     {
                         file.InputStream.Position = 0;
@@ -153,8 +155,10 @@ namespace Open.GI.hypermart.Controllers
                         }
                         product.Screenshots.Add(Screen);
                     }
+
                 }
-                
+
+ 
                 db.Products.Add(product);
                 db.SaveChanges();
 

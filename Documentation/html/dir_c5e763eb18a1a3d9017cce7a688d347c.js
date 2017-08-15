@@ -12,11 +12,15 @@ var dir_c5e763eb18a1a3d9017cce7a688d347c =
     [ "obj", "dir_4eb4b99003a5f776388a4b39645b27dd.html", "dir_4eb4b99003a5f776388a4b39645b27dd" ],
     [ "Properties", "dir_b5f26d72a946ac44ad84f75bb346b0d7.html", "dir_b5f26d72a946ac44ad84f75bb346b0d7" ],
     [ "Scripts", "dir_6baca79b21f2a33a33d576862dc95c49.html", "dir_6baca79b21f2a33a33d576862dc95c49" ],
+    [ "Services", "dir_c579caa7f5acfb611961cc70572f50f7.html", "dir_c579caa7f5acfb611961cc70572f50f7" ],
     [ "WIP", "dir_9c13ea36d9178e3e3691e4fb94688e22.html", "dir_9c13ea36d9178e3e3691e4fb94688e22" ],
     [ "Global.asax.cs", "_global_8asax_8cs.html", [
       [ "MvcApplication", "class_open_1_1_g_i_1_1hypermart_1_1_mvc_application.html", "class_open_1_1_g_i_1_1hypermart_1_1_mvc_application" ]
     ] ],
     [ "Registration.cs", "_registration_8cs.html", null ],
+    [ "Startup.cs", "_startup_8cs.html", [
+      [ "Startup", "class_open_1_1_g_i_1_1hypermart_1_1_startup.html", "class_open_1_1_g_i_1_1hypermart_1_1_startup" ]
+    ] ],
     [ "Status.asmx.cs", "_status_8asmx_8cs.html", [
       [ "Status", "class_open_1_1_g_i_1_1hypermart_1_1_status.html", "class_open_1_1_g_i_1_1hypermart_1_1_status" ]
     ] ]

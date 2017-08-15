@@ -1,5 +1,6 @@
 var namespace_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i =
 [
+    [ "AccountController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_account_controller.html", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_account_controller" ],
     [ "FilesController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_files_controller.html", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_files_controller" ],
     [ "ProductsController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_products_controller.html", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_products_controller" ],
     [ "RatingDetailsController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_rating_details_controller.html", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_rating_details_controller" ],

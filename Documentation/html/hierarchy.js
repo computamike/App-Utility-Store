@@ -1,11 +1,15 @@
 var hierarchy =
 [
+    [ "ActionFilterAttribute", null, [
+      [ "Open.GI.hypermart.Attributes.IdentityBasicAuthenticationAttribute", "class_open_1_1_g_i_1_1hypermart_1_1_attributes_1_1_identity_basic_authentication_attribute.html", null ]
+    ] ],
     [ "ActionResult", null, [
       [ "Open.GI.hypermart.Helpers.AtomActionResult", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_atom_action_result.html", null ],
       [ "Open.GI.hypermart.Helpers.RssActionResult", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_rss_action_result.html", null ]
     ] ],
     [ "Open.GI.hypermart.Helpers.AD_Repository", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_a_d___repository.html", null ],
     [ "ApiController", null, [
+      [ "Open.GI.hypermart.Controllers.API.AccountController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_account_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.API.FilesController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_files_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.API.ProductsController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_products_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.API.RatingDetailsController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_a_p_i_1_1_rating_details_controller.html", null ],
@@ -27,20 +31,20 @@ var hierarchy =
     [ "Controller", null, [
       [ "Open.GI.hypermart.Areas.HelpPage.Controllers.HelpController", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_controllers_1_1_help_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.DownloadController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_download_controller.html", null ],
+      [ "Open.GI.hypermart.Controllers.FakeController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_fake_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.HomeController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_home_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.NugetController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_nuget_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.ProductsController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_products_controller.html", null ],
       [ "Open.GI.hypermart.Controllers.SearchController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_search_controller.html", null ],
-      [ "Open.GI.hypermart.Controllers.UserController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_user_controller.html", null ]
+      [ "Open.GI.hypermart.Controllers.UserController", "class_open_1_1_g_i_1_1hypermart_1_1_controllers_1_1_user_controller.html", null ],
+      [ "Open.GI.hypermart.Helpers.EmptyController", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_empty_controller.html", null ]
     ] ],
     [ "DbContext", null, [
       [ "Open.GI.hypermart.DAL.HypermartContext", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_hypermart_context.html", null ],
       [ "Open.GI.hypermart.Models.Model1Container", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_model1_container.html", null ]
     ] ],
     [ "DbMigration", null, [
-      [ "Open.GI.hypermart.Migrations.Initial", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_initial.html", null ],
-      [ "Open.GI.hypermart.Migrations.Ratings", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_ratings.html", null ],
-      [ "Open.GI.hypermart.Migrations.TableNamingChanges", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_table_naming_changes.html", null ]
+      [ "Open.GI.hypermart.Migrations.Initial", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_initial.html", null ]
     ] ],
     [ "DropCreateDatabaseIfModelChanges", null, [
       [ "Open.GI.hypermart.DAL.HypermartInitializer", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_hypermart_initializer.html", null ]
@@ -57,23 +61,30 @@ var hierarchy =
     [ "HttpApplication", null, [
       [ "Open.GI.hypermart.MvcApplication", "class_open_1_1_g_i_1_1hypermart_1_1_mvc_application.html", null ]
     ] ],
+    [ "Open.GI.hypermart.Models.HttpErrorPage", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_http_error_page.html", null ],
+    [ "IdentityDbContext", null, [
+      [ "Open.GI.hypermart.DAL.AuthContext", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_auth_context.html", null ]
+    ] ],
     [ "IDisposable", null, [
       [ "Open.GI.hypermart.DAL.IHypermartContext", "interface_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_i_hypermart_context.html", [
         [ "Open.GI.hypermart.DAL.HypermartContext", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_hypermart_context.html", null ]
-      ] ]
+      ] ],
+      [ "Open.GI.hypermart.Helpers.AuthRepository", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_auth_repository.html", null ]
     ] ],
     [ "IDocumentationProvider", null, [
       [ "Open.GI.hypermart.Areas.HelpPage.XmlDocumentationProvider", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_xml_documentation_provider.html", null ]
     ] ],
+    [ "IIdentity", null, [
+      [ "Open.GI.hypermart.Attributes.ApiIdentity", "class_open_1_1_g_i_1_1hypermart_1_1_attributes_1_1_api_identity.html", null ]
+    ] ],
     [ "Open.GI.hypermart.Areas.HelpPage.ImageSample", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_image_sample.html", null ],
     [ "IMigrationMetadata", null, [
-      [ "Open.GI.hypermart.Migrations.Initial", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_initial.html", null ],
-      [ "Open.GI.hypermart.Migrations.Ratings", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_ratings.html", null ],
-      [ "Open.GI.hypermart.Migrations.TableNamingChanges", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_table_naming_changes.html", null ]
+      [ "Open.GI.hypermart.Migrations.Initial", "class_open_1_1_g_i_1_1hypermart_1_1_migrations_1_1_initial.html", null ]
     ] ],
     [ "Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider", "interface_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_i_model_documentation_provider.html", [
       [ "Open.GI.hypermart.Areas.HelpPage.XmlDocumentationProvider", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_xml_documentation_provider.html", null ]
     ] ],
+    [ "Open.GI.hypermart.Models.InstallationHistory", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_installation_history.html", null ],
     [ "Open.GI.hypermart.Areas.HelpPage.InvalidSample", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_invalid_sample.html", null ],
     [ "Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.ModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_model_description.html", [
       [ "Open.GI.hypermart.Areas.HelpPage.ModelDescriptions.CollectionModelDescription", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_model_descriptions_1_1_collection_model_description.html", null ],
@@ -99,13 +110,19 @@ var hierarchy =
     [ "Open.GI.hypermart.Models.Screenshot", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_screenshot.html", null ],
     [ "Open.GI.hypermart.Docs.DataTransformationObjects.ScreenShotDTO", "class_open_1_1_g_i_1_1hypermart_1_1_docs_1_1_data_transformation_objects_1_1_screen_shot_d_t_o.html", null ],
     [ "Open.GI.hypermart.Helpers.Search", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_search.html", null ],
+    [ "Open.GI.hypermart.Services.SearchService", "class_open_1_1_g_i_1_1hypermart_1_1_services_1_1_search_service.html", null ],
+    [ "Open.GI.hypermart.Models.Service", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_service.html", null ],
+    [ "Open.GI.hypermart.Startup", "class_open_1_1_g_i_1_1hypermart_1_1_startup.html", null ],
     [ "Open.GI.hypermart.DAL.StoreContentDAL", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_store_content_d_a_l.html", null ],
     [ "Open.GI.hypermart.Models.Tag", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_tag.html", null ],
     [ "Open.GI.hypermart.Areas.HelpPage.TextSample", "class_open_1_1_g_i_1_1hypermart_1_1_areas_1_1_help_page_1_1_text_sample.html", null ],
     [ "Open.GI.hypermart.App_Start.UnityConfig", "class_open_1_1_g_i_1_1hypermart_1_1_app___start_1_1_unity_config.html", null ],
     [ "Open.GI.hypermart.Models.User", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_user.html", null ],
     [ "Open.GI.hypermart.DataTransformationObjects.UserDTO", "class_open_1_1_g_i_1_1hypermart_1_1_data_transformation_objects_1_1_user_d_t_o.html", null ],
+    [ "Open.GI.hypermart.Models.UserModel", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_user_model.html", null ],
+    [ "Open.GI.hypermart.Helpers.ViewRenderer", "class_open_1_1_g_i_1_1hypermart_1_1_helpers_1_1_view_renderer.html", null ],
     [ "WebService", null, [
       [ "Open.GI.hypermart.Status", "class_open_1_1_g_i_1_1hypermart_1_1_status.html", null ]
-    ] ]
+    ] ],
+    [ "Open.GI.hypermart.Models.WSUser", "class_open_1_1_g_i_1_1hypermart_1_1_models_1_1_w_s_user.html", null ]
 ];

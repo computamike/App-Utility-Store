@@ -27,14 +27,6 @@ namespace Open.GI.hypermart.Controllers
             this.db = db;
         }
 
-
-        ///// <summary>
-        ///// Standard installer for Search Controller
-        ///// </summary>
-        //public SearchController()
-        //{
-
-        //}
         // GET: Search        
         /// <summary>
         /// Indexes the specified search term. (performs a search, returns a list of results)

@@ -1,5 +1,8 @@
 var dir_6a549aaa594efc62623ae95545ecc323 =
 [
+    [ "AuthContext.cs", "_auth_context_8cs.html", [
+      [ "AuthContext", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_auth_context.html", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_auth_context" ]
+    ] ],
     [ "HypermartContext.cs", "_hypermart_context_8cs.html", [
       [ "HypermartContext", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_hypermart_context.html", "class_open_1_1_g_i_1_1hypermart_1_1_d_a_l_1_1_hypermart_context" ]
     ] ],

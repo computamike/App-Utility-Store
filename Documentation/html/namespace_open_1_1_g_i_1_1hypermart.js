@@ -10,9 +10,11 @@ var namespace_open_1_1_g_i_1_1hypermart =
     [ "Helpers", "namespace_open_1_1_g_i_1_1hypermart_1_1_helpers.html", "namespace_open_1_1_g_i_1_1hypermart_1_1_helpers" ],
     [ "Migrations", "namespace_open_1_1_g_i_1_1hypermart_1_1_migrations.html", "namespace_open_1_1_g_i_1_1hypermart_1_1_migrations" ],
     [ "Models", "namespace_open_1_1_g_i_1_1hypermart_1_1_models.html", "namespace_open_1_1_g_i_1_1hypermart_1_1_models" ],
+    [ "Services", "namespace_open_1_1_g_i_1_1hypermart_1_1_services.html", "namespace_open_1_1_g_i_1_1hypermart_1_1_services" ],
     [ "BundleConfig", "class_open_1_1_g_i_1_1hypermart_1_1_bundle_config.html", null ],
     [ "FilterConfig", "class_open_1_1_g_i_1_1hypermart_1_1_filter_config.html", null ],
     [ "MvcApplication", "class_open_1_1_g_i_1_1hypermart_1_1_mvc_application.html", "class_open_1_1_g_i_1_1hypermart_1_1_mvc_application" ],
     [ "RouteConfig", "class_open_1_1_g_i_1_1hypermart_1_1_route_config.html", null ],
+    [ "Startup", "class_open_1_1_g_i_1_1hypermart_1_1_startup.html", "class_open_1_1_g_i_1_1hypermart_1_1_startup" ],
     [ "Status", "class_open_1_1_g_i_1_1hypermart_1_1_status.html", "class_open_1_1_g_i_1_1hypermart_1_1_status" ]
 ];
