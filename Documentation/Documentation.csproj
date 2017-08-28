@@ -128,8 +128,7 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>rem 環境変数の設定
-set OutDir=$(OutDir)
+    <PostBuildEvent>set OutDir=$(OutDir)
 set ConfigurationName=$(ConfigurationName)
 set ProjectName=$(ProjectName)
 set TargetName=$(TargetName)
